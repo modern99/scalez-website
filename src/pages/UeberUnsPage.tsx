@@ -1,7 +1,25 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import maxImg from "@/assets/max-schoenpflug.jpeg";
 import Seo from "@/components/Seo";
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "Über ScaleZ",
+  url: "https://www.scale-z.ch/ueber-uns",
+  mainEntity: {
+    "@type": "Organization",
+    name: "ScaleZ GmbH",
+    url: "https://www.scale-z.ch/",
+    founder: {
+      "@type": "Person",
+      name: "Max Schönpflug",
+      jobTitle: "Gründer & Geschäftsführer",
+    },
+  },
+};
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
@@ -25,6 +43,9 @@ export default function UeberUnsPage() {
         description="Hinter ScaleZ stehen Menschen mit klarer Meinung und direktem Stil. Executive Search in Zürich für Bauwesen, Immobilien und Industrie."
         path="/ueber-uns"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(aboutSchema)}</script>
+      </Helmet>
       <section className="pt-32 pb-16">
         <div className="container max-w-4xl">
           <motion.div {...fadeUp} className="inline-block border border-accent text-accent text-xs font-bold uppercase tracking-[0.2em] px-4 py-2 mb-8">

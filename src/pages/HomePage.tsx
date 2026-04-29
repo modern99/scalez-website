@@ -164,7 +164,7 @@ function HeroPerformancePanel() {
             </p>
           </div>
           <p className="pt-1 text-sm font-bold uppercase tracking-[0.22em] text-muted-foreground dark:text-brand-surface-foreground/58">
-            2026
+            {new Date().getFullYear()}
           </p>
         </div>
 

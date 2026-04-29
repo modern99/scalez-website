@@ -7,9 +7,30 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { toast } from "sonner";
 import { submitContactForm } from "@/lib/contact-api";
+import { Helmet } from "react-helmet-async";
 import PrivacyNotice from "@/components/PrivacyNotice";
 import TurnstileWidget from "@/components/TurnstileWidget";
 import Seo from "@/components/Seo";
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Kontakt – ScaleZ GmbH",
+  url: "https://www.scale-z.ch/kontakt",
+  mainEntity: {
+    "@type": "Organization",
+    name: "ScaleZ GmbH",
+    telephone: "+41797046000",
+    email: "info@scale-z.ch",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Eggbühlstrasse 24",
+      postalCode: "8050",
+      addressLocality: "Zürich",
+      addressCountry: "CH",
+    },
+  },
+};
 
 const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined;
 
@@ -80,6 +101,9 @@ export default function KontaktPage() {
         description="Direkt mit ScaleZ in Kontakt: Kontaktformular, Telefon +41 79 704 60 00, E-Mail info@scale-z.ch. Antwort innerhalb von 48 Stunden."
         path="/kontakt"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(contactPageSchema)}</script>
+      </Helmet>
       <section className="pt-32 pb-14">
         <div className="container max-w-4xl">
           <div className="grid gap-10">

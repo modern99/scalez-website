@@ -5,7 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/components/Layout";
-import Analytics from "@/components/Analytics";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import HomePage from "@/pages/HomePage";
 
 const UnternehmenPage = lazy(() => import("@/pages/UnternehmenPage"));
@@ -27,8 +27,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Analytics />
         <Layout>
+          <ErrorBoundary>
           <Suspense fallback={<div className="min-h-[60vh]" aria-hidden="true" />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -44,6 +44,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
+          </ErrorBoundary>
         </Layout>
       </BrowserRouter>
     </TooltipProvider>
