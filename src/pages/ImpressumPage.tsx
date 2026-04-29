@@ -13,7 +13,7 @@ export default function ImpressumPage() {
     <>
       <Seo
         title="Impressum – ScaleZ GmbH"
-        description="Impressum der ScaleZ GmbH, Eggbühlstrasse 24, 8050 Zürich. Angaben zu Geschäftsführung, Handelsregister und Bewilligungen."
+        description="Impressum der ScaleZ GmbH, Eggbühlstrasse 24, 8050 Zürich. Angaben zu Geschäftsführung und Handelsregister."
         path="/impressum"
       />
       <section className="pt-32 pb-14">
@@ -64,19 +64,6 @@ export default function ImpressumPage() {
             </motion.section>
 
             <motion.section {...fadeUp} transition={{ duration: 0.7, delay: 0.2 }} className="border-t border-border bg-background p-8 md:p-10 lg:col-span-2">
-              <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-accent">Bewilligungen</p>
-              <div className="space-y-2 font-light leading-relaxed text-muted-foreground">
-                <p>
-                  Bewilligung zur gewerbsmässigen Arbeitsvermittlung nach Bundesgesetz über die
-                  Arbeitsvermittlung und den Personalverleih (AVG): Amt für Wirtschaft und Arbeit
-                  des Kantons Zürich (AWA).
-                </p>
-                <p>Bewilligungsnummer: wird nach Erteilung ergänzt.</p>
-                <p>Eidgenössische Bewilligung SECO für Auslandsvermittlung: nicht erforderlich.</p>
-              </div>
-            </motion.section>
-
-            <motion.section {...fadeUp} transition={{ duration: 0.7, delay: 0.25 }} className="border-t border-border bg-background p-8 md:p-10 lg:col-span-2">
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-accent">UID & Haftungsausschluss</p>
               <div className="space-y-4 font-light leading-relaxed text-muted-foreground">
                 <p>UID: CHE-381.331.169</p>
