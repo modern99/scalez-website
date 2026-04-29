@@ -1,0 +1,26 @@
+import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
+
+const NotFound = () => {
+  return (
+    <>
+      <Seo
+        title="Seite nicht gefunden – ScaleZ"
+        description="Die angeforderte Seite existiert nicht. Zurück zur Startseite."
+        path="/404"
+        noindex
+      />
+      <div className="flex min-h-screen items-center justify-center bg-muted">
+        <div className="text-center">
+          <h1 className="mb-4 text-4xl font-bold">404</h1>
+          <p className="mb-4 text-xl text-muted-foreground">Seite nicht gefunden</p>
+          <Link to="/" className="text-primary underline hover:text-primary/90">
+            Zur Startseite
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default NotFound;

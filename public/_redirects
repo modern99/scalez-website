@@ -1,0 +1,4 @@
+https://scale-z.ch/*   https://www.scale-z.ch/:splat   301!
+/impressum.html        /impressum                      301
+/datenschutz.html      /datenschutz                    301
+/*                     /index.html                     200
