@@ -41,14 +41,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { BREVO_API_KEY, CONTACT_RECIPIENT_EMAIL, CONTACT_SENDER_EMAIL, CONTACT_SENDER_NAME, TURNSTILE_SECRET_KEY } = env;
 
   if (!BREVO_API_KEY || !CONTACT_RECIPIENT_EMAIL || !CONTACT_SENDER_EMAIL) {
-    return jsonResponse({
-      error: "Der Mailversand ist noch nicht konfiguriert.",
-      debug: {
-        BREVO_API_KEY: !!BREVO_API_KEY,
-        CONTACT_RECIPIENT_EMAIL: !!CONTACT_RECIPIENT_EMAIL,
-        CONTACT_SENDER_EMAIL: !!CONTACT_SENDER_EMAIL,
-      },
-    }, 500);
+    return jsonResponse({ error: "Der Mailversand ist noch nicht konfiguriert." }, 500);
   }
 
   if (!isAllowedOrigin(request, env)) {
