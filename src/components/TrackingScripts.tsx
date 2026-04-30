@@ -42,9 +42,21 @@ function ensureGoogleAnalytics(measurementId: string) {
     window.gtag = (...args: unknown[]) => {
       window.dataLayer?.push(args);
     };
+    // Consent Mode v2: defaults must be set before `js` command (required for EEA/DMA)
+    window.gtag("consent", "default", {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500,
+    });
     window.gtag("js", new Date());
     window.gtag("config", measurementId, { send_page_view: false });
   }
+  // This function is only called when the user has already granted statistics consent
+  window.gtag("consent", "update", {
+    analytics_storage: "granted",
+  });
 
   injectScriptOnce(
     GA_SCRIPT_ID,
@@ -107,6 +119,14 @@ export default function TrackingScripts() {
   useEffect(() => {
     if (statisticsAllowed && gaMeasurementId) {
       ensureGoogleAnalytics(gaMeasurementId);
+    }
+
+    if (gaMeasurementId && typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        ad_storage: marketingAllowed ? "granted" : "denied",
+        ad_user_data: marketingAllowed ? "granted" : "denied",
+        ad_personalization: marketingAllowed ? "granted" : "denied",
+      });
     }
 
     if (marketingAllowed && linkedinPartnerId) {
