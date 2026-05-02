@@ -36,28 +36,25 @@ function injectScriptOnce(id: string, src: string) {
   document.head.appendChild(script);
 }
 
-function ensureGoogleAnalytics(measurementId: string) {
-  if (typeof window.gtag !== "function") {
-    window.dataLayer = window.dataLayer ?? [];
-    window.gtag = (...args: unknown[]) => {
-      window.dataLayer?.push(args);
-    };
-    // Consent Mode v2: defaults must be set before `js` command (required for EEA/DMA)
-    window.gtag("consent", "default", {
-      analytics_storage: "denied",
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-      wait_for_update: 500,
-    });
-    window.gtag("js", new Date());
-    window.gtag("config", measurementId, { send_page_view: false });
+// Always call on mount so Consent Mode v2 can model data for users who deny consent
+function initGoogleAnalytics(measurementId: string) {
+  if (typeof window.gtag === "function") {
+    return;
   }
-  // This function is only called when the user has already granted statistics consent
-  window.gtag("consent", "update", {
-    analytics_storage: "granted",
+  window.dataLayer = window.dataLayer ?? [];
+  window.gtag = (...args: unknown[]) => {
+    window.dataLayer?.push(args);
+  };
+  // Consent Mode v2: defaults denied before `js` command (required for EEA/DMA)
+  window.gtag("consent", "default", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    wait_for_update: 500,
   });
-
+  window.gtag("js", new Date());
+  window.gtag("config", measurementId, { send_page_view: false });
   injectScriptOnce(
     GA_SCRIPT_ID,
     `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`,
@@ -116,18 +113,24 @@ export default function TrackingScripts() {
     };
   }, []);
 
+  // Always initialize on mount — script loads with denied defaults for Consent Mode v2
   useEffect(() => {
-    if (statisticsAllowed && gaMeasurementId) {
-      ensureGoogleAnalytics(gaMeasurementId);
+    if (gaMeasurementId) {
+      initGoogleAnalytics(gaMeasurementId);
     }
+  }, [gaMeasurementId]);
 
-    if (gaMeasurementId && typeof window.gtag === "function") {
-      window.gtag("consent", "update", {
-        ad_storage: marketingAllowed ? "granted" : "denied",
-        ad_user_data: marketingAllowed ? "granted" : "denied",
-        ad_personalization: marketingAllowed ? "granted" : "denied",
-      });
+  // Update consent grants whenever the user's choice changes
+  useEffect(() => {
+    if (!gaMeasurementId || typeof window.gtag !== "function") {
+      return;
     }
+    window.gtag("consent", "update", {
+      analytics_storage: statisticsAllowed ? "granted" : "denied",
+      ad_storage: marketingAllowed ? "granted" : "denied",
+      ad_user_data: marketingAllowed ? "granted" : "denied",
+      ad_personalization: marketingAllowed ? "granted" : "denied",
+    });
 
     if (marketingAllowed && linkedinPartnerId) {
       ensureLinkedInInsight(linkedinPartnerId);
