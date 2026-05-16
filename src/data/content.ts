@@ -38,7 +38,7 @@ export const jobPostings: JobPosting[] = [
     focus: "Architektur · Zürich",
     teaser:
       "Landesweit bekanntes Traditionsunternehmen im Bereich Architektur und Generalplanung sucht eine erfahrene Planungsleitung für das dynamische Büro mitten im Zürcher Industriequartier.",
-    compensation: "CHF 130'000 – 160'000 / Jahr",
+    compensation: "CHF 125'000 – 145'000 / Jahr",
     startDate: "Nach Vereinbarung",
     tasks: [
       "Du trägst die Hauptverantwortung für den reibungslosen Ablauf sämtlicher Planungsschritte von der ersten Ideenskizze bis zur finalen Umsetzung",
