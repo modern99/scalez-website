@@ -59,7 +59,44 @@ export const jobPostings: JobPosting[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [];
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "benzin-wird-scho-wieder-tueurer",
+    title: "«Benzin wird scho wieder tüürer!» ⛽",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "16. Mai 2026",
+    teaser:
+      "Der Schweizer Markt für Bauwesen und Engineering dreht sich rasend schnell – qualifizierte Fachkräfte haben traumhafte Optionen, während Firmen händeringend nach guten Dossiers suchen.",
+    intro:
+      "Ehrlich gesagt beschäftigt uns gerade ein ganz anderes Thema als der Benzinpreis. Der Schweizer Markt für Bauwesen und Engineering dreht sich momentan rasend schnell – mit grossen Chancen auf beiden Seiten.",
+    sections: [
+      {
+        id: "marktlage",
+        title: "Zwei Welten, ein Markt",
+        paragraphs: [
+          "Für qualifizierte Fachkräfte bieten sich fantastische Optionen. Der nächste Karriereschritt ist greifbar nah. Auf der anderen Seite verzweifeln unzählige Zürcher Firmen beinahe. Gute Dossiers fehlen schlichtweg. Endlose Besetzungszeiten kosten unnötig viel Geld und rauben wertvolle Nerven.",
+        ],
+      },
+      {
+        id: "das-paradox",
+        title: "Das verborgene Potenzial",
+        paragraphs: [
+          "Wir tauschen uns täglich mit hervorragenden Leuten aus. Diese Talente sind oft absolut bereit für eine Luftveränderung. Proaktiv suchen sie jedoch fast nie nach neuen Stellen. Zudem kontaktieren oft die völlig falschen Betriebe diese wertvollen Kandidaten.",
+          "Da mues me sich nöd wundere wänn nüt passiert.",
+        ],
+      },
+      {
+        id: "scalez-ansatz",
+        title: "Qualität statt Masse",
+        paragraphs: [
+          "Genau hier setzen wir mit ScaleZ den Hebel an. Blindes Verschicken von Lebensläufen gibt es bei uns nicht. Bei uns zählt ausschliesslich echte Qualität: Wir bauen tragfähige Beziehungen auf, verstehen den lokalen Markt im Detail, machen verborgene Chancen sofort sichtbar und verbinden grossartige Menschen zielgerichtet mit optimalen Arbeitgebern.",
+          "Mit ScaleZ bauen wir das Fundament für modernes Recruiting im Bereich Construction und Engineering.",
+        ],
+      },
+    ],
+  },
+];
 
 export function getBlogPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);
