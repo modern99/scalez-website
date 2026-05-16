@@ -31,15 +31,15 @@ export interface BlogPost {
 
 export const jobPostings: JobPosting[] = [
   {
-    slug: "gesamtleiter-architektur-ausfuehrungsplanung",
+    slug: "gesamtleiter-architektur-ausfuehrungsplanung-zuerich",
     title: "Gesamtleiter Architektur und Ausführungsplanung (m/w/d)",
     region: "Kanton Zürich",
-    employmentType: "Festanstellung, 100%",
+    employmentType: "Festanstellung, 80–100%",
     focus: "Architektur · Zürich",
     teaser:
-      "Ein über hundertjähriges Schweizer Traditionsunternehmen in Architektur und Generalplanung sucht eine Persönlichkeit, die Planungsprozesse von der Skizze bis zur Ausführung souverän leitet – mit grossem Gestaltungsspielraum im Herzen Zürichs.",
-    compensation: "Nach Vereinbarung",
-    startDate: "Ab sofort",
+      "Landesweit bekanntes Traditionsunternehmen im Bereich Architektur und Generalplanung sucht eine erfahrene Planungsleitung für das dynamische Büro mitten im Zürcher Industriequartier.",
+    compensation: "CHF 130'000 – 160'000 / Jahr",
+    startDate: "Nach Vereinbarung",
     tasks: [
       "Du trägst die Hauptverantwortung für den reibungslosen Ablauf sämtlicher Planungsschritte von der ersten Ideenskizze bis zur finalen Umsetzung",
       "Die intelligente Steuerung und Überwachung aller Projektphasen liegt in Deinen fähigen Händen",
@@ -53,7 +53,7 @@ export const jobPostings: JobPosting[] = [
       "Deine strukturierte Denkweise wird durch ein starkes kaufmännisches und kundenorientiertes Bewusstsein optimal ergänzt",
       "Du bist ein absolutes Kommunikationstalent und weisst genau, wie man eine Gruppe erfolgreich anleitet und motiviert",
       "Du brennst für herausragende Baukunst und schätzt gleichzeitig geordnete, saubere Abläufe",
-      "Verhandlungssicheres Deutsch ist zwingend erforderlich – jede weitere Landessprache oder Englisch ist ein willkommener Bonus",
+      "Verhandlungssicheres Deutsch ist zwingend erforderlich; weitere Landessprachen oder Englisch sind ein willkommener Bonus",
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
   },
