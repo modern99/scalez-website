@@ -29,7 +29,35 @@ export interface BlogPost {
   sections: ArticleSection[];
 }
 
-export const jobPostings: JobPosting[] = [];
+export const jobPostings: JobPosting[] = [
+  {
+    slug: "gesamtleiter-architektur-ausfuehrungsplanung",
+    title: "Gesamtleiter Architektur und Ausführungsplanung (m/w/d)",
+    region: "Kanton Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Architektur · Zürich",
+    teaser:
+      "Ein über hundertjähriges Schweizer Traditionsunternehmen in Architektur und Generalplanung sucht eine Persönlichkeit, die Planungsprozesse von der Skizze bis zur Ausführung souverän leitet – mit grossem Gestaltungsspielraum im Herzen Zürichs.",
+    compensation: "Nach Vereinbarung",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du trägst die Hauptverantwortung für den reibungslosen Ablauf sämtlicher Planungsschritte von der ersten Ideenskizze bis zur finalen Umsetzung",
+      "Die intelligente Steuerung und Überwachung aller Projektphasen liegt in Deinen fähigen Händen",
+      "Für Deine tägliche Arbeit greifst Du auf modernste Werkzeuge und zukunftsweisende digitale Methoden zurück",
+      "Du bildest die zentrale kommunikative Brücke zwischen der Bauherrschaft, externen Partnern und Deinem internen Team",
+      "Dabei findest Du stets die perfekte Balance zwischen den Wünschen der Kunden und den wirtschaftlichen Zielen des Architekturbüros",
+    ],
+    requirements: [
+      "Ein erfolgreich absolviertes Architekturstudium bildet Dein solides fachliches Fundament",
+      "Du hast bereits weitreichende Praxiserfahrung mit anspruchsvollen Schweizer Bauvorhaben gesammelt",
+      "Deine strukturierte Denkweise wird durch ein starkes kaufmännisches und kundenorientiertes Bewusstsein optimal ergänzt",
+      "Du bist ein absolutes Kommunikationstalent und weisst genau, wie man eine Gruppe erfolgreich anleitet und motiviert",
+      "Du brennst für herausragende Baukunst und schätzt gleichzeitig geordnete, saubere Abläufe",
+      "Verhandlungssicheres Deutsch ist zwingend erforderlich – jede weitere Landessprache oder Englisch ist ein willkommener Bonus",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+  },
+];
 
 export const blogPosts: BlogPost[] = [];
 
