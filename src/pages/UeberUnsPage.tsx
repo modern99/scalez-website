@@ -124,7 +124,7 @@ export default function UeberUnsPage() {
                   Daraufhin wagte ich den Schritt zu ScaleZ, mit dem Anspruch, dass jeder Mensch und jedes Unternehmen einen Ansprechpartner verdient, der mitdenkt statt nur abarbeitet. Eine Person, die die Dinge klar anspricht, auch wenn es manchmal unbequem ist.
                 </p>
                 <a
-                  href="https://ch.linkedin.com/in/max-sch%C3%B6npflug-%F0%9F%87%A8%F0%9F%87%AD-78478a20a"
+                  href="https://www.linkedin.com/in/max-sch%C3%B6npflug-78478a20a/"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-8 inline-flex items-center gap-2 border border-accent px-4 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-accent transition-colors hover:bg-accent hover:text-accent-foreground"

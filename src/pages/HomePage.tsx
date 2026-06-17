@@ -220,7 +220,7 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        title="ScaleZ – Headhunting & Executive Search Zürich"
+        title="ScaleZ – Fachkräftevermittlung & Headhunting Zürich"
         description="ScaleZ ist die Schweizer Recruiting-Boutique für Bauwesen, Immobilien, Gebäudetechnik und Industrie. Direkt, diskret, ergebnisorientiert – Sitz in Zürich."
         path="/"
       />
