@@ -61,6 +61,43 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lohn-nach-vereinbarung",
+    title: "«Lohn nach Vereinbarung» – und dann wundert man sich",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "25. Juni 2026",
+    teaser:
+      "Fünf Jahre Erfahrung, drei Sprachen, Teamplayer – und ganz am Ende: Lohn nach Vereinbarung. Warum schlechte Stelleninserate die besten Kandidaten kosten.",
+    intro:
+      "Schau Dir mal ein durchschnittliches Stelleninserat in der Schweiz an. Fünf Jahre Erfahrung, drei Sprachen, Teamplayer, belastbar, flexibel. Und ganz am Ende steht dann: Lohn nach Vereinbarung. Übersetzt heisst das: Wir wollen alles, sagen aber nicht, was wir zahlen.",
+    sections: [
+      {
+        id: "das-inserat",
+        title: "Das Inserat, das schon beim Lesen anstrengt",
+        paragraphs: [
+          "Kein Wunder, dass sich kaum jemand meldet. Die guten Leute haben längst einen Job. Sie haben keine Lust, sich für ein Inserat zu bewerben, das schon beim Lesen anstrengend ist. Sie scrollen weiter – oder sie kommen gar nicht erst auf die Idee zu suchen, weil sie niemand direkt anspricht.",
+          "Wer heute jemanden will, muss konkret werden. Was macht man wirklich den ganzen Tag? Was verdient man? Und warum sollte man ausgerechnet hier anfangen?",
+        ],
+      },
+      {
+        id: "die-luecke",
+        title: "«Lohn nach Vereinbarung» ist kein Geheimnis – es ist ein Signal",
+        paragraphs: [
+          "Unternehmen, die den Lohn nicht nennen, senden damit eine klare Botschaft: Wir verhandeln gern zu unseren Gunsten. Qualifizierte Kandidaten lesen das genau so. Sie bewerben sich lieber dort, wo man ihnen auf Augenhöhe begegnet.",
+          "Wer Transparenz scheut, verliert die Kandidaten, die Optionen haben – also genau die, die man eigentlich will.",
+        ],
+      },
+      {
+        id: "was-funktioniert",
+        title: "Was heute wirklich funktioniert",
+        paragraphs: [
+          "Konkrete Angaben. Ein ehrliches Bild des Alltags. Ein Lohnband, das zeigt, dass man es ernst meint. Das reicht schon, um aus der Masse herauszustechen – weil die Messlatte so tief liegt.",
+          "Alles andere ist Zeitverschwendung. Für beide Seiten. Und genau deshalb suchen wir bei ScaleZ nicht über Inserate – wir sprechen direkt mit den Leuten, die wirklich passen könnten.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "benzin-wird-scho-wieder-tueurer",
     title: "«Benzin wird scho wieder tüürer!» ⛽",
     category: "Markt",
