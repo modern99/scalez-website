@@ -61,6 +61,43 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "realitaetscheck-baulohn-schweiz",
+    title: "Kleiner Realitätscheck für alle am Bau 👷",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "26. Juni 2026",
+    teaser:
+      "Der Medianlohn im Schweizer Baugewerbe liegt 400 Franken unter dem nationalen Median – jeden Monat. Was das bedeutet und warum der Wechsel fast immer der grösste Lohnhebel ist.",
+    intro:
+      "Laut Bundesamt für Statistik liegt der Schweizer Medianlohn bei 7024 Franken brutto im Monat für eine Vollzeitstelle. Das Baugewerbe liegt bei 6616 Franken. Das sind 400 Franken weniger – und das jeden Monat.",
+    sections: [
+      {
+        id: "die-zahl",
+        title: "400 Franken. Jeden Monat.",
+        paragraphs: [
+          "Das klingt vielleicht nicht dramatisch. Aber 400 Franken pro Monat sind 4800 Franken im Jahr. Über fünf Jahre sind das fast 24'000 Franken. Geld, das andere Branchen einfach so auf dem Tisch haben.",
+          "Der Abstand ist nicht riesig – aber er ist real. Und er summiert sich.",
+        ],
+      },
+      {
+        id: "kein-naturgesetz",
+        title: "Das ist kein Naturgesetz",
+        paragraphs: [
+          "Der Medianlohn ist ein Durchschnittswert. Er sagt nichts darüber aus, was du persönlich verdienen kannst. Innerhalb der Baubranche ist die Spanne enorm: zwischen Regionen, zwischen Betrieben, zwischen Rollen. Wer weiss, wo er steht, hat eine ganz andere Ausgangslage.",
+          "Das ist kein Schicksal, das ist ein Verhandlungsthema.",
+        ],
+      },
+      {
+        id: "der-hebel",
+        title: "Der grösste Hebel heisst Wechsel",
+        paragraphs: [
+          "Wer auf eine interne Lohnerhöhung wartet, wartet oft lange. Wer den Markt kennt und bereit ist, den nächsten Schritt zu machen, sieht meistens viel schneller eine Veränderung auf dem Lohnzettel. Das ist keine Theorie – das sehen wir jeden Tag.",
+          "Wenn du wissen willst, wo dein Lohn in deinem Bereich wirklich steht, schreib uns. Wir sehen die aktuellen Zahlen – und wir reden direkt.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lohn-nach-vereinbarung",
     title: "«Lohn nach Vereinbarung» – und dann wundert man sich",
     category: "Markt",
