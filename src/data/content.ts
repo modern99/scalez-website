@@ -61,6 +61,41 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "drei-zeichen-schlechter-arbeitgeber-bewerbungsgespraech",
+    title: "Drei Dinge, an denen du einen schlechten Arbeitgeber schon im Bewerbungsgespräch erkennst",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "30. Juni 2026",
+    teaser:
+      "Keines dieser Warnsignale steht im Inserat – trotzdem sagen sie mehr über den Job als jede Stellenbeschreibung. Drei Dinge, auf die du im nächsten Gespräch achten solltest.",
+    intro:
+      "Du sitzt im Bewerbungsgespräch, der erste Eindruck ist ganz okay – und trotzdem stimmt irgendetwas nicht. Meistens liegt es an einem dieser drei Dinge.",
+    sections: [
+      {
+        id: "kein-normaler-arbeitstag",
+        title: "Niemand kann dir sagen, wie ein normaler Arbeitstag wirklich aussieht",
+        paragraphs: [
+          "Wenn die Antwort schwammig bleibt, weiss dort selbst keiner so genau, wofür du kommen sollst. Das ist kein Zufall – das ist ein Zeichen. Betriebe, die wissen, was sie wollen, können es auch erklären.",
+        ],
+      },
+      {
+        id: "beim-lohn-wird-gedruckst",
+        title: "Beim Lohn wird gedruckst",
+        paragraphs: [
+          "Wer beim Geld ausweicht, weicht später auch bei Ferien, Überstunden und Versprechen aus. Das Muster ist immer dasselbe. Wer auf Augenhöhe eingestellt, redet auch auf Augenhöhe über Geld.",
+        ],
+      },
+      {
+        id: "team-bleibt-unsichtbar",
+        title: "Du lernst dein künftiges Team nicht kennen",
+        paragraphs: [
+          "Gute Betriebe zeigen dir, mit wem du arbeitest. Schlechte verstecken es. Wenn du nach dem Gespräch immer noch nicht weisst, wer neben dir sitzen wird, frag dich warum.",
+          "Keine dieser Sachen steht im Inserat. Trotzdem sagen sie dir mehr über den Job als jede Stellenbeschreibung. Du musst nicht den erstbesten Job nehmen. Du darfst auswählen. Gerade jetzt.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "realitaetscheck-baulohn-schweiz",
     title: "Kleiner Realitätscheck für alle am Bau 👷",
     category: "Markt",
