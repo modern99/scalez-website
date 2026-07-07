@@ -61,6 +61,35 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "immer-schneller-immer-besser-druck-im-bewerbungsprozess",
+    title: "Immer schneller, immer besser, immer erreichbar. Und am Ende reicht es trotzdem nie.",
+    category: "Prozess",
+    readTime: "3 Min.",
+    publishedAt: "7. Juli 2026",
+    teaser:
+      "Unternehmen, die sich wochenlang nicht melden. Kandidaten, die sich gewissenhaft vorbereiten und trotzdem in einer Endlosschleife aus Gesprächsrunden landen. Warum gute Prozesse nicht durch mehr Druck entstehen.",
+    intro:
+      "Wir leben in einer Leistungsgesellschaft, die jedes Jahr ein bisschen mehr verlangt. Mehr Tempo, mehr Flexibilität, mehr Perfektion. Auch von Dir, sobald Du Dich bewirbst. Und genau da scheitern heute viele Prozesse.",
+    sections: [
+      {
+        id: "zwei-seiten-ein-problem",
+        title: "Zwei Seiten desselben Problems",
+        paragraphs: [
+          "Auf der einen Seite Firmen, die eine Stelle ausschreiben und sich dann erst Wochen später melden. Bis das erste Gespräch steht, ist der gute Mensch längst weiter – oder innerlich raus.",
+          "Auf der anderen Seite Du. Du schaufelst Dir in einem vollen Alltag bewusst Zeit frei, bereitest Dich vor, gibst Dir Mühe. Und im Gespräch steigen die Anforderungen mit jeder Runde. Noch eine Aufgabe, noch ein Termin, noch eine Erwartung. Das ist viel. Und es ist völlig in Ordnung, wenn sich das manchmal nach zu viel anfühlt.",
+        ],
+      },
+      {
+        id: "nicht-alleine-durch",
+        title: "Du musst da nicht alleine durch",
+        paragraphs: [
+          "Was wir Dir sagen wollen, ist einfach: Du musst da nicht alleine durch. Bei ScaleZ gehört die Vorbereitung fest zu unserer Dienstleistung. Wir lassen Dich mit keinem Termin allein, sondern gehen mit Dir durch, was Dich erwartet, worauf es ankommt und wie Du im Gespräch zeigst, was in Dir steckt.",
+          "Denn ein guter Prozess entsteht nicht durch mehr Druck. Sondern durch bessere Vorbereitung – von beiden Seiten.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "drei-zeichen-schlechter-arbeitgeber-bewerbungsgespraech",
     title: "Drei Dinge, an denen du einen schlechten Arbeitgeber schon im Bewerbungsgespräch erkennst",
     category: "Markt",
