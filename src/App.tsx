@@ -14,6 +14,7 @@ const KandidatenPage = lazyWithRetry(() => import("@/pages/KandidatenPage"));
 const UeberUnsPage = lazyWithRetry(() => import("@/pages/UeberUnsPage"));
 const KontaktPage = lazyWithRetry(() => import("@/pages/KontaktPage"));
 const JobsPage = lazyWithRetry(() => import("@/pages/JobsPage"));
+const JobDetailPage = lazyWithRetry(() => import("@/pages/JobDetailPage"));
 const BlogPage = lazyWithRetry(() => import("@/pages/BlogPage"));
 const BlogArticlePage = lazyWithRetry(() => import("@/pages/BlogArticlePage"));
 const ImpressumPage = lazyWithRetry(() => import("@/pages/ImpressumPage"));
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/kandidaten" element={<KandidatenPage />} />
               <Route path="/ueber-uns" element={<UeberUnsPage />} />
               <Route path="/jobs" element={<JobsPage />} />
+              <Route path="/jobs/:slug" element={<JobDetailPage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogArticlePage />} />
               <Route path="/kontakt" element={<KontaktPage />} />

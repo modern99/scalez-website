@@ -81,7 +81,9 @@ export default function JobsPage() {
                         </span>
                       </div>
                       <h2 className="text-2xl tracking-tighter md:text-3xl">
-                        {job.title}
+                        <Link to={`/jobs/${job.slug}`} className="transition-colors hover:text-accent">
+                          {job.title}
+                        </Link>
                       </h2>
                     </div>
                     <div className="text-right shrink-0">

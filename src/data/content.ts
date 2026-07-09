@@ -10,6 +10,16 @@ export interface JobPosting {
   tasks: string[];
   requirements: string[];
   note: string;
+  /** Publikationsdatum im ISO-Format "YYYY-MM-DD" – Pflicht für Google for Jobs */
+  datePosted: string;
+  /** Bewerbungsfrist im ISO-Format "YYYY-MM-DD" – weglassen, wenn offen */
+  validThrough?: string;
+  /** Ort für Google Jobs, z.B. "Zürich" */
+  addressLocality?: string;
+  /** Kantonskürzel für Google Jobs, z.B. "ZH" */
+  addressRegion?: string;
+  /** Ländercode, Default "CH" – nur setzen, wenn nicht Schweiz */
+  addressCountry?: string;
 }
 
 export interface ArticleSection {
@@ -56,6 +66,9 @@ export const jobPostings: JobPosting[] = [
       "Verhandlungssicheres Deutsch ist zwingend erforderlich; weitere Landessprachen oder Englisch sind ein willkommener Bonus",
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-05-16",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
   },
 ];
 
@@ -277,6 +290,10 @@ export function getBlogPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);
 }
 
+export function getJobPosting(slug: string) {
+  return jobPostings.find((job) => job.slug === slug);
+}
+
 // ─────────────────────────────────────────────────────────────
 // TEMPLATES – Einfach kopieren, ausfüllen und in das jeweilige
 // Array (jobPostings / blogPosts) einfügen.
@@ -287,14 +304,23 @@ JOB-TEMPLATE – Pflichtfelder:
   slug          → URL-Slug, z.B. "cfo-zuerich" (nur lowercase, Bindestriche)
   title         → Jobtitel inkl. (m/w/d), z.B. "CFO (m/w/d)"
   region        → z.B. "Kanton Zürich" / "Schweizweit"
-  employmentType→ z.B. "Festanstellung, 100%"
+  employmentType→ z.B. "Festanstellung, 100%" (Format beibehalten – wird für
+                  Google Jobs geparst: "Festanstellung, NN%" / "Festanstellung, NN–NN%")
   focus         → Branche · Ort, z.B. "Finanz · Zürich"
   teaser        → 1-2 Sätze Einleitung (erscheint auf der Übersichtsseite)
   compensation  → z.B. "CHF 120'000 - 150'000 / Jahr" oder "Nach Vereinbarung"
+                  (Format beibehalten – wird für Google Jobs geparst)
   startDate     → z.B. "Ab sofort" / "Q3 2026"
   tasks         → 3-5 Stichpunkte (Aufgaben)
   requirements  → 3-5 Stichpunkte (Anforderungen)
   note          → z.B. "Diskrete Besetzung · Alle Angaben vertraulich"
+  datePosted    → PFLICHT: Publikationsdatum ISO-Format, z.B. "2026-07-09" (= heute)
+
+Optionale Felder (empfohlen für Google Jobs):
+  validThrough    → Bewerbungsfrist ISO-Format, z.B. "2026-12-31"; weglassen wenn offen
+  addressLocality → Ort, z.B. "Zürich"
+  addressRegion   → Kantonskürzel, z.B. "ZH"
+  addressCountry  → nur wenn nicht Schweiz, z.B. "DE" (Default: "CH")
 
 {
   slug: "",
@@ -316,6 +342,9 @@ JOB-TEMPLATE – Pflichtfelder:
     "",
   ],
   note: "Diskrete Besetzung · Alle Angaben vertraulich",
+  datePosted: "",
+  addressLocality: "",
+  addressRegion: "",
 },
 */
 

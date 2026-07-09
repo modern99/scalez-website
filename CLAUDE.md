@@ -42,6 +42,10 @@ src/
   components/ui/       → shadcn/ui Basiskomponenten
   data/
     content.ts         → EINZIGE Datei für alle Inhalte (Jobs + Blog)
+  lib/
+    jobPostingSchema.ts→ JobPosting-JSON-LD-Builder für Google for Jobs
+scripts/
+  prerender.ts         → Post-Build: statische Job-Seiten + sitemap.xml
 functions/
   api/contact.ts       → Cloudflare Function: Formular-Handler (Brevo, Turnstile)
 public/                → Statische Assets (Logos, Favicons, OG-Image, SEO-Dateien)
@@ -59,6 +63,7 @@ public/                → Statische Assets (Logos, Favicons, OG-Image, SEO-Date
 | `/ueber-uns` | UeberUnsPage | Über ScaleZ |
 | `/kontakt` | KontaktPage | Kontaktformular |
 | `/jobs` | JobsPage | Stellenanzeigen-Übersicht |
+| `/jobs/:slug` | JobDetailPage | Einzelne Stellenanzeige (Google for Jobs) |
 | `/blog` | BlogPage | Blog-Übersicht |
 | `/blog/:slug` | BlogArticlePage | Einzelner Blogartikel |
 | `/impressum` | ImpressumPage | Impressum |
@@ -86,14 +91,19 @@ Trigger: *"neue Stelle", "neue Anzeige", "Job hinzufügen"*
    - `slug` → URL-Slug, nur lowercase + Bindestriche (z.B. `"cfo-zuerich"`)
    - `title` → Jobtitel mit `(m/w/d)`
    - `region` → z.B. `"Kanton Zürich"` / `"Schweizweit"`
-   - `employmentType` → z.B. `"Festanstellung, 100%"`
+   - `employmentType` → z.B. `"Festanstellung, 100%"` — **Format beibehalten** (`"Festanstellung, NN%"` / `"Festanstellung, NN–NN%"`), wird für Google Jobs geparst
    - `focus` → Branche · Ort, z.B. `"Finanz · Zürich"`
    - `teaser` → 1–2 Sätze für die Übersichtsseite
-   - `compensation` → z.B. `"CHF 120'000 – 150'000 / Jahr"` oder `"Nach Vereinbarung"`
+   - `compensation` → z.B. `"CHF 120'000 – 150'000 / Jahr"` oder `"Nach Vereinbarung"` — **Format beibehalten**, wird für Google Jobs geparst
    - `startDate` → z.B. `"Ab sofort"` / `"Q3 2026"`
    - `tasks` → 3–5 Aufgaben als String-Array
    - `requirements` → 3–5 Anforderungen als String-Array
    - `note` → Standard: `"Diskrete Besetzung · Alle Angaben vertraulich"`
+   - `datePosted` → **Pflicht**: Publikationsdatum im ISO-Format, z.B. `"2026-07-09"` (= heute)
+   - `validThrough` → optional: Bewerbungsfrist ISO-Format; weglassen wenn offen
+   - `addressLocality` → empfohlen: Ort, z.B. `"Zürich"` (für Google Jobs)
+   - `addressRegion` → empfohlen: Kantonskürzel, z.B. `"ZH"` (für Google Jobs)
+   - `addressCountry` → nur wenn nicht Schweiz (Default: `"CH"`)
 4. Fehlende Angaben beim Nutzer erfragen, bevor du schreibst
 
 ### Neuen Blogartikel hinzufügen
@@ -124,6 +134,11 @@ Trigger: *"ändere", "update", "bearbeite"* + Titel oder Slug
 ### Eintrag löschen
 
 Den entsprechenden Objekt-Block aus dem Array entfernen.
+
+Bei Jobs genügt das auch für Google: Nach dem nächsten Build/Deploy verschwinden
+die statische Detailseite und der Sitemap-Eintrag, die URL fällt auf einen
+noindex-Fallback ohne JobPosting-Markup zurück — Google entfernt die Anzeige.
+Alternativ kann vorab `validThrough` gesetzt werden (Anzeige läuft dann automatisch ab).
 
 ---
 
@@ -159,8 +174,15 @@ Alle Formulare: Turnstile-Bot-Schutz (optional), Zod-Validierung, Datenschutz-Ch
 - `src/components/Seo.tsx` → `<Helmet>` mit dynamischen Meta-Tags pro Seite
 - Strukturierte Daten (JSON-LD) für EmploymentAgency in `index.html`
 - OG-Image: `public/og-image.png` (1200×630)
-- `public/sitemap.xml` und `public/robots.txt` manuell gepflegt
-- Wenn neue Seiten/Routen hinzukommen: `sitemap.xml` aktualisieren
+- `public/robots.txt` manuell gepflegt
+- **`sitemap.xml` wird beim Build automatisch generiert** (`scripts/prerender.ts`) —
+  aus statischer Routenliste + Blog-Slugs + aktiven Job-Slugs. Wenn neue statische
+  Routen hinzukommen: Routenliste in `scripts/prerender.ts` ergänzen
+- **Google for Jobs:** `scripts/prerender.ts` erzeugt beim Build pro Job eine
+  statische Seite `dist/jobs/<slug>.html` mit JobPosting-JSON-LD im `<head>`
+  (Builder: `src/lib/jobPostingSchema.ts`). Der SEO-Default-Block in `index.html`
+  ist dafür mit `<!-- seo:defaults:start/end -->`-Markern umschlossen — Marker
+  nicht entfernen. Arbeitgeber erscheint als `"confidential"` (diskrete Besetzung)
 
 ---
 
