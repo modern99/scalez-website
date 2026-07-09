@@ -61,6 +61,43 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "die-frage-vor-der-arbeitgeber-angst-haben",
+    title: "Die eine Frage, vor der Arbeitgeber wirklich Angst haben",
+    category: "Markt",
+    readTime: "2 Min.",
+    publishedAt: "9. Juli 2026",
+    teaser:
+      "Am Ende eines Gesprächs fragen die meisten nach Ferientagen oder Homeoffice. Es gibt eine Frage, die viel mehr über einen Arbeitgeber verrät – und fast niemand stellt sie.",
+    intro:
+      "Es gibt eine Frage, vor der Arbeitgeber richtig Angst haben. Und fast niemand stellt sie.",
+    sections: [
+      {
+        id: "die-richtige-frage",
+        title: "Die Frage, die wirklich alles zeigt",
+        paragraphs: [
+          "Am Ende eines Bewerbungsgesprächs fragen die meisten nach Ferientagen oder Homeoffice. Verständlich – aber es verrät Dir wenig.",
+          "Die Frage, die wirklich alles zeigt, ist diese: Warum ist diese Stelle frei, und was ist mit der Person davor passiert?",
+        ],
+      },
+      {
+        id: "worauf-du-achten-solltest",
+        title: "Achte auf das Wie, nicht nur auf das Was",
+        paragraphs: [
+          "Achte dabei weniger auf die Antwort selbst als darauf, wie sie kommt. Ruhig und ehrlich, inklusive dem, was nicht gut lief? Dann bist Du wahrscheinlich bei einem guten Arbeitgeber.",
+          "Ausweichend, hektisch oder mit einem schnellen «die hat einfach nicht gepasst»? Dann weisst Du genug.",
+        ],
+      },
+      {
+        id: "du-pruefst-auch",
+        title: "Du bewirbst Dich nicht nur – Du prüfst auch",
+        paragraphs: [
+          "Denn wie eine Firma über die Person redet, die vor Dir gegangen ist, ist ziemlich genau, wie sie eines Tages über Dich reden wird.",
+          "Du bewirbst Dich nicht nur. Du prüfst auch. Vergiss das nie.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "immer-schneller-immer-besser-druck-im-bewerbungsprozess",
     title: "Immer schneller, immer besser, immer erreichbar. Und am Ende reicht es trotzdem nie.",
     category: "Prozess",
