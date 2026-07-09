@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,18 +6,19 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/components/Layout";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import { lazyWithRetry } from "@/lib/lazyWithRetry";
 import HomePage from "@/pages/HomePage";
 
-const UnternehmenPage = lazy(() => import("@/pages/UnternehmenPage"));
-const KandidatenPage = lazy(() => import("@/pages/KandidatenPage"));
-const UeberUnsPage = lazy(() => import("@/pages/UeberUnsPage"));
-const KontaktPage = lazy(() => import("@/pages/KontaktPage"));
-const JobsPage = lazy(() => import("@/pages/JobsPage"));
-const BlogPage = lazy(() => import("@/pages/BlogPage"));
-const BlogArticlePage = lazy(() => import("@/pages/BlogArticlePage"));
-const ImpressumPage = lazy(() => import("@/pages/ImpressumPage"));
-const DatenschutzPage = lazy(() => import("@/pages/DatenschutzPage"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const UnternehmenPage = lazyWithRetry(() => import("@/pages/UnternehmenPage"));
+const KandidatenPage = lazyWithRetry(() => import("@/pages/KandidatenPage"));
+const UeberUnsPage = lazyWithRetry(() => import("@/pages/UeberUnsPage"));
+const KontaktPage = lazyWithRetry(() => import("@/pages/KontaktPage"));
+const JobsPage = lazyWithRetry(() => import("@/pages/JobsPage"));
+const BlogPage = lazyWithRetry(() => import("@/pages/BlogPage"));
+const BlogArticlePage = lazyWithRetry(() => import("@/pages/BlogArticlePage"));
+const ImpressumPage = lazyWithRetry(() => import("@/pages/ImpressumPage"));
+const DatenschutzPage = lazyWithRetry(() => import("@/pages/DatenschutzPage"));
+const NotFound = lazyWithRetry(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
