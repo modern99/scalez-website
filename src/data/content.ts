@@ -74,6 +74,51 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "arbeitslosenquote-sinkt-realitaetscheck",
+    title: "2,9 Prozent Arbeitslosigkeit – klingt gut. Ist aber keine gute Nachricht.",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "14. Juli 2026",
+    teaser:
+      "Die Arbeitslosenquote sinkt auf 2,9 Prozent – die Schlagzeile klingt nach Entspannung. Die SECO-Zahlen vom 6. Juli erzählen darunter eine ganz andere Geschichte.",
+    intro:
+      "Letzte Woche ging eine Zahl durch die Medien: Die Arbeitslosenquote sinkt auf 2,9 Prozent. Klingt nach Entspannung. Ist aber keine.",
+    sections: [
+      {
+        id: "die-schlagzeile-truegt",
+        title: "Die Schlagzeile trügt",
+        paragraphs: [
+          "Wer die SECO-Zahlen vom 6. Juli genauer liest, findet darunter etwas anderes. Gegenüber dem Vorjahr sind heute 10'874 Menschen mehr arbeitslos. Ein Plus von 8,6 Prozent – in einem einzigen Jahr.",
+          "Davon steht nichts in der Schlagzeile. Die Schlagzeile zeigt nur die eine Zahl, die gerade gut aussieht.",
+        ],
+      },
+      {
+        id: "die-zahl-ueber-die-niemand-redet",
+        title: "Die Zahl, über die kaum jemand redet",
+        paragraphs: [
+          "22'896 Menschen suchen seit über einem Jahr einen Job. Das sind 31,8 Prozent mehr als vor einem Jahr.",
+          "Lies das nochmal in Ruhe. Fast ein Drittel mehr Menschen, die sich bewerben und bewerben – und einfach nichts hören.",
+        ],
+      },
+      {
+        id: "warum-der-sommer-taeuscht",
+        title: "Warum der Sommer täuscht",
+        paragraphs: [
+          "Der Rückgang im Juni? Saisonbereinigt liegt die Quote unverändert bei 3,1 Prozent. Im Sommer laufen die Baustellen, das drückt die Quote. Im Herbst dreht sich das wieder.",
+          "Der Markt ist also nicht plötzlich besser geworden. Er sieht im Sommer nur so aus.",
+        ],
+      },
+      {
+        id: "was-das-fuer-dich-heisst",
+        title: "Was das für Dich heisst",
+        paragraphs: [
+          "Der Markt ist nicht schlechter geworden. Aber er ist härter geworden. Rausfallen geht schneller, zurückkommen dauert länger.",
+          "Wer wechselt, sollte aus einer Position der Stärke heraus wechseln, nicht aus der Not. Und wer gerade sicher im Job sitzt, hat genau jetzt die beste Verhandlungsposition. Nicht erst dann, wenn es brennt.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "die-frage-vor-der-arbeitgeber-angst-haben",
     title: "Die eine Frage, vor der Arbeitgeber wirklich Angst haben",
     category: "Markt",
