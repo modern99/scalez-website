@@ -74,6 +74,51 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lohnjahr-2025-baugewerbe-realitaetscheck",
+    title: "2025 war das beste Lohnjahr seit 2009 – zumindest auf dem Papier.",
+    category: "Markt",
+    readTime: "3 Min.",
+    publishedAt: "22. Juli 2026",
+    teaser:
+      "Reallohnplus von 1,6 Prozent, der stärkste Anstieg seit 16 Jahren – die Schlagzeilen feiern das historische Lohnjahr. Am Bau kommt davon fast nichts an.",
+    intro:
+      "2025 war laut Bundesamt für Statistik das beste Lohnjahr der Schweiz seit 2009. Zumindest auf dem Papier.",
+    sections: [
+      {
+        id: "das-historische-lohnjahr",
+        title: "Das historische Lohnjahr",
+        paragraphs: [
+          "Das Bundesamt für Statistik meldet ein Reallohnplus von 1,6 Prozent – der stärkste Anstieg seit 16 Jahren. Die Schlagzeilen feierten das als grosse Erleichterung für alle Arbeitnehmenden.",
+          "Für alle. Ausser für Dich, wenn Du am Bau arbeitest.",
+        ],
+      },
+      {
+        id: "1-3-statt-3-1-prozent",
+        title: "1,3 statt 3,1 Prozent",
+        paragraphs: [
+          "Während die Löhne in Chemie und Pharma um 3,1 Prozent stiegen, gab es im Baugewerbe gerade mal 1,3 Prozent. Nicht real. Nominal. Vor Teuerung.",
+          "Rechnest Du die Inflation raus, bleibt am Bau fast nichts mehr übrig von diesem angeblich historischen Lohnjahr.",
+        ],
+      },
+      {
+        id: "der-trick-mit-dem-durchschnitt",
+        title: "Der Trick mit dem Durchschnitt",
+        paragraphs: [
+          "Das ist der Trick an Durchschnittszahlen. Sie klingen gut, weil sie die glücklichen und die vergessenen Branchen einfach zusammenrechnen.",
+          "Am Bau wird geschuftet, bei Wind, Kälte und Hitze. Und ausgerechnet dort kommt am wenigsten an.",
+        ],
+      },
+      {
+        id: "was-das-fuer-dich-heisst",
+        title: "Was das für Dich heisst",
+        paragraphs: [
+          "Wenn sich Deine letzte Lohnerhöhung nicht nach 1,6 Prozent angefühlt hat, dann täuscht Dich Dein Gefühl nicht.",
+          "Der Durchschnitt lügt nicht. Aber er erzählt auch nicht Deine Geschichte.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "arbeitslosenquote-sinkt-realitaetscheck",
     title: "2,9 Prozent Arbeitslosigkeit – klingt gut. Ist aber keine gute Nachricht.",
     category: "Markt",
