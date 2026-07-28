@@ -74,6 +74,42 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "es-hat-gematcht",
+    title: "Es hat gematcht. Nein, das hier ist keine Dating-App.",
+    category: "Direct Search",
+    readTime: "2 Min.",
+    publishedAt: "28. Juli 2026",
+    teaser:
+      "Eine Fachkraft, die seit Monaten unterfordert war. Eine Firma, die seit Monaten die falsche Person gesucht hat. Beide wussten nichts voneinander – bis wir sie verbunden haben.",
+    intro:
+      "Nein, das hier ist keine Dating-App. Aber ehrlich, im Kern machen wir genau das: Wir bringen zwei Seiten zusammen, die sich sonst nie gefunden hätten.",
+    sections: [
+      {
+        id: "das-match-dieser-woche",
+        title: "Das Match dieser Woche",
+        paragraphs: [
+          "Diese Woche hat es wieder gematcht. Eine Fachkraft, die seit Monaten unterfordert war. Eine Firma, die seit Monaten die falsche Person gesucht hat.",
+          "Beide wussten nichts voneinander – bis wir sie verbunden haben.",
+        ],
+      },
+      {
+        id: "praktisch-jede-woche",
+        title: "So läuft das bei uns – praktisch jede Woche",
+        paragraphs: [
+          "Kein Zufall, kein Glück. Das ist unser Alltag. Wir kennen die Menschen und wir kennen die Firmen – und wir sehen die Verbindungen, die auf den ersten Blick niemand sieht.",
+        ],
+      },
+      {
+        id: "dein-match",
+        title: "Vielleicht ist Dein Match einfach noch nicht gefunden worden",
+        paragraphs: [
+          "Wenn sich Dein aktueller Job nicht mehr richtig anfühlt, liegt das selten daran, dass es für Dich nichts Besseres gibt. Meistens liegt es daran, dass Du und die richtige Firma sich einfach noch nicht gefunden haben.",
+          "Schreib uns. Vielleicht sind wir diese Woche schon dabei, Dein Match zu finden.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lohnjahr-2025-baugewerbe-realitaetscheck",
     title: "2025 war das beste Lohnjahr seit 2009 – zumindest auf dem Papier.",
     category: "Markt",
