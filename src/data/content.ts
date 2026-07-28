@@ -43,36 +43,6 @@ export interface BlogPost {
 
 export const jobPostings: JobPosting[] = [
   {
-    slug: "gesamtleiter-architektur-ausfuehrungsplanung-zuerich",
-    title: "Gesamtleiter Architektur und Ausführungsplanung (m/w/d)",
-    region: "Kanton Zürich",
-    employmentType: "Festanstellung, 80–100%",
-    focus: "Architektur · Zürich",
-    teaser:
-      "Landesweit bekanntes Traditionsunternehmen im Bereich Architektur und Generalplanung sucht eine erfahrene Planungsleitung für das dynamische Büro mitten im Zürcher Industriequartier.",
-    compensation: "CHF 125'000 – 145'000 / Jahr",
-    startDate: "Nach Vereinbarung",
-    tasks: [
-      "Du trägst die Hauptverantwortung für den reibungslosen Ablauf sämtlicher Planungsschritte von der ersten Ideenskizze bis zur finalen Umsetzung",
-      "Die intelligente Steuerung und Überwachung aller Projektphasen liegt in Deinen fähigen Händen",
-      "Für Deine tägliche Arbeit greifst Du auf modernste Werkzeuge und zukunftsweisende digitale Methoden zurück",
-      "Du bildest die zentrale kommunikative Brücke zwischen der Bauherrschaft, externen Partnern und Deinem internen Team",
-      "Dabei findest Du stets die perfekte Balance zwischen den Wünschen der Kunden und den wirtschaftlichen Zielen des Architekturbüros",
-    ],
-    requirements: [
-      "Ein erfolgreich absolviertes Architekturstudium bildet Dein solides fachliches Fundament",
-      "Du hast bereits weitreichende Praxiserfahrung mit anspruchsvollen Schweizer Bauvorhaben gesammelt",
-      "Deine strukturierte Denkweise wird durch ein starkes kaufmännisches und kundenorientiertes Bewusstsein optimal ergänzt",
-      "Du bist ein absolutes Kommunikationstalent und weisst genau, wie man eine Gruppe erfolgreich anleitet und motiviert",
-      "Du brennst für herausragende Baukunst und schätzt gleichzeitig geordnete, saubere Abläufe",
-      "Verhandlungssicheres Deutsch ist zwingend erforderlich; weitere Landessprachen oder Englisch sind ein willkommener Bonus",
-    ],
-    note: "Diskrete Besetzung · Alle Angaben vertraulich",
-    datePosted: "2026-05-16",
-    addressLocality: "Zürich",
-    addressRegion: "ZH",
-  },
-  {
     slug: "bauingenieur-infrastruktur-bern",
     title: "Bauingenieur:in Infrastruktur (m/w/d)",
     region: "Kanton Bern",
