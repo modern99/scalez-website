@@ -110,6 +110,45 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Bern",
     addressRegion: "BE",
   },
+  {
+    slug: "bauingenieur-verkehrsplanung-tiefbau-bern",
+    title: "Bauingenieur:in Verkehrsplanung & Tiefbau (m/w/d)",
+    region: "Kanton Bern",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Verkehrsplanung · Bern",
+    teaser:
+      "Renommiertes Ingenieurbüro im Raum Bern sucht eine:n Bauingenieur:in, die/der Verkehrsplanung und Tiefbau als ein spannendes Ganzes begreift – vom Kreisel bis zum Gesamtverkehrskonzept.",
+    compensation: "CHF 95'000 – 120'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Du entwickelst Verkehrs- und Mobilitätslösungen für Gemeinden und Kantone",
+      "Du planst und projektierst Tiefbau- und Strassenbauvorhaben von A bis Z",
+      "Du jonglierst mit Verkehrsflüssen, Sicherheit und Raumnutzung und bringst sie in Einklang",
+      "Du führst Projekte durch alle Phasen und bleibst dabei Ansprechperson für alle Beteiligten",
+    ],
+    requirements: [
+      "Abschluss FH/ETH in Bauingenieurwesen",
+      "Praxiserfahrung im Schweizer Tiefbau",
+      "Interesse an der Schnittstelle zwischen Planung und baulicher Umsetzung",
+      "Analytischer Kopf mit Sinn fürs Praktische",
+      "Verhandlungssicheres Deutsch",
+    ],
+    benefits: [
+      "Mindestens 5 Wochen Ferien plus zusätzliche Brückentage",
+      "13. Monatslohn und Beteiligung am Unternehmenserfolg",
+      "Flexible Arbeitszeiten und Homeoffice-Möglichkeit",
+      "Firmenfahrzeug, auch zur privaten Nutzung",
+      "Gezielte Förderung Deiner Weiterbildung und echte Karrierechancen im Betrieb",
+      "Moderne Arbeitsplätze an einem gut erreichbaren Standort",
+      "Team-Events, gemeinsame Ausflüge und ein Sommerfest mit Begleitung",
+      "Kostenloser Zugang zu externer Gesundheitsberatung",
+      "Kaffee geht aufs Haus",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-28",
+    addressLocality: "Bern",
+    addressRegion: "BE",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
