@@ -99,10 +99,15 @@ export function buildJobDescriptionHtml(job: JobPosting): string {
   const list = (items: string[]) =>
     `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 
+  const benefits = job.benefits && job.benefits.length > 0
+    ? `<p><strong>Benefits</strong></p>${list(job.benefits)}`
+    : "";
+
   return (
     `<p>${escapeHtml(job.teaser)}</p>` +
     `<p><strong>Aufgaben</strong></p>${list(job.tasks)}` +
     `<p><strong>Anforderungen</strong></p>${list(job.requirements)}` +
+    benefits +
     `<p><strong>Pensum:</strong> ${escapeHtml(job.employmentType)}</p>` +
     `<p><strong>Vergütung:</strong> ${escapeHtml(job.compensation)}</p>` +
     `<p><strong>Stellenantritt:</strong> ${escapeHtml(job.startDate)}</p>`

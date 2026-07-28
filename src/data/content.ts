@@ -9,6 +9,8 @@ export interface JobPosting {
   startDate: string;
   tasks: string[];
   requirements: string[];
+  /** Optional: Benefits/Vorteile, werden auf der Detailseite als dritte Spalte angezeigt */
+  benefits?: string[];
   note: string;
   /** Publikationsdatum im ISO-Format "YYYY-MM-DD" – Pflicht für Google for Jobs */
   datePosted: string;
@@ -69,6 +71,44 @@ export const jobPostings: JobPosting[] = [
     datePosted: "2026-05-16",
     addressLocality: "Zürich",
     addressRegion: "ZH",
+  },
+  {
+    slug: "bauingenieur-infrastruktur-bern",
+    title: "Bauingenieur:in Infrastruktur (m/w/d)",
+    region: "Kanton Bern",
+    employmentType: "Festanstellung, 60–100%",
+    focus: "Tiefbau · Bern",
+    teaser:
+      "Etabliertes, interdisziplinäres Ingenieur- und Planungsbüro im Raum Bern sucht eine:n Bauingenieur:in Infrastruktur mit Herzblut für den Tiefbau – Strassen, Werkleitungen, Entwässerung, Kunstbauten.",
+    compensation: "CHF 90'000 – 115'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Du planst und projektierst Tiefbauvorhaben über alle Phasen, vom Vorprojekt bis zur Ausführung",
+      "Du rechnest, dimensionierst und findest die elegante Lösung, wo andere nur das Problem sehen",
+      "Du koordinierst mit Bauherrschaft, Behörden und Fachplanern auf Augenhöhe",
+      "Du bist auf der Baustelle präsent und behältst Termine, Kosten und Qualität im Griff",
+    ],
+    requirements: [
+      "Abschluss FH/ETH in Bauingenieurwesen",
+      "Erfahrung im Tiefbau in der Schweiz oder frischer Tatendrang, wenn Du am Anfang stehst",
+      "Sicherer Umgang mit gängiger Fach- und CAD-Software",
+      "Verhandlungssicheres Deutsch",
+    ],
+    benefits: [
+      "Mindestens 5 Wochen Ferien plus zusätzliche Brückentage",
+      "13. Monatslohn und Beteiligung am Unternehmenserfolg",
+      "Flexible Arbeitszeiten und Homeoffice-Möglichkeit",
+      "Firmenfahrzeug, auch zur privaten Nutzung",
+      "Gezielte Förderung Deiner Weiterbildung und echte Karrierechancen im Betrieb",
+      "Moderne Arbeitsplätze an einem gut erreichbaren Standort",
+      "Team-Events, gemeinsame Ausflüge und ein Sommerfest mit Begleitung",
+      "Kostenloser Zugang zu externer Gesundheitsberatung",
+      "Kaffee geht aufs Haus",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-28",
+    addressLocality: "Bern",
+    addressRegion: "BE",
   },
 ];
 
@@ -447,6 +487,8 @@ Optionale Felder (empfohlen für Google Jobs):
   addressLocality → Ort, z.B. "Zürich"
   addressRegion   → Kantonskürzel, z.B. "ZH"
   addressCountry  → nur wenn nicht Schweiz, z.B. "DE" (Default: "CH")
+  benefits        → optional, Stichpunkte (Vorteile), erscheint als dritte Spalte auf
+                    der Detailseite; weglassen, wenn keine Angaben vorliegen
 
 {
   slug: "",
@@ -463,6 +505,11 @@ Optionale Felder (empfohlen für Google Jobs):
     "",
   ],
   requirements: [
+    "",
+    "",
+    "",
+  ],
+  benefits: [
     "",
     "",
     "",

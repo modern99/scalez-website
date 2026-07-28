@@ -110,7 +110,7 @@ export default function JobDetailPage() {
               </div>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className={`grid gap-6 ${job.benefits && job.benefits.length > 0 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground">
                   Aufgaben
@@ -137,6 +137,21 @@ export default function JobDetailPage() {
                   ))}
                 </ul>
               </div>
+              {job.benefits && job.benefits.length > 0 && (
+                <div>
+                  <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground">
+                    Benefits
+                  </p>
+                  <ul className="space-y-1">
+                    {job.benefits.map((benefit, j) => (
+                      <li key={j} className="flex gap-2 text-sm font-light text-muted-foreground">
+                        <span className="mt-1.5 h-1 w-1 shrink-0 bg-accent" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
             <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
