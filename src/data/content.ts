@@ -164,6 +164,45 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "service-elektroinstallateur-efz-kriens",
+    title: "Service-Elektroinstallateur EFZ (m/w/d)",
+    region: "Kanton Luzern",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektrotechnik · Kriens",
+    teaser:
+      "Etablierter Betrieb mit rund 300 Mitarbeitenden und 50 Lernenden im Raum Kriens sucht einen echten Macher für den Servicebereich – gelebte DU-Kultur, flache Hierarchien und starker Teamzusammenhalt statt starrer Strukturen.",
+    compensation: "CHF 75'000 – 90'000 / Jahr",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du wickelst selbstständig komplexe Serviceaufträge im Bereich Starkstrom und Schwachstrom ab und löst technische Probleme direkt beim Kunden vor Ort",
+      "Dein Einsatzgebiet ist extrem abwechslungsreich und reicht von modernen Wohnbauten bis hin zu grossen Industrieanlagen und Gewerbeobjekten",
+      "Als Gesicht des Unternehmens pflegst Du den direkten Kundenkontakt und berätst die Auftraggeber kompetent sowie lösungsorientiert",
+      "Zettelwirtschaft gibt es bei Dir nicht – Du erledigst Deine auftragsbezogenen administrativen Aufgaben maximal effizient und komplett digital",
+      "Du bist ein echtes Vorbild auf der Baustelle und begleitest unsere Lernenden aktiv, um Dein wertvolles technisches Knowhow direkt weiterzugeben",
+      "Du agierst bei jedem Einsatz extrem flexibel und bringst smarte Technik sowie höchste Qualität präzise auf den Punkt zusammen",
+    ],
+    requirements: [
+      "Erfolgreich abgeschlossene Ausbildung als Elektroinstallateur EFZ oder Montage-Elektriker EFZ",
+      "Handfeste Berufserfahrung im dynamischen Servicealltag",
+      "Offene und kommunikative Art sowie positive Energie im Team",
+      "Absolute Organisationsstärke und sicheres Auftreten im Kundenkontakt auf Augenhöhe",
+      "Sicherer Umgang mit digitalen Tools sowie der gesamten MS-Office-Palette",
+      "Pragmatischer Typ, der auch bei unerwarteten Problemen sofort die richtige Lösung parat hat",
+    ],
+    benefits: [
+      "Geschäftsfahrzeug, das Du ausdrücklich auch privat nutzen darfst",
+      "Eigenes Smartphone und Tablet für Deine Aufträge",
+      "Finanzielle und zeitliche Unterstützung Deiner Weiterbildungspläne",
+      "Etablierter Betrieb mit 300 Mitarbeitenden und fairen Sozialleistungen",
+      "Offene Firmenkultur mit kurzen, direkten Entscheidungswegen",
+      "Hohe Eigenverantwortung und Gestaltungsfreiraum im Arbeitsalltag",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-29",
+    addressLocality: "Kriens",
+    addressRegion: "LU",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
