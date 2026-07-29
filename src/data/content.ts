@@ -11,6 +11,8 @@ export interface JobPosting {
   requirements: string[];
   /** Optional: Benefits/Vorteile, werden auf der Detailseite als dritte Spalte angezeigt */
   benefits?: string[];
+  /** Optional: Schlussabsatz(-Absätze), erscheint am Ende der Detailseite */
+  closingNote?: string[];
   note: string;
   /** Publikationsdatum im ISO-Format "YYYY-MM-DD" – Pflicht für Google for Jobs */
   datePosted: string;
@@ -118,6 +120,49 @@ export const jobPostings: JobPosting[] = [
     datePosted: "2026-07-28",
     addressLocality: "Bern",
     addressRegion: "BE",
+  },
+  {
+    slug: "projektleiter-siedlungswasserwirtschaft-werkleitungen",
+    title: "Projektleiter Siedlungswasserwirtschaft und Werkleitungen (m/w/d)",
+    region: "Cham, Zürich, Kemptthal (bald auch Pfäffikon SZ)",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Tiefbau · Zürich",
+    teaser:
+      "Extrem erfolgreiches Familienunternehmen, das die Energie- und Gebäudetechnik von morgen mitgestaltet, sucht eine:n Projektleiter:in Siedlungswasserwirtschaft und Werkleitungen mit echter Machermentalität.",
+    compensation: "CHF 110'000 – 135'000 / Jahr",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du übernimmst die komplette Planung und Leitung anspruchsvoller Projekte im Bereich Werkleitungen und Siedlungswasserwirtschaft, vom ersten Konzept bis zur Realisierung",
+      "Die präzise Ausarbeitung von Entwässerungskonzepten, technischen Berichten und komplexen Berechnungen liegt in Deiner Hand",
+      "Du projektierst fortschrittliche Retentionen und Versickerungsanlagen und prägst damit die nachhaltige Infrastruktur von morgen",
+      "Als Drehpunkt koordinierst Du Dich auf Augenhöhe mit Bauherrschaften, Gemeinden, Architekten und weiteren Projektbeteiligten",
+      "Du erstellst klare Ausschreibungsunterlagen und garantierst die Einhaltung von Terminen, Kosten und Qualitätsstandards",
+      "Du führst kleine, motivierte Planungsteams und unterstützt Deine Mitarbeitenden bei fachlichen Herausforderungen im Arbeitsalltag",
+    ],
+    requirements: [
+      "Fundierte Ausbildung in Gebäudetechnik, Sanitärbereich, Tiefbau oder einer vergleichbaren technischen Richtung",
+      "Weiterbildung als Fachperson für Grundstücksentwässerung VSA",
+      "Mehrjährige Praxiserfahrung im Tiefbau, Werkleitungsbau oder in der Siedlungswasserwirtschaft",
+      "Sicherer Umgang mit modernen CAD-Programmen, Kenntnisse in Revit oder AutoCAD von Vorteil",
+      "Professionelles Auftreten, mitdenkender Machertyp mit stilsicherer Kommunikation auf Deutsch",
+      "Selbstständige Arbeitsweise, Teamgeist und routinierter Umgang mit der Microsoft-Office-Palette",
+    ],
+    benefits: [
+      "Flexible Arbeitszeiten und Homeoffice-Möglichkeit",
+      "Moderne Technologie und ergonomisch eingerichtete Arbeitsplätze",
+      "Individuelle Förderung Deiner beruflichen Weiterentwicklung",
+      "Langfristige Anstellung in einem Familienunternehmen mit starkem Zusammenhalt",
+      "Ehrliche Feedbackkultur und Raum für eigene Ideen",
+      "Möglichkeit, Dich in der Ausbildung der nächsten Generation an Planungsfachkräften zu engagieren",
+    ],
+    closingNote: [
+      "Du bewirbst Dich nicht ins Leere. Wir kennen das Mandat, das Team und die Erwartungen an die Rolle. Du bekommst von uns eine ehrliche Einschätzung, ob die Stelle zu Dir passt, bevor Du überhaupt ein Gespräch führst.",
+      "Wir bereiten Dich auf das Gespräch vor und sagen Dir, worauf es ankommt. Beim Gehalt verhandeln wir nicht gegen Dich, sondern für Dich. Das kostet Dich keinen Franken. Bezahlt wird das von der Firma, nicht von Dir.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-29",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
   },
 ];
 
@@ -498,6 +543,8 @@ Optionale Felder (empfohlen für Google Jobs):
   addressCountry  → nur wenn nicht Schweiz, z.B. "DE" (Default: "CH")
   benefits        → optional, Stichpunkte (Vorteile), erscheint als dritte Spalte auf
                     der Detailseite; weglassen, wenn keine Angaben vorliegen
+  closingNote     → optional, Absätze (string[]), erscheinen am Ende der Detailseite;
+                    nur für Einzelfälle, weglassen im Normalfall
 
 {
   slug: "",

@@ -154,6 +154,16 @@ export default function JobDetailPage() {
               )}
             </div>
 
+            {job.closingNote && job.closingNote.length > 0 && (
+              <div className="space-y-3 border-t border-border pt-6">
+                {job.closingNote.map((paragraph, j) => (
+                  <p key={j} className="text-sm font-light leading-relaxed text-muted-foreground">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
+
             <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground mb-1">
