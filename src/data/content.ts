@@ -283,6 +283,45 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "verkaufsingenieur-hlk-gebaeudeautomation-zuerich",
+    title: "Verkaufsingenieur HLK und Gebäudeautomation (m/w/d)",
+    region: "Zürich mit Reisegebiet Basel und Aargau",
+    employmentType: "Festanstellung, 100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Extrem erfolgreiches Technologieunternehmen, das die Energie- und Gebäudetechnik von morgen mitgestaltet, sucht eine:n Verkaufsingenieur:in HLK und Gebäudeautomation mit echten Macherqualitäten für den Grossraum Basel und Aargau.",
+    compensation: "CHF 97'000 – 117'000 / Jahr (ohne Bonus)",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du betreust HLK-Planer sowie Installateure und baust langfristige Kundenbeziehungen im Grossraum Basel aktiv aus",
+      "Du berätst Kunden kompetent und verkaufst moderne Regeltechnikkomponenten sowie komplette HLK-Systeme",
+      "Du kalkulierst Offerten komplett selbstständig und führst die Verhandlungen bis zum erfolgreichen Abschluss",
+      "Du unterstützt Anspruchsgruppen mit Deiner technischen Expertise bei komplexen Ausschreibungen und Projekten",
+      "Du begleitest strategische Grossprojekte von der ersten Planung bis zur finalen Abwicklung",
+      "Du arbeitest bei der Projektumsetzung durchgehend eng mit den internen Fachabteilungen zusammen",
+    ],
+    requirements: [
+      "Technische Grundausbildung in Heizung, Lüftung, Klima oder Gebäudeautomation",
+      "Fundierte und nachweisbare Verkaufserfahrung im HLK-Bereich",
+      "Idealerweise ergänzende betriebswirtschaftliche Weiterbildung",
+      "Begeisterung für technische Beratung und Offenheit für neue Entwicklungen in der Gebäudeautomation",
+      "Hohe Reisebereitschaft für das Gebiet Basel und Aargau, Wohnsitz idealerweise direkt in dieser Region",
+      "Fliessendes Deutsch, gute Englischkenntnisse von Vorteil",
+    ],
+    benefits: [
+      "6 Wochen Ferien für eine optimale Erholung neben Deinem Arbeitsalltag",
+      "Feste finanzielle Pauschale für die geschäftliche Nutzung Deines Privatautos",
+      "Vergünstigtes ÖV-Abo sowie Gratisparkplätze direkt vor Ort",
+      "Vielfältige Weiterbildungsmöglichkeiten für Deine persönliche und fachliche Entwicklung",
+      "Direkter Zugang zu exklusiven Aktienplänen für Mitarbeitende",
+      "Flexible Arbeitsmodelle und mobiles Arbeiten für eine ausgewogene Work-Life-Balance",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-29",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
