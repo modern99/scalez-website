@@ -203,6 +203,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Kriens",
     addressRegion: "LU",
   },
+  {
+    slug: "projektleiter-projektingenieur-infrastruktur-strassen-kunstbauten-zuerich",
+    title: "Projektleiter und Projektingenieur Infrastruktur für Strassen und Kunstbauten (m/w/d)",
+    region: "Kanton Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Tiefbau · Zürich",
+    teaser:
+      "Extrem erfolgreiches, globales Ingenieurbüro in Zürich Oerlikon, das die Infrastruktur von morgen mitgestaltet, sucht eine:n Projektleiter:in und Projektingenieur:in Infrastruktur für Strassen und Kunstbauten mit echten Macherqualitäten.",
+    compensation: "CHF 95'000 – 130'000 / Jahr",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du planst und leitest anspruchsvolle Projekte im kommunalen sowie kantonalen Tiefbau",
+      "Du verantwortest die Projektierung von der ersten Studie bis zur finalen Inbetriebnahme",
+      "Du erstellst technische Berichte, Kostenschätzungen und detaillierte Ausschreibungsunterlagen",
+      "Du koordinierst Behörden, Fachplaner und alle weiteren involvierten Projektbeteiligten",
+      "Du begleitest die Bauleitung während der gesamten Realisierungsphase vor Ort",
+      "Du treibst den Einsatz von digitalen Planungsmethoden wie BIM aktiv voran",
+      "Du integrierst nachhaltige Lösungen wie Schwammstadt-Konzepte und Klimaadaptation",
+    ],
+    requirements: [
+      "Erfolgreich abgeschlossenes Studium als Bauingenieur:in an einer ETH oder FH",
+      "Fundierte Berufserfahrung im Strassenbau, Werkleitungsbau oder Tiefbau",
+      "Sichere Steuerung von Projekten in Bezug auf Qualität, Termine und Finanzen",
+      "Professionelles und souveränes Auftreten gegenüber Bauherrschaften und Behörden",
+      "Starkes unternehmerisches Denken und strukturiertes Handeln",
+      "Stilsichere mündliche sowie schriftliche Kommunikation auf Deutsch",
+      "Unbedingter Wille, Verantwortung zu übernehmen und selbstständig zu arbeiten",
+    ],
+    benefits: [
+      "Flexible Arbeitszeiten und Homeoffice für Deine ideale Work-Life-Balance",
+      "Moderne und top ausgestattete Büroräumlichkeiten in Zürich",
+      "Kostenfreies Training im Fitnesscenter direkt im Gebäude",
+      "Modernste digitale Tools und Systeme für Deine tägliche Arbeit",
+      "Zugang zu attraktiven Weiterbildungsangeboten und klaren Karriereperspektiven",
+      "Austausch in einem internationalen Netzwerk mit Spezialisten auf der ganzen Welt",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-29",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
