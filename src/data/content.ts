@@ -244,6 +244,45 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "zeichner-efz-konstrukteur-kunstbauten-zuerich",
+    title: "Zeichner EFZ Konstrukteur Kunstbauten (m/w/d)",
+    region: "Kanton Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Ingenieurbau · Zürich",
+    teaser:
+      "Extrem erfolgreiches, globales Büro für Ingenieurwesen und Architektur in Zürich sucht eine:n Zeichner:in EFZ Konstrukteur:in Kunstbauten mit echten Macherqualitäten.",
+    compensation: "CHF 70'000 – 87'000 / Jahr",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du erstellst Projektpläne und Ausführungspläne für Kunstbauten wie Brücken, Stützmauern und Durchlässe",
+      "Du modellierst tragende Konstruktionen und Infrastrukturbauwerke in 3D mit Civil 3D oder Revit",
+      "Du übernimmst die Koordination und führst Kollisionsprüfungen der Fachmodelle im BIM-Gesamtmodell durch",
+      "Du setzt statische Vorgaben sowie Detailkonstruktionen in Stahlbeton und Verbund zeichnerisch präzise um",
+      "Du pflegst die Dokumentation und sicherst die Qualität der Pläne nach strikten Projektstandards",
+      "Du unterstützt die Projektleitung aktiv bei anspruchsvollen Projekten von der Vorplanung bis zur Ausführung",
+    ],
+    requirements: [
+      "Erfolgreich abgeschlossene Ausbildung als Zeichner:in EFZ Fachrichtung Ingenieurbau oder als Konstrukteur:in",
+      "Fundierte Praxiserfahrung in der 3D-Modellierung mit Tools wie Civil 3D oder Revit",
+      "Kenntnis der fachlichen und zeichnerischen Anforderungen im konstruktiven Ingenieurbau und bei Kunstbauten",
+      "Idealerweise bereits Erfahrung mit der BIM-Methodik und Verständnis der Modellkoordination",
+      "Extrem genaue, fehlerfreie Arbeitsweise mit sehr hohem Qualitätsanspruch",
+      "Nahtlose Teamintegration und strukturierte Zusammenarbeit mit der Projektleitung",
+    ],
+    benefits: [
+      "Echte Homeoffice-Möglichkeiten und flexible Arbeitszeiten für Deine Work-Life-Balance",
+      "Top moderne Büros in Zürich mit kostenfreier Nutzung des Fitnesscenters im Gebäude",
+      "Teil eines weltweiten Netzwerks mit internationalem Austausch unter absoluten Spezialisten",
+      "Zugriff auf modernste digitale Arbeitsmittel und die aktuellste Planungssoftware",
+      "Langfristige Förderung durch attraktive Weiterbildungsangebote und klare Perspektiven",
+      "Mitwirkung an innovativen und nachhaltigen Projekten, die unsere Infrastruktur von morgen prägen",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-07-29",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
