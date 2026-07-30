@@ -326,6 +326,43 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "12-jahre-erfahrung-aber-nicht-ueber-29",
+    title: "12 Jahre Erfahrung. Aber bitte nicht über 29.",
+    category: "Markt",
+    readTime: "2 Min.",
+    publishedAt: "30. Juli 2026",
+    teaser:
+      "Ein Unternehmen sucht jemanden mit 12 Jahren Erfahrung – Bedingung: nicht älter als 29. Vier Sprachen, vier Programme, sofort einsatzbereit, günstig. Und wundert sich, warum die Stelle seit einem halben Jahr offen ist.",
+    intro:
+      "Gesucht wird jemand mit 12 Jahren Erfahrung. Bedingung: nicht älter als 29. Rechnen wir das kurz nach.",
+    sections: [
+      {
+        id: "die-rechnung-die-nicht-aufgeht",
+        title: "Die Rechnung, die nicht aufgeht",
+        paragraphs: [
+          "Ausbildung oder Studium fertig. Die ersten Jahre im Job gelernt. Verantwortung übernommen. Fachwissen aufgebaut. Vielleicht schon geführt. Und das alles bis zum 29. Lebensjahr.",
+          "Zusätzlich soll die Person natürlich in vier Sprachen verhandlungssicher sein, vier Programme im Schlaf beherrschen, sofort einsatzbereit sein und ins Team passen wie angegossen. Ach ja, und bitte nicht zu teuer.",
+        ],
+      },
+      {
+        id: "kein-fachkraeftemangel",
+        title: "Das ist kein Fachkräftemangel",
+        paragraphs: [
+          "Danach wundert sich das Unternehmen, warum die Stelle seit einem halben Jahr offen ist. Und nennt es Fachkräftemangel.",
+          "Nein. Ihr sucht keine Fachkraft. Ihr sucht ein Wunschprofil zum Schnäppchenpreis.",
+        ],
+      },
+      {
+        id: "erfahrung-oder-potenzial",
+        title: "Erfahrung oder Potenzial – nicht beides zum Nulltarif",
+        paragraphs: [
+          "12 Jahre Erfahrung entstehen nicht mit 25. Kompetenz braucht Zeit, und Zeit lässt sich nicht überspringen. Wer viel Erfahrung will, muss ein gewisses Alter akzeptieren. Wer nur junge Leute will, muss bereit sein, sie selbst aufzubauen.",
+          "Beides gleichzeitig verlangen, funktioniert nicht. Entweder Ihr sucht Erfahrung oder Ihr sucht Potenzial. Aber hört auf, beides maximal zu fordern und dann so zu tun, als gäbe es niemand Passendes.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "es-hat-gematcht",
     title: "Es hat gematcht. Nein, das hier ist keine Dating-App.",
     category: "Direct Search",
