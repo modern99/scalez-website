@@ -131,6 +131,21 @@ Trigger: *"ändere", "update", "bearbeite"* + Titel oder Slug
 2. Finde den Eintrag anhand von Titel oder Slug
 3. Ändere nur die genannten Felder
 
+### Admin-Bereich (`/admin`)
+
+Passwortgeschützter Web-Editor für Jobs & Blogartikel: `https://www.scale-z.ch/admin`.
+Login via `ADMIN_PASSWORD_HASH` + Session-Cookie (60 Min., Auto-Logout nach 15 Min. Inaktivität), optional Turnstile.
+Anlegen/Bearbeiten/Löschen committet über `/api/admin/publish` (Cloudflare Function)
+direkt nach `main` — der GitHub-Token liegt nur serverseitig. Bausteine:
+
+- `public/admin/` → statische Admin-App (index.html, admin.css, admin.js), `noindex`
+- `functions/api/admin/` → `_middleware` (Auth-Gate), `login`, `logout`, `content` (Liste), `publish`
+- `src/lib/adminAuth.ts` → Session/Passwort (WebCrypto)
+- `src/lib/contentSurgery.ts` → validiert Einträge, baut TS-Blöcke, fügt ein/ersetzt/löscht in `content.ts`
+- Turnstile-Sitekey wird beim Build von `scripts/prerender.ts` in `dist/admin/index.html` injiziert
+
+Das lokale Fallback-Tool `tools/content-editor.html` (Copy-Paste bzw. GitHub-Token im Browser) bleibt bestehen.
+
 ### Eintrag löschen
 
 Den entsprechenden Objekt-Block aus dem Array entfernen.
@@ -199,6 +214,13 @@ Alle Formulare: Turnstile-Bot-Schutz (optional), Zod-Validierung, Datenschutz-Ch
 - `CONTACT_SENDER_NAME` → Absendername (Standard: "ScaleZ")
 - `TURNSTILE_SECRET_KEY` → Turnstile-Verifikation
 - `PUBLIC_SITE_URL` → Basis-URL
+
+**Admin-Bereich (nur serverseitig, für `/api/admin/*`):**
+- `ADMIN_PASSWORD_HASH` → Format `<salt>:<hex(sha256("<salt>:<passwort>"))>`; generieren mit
+  `node -e "const c=require('crypto');const s=c.randomBytes(16).toString('hex');console.log(s+':'+c.createHash('sha256').update(s+':'+process.argv[1]).digest('hex'))" "PASSWORT"`
+- `ADMIN_SESSION_SECRET` → zufälliger String (32+ Bytes), signiert das Session-Cookie
+- `GITHUB_TOKEN` → Fine-grained PAT für `modern99/scalez-website`, Berechtigung «Contents: Read and write»
+- `GITHUB_REPO` (optional, Default `modern99/scalez-website`), `GITHUB_BRANCH` (optional, Default `main`)
 
 ---
 

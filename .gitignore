@@ -32,3 +32,6 @@ graphify-out
 *.njsproj
 *.sln
 *.sw?
+
+# Wrangler (lokaler Pages-Dev-Cache)
+.wrangler/

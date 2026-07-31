@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>ScaleZ Admin</title>
+  <link rel="icon" type="image/svg+xml" href="/appicon-favicon.svg" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body data-sitekey="__TURNSTILE_SITE_KEY__">
+
+<!-- ============================ LOGIN ============================ -->
+<div id="view-login" hidden>
+  <form id="login-form" class="login-card" autocomplete="off">
+    <h1>Scale<span>Z</span> Admin</h1>
+    <div class="row">
+      <label class="field-label" for="login-password">Passwort</label>
+      <input type="password" id="login-password" autocomplete="current-password" required />
+    </div>
+    <div id="turnstile-slot"></div>
+    <button type="submit" class="btn-accent" id="login-submit" style="width:100%;justify-content:center;margin-top:18px;">
+      <span>Anmelden</span>
+    </button>
+    <p class="pub-status" id="login-status" role="status"></p>
+  </form>
+</div>
+
+<!-- ============================ APP ============================ -->
+<div id="view-app" hidden>
+
+<header class="site">
+  <h1>Scale<span>Z</span> Admin</h1>
+  <img class="logo" src="/primary-logo.svg" alt="ScaleZ Logo" />
+  <span class="spacer"></span>
+  <button type="button" class="btn-ghost small" id="logout">Abmelden</button>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Inhaltstyp">
+  <button role="tab" id="tab-job" aria-selected="true" aria-controls="panel-job">Stellen</button>
+  <button role="tab" id="tab-blog" aria-selected="false" aria-controls="panel-blog">Blog</button>
+</nav>
+
+<main>
+<div class="banner" id="banner" hidden>
+  <div id="banner-text"></div>
+  <button type="button" id="banner-close" aria-label="Meldung schliessen">×</button>
+</div>
+
+<!-- ============================ JOBS ============================ -->
+<section id="panel-job" role="tabpanel" aria-labelledby="tab-job">
+  <div class="container">
+
+    <div id="j-list-view">
+      <div class="list-head">
+        <p class="count" id="j-count"></p>
+        <button type="button" class="btn-accent" id="j-new">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Neue Stelle
+        </button>
+      </div>
+      <ul class="entry-list" id="j-list"></ul>
+    </div>
+
+    <div id="j-form-view" hidden>
+      <div class="form-head">
+        <h2 id="j-form-title">Neue Stelle<span>.</span></h2>
+        <button type="button" class="btn-ghost" id="j-back">Zurück zur Liste</button>
+      </div>
+      <div class="form-warn" id="j-warn" hidden></div>
+
+      <div class="layout">
+        <form id="job-form" autocomplete="off" novalidate>
+
+          <fieldset>
+            <legend>Basis</legend>
+            <div class="row">
+              <label class="field-label" for="j-title">Jobtitel <span class="req">*</span></label>
+              <input type="text" id="j-title" placeholder="Bauingenieur:in Infrastruktur (m/w/d)" />
+              <p class="hint">Nur die Stellenbezeichnung — ohne Ort, Pensum oder Lohn (Google-Richtlinie). Hausformat: mit «(m/w/d)».</p>
+            </div>
+            <div class="row">
+              <label class="field-label" for="j-slug">URL-Slug <span class="req">*</span></label>
+              <div class="slug-wrap">
+                <span class="slug-prefix" aria-hidden="true">www.scale-z.ch/jobs/</span>
+                <input type="text" id="j-slug" placeholder="bauingenieur-infrastruktur-bern" spellcheck="false" />
+              </div>
+              <p class="hint" id="j-slug-hint">Wird automatisch aus dem Titel erzeugt, kann angepasst werden.</p>
+            </div>
+            <div class="grid2">
+              <div>
+                <label class="field-label" for="j-region">Region (Anzeige) <span class="req">*</span></label>
+                <input type="text" id="j-region" placeholder="Kanton Bern" />
+              </div>
+              <div>
+                <label class="field-label" for="j-start">Stellenantritt <span class="req">*</span></label>
+                <input type="text" id="j-start" list="start-options" placeholder="Ab sofort" />
+                <datalist id="start-options">
+                  <option value="Ab sofort"></option>
+                  <option value="Nach Vereinbarung"></option>
+                </datalist>
+              </div>
+            </div>
+            <div class="grid2" style="margin-top:18px;">
+              <div>
+                <label class="field-label" for="j-focus-branche">Branche (Fokus) <span class="req">*</span></label>
+                <input type="text" id="j-focus-branche" placeholder="Tiefbau" />
+              </div>
+              <div>
+                <label class="field-label" for="j-focus-ort">Ort (Fokus) <span class="req">*</span></label>
+                <input type="text" id="j-focus-ort" placeholder="Bern" />
+              </div>
+            </div>
+            <p class="hint">Erscheint auf der Übersicht als «Branche · Ort».</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pensum &amp; Anstellung</legend>
+            <div class="grid3">
+              <div>
+                <label class="field-label" for="j-emp-type">Anstellungsart <span class="req">*</span></label>
+                <select id="j-emp-type">
+                  <option>Festanstellung</option>
+                  <option>Temporär</option>
+                  <option>Praktikum</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="j-pensum-min">Pensum von (%) <span class="req">*</span></label>
+                <input type="number" id="j-pensum-min" min="10" max="100" step="10" value="80" />
+              </div>
+              <div>
+                <label class="field-label" for="j-pensum-max">Pensum bis (%)</label>
+                <input type="number" id="j-pensum-max" min="10" max="100" step="10" value="100" />
+                <p class="hint">Leer lassen für fixes Pensum.</p>
+              </div>
+            </div>
+            <div class="preview-string" id="j-emp-preview"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vergütung</legend>
+            <div class="row radio-row" role="radiogroup" aria-label="Vergütungsart">
+              <label><input type="radio" name="j-comp-mode" value="range" checked /> CHF-Spanne</label>
+              <label><input type="radio" name="j-comp-mode" value="fix" /> Fixbetrag</label>
+              <label><input type="radio" name="j-comp-mode" value="verhandlung" /> Nach Vereinbarung</label>
+            </div>
+            <div class="grid3" id="j-comp-fields">
+              <div>
+                <label class="field-label" for="j-comp-min">Von (CHF) <span class="req">*</span></label>
+                <input type="number" id="j-comp-min" min="0" step="1000" placeholder="90000" />
+              </div>
+              <div id="j-comp-max-wrap">
+                <label class="field-label" for="j-comp-max">Bis (CHF) <span class="req">*</span></label>
+                <input type="number" id="j-comp-max" min="0" step="1000" placeholder="115000" />
+              </div>
+              <div>
+                <label class="field-label" for="j-comp-unit">Einheit</label>
+                <select id="j-comp-unit">
+                  <option value="Jahr" selected>/ Jahr</option>
+                  <option value="Monat">/ Monat</option>
+                  <option value="Woche">/ Woche</option>
+                  <option value="Tag">/ Tag</option>
+                  <option value="Stunde">/ Stunde</option>
+                </select>
+              </div>
+            </div>
+            <div class="row" id="j-comp-suffix-wrap" style="margin-top:18px;">
+              <label class="field-label" for="j-comp-suffix">Zusatz (optional)</label>
+              <input type="text" id="j-comp-suffix" placeholder="(ohne Bonus)" />
+            </div>
+            <div class="preview-string" id="j-comp-preview"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Teaser</legend>
+            <div class="row">
+              <label class="field-label" for="j-teaser">Teaser <span class="req">*</span></label>
+              <textarea id="j-teaser" rows="3" placeholder="1–2 Sätze für die Übersichtsseite und die Meta-Description …"></textarea>
+              <p class="hint" id="j-teaser-count">0 Zeichen</p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Aufgaben <span class="opt">(3–5)</span></legend>
+            <div id="j-tasks"></div>
+            <button type="button" class="add-btn" data-add="j-tasks">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Aufgabe hinzufügen
+            </button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anforderungen <span class="opt">(3–5)</span></legend>
+            <div id="j-reqs"></div>
+            <button type="button" class="add-btn" data-add="j-reqs">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Anforderung hinzufügen
+            </button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Benefits <span class="opt">(optional)</span></legend>
+            <div id="j-benefits"></div>
+            <button type="button" class="add-btn" data-add="j-benefits">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Benefit hinzufügen
+            </button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Abschlusstext <span class="opt">(optional)</span></legend>
+            <div class="row">
+              <label class="field-label" for="j-closing">Absätze — durch Leerzeile trennen</label>
+              <textarea id="j-closing" rows="4" placeholder="Du bewirbst Dich nicht ins Leere. …&#10;&#10;Wir bereiten Dich auf das Gespräch vor …"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Google for Jobs</legend>
+            <div class="grid3">
+              <div>
+                <label class="field-label" for="j-date-posted">Publiziert am <span class="req">*</span></label>
+                <input type="date" id="j-date-posted" />
+              </div>
+              <div>
+                <label class="field-label" for="j-valid">Bewerbungsfrist</label>
+                <input type="date" id="j-valid" />
+                <p class="hint">Optional, von Google empfohlen (validThrough).</p>
+              </div>
+              <div>
+                <label class="field-label" for="j-canton">Kanton <span class="req">*</span></label>
+                <select id="j-canton">
+                  <option value="">— wählen —</option>
+                  <option>ZH</option><option>BE</option><option>LU</option><option>UR</option>
+                  <option>SZ</option><option>OW</option><option>NW</option><option>GL</option>
+                  <option>ZG</option><option>FR</option><option>SO</option><option>BS</option>
+                  <option>BL</option><option>SH</option><option>AR</option><option>AI</option>
+                  <option>SG</option><option>GR</option><option>AG</option><option>TG</option>
+                  <option>TI</option><option>VD</option><option>VS</option><option>NE</option>
+                  <option>GE</option><option>JU</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid2" style="margin-top:18px;">
+              <div>
+                <label class="field-label" for="j-locality">Arbeitsort (Gemeinde) <span class="req">*</span></label>
+                <input type="text" id="j-locality" placeholder="Bern" />
+                <p class="hint">Pflicht für Google (jobLocation).</p>
+              </div>
+              <div>
+                <label class="field-label" for="j-note">Hinweiszeile</label>
+                <input type="text" id="j-note" value="Diskrete Besetzung · Alle Angaben vertraulich" />
+              </div>
+            </div>
+          </fieldset>
+
+        </form>
+
+        <aside class="side">
+          <div class="side-box">
+            <h2>Google-Jobs-Check<span>.</span></h2>
+            <ul class="check-list" id="j-checks"></ul>
+            <div class="status-line" id="j-status"></div>
+          </div>
+          <div class="side-box">
+            <h2>Veröffentlichen<span>.</span></h2>
+            <div class="pub-body">
+              <button type="button" class="btn-accent" id="j-save">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                <span>Stelle veröffentlichen</span>
+              </button>
+              <p class="hint">Committet direkt nach <code style="font-family:var(--mono)">main</code> — der Cloudflare-Deploy startet automatisch (ca. 2–3 Min.).</p>
+              <p class="pub-status" id="j-pub-status" role="status"></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ BLOG ============================ -->
+<section id="panel-blog" role="tabpanel" aria-labelledby="tab-blog" hidden>
+  <div class="container">
+
+    <div id="b-list-view">
+      <div class="list-head">
+        <p class="count" id="b-count"></p>
+        <button type="button" class="btn-accent" id="b-new">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Neuer Artikel
+        </button>
+      </div>
+      <ul class="entry-list" id="b-list"></ul>
+    </div>
+
+    <div id="b-form-view" hidden>
+      <div class="form-head">
+        <h2 id="b-form-title">Neuer Artikel<span>.</span></h2>
+        <button type="button" class="btn-ghost" id="b-back">Zurück zur Liste</button>
+      </div>
+      <div class="form-warn" id="b-warn" hidden></div>
+
+      <div class="layout">
+        <form id="blog-form" autocomplete="off" novalidate>
+
+          <fieldset>
+            <legend>Basis</legend>
+            <div class="row">
+              <label class="field-label" for="b-title">Titel <span class="req">*</span></label>
+              <input type="text" id="b-title" placeholder="Wie ein gutes Briefing aussieht" />
+            </div>
+            <div class="row">
+              <label class="field-label" for="b-slug">URL-Slug <span class="req">*</span></label>
+              <div class="slug-wrap">
+                <span class="slug-prefix" aria-hidden="true">www.scale-z.ch/blog/</span>
+                <input type="text" id="b-slug" placeholder="wie-ein-gutes-briefing-aussieht" spellcheck="false" />
+              </div>
+              <p class="hint" id="b-slug-hint">Wird automatisch aus dem Titel erzeugt, kann angepasst werden.</p>
+            </div>
+            <div class="grid3">
+              <div>
+                <label class="field-label" for="b-category">Kategorie <span class="req">*</span></label>
+                <select id="b-category">
+                  <option>Direct Search</option>
+                  <option>Prozess</option>
+                  <option>Markt</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="b-readtime">Lesezeit <span class="req">*</span></label>
+                <input type="text" id="b-readtime" value="5 Min." />
+              </div>
+              <div>
+                <label class="field-label" for="b-published">Publiziert am <span class="req">*</span></label>
+                <input type="date" id="b-published" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Teaser &amp; Einleitung</legend>
+            <div class="row">
+              <label class="field-label" for="b-teaser">Teaser <span class="req">*</span></label>
+              <textarea id="b-teaser" rows="2" placeholder="1–2 Sätze für die Übersichtsseite …"></textarea>
+            </div>
+            <div class="row">
+              <label class="field-label" for="b-intro">Einleitung <span class="req">*</span></label>
+              <textarea id="b-intro" rows="3" placeholder="Einleitungsabsatz, 1–3 Sätze, kein Titel …"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Abschnitte</legend>
+            <div id="b-sections"></div>
+            <button type="button" class="add-btn" id="b-add-section">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Abschnitt hinzufügen
+            </button>
+          </fieldset>
+
+        </form>
+
+        <aside class="side">
+          <div class="side-box">
+            <h2>Check<span>.</span></h2>
+            <ul class="check-list" id="b-checks"></ul>
+            <div class="status-line" id="b-status"></div>
+          </div>
+          <div class="side-box">
+            <h2>Veröffentlichen<span>.</span></h2>
+            <div class="pub-body">
+              <button type="button" class="btn-accent" id="b-save">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                <span>Artikel veröffentlichen</span>
+              </button>
+              <p class="hint">Committet direkt nach <code style="font-family:var(--mono)">main</code> — der Cloudflare-Deploy startet automatisch (ca. 2–3 Min.).</p>
+              <p class="pub-status" id="b-pub-status" role="status"></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+</div>
+
+<script src="/admin/admin.js" defer></script>
+</body>
+</html>

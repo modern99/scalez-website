@@ -1,7 +1,7 @@
 // Läuft nach `vite build` (siehe package.json): erzeugt pro Stellenanzeige eine
 // statische HTML-Seite mit JobPosting-JSON-LD (Google for Jobs liest das Markup
 // so ohne JavaScript-Rendering) und generiert die sitemap.xml aus den Inhalten.
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { blogPosts, jobPostings } from "../src/data/content";
@@ -141,6 +141,15 @@ function main(): void {
 
   const sitemap = buildSitemap();
   writeFileSync(path.join(distDir, "sitemap.xml"), sitemap, "utf8");
+
+  // Admin-Seite: Turnstile-Sitekey (Build-Env) in den Platzhalter injizieren
+  const adminPath = path.join(distDir, "admin", "index.html");
+  if (existsSync(adminPath)) {
+    const adminHtml = readFileSync(adminPath, "utf8");
+    const siteKey = process.env.VITE_TURNSTILE_SITE_KEY ?? "";
+    writeFileSync(adminPath, adminHtml.replace("__TURNSTILE_SITE_KEY__", siteKey), "utf8");
+    console.log(`[prerender] Admin-Seite: Turnstile-Sitekey ${siteKey ? "injiziert" : "leer (Widget deaktiviert)"}.`);
+  }
 
   const urlCount = (sitemap.match(/<loc>/g) ?? []).length;
   console.log(

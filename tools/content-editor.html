@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>ScaleZ Content-Editor</title>
+  <style>
+    :root {
+      --bg: hsl(40 4% 14%);
+      --panel: hsl(42 5% 18%);
+      --field: hsl(40 5% 11%);
+      --border: hsl(48 10% 30%);
+      --fg: hsl(0 0% 97%);
+      --fg-muted: hsl(40 6% 72%);
+      --accent: #FF4D05;
+      --accent-ink: #171512;
+      --ok: #4CCB77;
+      --warn: #FFB020;
+      --err: #FF5C5C;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; border-radius: 0 !important; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    header.site {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid var(--border);
+      padding: 24px clamp(16px, 4vw, 48px);
+    }
+    header.site h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    header.site h1 span { color: var(--accent); }
+    header.site .logo { height: 24px; width: auto; display: block; }
+
+    nav.tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      padding: 0 clamp(16px, 4vw, 48px);
+      gap: 4px;
+    }
+    nav.tabs button {
+      appearance: none;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--fg-muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 16px 18px;
+      min-height: 44px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    nav.tabs button:hover { color: var(--fg); }
+    nav.tabs button[aria-selected="true"] {
+      color: var(--fg);
+      border-bottom-color: var(--accent);
+    }
+    nav.tabs button:focus-visible,
+    a:focus-visible, input:focus-visible, select:focus-visible,
+    textarea:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    main { padding: 32px clamp(16px, 4vw, 48px) 96px; }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1024px) {
+      .layout { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: start; }
+      .side { position: sticky; top: 24px; }
+    }
+
+    fieldset {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      margin: 0 0 24px;
+      padding: 24px;
+    }
+    legend {
+      padding: 0 10px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    legend .opt { font-size: 13px; color: var(--fg-muted); letter-spacing: 0.1em; }
+    .grid2 { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+    @media (min-width: 640px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+    .grid3 { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+    @media (min-width: 640px) { .grid3 { grid-template-columns: 1fr 1fr 1fr; } }
+    .row { margin-bottom: 18px; }
+    .row:last-child { margin-bottom: 0; }
+
+    label.field-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      margin-bottom: 7px;
+    }
+    label.field-label .req { color: var(--accent); }
+    .hint { font-size: 12.5px; color: var(--fg-muted); margin-top: 6px; }
+    .hint.err { color: var(--err); }
+
+    input[type="text"], input[type="number"], input[type="date"], select, textarea {
+      width: 100%;
+      min-height: 44px;
+      background: var(--field);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      font: inherit;
+      font-size: 15px;
+      padding: 10px 14px;
+      transition: border-color 0.2s;
+    }
+    input:hover, select:hover, textarea:hover { border-color: hsl(48 10% 42%); }
+    input.invalid, textarea.invalid, select.invalid { border-color: var(--err); }
+    textarea { resize: vertical; min-height: 88px; }
+    select { cursor: pointer; }
+    input[type="date"] { color-scheme: dark; }
+
+    .radio-row { display: flex; flex-wrap: wrap; gap: 14px; }
+    .radio-row label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      min-height: 44px;
+      padding: 0 4px;
+    }
+    .radio-row input { accent-color: var(--accent); width: 16px; height: 16px; min-height: 0; }
+
+    .list-item { display: flex; gap: 8px; margin-bottom: 8px; }
+    .list-item input, .list-item textarea { flex: 1; }
+    .icon-btn {
+      flex: none;
+      width: 44px;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--field);
+      border: 1px solid var(--border);
+      color: var(--fg-muted);
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .icon-btn:hover { color: var(--err); border-color: var(--err); }
+    .add-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: none;
+      border: 1px dashed var(--border);
+      color: var(--fg-muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      min-height: 44px;
+      width: 100%;
+      justify-content: center;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .add-btn:hover { color: var(--accent); border-color: var(--accent); }
+    .icon { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: square; }
+
+    .slug-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--field);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s;
+    }
+    .slug-wrap:hover { border-color: hsl(48 10% 42%); }
+    .slug-wrap:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .slug-wrap:has(input.invalid) { border-color: var(--err); }
+    .slug-wrap .slug-prefix {
+      padding-left: 14px;
+      color: var(--fg-muted);
+      font-size: 15px;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .slug-wrap input {
+      border: none;
+      background: transparent;
+      padding-left: 2px;
+      min-height: 42px;
+    }
+    .slug-wrap input:focus-visible { outline: none; }
+    .slug-wrap input.invalid { border: none; }
+
+    .preview-string {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--accent);
+      background: var(--field);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      margin-top: 8px;
+      word-break: break-word;
+    }
+
+    .side-box { border: 1px solid var(--border); background: var(--panel); margin-bottom: 24px; }
+    .side-box h2 {
+      margin: 0;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+    .side-box h2 span { color: var(--accent); }
+    .check-list { list-style: none; margin: 0; padding: 12px 18px; }
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 6px 0;
+      font-size: 13.5px;
+      color: var(--fg-muted);
+    }
+    .check-list li strong { color: var(--fg); font-weight: 500; }
+    .check-list .icon { flex: none; margin-top: 3px; }
+    .check-list li.ok .icon { stroke: var(--ok); }
+    .check-list li.warn .icon { stroke: var(--warn); }
+    .check-list li.err .icon { stroke: var(--err); }
+    .status-line {
+      padding: 12px 18px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .status-line.ready { color: var(--ok); }
+    .status-line.blocked { color: var(--err); }
+    .status-line.warned { color: var(--warn); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      border: 1px solid var(--border);
+      color: var(--fg);
+      padding: 2px 8px;
+      background: var(--field);
+    }
+
+    .code-wrap { position: relative; }
+    pre.code {
+      margin: 0;
+      padding: 18px;
+      font-family: var(--mono);
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--fg);
+      overflow-x: auto;
+      max-height: 480px;
+      white-space: pre;
+    }
+    .code-actions { display: flex; gap: 8px; padding: 0 18px 18px; }
+    .btn-accent {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      color: var(--accent-ink);
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      min-height: 44px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-accent:hover { background: hsl(18 100% 45%); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--fg-muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      min-height: 44px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--fg); border-color: var(--fg-muted); }
+    .paste-hint {
+      border-top: 1px solid var(--border);
+      padding: 12px 18px;
+      font-size: 12.5px;
+      color: var(--fg-muted);
+    }
+    .paste-hint code { font-family: var(--mono); color: var(--accent); font-size: 12px; }
+
+    .pub-body { padding: 18px; }
+    .pub-body .btn-accent { width: 100%; justify-content: center; margin-top: 14px; }
+    .btn-accent:disabled { opacity: 0.45; cursor: not-allowed; }
+    .pub-status { margin: 12px 0 0; font-size: 13px; line-height: 1.5; }
+    .pub-status:empty { margin: 0; }
+    .pub-status.ok { color: var(--ok); }
+    .pub-status.err { color: var(--err); }
+    .pub-status a { color: var(--accent); word-break: break-word; }
+    details.token-box summary {
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      padding: 4px 0;
+      list-style: none;
+    }
+    details.token-box summary::-webkit-details-marker { display: none; }
+    details.token-box summary::before { content: "+ "; color: var(--accent); }
+    details.token-box[open] summary::before { content: "– "; }
+    details.token-box { margin-bottom: 4px; }
+    details.token-box .hint a { color: var(--accent); }
+
+    details.code-box > summary { list-style: none; cursor: pointer; }
+    details.code-box > summary::-webkit-details-marker { display: none; }
+    details.code-box > summary h2::before { content: "+ "; color: var(--accent); }
+    details.code-box[open] > summary h2::before { content: "– "; }
+    details.code-box:not([open]) > summary h2 { border-bottom: none; }
+    details.code-box > summary:hover h2 { color: var(--accent); }
+    details.code-box > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+    .section-card { border: 1px solid var(--border); background: var(--field); padding: 18px; margin-bottom: 14px; }
+    .section-card .sec-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .section-card .sec-head span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+    }
+    .sec-id { font-family: var(--mono); font-size: 11.5px; color: var(--fg-muted); margin-top: 6px; }
+    .sec-id b { color: var(--accent); font-weight: 400; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+
+<header class="site">
+  <h1>Scale<span>Z</span> Content-Editor</h1>
+  <img class="logo" src="../public/primary-logo.svg" alt="ScaleZ Logo" />
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Inhaltstyp">
+  <button role="tab" id="tab-job" aria-selected="true" aria-controls="panel-job">Neue Stelle</button>
+  <button role="tab" id="tab-blog" aria-selected="false" aria-controls="panel-blog">Neuer Blogartikel</button>
+</nav>
+
+<main>
+
+<!-- ============================ JOB ============================ -->
+<section id="panel-job" role="tabpanel" aria-labelledby="tab-job">
+  <div class="layout">
+    <form id="job-form" autocomplete="off" novalidate>
+
+      <fieldset>
+        <legend>Basis</legend>
+        <div class="row">
+          <label class="field-label" for="j-title">Jobtitel <span class="req">*</span></label>
+          <input type="text" id="j-title" placeholder="Bauingenieur:in Infrastruktur (m/w/d)" />
+          <p class="hint">Nur die Stellenbezeichnung — ohne Ort, Pensum oder Lohn (Google-Richtlinie). Hausformat: mit «(m/w/d)».</p>
+        </div>
+        <div class="row">
+          <label class="field-label" for="j-slug">URL-Slug <span class="req">*</span></label>
+          <div class="slug-wrap">
+            <span class="slug-prefix" aria-hidden="true">www.scale-z.ch/jobs/</span>
+            <input type="text" id="j-slug" placeholder="bauingenieur-infrastruktur-bern" spellcheck="false" />
+          </div>
+          <p class="hint">Wird automatisch aus dem Titel erzeugt, kann angepasst werden. Nur Kleinbuchstaben, Ziffern, Bindestriche.</p>
+        </div>
+        <div class="grid2">
+          <div>
+            <label class="field-label" for="j-region">Region (Anzeige) <span class="req">*</span></label>
+            <input type="text" id="j-region" placeholder="Kanton Bern" />
+          </div>
+          <div>
+            <label class="field-label" for="j-start">Stellenantritt <span class="req">*</span></label>
+            <input type="text" id="j-start" list="start-options" placeholder="Ab sofort" />
+            <datalist id="start-options">
+              <option value="Ab sofort"></option>
+              <option value="Nach Vereinbarung"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="grid2" style="margin-top:18px;">
+          <div>
+            <label class="field-label" for="j-focus-branche">Branche (Fokus) <span class="req">*</span></label>
+            <input type="text" id="j-focus-branche" placeholder="Tiefbau" />
+          </div>
+          <div>
+            <label class="field-label" for="j-focus-ort">Ort (Fokus) <span class="req">*</span></label>
+            <input type="text" id="j-focus-ort" placeholder="Bern" />
+          </div>
+        </div>
+        <p class="hint">Erscheint auf der Übersicht als «Branche · Ort».</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pensum &amp; Anstellung</legend>
+        <div class="grid3">
+          <div>
+            <label class="field-label" for="j-emp-type">Anstellungsart <span class="req">*</span></label>
+            <select id="j-emp-type">
+              <option>Festanstellung</option>
+              <option>Temporär</option>
+              <option>Praktikum</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="j-pensum-min">Pensum von (%) <span class="req">*</span></label>
+            <input type="number" id="j-pensum-min" min="10" max="100" step="10" value="80" />
+          </div>
+          <div>
+            <label class="field-label" for="j-pensum-max">Pensum bis (%)</label>
+            <input type="number" id="j-pensum-max" min="10" max="100" step="10" value="100" />
+            <p class="hint">Leer lassen für fixes Pensum.</p>
+          </div>
+        </div>
+        <div class="preview-string" id="j-emp-preview"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vergütung</legend>
+        <div class="row radio-row" role="radiogroup" aria-label="Vergütungsart">
+          <label><input type="radio" name="j-comp-mode" value="range" checked /> CHF-Spanne</label>
+          <label><input type="radio" name="j-comp-mode" value="fix" /> Fixbetrag</label>
+          <label><input type="radio" name="j-comp-mode" value="verhandlung" /> Nach Vereinbarung</label>
+        </div>
+        <div class="grid3" id="j-comp-fields">
+          <div>
+            <label class="field-label" for="j-comp-min">Von (CHF) <span class="req">*</span></label>
+            <input type="number" id="j-comp-min" min="0" step="1000" placeholder="90000" />
+          </div>
+          <div id="j-comp-max-wrap">
+            <label class="field-label" for="j-comp-max">Bis (CHF) <span class="req">*</span></label>
+            <input type="number" id="j-comp-max" min="0" step="1000" placeholder="115000" />
+          </div>
+          <div>
+            <label class="field-label" for="j-comp-unit">Einheit</label>
+            <select id="j-comp-unit">
+              <option value="Jahr" selected>/ Jahr</option>
+              <option value="Monat">/ Monat</option>
+              <option value="Stunde">/ Stunde</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" id="j-comp-suffix-wrap" style="margin-top:18px;">
+          <label class="field-label" for="j-comp-suffix">Zusatz (optional)</label>
+          <input type="text" id="j-comp-suffix" placeholder="(ohne Bonus)" />
+        </div>
+        <div class="preview-string" id="j-comp-preview"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Teaser</legend>
+        <div class="row">
+          <label class="field-label" for="j-teaser">Teaser <span class="req">*</span></label>
+          <textarea id="j-teaser" rows="3" placeholder="1–2 Sätze für die Übersichtsseite und die Meta-Description …"></textarea>
+          <p class="hint" id="j-teaser-count">0 Zeichen</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Aufgaben <span class="opt">(3–5)</span></legend>
+        <div id="j-tasks"></div>
+        <button type="button" class="add-btn" data-add="j-tasks">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Aufgabe hinzufügen
+        </button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Anforderungen <span class="opt">(3–5)</span></legend>
+        <div id="j-reqs"></div>
+        <button type="button" class="add-btn" data-add="j-reqs">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Anforderung hinzufügen
+        </button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Benefits (optional)</legend>
+        <div id="j-benefits"></div>
+        <button type="button" class="add-btn" data-add="j-benefits">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Benefit hinzufügen
+        </button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Abschlusstext (optional)</legend>
+        <div class="row">
+          <label class="field-label" for="j-closing">Absätze — durch Leerzeile trennen</label>
+          <textarea id="j-closing" rows="4" placeholder="Du bewirbst Dich nicht ins Leere. …&#10;&#10;Wir bereiten Dich auf das Gespräch vor …"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Google for Jobs</legend>
+        <div class="grid3">
+          <div>
+            <label class="field-label" for="j-date-posted">Publiziert am <span class="req">*</span></label>
+            <input type="date" id="j-date-posted" />
+          </div>
+          <div>
+            <label class="field-label" for="j-valid">Bewerbungsfrist</label>
+            <input type="date" id="j-valid" />
+            <p class="hint">Optional, von Google empfohlen (validThrough).</p>
+          </div>
+          <div>
+            <label class="field-label" for="j-canton">Kanton <span class="req">*</span></label>
+            <select id="j-canton">
+              <option value="">— wählen —</option>
+              <option>ZH</option><option>BE</option><option>LU</option><option>UR</option>
+              <option>SZ</option><option>OW</option><option>NW</option><option>GL</option>
+              <option>ZG</option><option>FR</option><option>SO</option><option>BS</option>
+              <option>BL</option><option>SH</option><option>AR</option><option>AI</option>
+              <option>SG</option><option>GR</option><option>AG</option><option>TG</option>
+              <option>TI</option><option>VD</option><option>VS</option><option>NE</option>
+              <option>GE</option><option>JU</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid2" style="margin-top:18px;">
+          <div>
+            <label class="field-label" for="j-locality">Arbeitsort (Gemeinde) <span class="req">*</span></label>
+            <input type="text" id="j-locality" placeholder="Bern" />
+            <p class="hint">Pflicht für Google (jobLocation).</p>
+          </div>
+          <div>
+            <label class="field-label" for="j-note">Hinweiszeile</label>
+            <input type="text" id="j-note" value="Diskrete Besetzung · Alle Angaben vertraulich" />
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+
+    <aside class="side">
+      <div class="side-box">
+        <h2>Google-Jobs-Check<span>.</span></h2>
+        <ul class="check-list" id="j-checks"></ul>
+        <div class="status-line" id="j-status"></div>
+      </div>
+      <div class="side-box">
+        <h2>Veröffentlichen<span>.</span></h2>
+        <div class="pub-body">
+          <details class="token-box" id="j-token-box">
+            <summary>GitHub-Token</summary>
+            <div class="row" style="margin-top:10px;">
+              <input type="password" class="gh-token" placeholder="github_pat_…" autocomplete="off" spellcheck="false" aria-label="GitHub-Token" />
+              <p class="hint">Fine-grained Token mit Zugriff auf <b>modern99/scalez-website</b> und Berechtigung «Contents: Read and write» — erstellen unter <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>. Wird nur lokal in diesem Browser gespeichert.</p>
+            </div>
+          </details>
+          <button type="button" class="btn-accent" id="j-publish">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            <span>Stelle veröffentlichen</span>
+          </button>
+          <p class="hint">Committet direkt nach <code style="font-family:var(--mono)">main</code> — der Cloudflare-Deploy startet automatisch. Aktiv, sobald alle Pflichtpunkte grün sind und ein Token hinterlegt ist.</p>
+          <p class="pub-status" id="j-pub-status" role="status"></p>
+        </div>
+      </div>
+      <details class="side-box code-box">
+        <summary><h2>Code für content.ts<span>.</span></h2></summary>
+        <div class="code-wrap"><pre class="code" id="j-code"></pre></div>
+        <div class="code-actions">
+          <button type="button" class="btn-accent" id="j-copy">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"/><path d="M5 15V4h11"/></svg>
+            <span>Code kopieren</span>
+          </button>
+          <button type="button" class="btn-ghost" id="j-reset">Zurücksetzen</button>
+        </div>
+        <p class="paste-hint">Fallback ohne Token: einfügen ans <b>Ende</b> des Arrays <code>jobPostings</code> in <code>src/data/content.ts</code> — dann committen &amp; pushen. Nach dem Deploy in der Search Console die Indexierung der neuen URL beantragen.</p>
+      </details>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ BLOG ============================ -->
+<section id="panel-blog" role="tabpanel" aria-labelledby="tab-blog" hidden>
+  <div class="layout">
+    <form id="blog-form" autocomplete="off" novalidate>
+
+      <fieldset>
+        <legend>Basis</legend>
+        <div class="row">
+          <label class="field-label" for="b-title">Titel <span class="req">*</span></label>
+          <input type="text" id="b-title" placeholder="Wie ein gutes Briefing aussieht" />
+        </div>
+        <div class="row">
+          <label class="field-label" for="b-slug">URL-Slug <span class="req">*</span></label>
+          <div class="slug-wrap">
+            <span class="slug-prefix" aria-hidden="true">www.scale-z.ch/blog/</span>
+            <input type="text" id="b-slug" placeholder="wie-ein-gutes-briefing-aussieht" spellcheck="false" />
+          </div>
+        </div>
+        <div class="grid3">
+          <div>
+            <label class="field-label" for="b-category">Kategorie <span class="req">*</span></label>
+            <select id="b-category">
+              <option>Direct Search</option>
+              <option>Prozess</option>
+              <option>Markt</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="b-readtime">Lesezeit <span class="req">*</span></label>
+            <input type="text" id="b-readtime" value="5 Min." />
+          </div>
+          <div>
+            <label class="field-label" for="b-published">Publiziert am <span class="req">*</span></label>
+            <input type="date" id="b-published" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Teaser &amp; Einleitung</legend>
+        <div class="row">
+          <label class="field-label" for="b-teaser">Teaser <span class="req">*</span></label>
+          <textarea id="b-teaser" rows="2" placeholder="1–2 Sätze für die Übersichtsseite …"></textarea>
+        </div>
+        <div class="row">
+          <label class="field-label" for="b-intro">Einleitung <span class="req">*</span></label>
+          <textarea id="b-intro" rows="3" placeholder="Einleitungsabsatz, 1–3 Sätze, kein Titel …"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Abschnitte</legend>
+        <div id="b-sections"></div>
+        <button type="button" class="add-btn" id="b-add-section">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Abschnitt hinzufügen
+        </button>
+      </fieldset>
+
+    </form>
+
+    <aside class="side">
+      <div class="side-box">
+        <h2>Check<span>.</span></h2>
+        <ul class="check-list" id="b-checks"></ul>
+        <div class="status-line" id="b-status"></div>
+      </div>
+      <div class="side-box">
+        <h2>Veröffentlichen<span>.</span></h2>
+        <div class="pub-body">
+          <details class="token-box" id="b-token-box">
+            <summary>GitHub-Token</summary>
+            <div class="row" style="margin-top:10px;">
+              <input type="password" class="gh-token" placeholder="github_pat_…" autocomplete="off" spellcheck="false" aria-label="GitHub-Token" />
+              <p class="hint">Fine-grained Token mit Zugriff auf <b>modern99/scalez-website</b> und Berechtigung «Contents: Read and write» — erstellen unter <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>. Wird nur lokal in diesem Browser gespeichert.</p>
+            </div>
+          </details>
+          <button type="button" class="btn-accent" id="b-publish">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            <span>Artikel veröffentlichen</span>
+          </button>
+          <p class="hint">Committet direkt nach <code style="font-family:var(--mono)">main</code> — der Cloudflare-Deploy startet automatisch. Aktiv, sobald alle Pflichtpunkte grün sind und ein Token hinterlegt ist.</p>
+          <p class="pub-status" id="b-pub-status" role="status"></p>
+        </div>
+      </div>
+      <details class="side-box code-box">
+        <summary><h2>Code für content.ts<span>.</span></h2></summary>
+        <div class="code-wrap"><pre class="code" id="b-code"></pre></div>
+        <div class="code-actions">
+          <button type="button" class="btn-accent" id="b-copy">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"/><path d="M5 15V4h11"/></svg>
+            <span>Code kopieren</span>
+          </button>
+          <button type="button" class="btn-ghost" id="b-reset">Zurücksetzen</button>
+        </div>
+        <p class="paste-hint">Fallback ohne Token: einfügen an den <b>Anfang</b> des Arrays <code>blogPosts</code> in <code>src/data/content.ts</code> (neuste Artikel stehen oben) — dann committen &amp; pushen.</p>
+      </details>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<script>
+"use strict";
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+/* ---------- Helpers ---------- */
+
+function esc(s) {
+  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\s*\n\s*/g, " ").trim();
+}
+function fmtChf(n) {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+}
+function slugify(s) {
+  return s
+    .toLowerCase()
+    .replace(/\(m\/w\/d\)/g, "")
+    .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+    .replace(/[àáâ]/g, "a").replace(/[èéêë]/g, "e").replace(/[ìíî]/g, "i")
+    .replace(/[òóô]/g, "o").replace(/[ùúû]/g, "u").replace(/ç/g, "c")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-{2,}/g, "-");
+}
+const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+function todayIso() {
+  const d = new Date();
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+function splitParagraphs(text) {
+  return text.split(/\n\s*\n/).map((p) => p.replace(/\s*\n\s*/g, " ").trim()).filter(Boolean);
+}
+function listValues(containerId) {
+  return $$("#" + containerId + " input").map((i) => i.value.trim()).filter(Boolean);
+}
+function tsArray(name, items, pad) {
+  const lines = items.map((it) => pad + '  "' + esc(it) + '",').join("\n");
+  return pad + name + ": [\n" + lines + "\n" + pad + "],";
+}
+
+/* Spiegelt src/lib/jobPostingSchema.ts (parseEmploymentTypes / parseBaseSalary) */
+function parseEmploymentTypes(employmentType) {
+  const types = [];
+  const range = employmentType.match(/(\d{1,3})\s*[–—-]\s*(\d{1,3})\s*%/);
+  const single = range ? null : employmentType.match(/(\d{1,3})\s*%/);
+  if (range) {
+    const min = Number(range[1]);
+    const max = Number(range[2]);
+    if (max >= 100) types.push("FULL_TIME");
+    if (min < 100) types.push("PART_TIME");
+  } else if (single) {
+    types.push(Number(single[1]) >= 100 ? "FULL_TIME" : "PART_TIME");
+  }
+  if (/temporär|befristet/i.test(employmentType)) types.push("TEMPORARY");
+  if (/praktikum/i.test(employmentType)) types.push("INTERN");
+  return types.length > 0 ? types : undefined;
+}
+function parseBaseSalary(compensation) {
+  if (!/^\s*CHF/i.test(compensation)) return undefined;
+  const toNumber = (raw) => Number(raw.replace(/['’]/g, ""));
+  const range = compensation.match(/CHF\s*([\d'’]+)\s*[–—-]\s*(?:CHF\s*)?([\d'’]+)/i);
+  const single = range ? null : compensation.match(/CHF\s*([\d'’]+)/i);
+  let value;
+  if (range) value = { minValue: toNumber(range[1]), maxValue: toNumber(range[2]) };
+  else if (single) value = { value: toNumber(single[1]) };
+  if (!value) return undefined;
+  let unitText;
+  if (/\/\s*Jahr/i.test(compensation)) unitText = "YEAR";
+  else if (/\/\s*Monat/i.test(compensation)) unitText = "MONTH";
+  else if (/\/\s*Woche/i.test(compensation)) unitText = "WEEK";
+  else if (/\/\s*Tag/i.test(compensation)) unitText = "DAY";
+  else if (/\/\s*Stunde/i.test(compensation)) unitText = "HOUR";
+  if (!unitText) {
+    const smallest = value.minValue ?? value.value ?? 0;
+    if (smallest < 12000) return undefined;
+    unitText = "YEAR";
+  }
+  return Object.assign({}, value, { unitText });
+}
+
+const ICONS = {
+  ok: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg>',
+  warn: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L2 20h20L12 3zM12 10v5M12 17.5v.5"/></svg>',
+  err: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>',
+};
+function renderChecks(ul, checks) {
+  ul.innerHTML = checks
+    .map((c) => '<li class="' + c.level + '">' + ICONS[c.level] + "<span>" + c.html + "</span></li>")
+    .join("");
+}
+function renderStatus(el, checks, readyText) {
+  const errs = checks.filter((c) => c.level === "err").length;
+  const warns = checks.filter((c) => c.level === "warn").length;
+  if (errs > 0) {
+    el.className = "status-line blocked";
+    el.textContent = errs + " Pflichtpunkt(e) offen";
+  } else if (warns > 0) {
+    el.className = "status-line warned";
+    el.textContent = readyText + " — " + warns + " Empfehlung(en) offen";
+  } else {
+    el.className = "status-line ready";
+    el.textContent = readyText;
+  }
+}
+function markValidity(input, valid) {
+  input.classList.toggle("invalid", !valid && input.value.trim() !== "");
+}
+
+/* ---------- Dynamische Listen ---------- */
+
+function addListItem(containerId, value) {
+  const wrap = document.createElement("div");
+  wrap.className = "list-item";
+  wrap.innerHTML =
+    '<input type="text" value="" aria-label="Listeneintrag" />' +
+    '<button type="button" class="icon-btn" aria-label="Eintrag entfernen">' +
+    '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>';
+  wrap.querySelector("input").value = value || "";
+  wrap.querySelector("button").addEventListener("click", () => {
+    wrap.remove();
+    update();
+  });
+  $("#" + containerId).appendChild(wrap);
+}
+$$("button[data-add]").forEach((btn) =>
+  btn.addEventListener("click", () => {
+    addListItem(btn.dataset.add);
+    update();
+  })
+);
+
+/* ---------- Blog-Abschnitte ---------- */
+
+let sectionCounter = 0;
+function addSection() {
+  sectionCounter++;
+  const card = document.createElement("div");
+  card.className = "section-card";
+  card.innerHTML =
+    '<div class="sec-head"><span>Abschnitt</span>' +
+    '<button type="button" class="icon-btn" aria-label="Abschnitt entfernen">' +
+    '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>' +
+    '<div class="row"><label class="field-label" for="sec-title-' + sectionCounter + '">Zwischentitel <span class="req">*</span></label>' +
+    '<input type="text" id="sec-title-' + sectionCounter + '" class="sec-title" placeholder="Das Briefing entscheidet" />' +
+    '<p class="sec-id">Anker-ID: <b>—</b></p></div>' +
+    '<div class="row"><label class="field-label" for="sec-text-' + sectionCounter + '">Absätze (1–3) — durch Leerzeile trennen <span class="req">*</span></label>' +
+    '<textarea id="sec-text-' + sectionCounter + '" class="sec-text" rows="5" placeholder="Erster Absatz …&#10;&#10;Zweiter Absatz …"></textarea></div>';
+  card.querySelector(".sec-head button").addEventListener("click", () => {
+    card.remove();
+    update();
+  });
+  $("#b-sections").appendChild(card);
+}
+$("#b-add-section").addEventListener("click", () => {
+  addSection();
+  update();
+});
+function readSections() {
+  return $$("#b-sections .section-card").map((card) => {
+    const title = card.querySelector(".sec-title").value.trim();
+    const id = slugify(title);
+    card.querySelector(".sec-id b").textContent = id || "—";
+    return { id, title, paragraphs: splitParagraphs(card.querySelector(".sec-text").value) };
+  });
+}
+
+/* ---------- Job: Werte einsammeln ---------- */
+
+let jobSlugDirty = false;
+$("#j-slug").addEventListener("input", () => { jobSlugDirty = true; });
+$("#j-title").addEventListener("input", () => {
+  if (!jobSlugDirty) $("#j-slug").value = slugify($("#j-title").value);
+});
+let blogSlugDirty = false;
+$("#b-slug").addEventListener("input", () => { blogSlugDirty = true; });
+$("#b-title").addEventListener("input", () => {
+  if (!blogSlugDirty) $("#b-slug").value = slugify($("#b-title").value);
+});
+
+function buildEmploymentString() {
+  const type = $("#j-emp-type").value;
+  const min = $("#j-pensum-min").value.trim();
+  const max = $("#j-pensum-max").value.trim();
+  if (!min) return "";
+  const pensum = max && max !== min ? min + "–" + max + "%" : min + "%";
+  return type + ", " + pensum;
+}
+function buildCompensationString() {
+  const mode = document.querySelector('input[name="j-comp-mode"]:checked').value;
+  if (mode === "verhandlung") return "Nach Vereinbarung";
+  const min = $("#j-comp-min").value.trim();
+  const max = $("#j-comp-max").value.trim();
+  const unit = $("#j-comp-unit").value;
+  const suffix = $("#j-comp-suffix").value.trim();
+  if (!min || (mode === "range" && !max)) return "";
+  const base =
+    mode === "range"
+      ? "CHF " + fmtChf(min) + " – " + fmtChf(max) + " / " + unit
+      : "CHF " + fmtChf(min) + " / " + unit;
+  return suffix ? base + " " + suffix : base;
+}
+function readJob() {
+  return {
+    slug: $("#j-slug").value.trim(),
+    title: $("#j-title").value.trim(),
+    region: $("#j-region").value.trim(),
+    employmentType: buildEmploymentString(),
+    focus: [$("#j-focus-branche").value.trim(), $("#j-focus-ort").value.trim()].filter(Boolean).join(" · "),
+    teaser: $("#j-teaser").value.trim(),
+    compensation: buildCompensationString(),
+    startDate: $("#j-start").value.trim(),
+    tasks: listValues("j-tasks"),
+    requirements: listValues("j-reqs"),
+    benefits: listValues("j-benefits"),
+    closingNote: splitParagraphs($("#j-closing").value),
+    note: $("#j-note").value.trim(),
+    datePosted: $("#j-date-posted").value,
+    validThrough: $("#j-valid").value,
+    addressLocality: $("#j-locality").value.trim(),
+    addressRegion: $("#j-canton").value,
+  };
+}
+
+/* ---------- Job: Code-Generierung ---------- */
+
+function buildJobCode(job) {
+  const p = "    ";
+  const lines = ["  {"];
+  lines.push(p + 'slug: "' + esc(job.slug) + '",');
+  lines.push(p + 'title: "' + esc(job.title) + '",');
+  lines.push(p + 'region: "' + esc(job.region) + '",');
+  lines.push(p + 'employmentType: "' + esc(job.employmentType) + '",');
+  lines.push(p + 'focus: "' + esc(job.focus) + '",');
+  lines.push(p + "teaser:");
+  lines.push(p + '  "' + esc(job.teaser) + '",');
+  lines.push(p + 'compensation: "' + esc(job.compensation) + '",');
+  lines.push(p + 'startDate: "' + esc(job.startDate) + '",');
+  lines.push(tsArray("tasks", job.tasks.length ? job.tasks : [""], p));
+  lines.push(tsArray("requirements", job.requirements.length ? job.requirements : [""], p));
+  if (job.benefits.length) lines.push(tsArray("benefits", job.benefits, p));
+  if (job.closingNote.length) lines.push(tsArray("closingNote", job.closingNote, p));
+  lines.push(p + 'note: "' + esc(job.note) + '",');
+  lines.push(p + 'datePosted: "' + job.datePosted + '",');
+  if (job.validThrough) lines.push(p + 'validThrough: "' + job.validThrough + '",');
+  if (job.addressLocality) lines.push(p + 'addressLocality: "' + esc(job.addressLocality) + '",');
+  if (job.addressRegion) lines.push(p + 'addressRegion: "' + job.addressRegion + '",');
+  lines.push("  },");
+  return lines.join("\n");
+}
+
+/* ---------- Job: Google-Check ---------- */
+
+function jobChecks(job) {
+  const checks = [];
+  const add = (level, html) => checks.push({ level, html });
+
+  if (!job.title) add("err", "<strong>Titel</strong> fehlt.");
+  else if (/%|CHF|\d{2,3}\s*%/.test(job.title))
+    add("warn", "<strong>Titel</strong> sollte weder Pensum noch Lohn enthalten (Google-Richtlinie).");
+  else if (!/\(m\/w\/d\)/.test(job.title))
+    add("warn", "<strong>Titel</strong> ohne «(m/w/d)» — Hausformat prüfen.");
+  else add("ok", "<strong>Titel</strong> in Ordnung.");
+
+  if (!job.slug) add("err", "<strong>Slug</strong> fehlt.");
+  else if (!SLUG_PATTERN.test(job.slug)) add("err", "<strong>Slug</strong> ungültig — nur Kleinbuchstaben, Ziffern, Bindestriche.");
+  else add("ok", "<strong>Slug</strong> gültig: <code style='font-family:var(--mono)'>" + job.slug + "</code>");
+
+  if (!job.teaser) add("err", "<strong>Teaser</strong> fehlt (wird Beschreibung + Meta-Description).");
+  else if (job.teaser.length > 155) add("warn", "<strong>Teaser</strong> " + job.teaser.length + " Zeichen — Meta-Description wird bei 155 gekürzt (Anzeige selbst ist nicht betroffen).");
+  else add("ok", "<strong>Teaser</strong> " + job.teaser.length + " Zeichen.");
+
+  const empTypes = job.employmentType ? parseEmploymentTypes(job.employmentType) : undefined;
+  if (!job.employmentType) add("err", "<strong>Pensum</strong> fehlt.");
+  else if (!empTypes) add("err", "<strong>Pensum</strong> nicht parsebar — Format «Festanstellung, 80–100%» verwenden.");
+  else add("ok", "<strong>employmentType</strong> für Google: <span class='chips'>" + empTypes.map((t) => "<span class='chip'>" + t + "</span>").join("") + "</span>");
+
+  const salary = job.compensation ? parseBaseSalary(job.compensation) : undefined;
+  if (!job.compensation) add("err", "<strong>Vergütung</strong> fehlt.");
+  else if (salary) {
+    const txt = salary.minValue != null ? fmtChf(salary.minValue) + " – " + fmtChf(salary.maxValue) : fmtChf(salary.value);
+    add("ok", "<strong>baseSalary</strong> für Google: CHF " + txt + " / " + salary.unitText);
+  } else add("warn", "<strong>Vergütung</strong> «" + job.compensation + "» ergibt kein baseSalary — Anzeigen mit Lohnangabe werden bei Google prominenter dargestellt.");
+
+  if (!job.addressLocality || !job.addressRegion)
+    add("err", "<strong>Arbeitsort</strong> unvollständig — Gemeinde + Kanton sind für Googles jobLocation nötig.");
+  else add("ok", "<strong>jobLocation</strong>: " + job.addressLocality + " (" + job.addressRegion + "), CH");
+
+  if (!job.datePosted) add("err", "<strong>Publikationsdatum</strong> fehlt (datePosted ist Pflicht).");
+  else add("ok", "<strong>datePosted</strong>: " + job.datePosted);
+
+  if (!job.validThrough) add("warn", "<strong>Bewerbungsfrist</strong> leer — validThrough ist optional, aber von Google empfohlen.");
+  else if (job.datePosted && job.validThrough <= job.datePosted) add("err", "<strong>Bewerbungsfrist</strong> muss nach dem Publikationsdatum liegen.");
+  else add("ok", "<strong>validThrough</strong>: " + job.validThrough);
+
+  if (job.tasks.length < 3) add(job.tasks.length ? "warn" : "err", "<strong>Aufgaben</strong>: " + job.tasks.length + " erfasst — 3–5 empfohlen.");
+  else add("ok", "<strong>Aufgaben</strong>: " + job.tasks.length + " erfasst.");
+  if (job.requirements.length < 3) add(job.requirements.length ? "warn" : "err", "<strong>Anforderungen</strong>: " + job.requirements.length + " erfasst — 3–5 empfohlen.");
+  else add("ok", "<strong>Anforderungen</strong>: " + job.requirements.length + " erfasst.");
+
+  if (!job.region) add("err", "<strong>Region</strong> (Anzeige) fehlt.");
+  if (!job.focus) add("err", "<strong>Fokus</strong> (Branche · Ort) fehlt.");
+  if (!job.startDate) add("err", "<strong>Stellenantritt</strong> fehlt.");
+
+  return checks;
+}
+
+/* ---------- Blog ---------- */
+
+function readBlog() {
+  const dateVal = $("#b-published").value;
+  let publishedAt = "";
+  if (dateVal) {
+    publishedAt = new Date(dateVal + "T12:00:00").toLocaleDateString("de-CH", {
+      day: "numeric", month: "long", year: "numeric",
+    });
+  }
+  return {
+    slug: $("#b-slug").value.trim(),
+    title: $("#b-title").value.trim(),
+    category: $("#b-category").value,
+    readTime: $("#b-readtime").value.trim(),
+    publishedAt,
+    teaser: $("#b-teaser").value.trim(),
+    intro: $("#b-intro").value.trim(),
+    sections: readSections(),
+  };
+}
+function buildBlogCode(post) {
+  const p = "    ";
+  const lines = ["  {"];
+  lines.push(p + 'slug: "' + esc(post.slug) + '",');
+  lines.push(p + 'title: "' + esc(post.title) + '",');
+  lines.push(p + 'category: "' + post.category + '",');
+  lines.push(p + 'readTime: "' + esc(post.readTime) + '",');
+  lines.push(p + 'publishedAt: "' + esc(post.publishedAt) + '",');
+  lines.push(p + "teaser:");
+  lines.push(p + '  "' + esc(post.teaser) + '",');
+  lines.push(p + "intro:");
+  lines.push(p + '  "' + esc(post.intro) + '",');
+  lines.push(p + "sections: [");
+  post.sections.forEach((sec) => {
+    lines.push(p + "  {");
+    lines.push(p + '    id: "' + sec.id + '",');
+    lines.push(p + '    title: "' + esc(sec.title) + '",');
+    lines.push(p + "    paragraphs: [");
+    sec.paragraphs.forEach((par) => lines.push(p + '      "' + esc(par) + '",'));
+    lines.push(p + "    ],");
+    lines.push(p + "  },");
+  });
+  lines.push(p + "],");
+  lines.push("  },");
+  return lines.join("\n");
+}
+function blogChecks(post) {
+  const checks = [];
+  const add = (level, html) => checks.push({ level, html });
+  if (!post.title) add("err", "<strong>Titel</strong> fehlt.");
+  if (!post.slug) add("err", "<strong>Slug</strong> fehlt.");
+  else if (!SLUG_PATTERN.test(post.slug)) add("err", "<strong>Slug</strong> ungültig.");
+  else add("ok", "<strong>Slug</strong> gültig.");
+  if (!post.teaser) add("err", "<strong>Teaser</strong> fehlt.");
+  if (!post.intro) add("err", "<strong>Einleitung</strong> fehlt.");
+  if (!post.readTime) add("err", "<strong>Lesezeit</strong> fehlt.");
+  if (!post.publishedAt) add("err", "<strong>Publikationsdatum</strong> fehlt.");
+  else add("ok", "<strong>Publiziert</strong>: " + post.publishedAt);
+  const complete = post.sections.filter((s) => s.title && s.paragraphs.length);
+  if (!complete.length) add("err", "Mindestens <strong>1 Abschnitt</strong> mit Titel und Absatz nötig.");
+  else add("ok", "<strong>" + complete.length + " Abschnitt(e)</strong> vollständig.");
+  post.sections.forEach((s, i) => {
+    if (s.title && !s.paragraphs.length) add("err", "Abschnitt " + (i + 1) + ": <strong>Absätze</strong> fehlen.");
+    if (!s.title && s.paragraphs.length) add("err", "Abschnitt " + (i + 1) + ": <strong>Zwischentitel</strong> fehlt.");
+    if (s.paragraphs.length > 3) add("warn", "Abschnitt " + (i + 1) + ": " + s.paragraphs.length + " Absätze — 1–3 empfohlen.");
+  });
+  return checks;
+}
+
+/* ---------- Update-Zyklus ---------- */
+
+function update() {
+  // Job
+  const job = readJob();
+  $("#j-emp-preview").textContent = job.employmentType || "—";
+  $("#j-comp-preview").textContent = job.compensation || "—";
+  $("#j-teaser-count").textContent = job.teaser.length + " Zeichen";
+  markValidity($("#j-slug"), SLUG_PATTERN.test(job.slug));
+  const jc = jobChecks(job);
+  renderChecks($("#j-checks"), jc);
+  renderStatus($("#j-status"), jc, "Bereit zum Veröffentlichen");
+  $("#j-code").textContent = buildJobCode(job);
+
+  const mode = document.querySelector('input[name="j-comp-mode"]:checked').value;
+  $("#j-comp-fields").hidden = mode === "verhandlung";
+  $("#j-comp-suffix-wrap").hidden = mode === "verhandlung";
+  $("#j-comp-max-wrap").hidden = mode !== "range";
+
+  // Blog
+  const post = readBlog();
+  const bc = blogChecks(post);
+  renderChecks($("#b-checks"), bc);
+  renderStatus($("#b-status"), bc, "Bereit zum Veröffentlichen");
+  $("#b-code").textContent = buildBlogCode(post);
+
+  jobHasErrors = jc.some((c) => c.level === "err");
+  blogHasErrors = bc.some((c) => c.level === "err");
+  updatePublishButtons();
+}
+document.addEventListener("input", update);
+document.addEventListener("change", update);
+
+/* ---------- Kopieren ---------- */
+
+function wireCopy(btnId, preId) {
+  const btn = $(btnId);
+  const label = btn.querySelector("span");
+  btn.addEventListener("click", async () => {
+    const text = $(preId).textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      ta.remove();
+    }
+    const old = label.textContent;
+    label.textContent = "Kopiert";
+    btn.disabled = true;
+    setTimeout(() => {
+      label.textContent = old;
+      btn.disabled = false;
+    }, 1600);
+  });
+}
+wireCopy("#j-copy", "#j-code");
+wireCopy("#b-copy", "#b-code");
+
+/* ---------- Veröffentlichen (GitHub-API → Cloudflare-Pages-Deploy) ---------- */
+
+const GH = { owner: "modern99", repo: "scalez-website", branch: "main", path: "src/data/content.ts" };
+const TOKEN_KEY = "scalez-editor-gh-token";
+let jobHasErrors = true;
+let blogHasErrors = true;
+let publishing = false;
+
+function getToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; }
+}
+$$(".gh-token").forEach((inp) => {
+  inp.value = getToken();
+  inp.addEventListener("input", () => {
+    try { localStorage.setItem(TOKEN_KEY, inp.value.trim()); } catch (e) {}
+    $$(".gh-token").forEach((other) => { if (other !== inp) other.value = inp.value; });
+    updatePublishButtons();
+  });
+});
+// Ohne gespeichertes Token die Token-Box aufklappen
+if (!getToken()) {
+  $("#j-token-box").open = true;
+  $("#b-token-box").open = true;
+}
+
+function updatePublishButtons() {
+  const hasToken = getToken() !== "";
+  $("#j-publish").disabled = publishing || jobHasErrors || !hasToken;
+  $("#b-publish").disabled = publishing || blogHasErrors || !hasToken;
+}
+
+function b64ToUtf8(b64) {
+  const bin = atob(b64.replace(/\s/g, ""));
+  return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
+}
+function utf8ToB64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  bytes.forEach((b) => { bin += String.fromCharCode(b); });
+  return btoa(bin);
+}
+
+async function ghRequest(method, url, body) {
+  const res = await fetch(url, {
+    method,
+    headers: {
+      Authorization: "Bearer " + getToken(),
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  if (!res.ok) {
+    let detail = res.status + " " + res.statusText;
+    try { detail = res.status + ": " + (await res.json()).message; } catch (e) {}
+    const err = new Error(detail);
+    err.status = res.status;
+    throw err;
+  }
+  return res.json();
+}
+
+async function publishEntry(kind) {
+  const isJob = kind === "job";
+  const statusEl = $(isJob ? "#j-pub-status" : "#b-pub-status");
+  const btn = $(isJob ? "#j-publish" : "#b-publish");
+  const label = btn.querySelector("span");
+  const entry = isJob ? readJob() : readBlog();
+  const block = isJob ? buildJobCode(entry) : buildBlogCode(entry);
+  const liveUrl = "https://www.scale-z.ch/" + (isJob ? "jobs/" : "blog/") + entry.slug;
+  const setStatus = (cls, html) => { statusEl.className = "pub-status " + cls; statusEl.innerHTML = html; };
+
+  publishing = true;
+  updatePublishButtons();
+  const origLabel = label.textContent;
+
+  try {
+    label.textContent = "Lade content.ts …";
+    const fileUrl = "https://api.github.com/repos/" + GH.owner + "/" + GH.repo + "/contents/" + GH.path;
+    const file = await ghRequest("GET", fileUrl + "?ref=" + GH.branch);
+    const content = b64ToUtf8(file.content);
+
+    if (content.includes('slug: "' + entry.slug + '"')) {
+      throw new Error("Slug «" + entry.slug + "» existiert bereits in content.ts — bitte anpassen.");
+    }
+
+    let updated;
+    if (isJob) {
+      // Ans Ende des jobPostings-Arrays (vor dessen schliessendem "];")
+      const start = content.indexOf("export const jobPostings");
+      const end = start === -1 ? -1 : content.indexOf("\n];", start);
+      if (end === -1) throw new Error("Einfügepunkt «export const jobPostings … ];» nicht gefunden.");
+      updated = content.slice(0, end) + "\n" + block + content.slice(end);
+    } else {
+      // An den Anfang des blogPosts-Arrays (neuste Artikel stehen oben).
+      // Anker "= [" statt "[", sonst träfe man die Typ-Annotation "BlogPost[]".
+      const start = content.indexOf("export const blogPosts");
+      const eq = start === -1 ? -1 : content.indexOf("= [", start);
+      if (eq === -1) throw new Error("Einfügepunkt «export const blogPosts = [» nicht gefunden.");
+      updated = content.slice(0, eq + 3) + "\n" + block + content.slice(eq + 3);
+    }
+
+    label.textContent = "Committe …";
+    const message = isJob
+      ? "content: neue Stelle «" + entry.title + "»"
+      : "content: neuer Blogartikel «" + entry.title + "»";
+    const result = await ghRequest("PUT", fileUrl, {
+      message,
+      content: utf8ToB64(updated),
+      sha: file.sha,
+      branch: GH.branch,
+    });
+
+    const commitUrl = result.commit && result.commit.html_url ? result.commit.html_url : "";
+    setStatus("ok",
+      "Veröffentlicht — Cloudflare Pages baut jetzt, in ca. 2–3 Min. live:<br />" +
+      '<a href="' + liveUrl + '" target="_blank" rel="noopener">' + liveUrl + "</a>" +
+      (commitUrl ? '<br /><a href="' + commitUrl + '" target="_blank" rel="noopener">Commit auf GitHub ansehen</a>' : "") +
+      (isJob ? "<br />Tipp: danach in der Search Console die Indexierung der URL beantragen." : ""));
+  } catch (e) {
+    const hint =
+      e.status === 401 ? " — Token ungültig oder abgelaufen."
+      : e.status === 403 ? " — Token ohne Schreibberechtigung (Contents: Read and write nötig)."
+      : e.status === 404 ? " — Repo nicht gefunden oder Token ohne Zugriff auf " + GH.owner + "/" + GH.repo + "."
+      : e.status === 409 ? " — content.ts wurde parallel geändert, bitte erneut versuchen."
+      : "";
+    setStatus("err", "Fehler: " + e.message + hint);
+  } finally {
+    publishing = false;
+    label.textContent = origLabel;
+    updatePublishButtons();
+  }
+}
+$("#j-publish").addEventListener("click", () => publishEntry("job"));
+$("#b-publish").addEventListener("click", () => publishEntry("blog"));
+
+/* ---------- Reset ---------- */
+
+function initJobLists() {
+  $("#j-tasks").innerHTML = "";
+  $("#j-reqs").innerHTML = "";
+  $("#j-benefits").innerHTML = "";
+  for (let i = 0; i < 3; i++) { addListItem("j-tasks"); addListItem("j-reqs"); }
+  addListItem("j-benefits");
+}
+$("#j-reset").addEventListener("click", () => {
+  $("#job-form").reset();
+  jobSlugDirty = false;
+  $("#j-date-posted").value = todayIso();
+  $("#j-note").value = "Diskrete Besetzung · Alle Angaben vertraulich";
+  initJobLists();
+  update();
+});
+$("#b-reset").addEventListener("click", () => {
+  $("#blog-form").reset();
+  blogSlugDirty = false;
+  $("#b-published").value = todayIso();
+  $("#b-sections").innerHTML = "";
+  addSection();
+  update();
+});
+
+/* ---------- Tabs ---------- */
+
+function selectTab(which) {
+  const isJob = which === "job";
+  $("#tab-job").setAttribute("aria-selected", String(isJob));
+  $("#tab-blog").setAttribute("aria-selected", String(!isJob));
+  $("#panel-job").hidden = !isJob;
+  $("#panel-blog").hidden = isJob;
+}
+$("#tab-job").addEventListener("click", () => selectTab("job"));
+$("#tab-blog").addEventListener("click", () => selectTab("blog"));
+
+/* ---------- Init ---------- */
+
+$("#j-date-posted").value = todayIso();
+$("#b-published").value = todayIso();
+initJobLists();
+addSection();
+update();
+</script>
+</body>
+</html>
