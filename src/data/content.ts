@@ -155,10 +155,6 @@ export const jobPostings: JobPosting[] = [
       "Ehrliche Feedbackkultur und Raum für eigene Ideen",
       "Möglichkeit, Dich in der Ausbildung der nächsten Generation an Planungsfachkräften zu engagieren",
     ],
-    closingNote: [
-      "Du bewirbst Dich nicht ins Leere. Wir kennen das Mandat, das Team und die Erwartungen an die Rolle. Du bekommst von uns eine ehrliche Einschätzung, ob die Stelle zu Dir passt, bevor Du überhaupt ein Gespräch führst.",
-      "Wir bereiten Dich auf das Gespräch vor und sagen Dir, worauf es ankommt. Beim Gehalt verhandeln wir nicht gegen Dich, sondern für Dich. Das kostet Dich keinen Franken. Bezahlt wird das von der Firma, nicht von Dir.",
-    ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
     datePosted: "2026-07-29",
     addressLocality: "Zürich",

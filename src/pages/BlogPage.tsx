@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Seo from "@/components/Seo";
 import { blogPosts } from "@/data/content";
@@ -12,6 +13,9 @@ const fadeUp = {
 };
 
 export default function BlogPage() {
+  const featured = blogPosts[0];
+  const gridPosts = blogPosts.slice(1);
+
   return (
     <>
       <Seo
@@ -21,7 +25,7 @@ export default function BlogPage() {
         noindex={true}
       />
       <section className="pt-32 pb-16">
-        <div className="container max-w-5xl">
+        <div className="container max-w-4xl">
           <motion.div {...fadeUp} className="mb-8 inline-block border border-accent px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-accent">
             Blog
           </motion.div>
@@ -37,7 +41,7 @@ export default function BlogPage() {
       </section>
 
       <section className="border-t border-border py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-7xl">
           {blogPosts.length === 0 ? (
             <motion.div
               {...fadeUp}
@@ -60,39 +64,81 @@ export default function BlogPage() {
               </Button>
             </motion.div>
           ) : (
-            <div className="flex flex-col divide-y divide-border border border-border">
-              {blogPosts.map((post, i) => (
-                <motion.div
-                  key={post.slug}
+            <>
+              {featured && (
+                <motion.article
                   {...fadeUp}
-                  transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="flex flex-col gap-4 p-8 md:p-12"
+                  className="job-card-texture mb-8 border border-foreground/10 p-8 text-foreground shadow-[var(--card-shadow)] transition-colors duration-300 hover:border-accent/60 dark:border-brand-surface-foreground/10 dark:text-brand-surface-foreground md:p-14"
                 >
-                  <div className="flex flex-wrap items-center gap-4">
-                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                      {post.category}
-                    </span>
-                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                      {post.readTime}
-                    </span>
-                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                      {post.publishedAt}
-                    </span>
+                  <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+                    <div>
+                      <div className="mb-4 flex flex-wrap gap-3">
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                          Neuester Beitrag · {featured.category}
+                        </span>
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground dark:text-brand-surface-foreground/55">
+                          {featured.readTime}
+                        </span>
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground dark:text-brand-surface-foreground/55">
+                          {featured.publishedAt}
+                        </span>
+                      </div>
+                      <h2 className="text-3xl tracking-tighter md:text-4xl lg:text-5xl">
+                        <Link to={`/blog/${featured.slug}`} className="transition-colors duration-200 hover:text-accent">
+                          {featured.title}
+                        </Link>
+                      </h2>
+                    </div>
+                    <div className="flex flex-col items-start gap-6">
+                      <p className="text-base font-light leading-relaxed text-muted-foreground dark:text-brand-surface-foreground/72">
+                        {featured.teaser}
+                      </p>
+                      <Button asChild size="lg" className="bg-foreground px-7 text-sm font-bold uppercase tracking-[0.2em] text-background hover:bg-accent hover:text-accent-foreground dark:bg-brand-surface-foreground dark:text-brand-surface dark:hover:bg-accent dark:hover:text-accent-foreground">
+                        <Link to={`/blog/${featured.slug}`}>Artikel lesen</Link>
+                      </Button>
+                    </div>
                   </div>
-                  <h2 className="text-2xl tracking-tighter md:text-3xl">
-                    {post.title}
-                  </h2>
-                  <p className="text-base font-light leading-relaxed text-muted-foreground max-w-2xl">
-                    {post.teaser}
-                  </p>
-                  <div>
-                    <Button asChild variant="outline" size="lg" className="px-7 text-sm font-bold uppercase tracking-[0.2em] hover:bg-accent hover:text-accent-foreground hover:border-accent">
-                      <Link to={`/blog/${post.slug}`}>Artikel lesen</Link>
-                    </Button>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                </motion.article>
+              )}
+
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {gridPosts.map((post, i) => (
+                  <motion.div
+                    key={post.slug}
+                    {...fadeUp}
+                    transition={{ duration: 0.6, delay: (i % 3) * 0.08 }}
+                    className="flex"
+                  >
+                    <Link
+                      to={`/blog/${post.slug}`}
+                      className="exp-card group flex w-full flex-col gap-4 border border-border p-8"
+                    >
+                      <div className="flex flex-wrap gap-3">
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                          {post.category}
+                        </span>
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                          {post.readTime}
+                        </span>
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                          {post.publishedAt}
+                        </span>
+                      </div>
+                      <h3 className="text-xl tracking-tighter transition-colors duration-200 group-hover:text-accent md:text-2xl">
+                        {post.title}
+                      </h3>
+                      <p className="text-base font-light leading-relaxed text-muted-foreground">
+                        {post.teaser}
+                      </p>
+                      <span className="mt-auto inline-flex items-center gap-2 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-colors duration-200 group-hover:text-accent">
+                        Artikel lesen
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </section>

@@ -113,16 +113,12 @@ describe("buildJobDescriptionHtml", () => {
 });
 
 describe("buildJobPostingJsonLd", () => {
-  it("builds the full JSON-LD for the real job posting", () => {
-    const realJob = jobPostings.find(
-      (job) => job.slug === "gesamtleiter-architektur-ausfuehrungsplanung-zuerich",
-    );
-    expect(realJob).toBeDefined();
-    expect(buildJobPostingJsonLd(realJob!)).toEqual({
+  it("builds the full JSON-LD for a complete job posting", () => {
+    expect(buildJobPostingJsonLd(baseJob)).toEqual({
       "@context": "https://schema.org/",
       "@type": "JobPosting",
-      title: "Gesamtleiter Architektur und Ausführungsplanung (m/w/d)",
-      description: buildJobDescriptionHtml(realJob!),
+      title: "Testleiter (m/w/d)",
+      description: buildJobDescriptionHtml(baseJob),
       datePosted: "2026-05-16",
       hiringOrganization: { "@type": "Organization", name: "confidential" },
       jobLocation: {
@@ -134,20 +130,30 @@ describe("buildJobPostingJsonLd", () => {
           addressCountry: "CH",
         },
       },
-      employmentType: ["FULL_TIME", "PART_TIME"],
+      employmentType: ["FULL_TIME"],
       baseSalary: {
         "@type": "MonetaryAmount",
         currency: "CHF",
-        value: { "@type": "QuantitativeValue", minValue: 125000, maxValue: 145000, unitText: "YEAR" },
+        value: { "@type": "QuantitativeValue", minValue: 100000, maxValue: 120000, unitText: "YEAR" },
       },
       identifier: {
         "@type": "PropertyValue",
         name: "ScaleZ GmbH",
-        value: "gesamtleiter-architektur-ausfuehrungsplanung-zuerich",
+        value: "test-job-zuerich",
       },
       directApply: true,
-      url: jobUrl("gesamtleiter-architektur-ausfuehrungsplanung-zuerich"),
+      url: jobUrl("test-job-zuerich"),
     });
+  });
+
+  it("builds valid JSON-LD for every current job posting", () => {
+    for (const job of jobPostings) {
+      const jsonLd = buildJobPostingJsonLd(job);
+      expect(jsonLd).not.toBeNull();
+      expect(jsonLd?.title).toBe(job.title);
+      expect(jsonLd?.url).toBe(jobUrl(job.slug));
+      expect(jsonLd?.description).toBe(buildJobDescriptionHtml(job));
+    }
   });
 
   it("defaults the country to CH and degrades to country-only without locality/region", () => {
