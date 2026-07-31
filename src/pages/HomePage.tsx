@@ -260,14 +260,14 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-6 flex flex-col gap-4 sm:flex-row lg:justify-end"
+                className="mt-6 flex w-full max-w-[479px] flex-col gap-4 sm:flex-row"
               >
-                <Button asChild size="lg" className="bg-accent px-8 text-sm font-bold uppercase tracking-widest text-accent-foreground hover:bg-accent/90">
+                <Button asChild size="lg" className="bg-accent px-8 text-sm font-bold uppercase tracking-widest text-accent-foreground hover:bg-accent/90 sm:flex-1">
                   <Link to="/unternehmen">
                     Jetzt starten <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-foreground/20 px-8 text-sm font-bold uppercase tracking-widest hover:border-accent hover:bg-accent hover:text-accent-foreground">
+                <Button asChild variant="outline" size="lg" className="border-foreground/20 px-8 text-sm font-bold uppercase tracking-widest hover:border-accent hover:bg-accent hover:text-accent-foreground sm:flex-1">
                   <Link to="/kandidaten">Ich bin Kandidat</Link>
                 </Button>
               </motion.div>
