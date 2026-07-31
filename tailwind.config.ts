@@ -8,7 +8,10 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      // Mobile-Gutter; ab sm wieder 2rem – siehe .container-Regel in src/index.css.
+      // (Der Container-Plugin generiert responsives Padding nur für Breakpoints,
+      // die unter `screens` stehen, deshalb hier bewusst nur der Basiswert.)
+      padding: "1.25rem",
       screens: {
         "2xl": "1400px",
       },

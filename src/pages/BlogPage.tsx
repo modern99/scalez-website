@@ -23,42 +23,42 @@ export default function BlogPage() {
         description="Praxisnahe Einblicke, Markttrends und Know-how zu Recruiting, Karriere und der Besetzung anspruchsvoller Positionen in der DACH-Region."
         path="/blog"
       />
-      <section className="pt-32 pb-16">
+      <section className="pt-28 pb-12 sm:pt-32 sm:pb-16">
         <div className="container max-w-4xl">
-          <motion.div {...fadeUp} className="mb-8 inline-block border border-accent px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-accent">
+          <motion.div {...fadeUp} className="mb-6 inline-block border border-accent px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-accent sm:mb-8">
             Blog
           </motion.div>
-          <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.1 }} className="mb-6 text-4xl tracking-tighter sm:text-6xl md:text-7xl">
+          <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.1 }} className="mb-5 text-3xl tracking-tighter sm:mb-6 sm:text-5xl md:text-6xl lg:text-7xl">
             Markt, Talent und
             <br />
             <span className="text-accent">Perspektive.</span>
           </motion.h1>
-          <motion.p {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="max-w-2xl text-lg font-light leading-relaxed text-muted-foreground">
+          <motion.p {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="max-w-2xl text-base font-light leading-relaxed text-muted-foreground sm:text-lg">
             Praxisnahe Einblicke, aktuelle Entwicklungen und fundiertes Wissen rund um Recruiting, Karriere und die Besetzung anspruchsvoller Positionen.
           </motion.p>
         </div>
       </section>
 
-      <section className="border-t border-border py-24">
+      <section className="border-t border-border py-14 sm:py-16 md:py-24">
         <div className="container max-w-7xl">
           {blogPosts.length === 0 ? (
             <motion.div
               {...fadeUp}
-              className="flex flex-col items-start gap-8 border border-border p-10 md:p-16"
+              className="flex flex-col items-start gap-6 border border-border p-6 sm:gap-8 sm:p-10 md:p-16"
             >
               <div className="h-px w-12 bg-accent" />
               <div>
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.35em] text-accent">
                   Demnächst
                 </p>
-                <h2 className="text-3xl tracking-tighter md:text-4xl">
+                <h2 className="text-2xl tracking-tighter sm:text-3xl md:text-4xl">
                   Erste Artikel erscheinen in Kürze.
                 </h2>
               </div>
-              <p className="max-w-lg text-lg font-light leading-relaxed text-muted-foreground">
+              <p className="max-w-lg text-base font-light leading-relaxed text-muted-foreground sm:text-lg">
                 Hier entstehen praxisnahe Beiträge zu Recruiting, Karriere und dem Schweizer Arbeitsmarkt. Schauen Sie bald wieder vorbei.
               </p>
-              <Button asChild size="lg" className="bg-foreground px-7 text-sm font-bold uppercase tracking-[0.2em] text-background hover:bg-accent hover:text-accent-foreground">
+              <Button asChild size="lg" className="w-full bg-foreground px-7 text-sm font-bold uppercase tracking-[0.2em] text-background hover:bg-accent hover:text-accent-foreground sm:w-auto">
                 <Link to="/kontakt">Kontakt aufnehmen</Link>
               </Button>
             </motion.div>
@@ -67,11 +67,11 @@ export default function BlogPage() {
               {featured && (
                 <motion.article
                   {...fadeUp}
-                  className="job-card-texture mb-8 border border-foreground/10 p-8 text-foreground shadow-[var(--card-shadow)] transition-colors duration-300 hover:border-accent/60 dark:border-brand-surface-foreground/10 dark:text-brand-surface-foreground md:p-14"
+                  className="job-card-texture mb-6 border border-foreground/10 p-6 text-foreground shadow-[var(--card-shadow)] transition-colors duration-300 hover:border-accent/60 dark:border-brand-surface-foreground/10 dark:text-brand-surface-foreground sm:mb-8 sm:p-8 md:p-14"
                 >
-                  <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-                    <div>
-                      <div className="mb-4 flex flex-wrap gap-3">
+                  <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+                    <div className="min-w-0">
+                      <div className="mb-4 flex flex-wrap gap-x-3 gap-y-2">
                         <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
                           Neuester Beitrag · {featured.category}
                         </span>
@@ -82,17 +82,17 @@ export default function BlogPage() {
                           {featured.publishedAt}
                         </span>
                       </div>
-                      <h2 className="text-3xl tracking-tighter md:text-4xl lg:text-5xl">
+                      <h2 className="hyphens-auto text-2xl tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
                         <Link to={`/blog/${featured.slug}`} className="transition-colors duration-200 hover:text-accent">
                           {featured.title}
                         </Link>
                       </h2>
                     </div>
-                    <div className="flex flex-col items-start gap-6">
-                      <p className="text-base font-light leading-relaxed text-muted-foreground dark:text-brand-surface-foreground/72">
+                    <div className="flex min-w-0 flex-col items-start gap-5 sm:gap-6">
+                      <p className="text-[0.9375rem] font-light leading-relaxed text-muted-foreground dark:text-brand-surface-foreground/72 sm:text-base">
                         {featured.teaser}
                       </p>
-                      <Button asChild size="lg" className="bg-foreground px-7 text-sm font-bold uppercase tracking-[0.2em] text-background hover:bg-accent hover:text-accent-foreground dark:bg-brand-surface-foreground dark:text-brand-surface dark:hover:bg-accent dark:hover:text-accent-foreground">
+                      <Button asChild size="lg" className="w-full bg-foreground px-7 text-sm font-bold uppercase tracking-[0.2em] text-background hover:bg-accent hover:text-accent-foreground dark:bg-brand-surface-foreground dark:text-brand-surface dark:hover:bg-accent dark:hover:text-accent-foreground sm:w-auto">
                         <Link to={`/blog/${featured.slug}`}>Artikel lesen</Link>
                       </Button>
                     </div>
@@ -110,9 +110,9 @@ export default function BlogPage() {
                   >
                     <Link
                       to={`/blog/${post.slug}`}
-                      className="exp-card group flex w-full flex-col gap-4 border border-border p-8"
+                      className="exp-card group flex w-full min-w-0 flex-col gap-4 border border-border p-6 sm:p-8"
                     >
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-x-3 gap-y-2">
                         <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
                           {post.category}
                         </span>
@@ -123,15 +123,15 @@ export default function BlogPage() {
                           {post.publishedAt}
                         </span>
                       </div>
-                      <h3 className="text-xl tracking-tighter transition-colors duration-200 group-hover:text-accent md:text-2xl">
+                      <h3 className="hyphens-auto text-lg tracking-tighter transition-colors duration-200 group-hover:text-accent sm:text-xl md:text-2xl">
                         {post.title}
                       </h3>
-                      <p className="text-base font-light leading-relaxed text-muted-foreground">
+                      <p className="text-[0.9375rem] font-light leading-relaxed text-muted-foreground sm:text-base">
                         {post.teaser}
                       </p>
                       <span className="mt-auto inline-flex items-center gap-2 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-colors duration-200 group-hover:text-accent">
                         Artikel lesen
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-4 w-4 shrink-0" />
                       </span>
                     </Link>
                   </motion.div>
