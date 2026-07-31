@@ -22,7 +22,6 @@ export default function BlogPage() {
         title="Blog – Markt, Talent und Perspektive | ScaleZ"
         description="Praxisnahe Einblicke, Markttrends und Know-how zu Recruiting, Karriere und der Besetzung anspruchsvoller Positionen in der DACH-Region."
         path="/blog"
-        noindex={true}
       />
       <section className="pt-32 pb-16">
         <div className="container max-w-4xl">

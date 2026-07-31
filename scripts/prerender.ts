@@ -95,12 +95,12 @@ function isExpired(job: (typeof jobPostings)[number]): boolean {
 }
 
 function buildSitemap(): string {
-  // "/blog" fehlt bewusst: die Blog-Übersicht ist noindex, die Artikel nicht.
   const staticRoutes = [
     "/",
     "/unternehmen",
     "/kandidaten",
     "/jobs",
+    "/blog",
     "/ueber-uns",
     "/kontakt",
     "/impressum",
