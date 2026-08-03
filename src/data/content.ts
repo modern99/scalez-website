@@ -314,7 +314,7 @@ export const jobPostings: JobPosting[] = [
       "Flexible Arbeitsmodelle und mobiles Arbeiten für eine ausgewogene Work-Life-Balance",
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
-    datePosted: "2026-07-29",
+    datePosted: "2026-08-03",
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
