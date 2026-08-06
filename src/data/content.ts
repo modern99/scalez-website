@@ -398,6 +398,49 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "warum-sollten-wir-ausgerechnet-dich-einstellen",
+    title: "Warum sollten wir ausgerechnet Dich einstellen?",
+    category: "Markt",
+    readTime: "2 Min.",
+    publishedAt: "6. August 2026",
+    teaser:
+      "Warum sollten wir ausgerechnet Dich einstellen? Das ist die überheblichste Frage, die man in einem Bewerbungsgespräch stellen kann.",
+    intro:
+      "Ehrlich gesagt, wer diese Frage heute noch stellt, hat nicht verstanden, wie man 2026 gute Leute für sich gewinnt.",
+    sections: [
+      {
+        id: "was-diese-frage-eigentlich-sagt",
+        title: "Was diese Frage eigentlich sagt:",
+        paragraphs: [
+          "\"Wir sind der Preis, den Du gewinnen musst.\" \"Du bist die Bittstellerin, die uns überzeugen muss.\" \"Machtgefälle ist uns wichtiger als Augenhöhe.\"",
+        ],
+      },
+      {
+        id: "liebe-unternehmen-drehen-wir-den-spiess-doch-mal-um",
+        title: "Liebe Unternehmen, drehen wir den Spiess doch mal um.",
+        paragraphs: [
+          "Jemand mit 10, 15 oder 20 Jahren Erfahrung muss sich nicht rechtfertigen, warum er arbeiten will. Er bietet seine Expertise, seine Lebenszeit und sein Können an.",
+        ],
+      },
+      {
+        id: "die-eigentliche-frage-muesste-lauten",
+        title: "Die eigentliche Frage müsste lauten:",
+        paragraphs: [
+          "\"Warum sollte diese Person sich ausgerechnet für Euch entscheiden?\" \"Was bietet Ihr, damit jemand seine Fähigkeiten bei Euch einbringen will?\"",
+        ],
+      },
+      {
+        id: "ein-bewerbungsgespraech-ist-kein-verhoer-und-keine-castingshow",
+        title: "Ein Bewerbungsgespräch ist kein Verhör und keine Castingshow.",
+        paragraphs: [
+          "Es ist ein Gespräch zwischen zwei möglichen Partnern, auf Augenhöhe.",
+          "Wer von oben herab fragt, bekommt am Ende vielleicht jemanden, der gut antworten kann. Nicht unbedingt jemanden, der den Job am besten macht.",
+          "Hört auf mit den Fangfragen aus dem letzten Jahrhundert. Fangt an, echte Gespräche zu führen.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "12-jahre-erfahrung-aber-nicht-ueber-29",
     title: "12 Jahre Erfahrung. Aber bitte nicht über 29.",
     category: "Markt",
