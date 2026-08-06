@@ -318,6 +318,44 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "projektleiter-gebaeudeautomation",
+    title: "Projektleiter Gebäudeautomation (m/w/d)",
+    region: "Kanton Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Gestalte die Zukunft intelligenter Gebäude! Leite spannende Projekte in der Gebäudeautomation mit einem idealen Mix aus Büro- und Praxisanteil.",
+    compensation: "CHF 85'000 – 110'000 / Jahr 75000",
+    startDate: "Ab sofort",
+    tasks: [
+      "Eigenverantwortliche Leitung von Projekten im Bereich Gebäudeautomation (KNX, SPS, DALI)",
+      "Programmierung, Parametrierung und Inbetriebnahme der Anlagen direkt vor Ort beim Kunden",
+      "Erstellung von technischen Konzepten, Pflichtenheften und der finalen Anlagendokumentation",
+      "Fachliche Führung und Koordination der beteiligten internen und externen Montage-Partner",
+    ],
+    requirements: [
+      "Abgeschlossene Grundausbildung als Elektroinstallateur/in EFZ, Automatiker/in EFZ oder ähnlich",
+      "Weiterbildung auf Stufe HF/FH (z. B. Elektrotechnik, Systemtechnik) oder aktuell in Ausbildung dazu",
+      "Erste fundierte Berufserfahrung in der Programmierung von Systemen (z. B. KNX)",
+      "Strukturierte Arbeitsweise, kundenorientiertes Auftreten sowie fliessendes Deutsch",
+    ],
+    benefits: [
+      "Flexible Jahresarbeitszeit und die Möglichkeit für Home-Office",
+      "Grosszügige zeitliche und finanzielle Unterstützung bei fachlichen Weiterbildungen",
+      "Modernes Firmenfahrzeug, das auch privat genutzt werden kann",
+      "Ein kollegiales Team mit kurzen Entscheidungswegen in einer krisensicheren Branche",
+    ],
+    closingNote: [
+      "Klingt das nach Deinem nächsten Karriereschritt? Dann freuen wir uns auf deine unkomplizierte Bewerbung mit Lebenslauf.",
+      "Für erste Fragen steht dir unser Team jederzeit gerne zur Verfügung. Wir prüfen dein Dossier schnell und diskret.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-08-06",
+    validThrough: "2026-09-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
