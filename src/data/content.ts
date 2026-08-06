@@ -356,6 +356,44 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "servicemonteur-elektro",
+    title: "Servicemonteur Elektro (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektroinstallation · Zürich",
+    teaser:
+      "Selbstständig unterwegs und nah am Kunden! Wir suchen einen engagierten Servicemonteur Elektro für vielseitige Einsätze im Raum Zürich.",
+    compensation: "CHF 78'000 – 92'000 / Jahr inkl. Firmenfahrzeug (auch für den Arbeitsweg)",
+    startDate: "Ab sofort",
+    tasks: [
+      "Selbstständige Abwicklung von Service-, Unterhalts- und Reparaturaufträgen bei Privat- und Gewerbekunden",
+      "Fehlersuche und Behebung von Störungen an elektrischen Anlagen sowie Ausführung von Kleinumbauten",
+      "Erstellen von sauberen Rapporten und Ausmassen direkt vor Ort beim Kunden",
+      "Kundenberatung vor Ort bezüglich kleinerer technischer Anpassungen und Erweiterungen",
+    ],
+    requirements: [
+      "Abgeschlossene Berufslehre als Elektroinstallateur EFZ oder Montage-Elektriker EFZ",
+      "Erste Berufserfahrung im Servicebereich oder in der selbstständigen Kundenbetreuung von Vorteil",
+      "Führerausweis Kat. B ist zwingend erforderlich",
+      "Kundenorientiertes, gepflegtes Auftreten sowie einwandfreie Deutschkenntnisse",
+    ],
+    benefits: [
+      "Eigenes, top ausgerüstetes Servicefahrzeug zur privaten Nutzung",
+      "Hohe Eigenverantwortung und abwechslungsreiche Kundeneinsätze ohne Schichtarbeit",
+      "Zweiundzwanzig bis dreissig Ferientage sowie volle Unterstützung bei fachlichen Weiterbildungen",
+      "Ein eingespieltes, kollegiales Team mit flachen Hierarchien",
+    ],
+    closingNote: [
+      "Du bewirbst Dich nicht ins Leere. Wir prüfen Deine Unterlagen umgehend und nehmen innerhalb kürzester Zeit direkt Kontakt mit Dir auf.",
+      "Wir bereiten Dich optimal auf das Gespräch vor und begleiten Dich diskret durch den gesamten Prozess bis zur erfolgreichen Anstellung.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-08-06",
+    validThrough: "2026-09-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
