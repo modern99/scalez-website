@@ -394,6 +394,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "elektroinstallateur-efz-teamleiter-service-unterhalt-zuerich",
+    title: "Elektroinstallateur:in EFZ als Teamleiter:in Service & Unterhalt (m/w/d)",
+    region: "Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Elektro / Gebäudetechnik · Zürich",
+    teaser:
+      "Vom Monteur zur Führungskraft. Leite in Zürich eigene Service- und Umbauprojekte im Elektrobereich und führe dein eigenes Montageteam. Du steuerst AVOR, Materialplanung und Ausführung, bist direkte Ansprechperson für Kundschaft und Planer und arbeitest mit modernen digitalen Werkzeugen statt Zettelwirtschaft. Ein etablierter Elektro-Betrieb mit ausgezeichneter Arbeitgeberkultur sucht dich unbefristet.",
+    compensation: "CHF 84'500 – 95'000 / Jahr Nach Vereinbarung",
+    startDate: "Ab sofort",
+    tasks: [
+      "Eigenverantwortliche Leitung von Service-, Umbau- und Neubauprojekten in Gewerbe, Industrie und Wohnbau, von der Planung bis zur Übergabe",
+      "Fachliche Führung und Einsatzplanung deines Montageteams sowie Begleitung der Lernenden",
+      "Steuerung von AVOR, Materialbewirtschaftung und Baustellenadministration mit modernen digitalen Hilfsmitteln",
+      "Direkte Zusammenarbeit mit Kundschaft, Architektinnen und Planern über den gesamten Projektverlauf",
+      "Sicherstellung von Qualität, Termintreue und Arbeitssicherheit auf deinen Baustellen",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Elektroinstallateur:in EFZ mit mehrjähriger Praxis",
+      "Erfahrung oder klare Ambition in der fachlichen Führung eines Teams",
+      "Strukturierte, qualitäts- und verantwortungsbewusste Arbeitsweise",
+      "Organisationsstärke und Freude am Umgang mit anspruchsvoller Kundschaft",
+      "Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Führungsrolle mit echter Eigenverantwortung ab dem ersten Tag",
+      "Unbefristete Festanstellung in einem mehrfach ausgezeichneten Arbeitsumfeld",
+      "Abwechslungsreiche Projekte statt Routine, quer durch Gewerbe, Industrie und Wohnbau",
+      "Moderne digitale Arbeitsmittel und kurze Entscheidungswege",
+      "Firmenfahrzeug zur beruflichen Nutzung",
+    ],
+    closingNote: [
+      "Passt das zu deinem nächsten Schritt? Dann lass uns unverbindlich sprechen. In einem kurzen, vertraulichen Gespräch klären wir gemeinsam, ob die Rolle wirklich zu dir passt, bevor du dich formell bewirbst.",
+      "ScaleZ begleitet dich diskret durch den gesamten Prozess.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-08-18",
+    validThrough: "2026-11-18",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
