@@ -435,6 +435,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "bauleiter-tiefbau-entwicklungsperspektive-zuerich",
+    title: "Bauleiter:in Infrastruktur, Einstieg mit Perspektive (m/w/d)",
+    region: "Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Bau / Tiefbau · Zürich",
+    teaser:
+      "Deine Baustelle, deine Verantwortung. Führe in Zürich anspruchsvolle Tiefbauprojekte im Strassen-, Werkleitungs- und Kunstbau vor Ort und wachse Schritt für Schritt in eigene Baustellen hinein. Du überwachst Qualität, Kosten und Termine, koordinierst Unternehmer, Werke und Fachplaner und wirst dabei von erfahrenen Chefbauleitern gezielt weiterentwickelt. Ein etabliertes Ingenieur- und Infrastrukturbüro mit modernen Strukturen in Zürich-Oerlikon sucht dich unbefristet.",
+    compensation: "CHF 90'000 – 115'000 / Jahr Nach Vereinbarung",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Örtliche Bauleitung von Projekten im Strassen-, Werkleitungs- und Ingenieurbau",
+      "Überwachung von Bauausführung, Qualität, Kosten, Terminen und Arbeitssicherheit",
+      "Koordination von Unternehmern, Fachplanern, Werken und weiteren Projektbeteiligten",
+      "Organisation von Baustellensitzungen sowie Führung von Protokollen, Rapporten und Ausmassen",
+      "Unterstützung der Projekt- und Chefbauleitung über die Ausführungsphasen bis zur Übergabe",
+    ],
+    requirements: [
+      "Ausbildung als Techniker:in HF Tiefbau, Bauingenieur:in FH/ETH oder vergleichbare Qualifikation",
+      "Erste Erfahrung in Bauleitung oder Projektierung von Infrastrukturprojekten von Vorteil",
+      "Interesse an Strassenbau, Werkleitungsbau und Kunstbauten sowie technisches Verständnis",
+      "Selbstständige, strukturierte und zuverlässige Arbeitsweise mit unternehmerischem Denken",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Abwechslungsreiche Infrastrukturprojekte für Städte, Gemeinden, Kantone und private Bauherrschaften",
+      "Gezielte Entwicklung durch erfahrene Chefbauleiter, mit Perspektive zu Senior Bauleiter, Chefbauleiter oder Projektleiter",
+      "Hohe Eigenverantwortung und rascher Aufbau eigener Baustellen",
+      "Flexible Arbeitszeiten und Homeoffice-Anteil für administrative Tätigkeiten",
+      "Moderne digitale Arbeitsmittel und Büro in Zürich-Oerlikon",
+    ],
+    closingNote: [
+      "Passt das zu deinem nächsten Schritt? Dann lass uns unverbindlich sprechen. In einem kurzen, vertraulichen Gespräch klären wir gemeinsam, ob die Rolle wirklich zu dir passt, bevor du dich formell bewirbst. Auch wenn du noch nicht jede Anforderung erfüllst, lohnt sich der Austausch.",
+      "ScaleZ begleitet dich diskret durch den gesamten Prozess.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-08-18",
+    validThrough: "2026-11-18",
+    addressLocality: "Zürich-Oerlikon",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
