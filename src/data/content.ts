@@ -487,6 +487,52 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lohn-projektleiter-gebaeudeautomation-schweiz",
+    title: "Was verdient ein Projektleiter Gebäudeautomation in der Schweiz?",
+    category: "Markt",
+    readTime: "5 Min.",
+    publishedAt: "18. August 2026",
+    teaser:
+      "Wie viel verdient man als Projektleiter Gebäudeautomation in der Schweiz wirklich? Wir zeigen realistische Lohnbänder, was den Lohn nach oben treibt und wo die grössten Unterschiede liegen.",
+    intro:
+      "Die Gebäudeautomation ist einer der spannendsten und am schnellsten wachsenden Bereiche der Schweizer Gebäudetechnik. Wer hier als Projektleiter arbeitet, verbindet Elektro, HLK und Digitalisierung und ist entsprechend gefragt. Doch was verdient man in dieser Rolle tatsächlich? Feste Zahlen sind schwer zu finden, weil der Lohn stark von Erfahrung, Region und Verantwortung abhängt. In diesem Beitrag ordnen wir die realistischen Lohnbänder ein und zeigen, welche Faktoren am meisten bewegen. Die genannten Werte sind Erfahrungswerte und Marktbeobachtungen, keine amtliche Statistik.",
+    sections: [
+      {
+        id: "das-realistische-lohnband-auf-einen-blick",
+        title: "Das realistische Lohnband auf einen Blick",
+        paragraphs: [
+          "Für einen Projektleiter Gebäudeautomation in der Deutschschweiz bewegt sich das Jahresgehalt erfahrungsgemäss meist zwischen rund 90'000 und 125'000 Franken brutto. Der Einstieg mit erster Projektverantwortung liegt häufig im Bereich um 90'000 bis 100'000 Franken. Wer mehrere Jahre Erfahrung mitbringt und grössere Projekte eigenverantwortlich führt, erreicht oft 110'000 bis 125'000 Franken oder mehr.",
+          "Diese Spanne ist bewusst breit, denn kaum eine andere Rolle hängt so stark von den konkreten Umständen ab. Zwei Projektleiter mit demselben Titel können mehrere Tausend Franken auseinanderliegen, je nachdem, für welche Art Projekte und welche Firma sie arbeiten.",
+        ],
+      },
+      {
+        id: "was-den-lohn-nach-oben-treibt",
+        title: "Was den Lohn nach oben treibt",
+        paragraphs: [
+          "Den grössten Unterschied macht die Projektgrösse und die Budgetverantwortung. Wer Projekte im Millionenbereich führt und ein Team koordiniert, wird deutlich anders vergütet als jemand, der einzelne Anlagen betreut.",
+          "Ein zweiter starker Hebel ist die technische Breite. Projektleiter, die Elektro, HLK und die digitale Steuerung wirklich verbinden können und mit modernen Systemen und Schnittstellen vertraut sind, sind selten und entsprechend gesucht.",
+          "Auch die Art des Arbeitgebers zählt. Grössere Generalunternehmen und spezialisierte Automationsfirmen zahlen tendenziell anders als kleinere Installationsbetriebe. Und schliesslich spielt die Region eine Rolle, im Grossraum Zürich und Zug liegen die Löhne meist über dem Schweizer Durchschnitt.",
+        ],
+      },
+      {
+        id: "lohn-ist-nicht-alles-worauf-es-ankommt",
+        title: "Lohn ist nicht alles, worauf es ankommt",
+        paragraphs: [
+          "So wichtig die Zahl ist, sie erzählt nur die halbe Geschichte. Gerade in der Gebäudeautomation entscheiden oft Faktoren über die Zufriedenheit, die nicht auf dem Lohnzettel stehen. Dazu gehören die Art der Projekte, der Grad an Eigenverantwortung, die Entwicklungsmöglichkeiten Richtung Senior- oder Bereichsleitung und wie modern eine Firma technisch aufgestellt ist.",
+          "Ein etwas tieferer Lohn bei einem Arbeitgeber mit spannenderen Projekten und echter Entwicklungsperspektive kann sich langfristig mehr lohnen als das Maximum bei eintöniger Arbeit. Wer einen Wechsel überlegt, sollte deshalb den Gesamtwert einer Stelle betrachten, nicht nur die Bruttozahl.",
+        ],
+      },
+      {
+        id: "wo-du-im-markt-stehst",
+        title: "Wo du im Markt stehst",
+        paragraphs: [
+          "Die ehrlichste Antwort auf die Lohnfrage ist immer individuell. Dein realistischer Wert hängt von deinem genauen Profil, deiner Erfahrung und dem aktuellen Marktbedarf ab. Genau das lässt sich am besten in einem kurzen, vertraulichen Gespräch einordnen.",
+          "Wenn du wissen möchtest, wo du mit deinem Profil aktuell stehst und was für dich realistisch drin liegt, melde dich bei uns. Wir kennen den Markt in der Gebäudetechnik und sagen dir ehrlich und unverbindlich, wie deine Ausgangslage aussieht.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "warum-sollten-wir-ausgerechnet-dich-einstellen",
     title: "Warum sollten wir ausgerechnet Dich einstellen?",
     category: "Markt",
