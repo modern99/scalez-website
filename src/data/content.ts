@@ -79,6 +79,7 @@ export const jobPostings: JobPosting[] = [
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
     datePosted: "2026-07-28",
+    validThrough: "2026-10-28",
     addressLocality: "Bern",
     addressRegion: "BE",
   },
