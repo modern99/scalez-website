@@ -487,6 +487,68 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "gehalt-verhandeln-schweiz",
+    title: "Gehalt verhandeln in der Schweiz. Der ehrliche Leitfaden.",
+    category: "Prozess",
+    readTime: "6 Min.",
+    publishedAt: "24. August 2026",
+    teaser:
+      "Die meisten verhandeln fünf Mal im Leben ihren Lohn. Ihr Gegenüber jede Woche. So drehst Du dieses Ungleichgewicht um.",
+    intro:
+      "Die meisten Menschen verhandeln in ihrem ganzen Berufsleben nur eine Handvoll Mal ihren Lohn. Ihr Gegenüber macht genau das jede Woche. Dieses Ungleichgewicht ist der eigentliche Grund, warum so viele in der Schweiz unter ihrem Wert bezahlt werden. Dieser Leitfaden dreht es um, konkret und ohne Floskeln.",
+    sections: [
+      {
+        id: "warum-der-moment-vor-der-verhandlung-schon-fast-alles-entscheidet",
+        title: "Warum der Moment vor der Verhandlung schon fast alles entscheidet",
+        paragraphs: [
+          "Die verbreitetste Fehlannahme ist, dass eine Lohnverhandlung im Gespräch stattfindet. In Wahrheit ist sie meist schon entschieden, bevor Du den Raum betrittst. Entscheidend ist, ob Du weisst, was Deine Arbeit auf dem aktuellen Markt kostet, nicht was Du letztes Jahr verdient hast.",
+          "Genau hier machen die meisten den ersten Fehler. Sie leiten ihre Forderung vom eigenen alten Lohn ab, plus ein paar Prozent. Der Markt funktioniert aber nicht so. Ein Wechsel wird nicht am alten Gehalt gemessen, sondern daran, was die Position und Deine Fähigkeiten heute wert sind. Wer beim alten Lohn ansetzt, zementiert eine womöglich jahrelange Unterbezahlung.",
+          "Bevor Du also über eine Zahl sprichst, brauchst Du drei Referenzpunkte. Den Medianlohn Deiner Branche und Region, verlässlich zu finden in der Lohnstrukturerhebung des Bundesamts für Statistik. Die Spanne innerhalb Deiner Funktion, denn zwischen unterem und oberem Viertel liegen oft mehrere hundert Franken im Monat. Und den regionalen Unterschied, denn dieselbe Stelle wird in der Region Zürich deutlich anders bezahlt als etwa im Tessin.",
+        ],
+      },
+      {
+        id: "die-erste-zahl-wer-sie-nennt-hat-oft-schon-verloren-oder-gewonnen",
+        title: "Die erste Zahl. Wer sie nennt, hat oft schon verloren, oder gewonnen",
+        paragraphs: [
+          "Es gibt eine alte Faustregel, nenne nie die erste Zahl. Sie stimmt nur halb. Richtig ist, wer eine schlecht vorbereitete erste Zahl nennt, verliert. Wer eine gut begründete erste Zahl nennt, setzt den Anker für das ganze Gespräch.",
+          "In der Schweiz fragen viele Arbeitgeber früh nach Deiner Lohnvorstellung. Eine Ausweichantwort wie das ist verhandelbar wirkt unsicher. Besser ist eine konkrete Spanne, deren unteres Ende bereits das ist, womit Du zufrieden wärst. Denn erfahrungsgemäss landet das Ergebnis am unteren Rand der genannten Spanne. Nennst Du 90 bis 100, rechne mit 90. Deine Spanne sollte also selbstbewusst, aber begründbar sein, gestützt auf die Marktzahlen, die Du vorher recherchiert hast.",
+        ],
+      },
+      {
+        id: "der-teil-den-fast-alle-vergessen-lohn-ist-nicht-nur-der-lohn",
+        title: "Der Teil, den fast alle vergessen. Lohn ist nicht nur der Lohn",
+        paragraphs: [
+          "Wer nur auf die Bruttozahl starrt, lässt in der Schweiz regelmässig Geld liegen. Ein Angebot besteht aus deutlich mehr Bausteinen, und mehrere davon sind verhandelbar, gerade wenn beim Grundlohn wenig Bewegung ist.",
+          "Dazu gehört der Anteil des dreizehnten Monatslohns, die Höhe und Bedingung eines Bonus, der Arbeitgeberanteil an der Pensionskasse, der deutlich über dem gesetzlichen Minimum liegen kann, die Anzahl Ferientage, Weiterbildungsbudget, Homeoffice-Regelungen und die Übernahme von Reise- oder Verpflegungskosten. Wenn eine Firma beim Grundlohn an eine interne Grenze stösst, ist sie oft bei diesen Punkten flexibel. Wer nur über eine einzige Zahl verhandelt, verschenkt genau diesen Spielraum.",
+        ],
+      },
+      {
+        id: "wenn-das-erste-angebot-zu-tief-ist",
+        title: "Wenn das erste Angebot zu tief ist",
+        paragraphs: [
+          "Das erste Angebot ist selten das letzte. Ein zu tiefes Angebot ist kein Grund zur Enttäuschung, sondern der normale Anfang. Der entscheidende Moment ist Deine Reaktion darauf.",
+          "Der Fehler wäre, sofort zuzusagen aus Angst, die Chance zu verlieren, oder umgekehrt beleidigt abzubrechen. Besser ist eine ruhige, sachliche Rückmeldung, die Wertschätzung fürs Angebot zeigt, aber klar auf die Differenz zu Deinen recherchierten Marktzahlen verweist. Nicht ich will mehr, sondern für diese Verantwortung und meine Erfahrung liegt der Marktwert bei X, hier ist, worauf ich das stütze. Damit verlagerst Du das Gespräch weg von Deinen Wünschen hin zu objektiven Fakten, und genau dort bist Du stark.",
+        ],
+      },
+      {
+        id: "warum-eine-externe-begleitung-den-unterschied-macht",
+        title: "Warum eine externe Begleitung den Unterschied macht",
+        paragraphs: [
+          "An diesem Punkt zeigt sich der grösste Vorteil, wenn Du nicht allein verhandelst. Wer selbst am Tisch sitzt, ist emotional beteiligt, will den Job, will keinen Konflikt und gibt deshalb oft zu früh nach. Jemand, der den Markt kennt und für Dich verhandelt, hat diese Hemmung nicht und weiss zusätzlich, wo bei einer bestimmten Firma real noch Spielraum ist.",
+          "Genau das ist ein Teil unserer Arbeit bei ScaleZ. Wir gehen mit unseren Kandidatinnen und Kandidaten vor jedem Gespräch durch, was realistisch drin liegt, und lassen sie in der Verhandlung nicht allein. Wenn ein erstes Angebot zu tief ausfällt, geben wir nicht klein bei, sondern holen gemeinsam das beste Ergebnis heraus, das für die Position tatsächlich möglich ist.",
+        ],
+      },
+      {
+        id: "das-wichtigste-in-drei-saetzen",
+        title: "Das Wichtigste in drei Sätzen",
+        paragraphs: [
+          "Kenne Deinen Marktwert, bevor Du über eine Zahl sprichst, und leite ihn vom Markt ab, nicht von Deinem alten Lohn. Verhandle nie nur über den Grundlohn, sondern über das gesamte Paket. Und behandle ein zu tiefes erstes Angebot als Anfang, nicht als Ende.",
+          "Wenn Du gerade vor einer Verhandlung stehst oder wissen willst, was Deine Erfahrung im aktuellen Markt wirklich wert ist, melde Dich bei uns. Ein ehrliches Gespräch darüber kostet Dich nichts und gibt Dir Klarheit, mit der Du deutlich stärker in jede Verhandlung gehst.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lohn-projektleiter-gebaeudeautomation-schweiz",
     title: "Was verdient ein Projektleiter Gebäudeautomation in der Schweiz?",
     category: "Markt",
