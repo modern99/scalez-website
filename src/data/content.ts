@@ -487,6 +487,63 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "gav-elektrobranche-2026-2029",
+    title: "Neuer GAV 2026 in der Schweizer Elektrobranche was sich für dich als Fachkraft jetzt ändert",
+    category: "Markt",
+    readTime: "6 Min.",
+    publishedAt: "26. August 2026",
+    teaser:
+      "Seit dem 1. Januar 2026 gilt der neue Gesamtarbeitsvertrag der Schweizer Elektrobranche. Mindestlöhne, Arbeitszeit und Auslagenersatz wurden für die kommenden vier Jahre neu geregelt. Wir zeigen dir, welche Zahlen für dich als Elektroinstallateur:in, Teamleiter:in oder Gebäudeinformatiker:in wirklich zählen.",
+    intro:
+      "Der neue GAV 2026 bis 2029 der Schweizer Elektrobranche ist mehr als eine formale Vertragsverlängerung. Er definiert die Mindestlöhne, die Jahresbruttoarbeitszeit und die Regeln zum Auslagenersatz neu und läuft bis Ende 2029. Für rund 40'000 Fachkräfte in der Elektrobranche bedeutet das konkrete Zahlen zum Nachrechnen. Wir haben die Lohnvereinbarung Punkt für Punkt durchgearbeitet und ordnen die wichtigsten Änderungen so ein, dass du in fünf Minuten weisst, wo du stehst und was der Vertrag für deine nächste Lohnverhandlung bedeutet.",
+    sections: [
+      {
+        id: "was-der-neue-gav-elektrobranche-ueberhaupt-regelt",
+        title: "Was der neue GAV Elektrobranche überhaupt regelt",
+        paragraphs: [
+          "Der neue Gesamtarbeitsvertrag ist am 1. Januar 2026 in Kraft getreten und läuft bis Ende 2029. Verhandelt wurde er zwischen dem Arbeitgeberverband EIT.swiss und den Gewerkschaften Unia und Syna. Die Delegierten von EIT.swiss haben den Vertrag am 17. September 2025 genehmigt, kurz darauf hat die Paritätische Landeskommission die Details für 2026 festgezurrt.",
+          "Wichtig zu wissen: Der GAV gilt allgemeinverbindlich für alle Betriebe, die im Nieder- oder Schwachstrombereich elektrische Installationen ausführen, sowie für vorbereitende Arbeiten wie Schlitzarbeiten, Trassenmontagen oder Rohreinlagen. Ob du in einem klassischen Elektroinstallationsbetrieb, im Bereich Gebäudeinformatik oder in der Anlagentechnik arbeitest, spielt keine Rolle. Sobald dein Arbeitgeber in den beschriebenen Bereich fällt, hast du Anspruch auf die im GAV festgelegten Mindestbedingungen.",
+        ],
+      },
+      {
+        id: "die-neuen-mindestloehne-2026-im-ueberblick",
+        title: "Die neuen Mindestlöhne 2026 im Überblick",
+        paragraphs: [
+          "Der GAV unterscheidet klar nach Ausbildung, Funktion und Branchenerfahrung. Für 2026 gelten diese Mindestlöhne pro Monat (13x jährlich). Elektroinstallateur:in EFZ startet bei CHF 4'500 direkt nach dem Abschluss. Nach einem vollen Jahr Branchenerfahrung in der Schweiz steigt der Mindestlohn auf CHF 5'000. Bis 2029 klettert er stufenweise auf CHF 4'700 beziehungsweise CHF 5'200.",
+          "Montage-Elektriker:in EFZ beginnt bei CHF 4'300 nach Abschluss und CHF 4'700 nach einem Branchenjahr. Gebäudeinformatiker:innen und Telematiker:innen EFZ haben mit CHF 4'770 nach Abschluss und CHF 5'300 nach einem Branchenjahr die höchsten Einstiegsmindestlöhne unter den EFZ-Berufen. Teamleiter:innen mit Prüfungszertifikat nach den Ausbildungsvorgaben von EIT.swiss oder vertraglich anerkannter Gleichwertigkeit erhalten mindestens CHF 5'600 pro Monat.",
+          "Für Fachkräfte mit schulischem Berufsabschluss oder ausländischer Elektrofachausbildung gelten CHF 4'300 nach Abschluss und CHF 4'600 nach einem Branchenjahr. Wer ohne Berufsabschluss in der Elektrobranche arbeitet, hat Anspruch auf CHF 4'200 zu Beginn und CHF 4'500 nach zwei Jahren Branchenerfahrung.",
+        ],
+      },
+      {
+        id: "arbeitszeit-auslagenersatz-und-weitere-aenderungen-die-zaehlen",
+        title: "Arbeitszeit Auslagenersatz und weitere Änderungen die zählen",
+        paragraphs: [
+          "Die Paritätische Landeskommission hat die Jahresbruttoarbeitszeit für 2026 auf 2'088 Stunden festgelegt. Umgerechnet auf 40 Stunden pro Woche ergibt sich daraus ein solider Referenzwert für alle Berechnungen rund um Überstunden, Ferien und Krankheitstage.",
+          "Neu geregelt ist auch der Auslagenersatz für auswärtige Arbeit bei täglicher Heimkehr. Wenn dein Arbeitsort mehr als 15 Minuten Wegstrecke vom Firmendomizil entfernt liegt, hast du Anspruch auf mindestens CHF 18 pro Tag für die auswärtige Verpflegung. Klingt nach wenig, summiert sich aber übers Jahr auf mehrere hundert Franken, die viele Fachkräfte gar nicht einfordern.",
+          "Zusätzlich zur Lohnstruktur wurde für alle Mitarbeitenden, die vor dem 1. Oktober 2025 beim gleichen Arbeitgeber angestellt waren, per 1. Januar 2026 eine generelle Erhöhung der Effektivlöhne um CHF 50 pro Monat beschlossen. Wer den Job später angetreten hat, ist von dieser generellen Anhebung ausgeschlossen. Der Vollzugskosten- und Weiterbildungsbeitrag beträgt weiterhin CHF 21 pro Monat und wird sowohl vom Arbeitnehmenden als auch vom Arbeitgeber getragen.",
+        ],
+      },
+      {
+        id: "mindestlohn-ist-nicht-marktlohn-und-darin-liegt-deine-chance",
+        title: "Mindestlohn ist nicht Marktlohn und darin liegt deine Chance",
+        paragraphs: [
+          "Die GAV-Mindestlöhne sind genau das: Mindestansprüche. Sie schützen dich vor Unterbezahlung, sagen aber wenig über deinen tatsächlichen Marktwert aus. Im Schnitt verdienen Elektroinstallateur:innen in der Schweiz laut aktuellen Lohnstatistiken zwischen CHF 68'000 und CHF 85'000 pro Jahr, im Kanton Zürich liegt der Durchschnitt bei rund CHF 72'000 brutto. Erfahrene Fachkräfte mit Spezialisierungen wie Photovoltaik, Gebäudeautomation oder Elektroplanung erreichen häufig CHF 95'000 bis über CHF 110'000.",
+          "Zwischen dem Mindestlohn nach EFZ (CHF 58'500 bei 13 Monatslöhnen) und dem Marktdurchschnitt liegen also rund CHF 10'000 bis CHF 25'000 pro Jahr. Diese Lücke füllen Erfahrung, Zusatzqualifikationen, Verantwortung und Verhandlungsgeschick. Wer den Unterschied zwischen dem, was der GAV garantiert, und dem, was der Markt tatsächlich zahlt, kennt, verhandelt in der Regel deutlich stärker.",
+          "Regionale Unterschiede spielen ebenfalls eine grosse Rolle. In Zürich und Basel-Stadt liegen die Löhne teils bis zu 20 Prozent höher als in ländlichen Kantonen. Auch die Betriebsgrösse und der Auftragsmix des Arbeitgebers wirken sich direkt aus. Grosse Generalunternehmen und Industriebetriebe zahlen für die gleiche Funktion oft mehr als kleinere Handwerksbetriebe, dafür bieten kleinere Betriebe häufig mehr Verantwortung und schnellere Aufstiegsmöglichkeiten.",
+        ],
+      },
+      {
+        id: "was-du-als-fachkraft-in-der-elektrobranche-jetzt-tun-solltest",
+        title: "Was du als Fachkraft in der Elektrobranche jetzt tun solltest",
+        paragraphs: [
+          "Prüfe zuerst, ob dein aktueller Lohn mindestens den GAV-Vorgaben entspricht. Die Zahlen findest du oben, den vollständigen Text der Lohnvereinbarung 2026 stellt die Paritätische Landeskommission auf plk-elektro.ch als PDF zur Verfügung. Falls dein Effektivlohn unter dem Mindestlohn liegt, hast du Anspruch auf sofortige Anpassung. Bei Unsicherheiten wendest du dich am besten an den Rechtsdienst von EIT.swiss oder direkt an deine Gewerkschaft.",
+          "Wenn du oberhalb des Mindestlohns liegst, aber unsicher bist, wo du im Marktvergleich stehst, hilft eine ehrliche Standortbestimmung. Berufserfahrung, Weiterbildungen wie die Fachprüfung zum Elektro-Teamleiter oder Sicherheitsberater, sowie Spezialgebiete wie KNX, Photovoltaik oder Gebäudeautomation heben deinen Marktwert oft deutlich stärker, als du denkst.",
+          "Genau hier setzen wir bei ScaleZ an. Wir kennen die Elektrobranche in der Deutschschweiz, sprechen mit Betrieben aller Grössenordnungen und wissen, welche Löhne aktuell für welche Profile bezahlt werden. Wenn du wissen willst, wo du mit deinem Profil im Markt stehst, melde dich bei uns. Wir ordnen deinen Marktwert gemeinsam mit dir ein, diskret und ohne Verpflichtung.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "gehalt-verhandeln-schweiz",
     title: "Gehalt verhandeln in der Schweiz. Der ehrliche Leitfaden.",
     category: "Prozess",
