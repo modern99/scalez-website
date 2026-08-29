@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import maxImg from "@/assets/max-schoenpflug.jpeg";
+import maxImg from "@/assets/max-schoenpflug-portrait.jpeg";
 import Seo from "@/components/Seo";
 
 const aboutSchema = {
@@ -108,8 +108,8 @@ export default function UeberUnsPage() {
                 <img
                   src={maxImg}
                   alt="Max Schönpflug – Founder von ScaleZ"
-                  width="640"
-                  height="800"
+                  width="900"
+                  height="900"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
