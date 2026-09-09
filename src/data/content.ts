@@ -487,6 +487,70 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tiefbau-zuerich-karriere-lohn-2026",
+    title: "Tiefbau Zürich 2026 was du auf welcher Karrierestufe verdienst und wohin dein Weg als Bauleiter führen kann",
+    category: "Markt",
+    readTime: "6 Min.",
+    publishedAt: "9. September 2026",
+    teaser:
+      "Der Tiefbau in der Region Zürich boomt und die Nachfrage nach Bauleiter:innen und Projektleiter:innen ist so hoch wie seit Jahren nicht mehr. Wir zeigen dir, welche Karrierestufen es realistisch gibt, was sie verdienen und was den Sprung von einer Stufe zur nächsten wirklich ausmacht.",
+    intro:
+      "Der Schweizer Tiefbau steht 2026 unter Druck. Werkleitungen müssen erneuert werden, das Strassennetz altert, Klimaadaptation und Schwammstadt-Konzepte kommen als komplett neue Anforderungsfelder dazu. Gleichzeitig fehlen erfahrene Bauleiter:innen und Projektleiter:innen so stark, dass Ingenieurbüros im Raum Zürich mittlerweile aktiv um jeden qualifizierten Kopf kämpfen. Wir sprechen jede Woche mit Fachkräften im Tiefbau und mit den Büros, die sie suchen. Was uns dabei auffällt: Viele Bauleiter:innen kennen ihren eigenen Karriereweg gar nicht richtig und unterschätzen, was auf der nächsten Stufe realistisch drin wäre. Genau darum geht es hier.",
+    sections: [
+      {
+        id: "warum-der-tiefbau-in-zuerich-2026-zu-den-spannendsten-baubereichen-gehoert",
+        title: "Warum der Tiefbau in Zürich 2026 zu den spannendsten Baubereichen gehört",
+        paragraphs: [
+          "Der Kanton Zürich investiert allein in den nächsten fünf Jahren mehrere hundert Millionen Franken in die Erneuerung von Strassen, Werkleitungen und Kunstbauten. Dazu kommen private Bauherrschaften, die Erschliessungen und Infrastrukturprojekte in noch nie dagewesenem Tempo abwickeln. Klimaadaptation, digitale Planungsmethoden wie BIM und Schwammstadt-Konzepte machen aus dem einst als konservativ geltenden Tiefbau ein Feld, in dem sich Ingenieurwesen und Innovation direkt begegnen.",
+          "Für Bauleiter:innen und Projektleiter:innen bedeutet das drei Dinge. Erstens: Es gibt mehr offene Stellen als qualifizierte Kandidat:innen. Zweitens: Die Löhne haben in den letzten 24 Monaten spürbar angezogen. Drittens: Wer heute wechseln will, hat die Wahl zwischen etablierten Ingenieurbüros, global aufgestellten Beratungsunternehmen und spezialisierten Infrastrukturplanern. Die Chance liegt gerade auf dem Tisch.",
+        ],
+      },
+      {
+        id: "die-vier-realen-karrierestufen-im-tiefbau-von-junior-bauleiter-zu-chef-oder-projektleiter",
+        title: "Die vier realen Karrierestufen im Tiefbau von Junior Bauleiter zu Chef- oder Projektleiter",
+        paragraphs: [
+          "Die Karrierewege im Schweizer Tiefbau lassen sich grob in vier Stufen einteilen. Auf der ersten Stufe stehst du als Junior Bauleiter:in oder Bauleiter:in Einstieg, meist direkt nach der Ausbildung als Techniker HF Tiefbau, Bauingenieur:in FH oder ETH. Du übernimmst kleinere Baustellen, arbeitest eng mit erfahrenen Chefbauleitern zusammen und lernst die operative Baustellenführung von Grund auf. Auf der zweiten Stufe bist du als Bauleiter:in mit voller Verantwortung für eigene Baustellen unterwegs. Du überwachst Qualität, Kosten und Termine, koordinierst Unternehmer und Fachplaner selbstständig und trägst die Verantwortung für Bauausführung und Arbeitssicherheit vor Ort. Diese Stufe erreichst du typischerweise nach zwei bis fünf Jahren praktischer Erfahrung. Die dritte Stufe ist der Sprung in die Projektleitung. Als Projektleiter:in oder Projektingenieur:in verantwortest du Projekte über den gesamten Lebenszyklus, von der ersten Studie bis zur Inbetriebnahme. Du erstellst technische Berichte, Kostenschätzungen und Ausschreibungsunterlagen, koordinierst Behörden und Bauherrschaften und trägst die kaufmännische Gesamtverantwortung. Diese Rolle setzt in der Regel ein FH- oder ETH-Studium und fünf bis zehn Jahre einschlägige Erfahrung voraus. Auf der vierten Stufe schliesslich stehen die Chefbauleitung oder die Senior Projektleitung. Du führst mehrere Bauleiter:innen, entwickelst strategisch das Portfolio des Büros mit und wirst Ansprechperson für die grössten Bauherrschaften und komplexesten Projekte.",
+        ],
+      },
+      {
+        id: "was-du-in-zuerich-auf-welcher-stufe-wirklich-verdienst",
+        title: "Was du in Zürich auf welcher Stufe wirklich verdienst",
+        paragraphs: [
+          "Die Löhne im Tiefbau haben in Zürich in den letzten Jahren spürbar angezogen, liegen aber je nach Bürogrösse, Spezialisierung und Verantwortung deutlich auseinander. Wir orientieren uns hier an tatsächlichen Werten aus laufenden Vermittlungen und offenen Anzeigen im Raum Zürich 2026. Als Einstieg mit Perspektive für Bauleiter:innen mit erster praktischer Erfahrung liegen realistische Jahresgehälter bei CHF 90'000 bis 115'000. Wichtig hier: In dieser Range steckt bereits Entwicklungsperspektive. Wer nach zwei bis drei Jahren in dieser Rolle steht und Baustellen selbstständig führt, kann in der nächsten Verhandlung deutlich zulegen.",
+          "Als voll verantwortliche:r Bauleiter:in mit drei bis sieben Jahren Erfahrung liegen die Löhne typischerweise bei CHF 110'000 bis 135'000, abhängig von Projektgrösse und Komplexität der geführten Baustellen. Wer auf Kunstbauten oder komplexe Werkleitungsprojekte spezialisiert ist, landet in dieser Range oft am oberen Ende.",
+          "Als Projektleiter:in oder Projektingenieur:in mit ETH- oder FH-Hintergrund und fünf bis zehn Jahren Erfahrung sind Jahresgehälter zwischen CHF 120'000 und 145'000 der Marktstandard. In global aufgestellten Ingenieurbüros oder bei besonderer Verantwortung für Grossprojekte sind auch CHF 150'000 und mehr keine Seltenheit. Chefbauleitung und Senior Projektleitung liegen erfahrungsgemäss zwischen CHF 140'000 und 170'000, mit erheblichen Ausreissern nach oben je nach Führungsspanne und Bürogrösse.",
+        ],
+      },
+      {
+        id: "der-eigentliche-sprung-was-zwischen-bauleiter-und-projektleiter-wirklich-passiert",
+        title: "Der eigentliche Sprung was zwischen Bauleiter und Projektleiter wirklich passiert",
+        paragraphs: [
+          "Der Wechsel von der operativen Bauleitung in die Projektleitung ist der grösste inhaltliche Sprung in dieser Karriere. Nicht wegen der zusätzlichen Franken, sondern wegen der veränderten Rolle. Als Bauleiter:in bist du der Anker auf der Baustelle. Als Projektleiter:in bist du der Anker gegenüber der Bauherrschaft.",
+          "Was diesen Sprung unterscheidet, sind drei Kompetenzfelder. Erstens die kaufmännische Steuerung. Du verantwortest ein Budget über den gesamten Projektlebenszyklus, nicht nur die Ausführungsphase. Zweitens die Kommunikation mit Bauherrschaften und Behörden. Du bist die Person, die einer Gemeindeverwaltung erklären muss, warum die Erneuerung einer Werkleitung mehr kostet als geplant. Drittens die Fähigkeit, digitale Planungsmethoden wie BIM aktiv voranzutreiben und nachhaltige Konzepte wie Schwammstadt oder Klimaadaptation in die Projektierung zu integrieren.",
+          "Wer diesen Sprung machen will, sollte gezielt Projekte suchen, in denen genau diese Verantwortung schrittweise übertragen wird. Genau darauf achten die besseren Ingenieurbüros mittlerweile in ihren Stellenausschreibungen: Sie bieten nicht nur eine Rolle, sondern einen Entwicklungspfad.",
+        ],
+      },
+      {
+        id: "worauf-du-bei-einem-wechsel-im-tiefbau-achten-solltest",
+        title: "Worauf du bei einem Wechsel im Tiefbau achten solltest",
+        paragraphs: [
+          "Der Schweizer Tiefbau-Arbeitsmarkt ist 2026 in einer Situation, in der Fachkräfte die Wahl haben. Genau deshalb lohnt es sich, vor einem Wechsel nicht nur auf den Lohn zu schauen, sondern auf drei Punkte, die den Unterschied zwischen einem guten und einem sehr guten Arbeitgeber machen. Erstens die Projektstruktur. Frage konkret nach den Projekten der letzten zwölf Monate. Ein Büro, das ausschliesslich Standard-Werkleitungsbau macht, gibt dir andere Erfahrungen als eines, das komplexe Kunstbauten oder innovative Infrastrukturprojekte begleitet. Beides kann richtig sein, aber du solltest wissen, worauf du dich einlässt.",
+          "Zweitens die Entwicklungsperspektive. Frage explizit, wie der Weg zur nächsten Karrierestufe im konkreten Büro aussieht. Wer als Antwort ein \"das schauen wir dann\" bekommt, hat die Antwort im Grunde schon. Ein gutes Büro kann dir konkret sagen, welche Meilensteine für einen Aufstieg definiert sind und welche Weiterbildungen unterstützt werden.",
+          "Drittens die Arbeitsweise. Homeoffice-Regelung für administrative Tätigkeiten, digitale Arbeitsmittel, moderne Büroräume, flexible Arbeitszeiten. Das sind keine Nebensächlichkeiten, sondern die Faktoren, die im Alltag über Zufriedenheit und Belastung entscheiden.",
+        ],
+      },
+      {
+        id: "zwei-aktuelle-moeglichkeiten-fuer-tiefbau-fachkraefte-in-zuerich",
+        title: "Zwei aktuelle Möglichkeiten für Tiefbau-Fachkräfte in Zürich",
+        paragraphs: [
+          "Wir vermitteln aktuell zwei Positionen im Tiefbau in Zürich-Oerlikon, die genau auf zwei aufeinanderfolgende Karrierestufen einzahlen. Beide sind bei etablierten Ingenieurbüros mit moderner Struktur und klarer Entwicklungsperspektive. Für Einsteiger:innen und Bauleiter:innen mit ersten Jahren Erfahrung ist die Position Bauleiter:in Infrastruktur, Einstieg mit Perspektive spannend. Anspruchsvolle Tiefbauprojekte im Strassen-, Werkleitungs- und Kunstbau in Zürich, gezielte Entwicklung durch erfahrene Chefbauleiter und ein Jahreslohn zwischen CHF 90'000 und 115'000. Details und Bewerbung unter https://www.scale-z.ch/kandidaten?position=Bauleiter%3Ain%20Infrastruktur%2C%20Einstieg%20mit%20Perspektive",
+          "Für erfahrenere Bauingenieur:innen mit Studium und mehreren Jahren Berufserfahrung passt die Position Projektleiter und Projektingenieur Infrastruktur für Strassen und Kunstbauten. Ein extrem erfolgreiches, global aufgestelltes Ingenieurbüro in Zürich Oerlikon, das die Infrastruktur von morgen mitgestaltet und dabei aktiv auf BIM und Klimaadaptation setzt. Jahreslohn zwischen CHF 95'000 und 130'000. Details und Bewerbung unter https://www.scale-z.ch/kandidaten?position=Projektleiter%20und%20Projektingenieur%20Infrastruktur%20f%C3%BCr%20Strassen%20und%20Kunstbauten",
+          "Wenn dein Profil zu einer der beiden Rollen passt oder du dich fragst, wo du selbst im Markt stehst, melde dich bei uns. Wir ordnen deine Möglichkeiten ehrlich ein, auch wenn eine der beiden Positionen am Ende nicht der richtige nächste Schritt ist.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "gav-elektrobranche-2026-2029",
     title: "Neuer GAV 2026 in der Schweizer Elektrobranche was sich für dich als Fachkraft jetzt ändert",
     category: "Markt",
