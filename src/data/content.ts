@@ -603,6 +603,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "bauleitender-monteur-elektroinstallationen",
+    title: "Bauleitender Monteur:in Elektroinstallationen (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Elektro · Zürich",
+    teaser:
+      "Deine Baustelle. Dein Team. Deine Verantwortung. Du führst kleinere und mittlere Elektroinstallationsprojekte im Wohn-, Gewerbe- und Industriebau vor Ort und koordinierst Monteure, Lernende und Subunternehmer. Zwischen Werkstatt und Baustelle sorgst du dafür, dass Termine, Qualität und Sicherheit stimmen und dass dein Team gut arbeiten kann. Ein etablierter Elektroinstallationsbetrieb im Grossraum Zürich sucht dich unbefristet.",
+    compensation: "CHF 82'000 – 105'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Führen von Elektroinstallationsprojekten im Wohn-, Gewerbe- und Industriebau vor Ort",
+      "Koordination und Führung des Baustellenteams inklusive Monteuren und Lernenden",
+      "Ausführungsplanung, Materialbestellung und Terminplanung in Absprache mit der Projektleitung",
+      "Ansprechperson für Kunden, Bauleitung und Fachplaner auf der Baustelle",
+      "Überwachung von Qualität, Sicherheit und Termineinhaltung sowie Erstellung von Rapporten",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Elektroinstallateur:in EFZ mit mehrjähriger Berufserfahrung",
+      "Weiterbildung als Elektro-Projektleiter:in oder Teamleiter:in mit Prüfungszertifikat nach EIT.swiss von Vorteil",
+      "Führungserfahrung auf der Baustelle oder ausgeprägte Bereitschaft, in diese Rolle hineinzuwachsen",
+      "Gute Kenntnisse in NIN, NIV und aktuellen Schweizer Normen",
+      "Selbstständige, strukturierte Arbeitsweise mit unternehmerischem Denken",
+    ],
+    benefits: [
+      "Eigenverantwortliche Projekte mit direktem Kundenkontakt",
+      "Klare Karriereperspektive Richtung Projektleiter:in oder Bauleiter:in Elektro",
+      "Unterstützung bei Weiterbildungen wie Elektro-Teamleiter:in oder Sicherheitsberater:in",
+      "Servicefahrzeug oder Poolfahrzeug",
+      "5 Wochen Ferien und faire Überstundenregelung",
+    ],
+    closingNote: [
+      "Wenn du bereit bist, Verantwortung auf der Baustelle zu übernehmen und dein Team weiterzuentwickeln, freuen wir uns auf dich. Ein Erstgespräch dauert 30 Minuten und klärt alle Fragen zu Position, Betrieb und Perspektive.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-09",
+    validThrough: "2026-11-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
