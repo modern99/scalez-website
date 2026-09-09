@@ -483,6 +483,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich-Oerlikon",
     addressRegion: "ZH",
   },
+  {
+    slug: "servicetechniker-elektro-notstromanlagen",
+    title: "Servicetechniker:in Elektro und Notstromanlagen (m/w/d)",
+    region: "Deutschschweiz",
+    employmentType: "Festanstellung, 100%",
+    focus: "Elektro · Zürich",
+    teaser:
+      "Kein Alltag am Bürotisch. Sicherheitskritische Elektroanlagen in der Deutschschweiz brauchen dich vor Ort. Du übernimmst Wartungen, Reparaturen und Inbetriebnahmen an Notstromanlagen, USV-Systemen und Sicherheitsbeleuchtungen bei Kunden aus Industrie, Spitälern, Hotellerie und öffentlichen Betrieben. Ein etabliertes Schweizer Serviceunternehmen mit klaren Prozessen und eingespieltem Team sucht dich unbefristet.",
+    compensation: "CHF 80'000 – 105'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Wartung, Reparatur und Inbetriebnahme von Notstromanlagen, USV-Systemen und Sicherheitsbeleuchtungen",
+      "Selbstständige Fehlersuche und Störungsbehebung bei Kunden vor Ort",
+      "Durchführung von periodischen Prüfungen gemäss SEV- und SUVA-Vorgaben",
+      "Dokumentation der Serviceeinsätze und Rapportierung an die Einsatzleitung",
+      "Beratung der Kunden zu Optimierungen, Ersatzteilen und Systemerweiterungen",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Elektroinstallateur:in EFZ, Elektromonteur:in EFZ oder gleichwertig",
+      "Weiterbildung als Servicetechniker:in oder mehrjährige Erfahrung im technischen Service von Vorteil",
+      "Kenntnisse in NIN, NIV und den relevanten Schweizer Normen",
+      "Selbstständige, kundenorientierte und lösungsorientierte Arbeitsweise",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Vollständig ausgestattetes Servicefahrzeug zur privaten Nutzung",
+      "Modernste Mess- und Prüfgeräte sowie mobile Dokumentationstools",
+      "Klare Weiterbildungspfade zum Servicespezialist:in oder Einsatzleitung",
+      "Faire Pikettentschädigung und geregelte Rotation im Team",
+      "5 Wochen Ferien und flexible Zeiterfassung",
+    ],
+    closingNote: [
+      "Wenn dich sicherheitskritische Anlagen und echte Kundennähe reizen, freuen wir uns auf deine Bewerbung. Wir melden uns innerhalb von zwei Arbeitstagen zurück und besprechen mit dir alle Details in einem kurzen Erstgespräch.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-09",
+    validThrough: "2026-11-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
