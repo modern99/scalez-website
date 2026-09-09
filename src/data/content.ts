@@ -523,6 +523,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "servicetechniker-heizung-waermepumpen",
+    title: "Servicetechniker:in Heizung und Wärmepumpen (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Wärme ist Grundversorgung. Wenn eine Heizung ausfällt, zählt jede Stunde. Du sorgst dafür, dass Wärmepumpen, Gas- und Ölheizungen sowie moderne Hybridsysteme im Grossraum Zürich zuverlässig laufen. Wartung, Störungsbehebung, Inbetriebnahmen. Ein etabliertes Schweizer Haustechnikunternehmen mit langjährig treuem Kundenstamm sucht dich unbefristet.",
+    compensation: "CHF 78'000 – 100'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Wartung und Reparatur von Wärmepumpen, Öl- und Gasheizungen sowie Hybridsystemen",
+      "Inbetriebnahme neuer Anlagen inklusive hydraulischer und regelungstechnischer Einstellung",
+      "Fehlerdiagnose und Störungsbehebung im Alltags- und Notfalldienst",
+      "Beratung der Kunden zu Effizienzoptimierungen und Modernisierungen",
+      "Zusammenarbeit mit der Planungs- und Verkaufsabteilung bei Ersatzangeboten",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Heizungsinstallateur:in EFZ, Servicetechniker:in Heizung oder gleichwertig",
+      "Erfahrung mit gängigen Wärmepumpensystemen (z.B. Viessmann, Hoval, CTA, Stiebel Eltron) von Vorteil",
+      "Gute Kenntnisse in Hydraulik, Regelungstechnik und aktuellen Effizienzstandards",
+      "Selbstständige, kundenorientierte und zuverlässige Arbeitsweise",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Vollständig ausgestattetes Servicefahrzeug zur privaten Nutzung",
+      "Regelmässige herstellerzertifizierte Schulungen und Weiterbildungen",
+      "Klarer Entwicklungspfad zum Servicespezialist:in oder Teamleiter:in Service",
+      "Faire Pikettentschädigung und geregelte Rotation",
+      "Familiäres Team mit langjährig treuen Kunden im Grossraum Zürich",
+    ],
+    closingNote: [
+      "Wenn du eine Servicerolle mit direktem Kundenkontakt, klarer Weiterentwicklung und einem stabilen Team suchst, freuen wir uns auf dich. Wir melden uns innerhalb von zwei Arbeitstagen mit einem konkreten nächsten Schritt.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-09",
+    validThrough: "2026-11-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
