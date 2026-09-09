@@ -563,6 +563,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "zeichner-efz-ingenieurbau-architektur",
+    title: "Zeichner:in EFZ Fachrichtung Ingenieurbau oder Architektur (m/w/d)",
+    region: "Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Ingenieurbau · Zürich",
+    teaser:
+      "Deine Pläne, deine Handschrift. Von der ersten Skizze bis zur ausführungsreifen Werkplanung übernimmst du die zeichnerische Umsetzung von Bau- und Infrastrukturprojekten in Zürich. Du arbeitest eng mit Projektleitung und Bauleitung zusammen, entwickelst dich mit anspruchsvollen Projekten weiter und wirst gezielt zur nächsten Karrierestufe geführt. Ein etabliertes Zürcher Ingenieur- oder Architekturbüro mit moderner digitaler Infrastruktur sucht dich unbefristet.",
+    compensation: "CHF 75'000 – 95'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Erstellen von Vor-, Bau- und Ausführungsplänen in CAD (AutoCAD, Revit oder Allplan)",
+      "Umsetzung von Skizzen und Vorgaben der Projekt- und Bauleitung in präzise Planwerke",
+      "Erstellen von Detailplänen, Schnitten, Grundrissen und Ansichten",
+      "Mitarbeit bei der Erstellung von Massen- und Mengenermittlungen",
+      "Koordination mit Fachplanern und Projektbeteiligten",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Zeichner:in EFZ Fachrichtung Ingenieurbau, Architektur oder Innenarchitektur",
+      "Sichere Anwendung von mindestens einem CAD-System (AutoCAD, Revit, Allplan oder ArchiCAD)",
+      "Erste Erfahrung mit BIM oder klarer Wille zur Einarbeitung",
+      "Strukturierte, sorgfältige und präzise Arbeitsweise",
+      "Sehr gute Deutschkenntnisse (mind. C1)",
+    ],
+    benefits: [
+      "Anspruchsvolle Projekte für Städte, Gemeinden, Kantone und private Bauherrschaften",
+      "Moderne digitale Arbeitsmittel und aktuelle Softwarelizenzen",
+      "Gezielte Weiterentwicklung Richtung Techniker HF, BIM-Koordination oder Teamleitung",
+      "Flexible Arbeitszeiten und Homeoffice-Anteil",
+      "Modernes Büro in Zürich mit guter ÖV-Erschliessung",
+    ],
+    closingNote: [
+      "Wenn du deine zeichnerische Präzision in einem Umfeld einsetzen willst, das echte Entwicklungsperspektiven bietet, freuen wir uns auf deine Bewerbung. Ein kurzer Anruf reicht für die ersten Fragen.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-09",
+    validThrough: "2026-11-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
