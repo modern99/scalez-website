@@ -684,6 +684,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Wallisellen",
     addressRegion: "ZH",
   },
+  {
+    slug: "servicetechniker-sanitaer",
+    title: "Servicetechniker:in Sanitär (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Wasser und Abwasser sind Grundversorgung. Wenn etwas nicht funktioniert, zählt jede Stunde. Du übernimmst Reparaturen, Wartungen und Umbauten an Sanitäranlagen in Wohn-, Gewerbe- und Industrieobjekten im Grossraum Zürich. Zwischen Erstkontakt beim Kunden und sauberer Übergabe bist du die Person, die den Unterschied macht. Ein etabliertes Schweizer Sanitärunternehmen mit treuer Stammkundschaft sucht dich unbefristet.",
+    compensation: "CHF 78'000 – 98'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Reparatur und Wartung von Sanitärinstallationen in Bad, Küche und Technikräumen",
+      "Installation neuer Apparate, Armaturen und Ablaufsysteme bei Um- und Ersatzbauten",
+      "Fehlerdiagnose und Störungsbehebung im Alltags- und Notfalldienst",
+      "Beratung der Kunden zu Optimierungen, Ersatzteilen und Modernisierungen",
+      "Sorgfältige Rapportierung und Zusammenarbeit mit der Einsatzleitung und Werkstatt",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Sanitärinstallateur:in EFZ oder gleichwertig",
+      "Erfahrung im Service oder Bereitschaft zur Einarbeitung in kundenorientierte Serviceeinsätze",
+      "Freundlicher und professioneller Umgang mit Kund:innen",
+      "Selbstständige, lösungsorientierte und zuverlässige Arbeitsweise",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Vollständig ausgestattetes Servicefahrzeug zur privaten Nutzung",
+      "Moderne Werkzeuge, Mess- und Diagnosegeräte",
+      "Klarer Entwicklungspfad zum Servicespezialist:in oder Teamleiter:in Service",
+      "Faire Pikettentschädigung und geregelte Rotation im Team",
+      "5 Wochen Ferien und flexible Zeiterfassung",
+      "Familiäres Team mit langjährig treuen Kunden im Grossraum Zürich",
+    ],
+    closingNote: [
+      "Wenn du eine Servicerolle mit direktem Kundenkontakt und echter Verantwortung suchst, freuen wir uns auf deine Bewerbung. Wir melden uns innerhalb von zwei Arbeitstagen zurück und besprechen mit dir alle Details in einem kurzen Erstgespräch.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-28",
+    validThrough: "2026-12-21",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
