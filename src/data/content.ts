@@ -725,6 +725,48 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "elektroplaner-projektierung",
+    title: "Elektroplaner:in EFZ oder mit Weiterbildung (m/w/d)",
+    region: "Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektro · Zürich",
+    teaser:
+      "Du entwickelst die Elektroplanung, bevor jemand einen Kabelkanal in die Hand nimmt. Von der ersten Studie bis zur Ausschreibung planst du elektrische Anlagen für Wohn-, Gewerbe- und Sonderbauten in Zürich, koordinierst mit Architekt:innen und Fachplaner:innen und triffst die Entscheidungen, die später auf der Baustelle funktionieren müssen. Ein etabliertes Zürcher Elektroingenieur- oder Planungsbüro mit BIM-basierten Prozessen sucht dich unbefristet.",
+    compensation: "CHF 85'000 – 115'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Elektroplanung für Wohn-, Gewerbe- und Sonderbauten von der Vor- bis zur Ausführungsphase",
+      "Erstellen von Prinzipschemata, Verteilerplänen und Installationsplänen in CAD (Elcad, Plancal Nova oder Revit)",
+      "Erstellen von Ausschreibungsunterlagen, Devis und Massenermittlungen",
+      "Koordination mit Architekt:innen, HLKS-Fachplaner:innen und Bauherrschaften",
+      "Fachliche Begleitung der Ausführungsphase in enger Zusammenarbeit mit der Bauleitung",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Elektroplaner:in EFZ oder Elektroinstallateur:in EFZ mit Weiterbildung Richtung Planung",
+      "Erste bis mehrjährige Erfahrung in der Elektroplanung von Vorteil",
+      "Sichere Anwendung von mindestens einem CAD-System (Elcad, Plancal Nova, Revit oder Allplan)",
+      "Interesse an BIM oder klarer Wille zur Einarbeitung",
+      "Strukturierte, sorgfältige Arbeitsweise mit gutem technischem Verständnis",
+      "Sehr gute Deutschkenntnisse (mind. C1)",
+    ],
+    benefits: [
+      "Anspruchsvolle Projekte für private Bauherrschaften, Städte und Kantone",
+      "Moderne digitale Arbeitsmittel, aktuelle CAD- und BIM-Lizenzen",
+      "Gezielte Weiterentwicklung Richtung Techniker HF Elektro, Projektleitung oder BIM-Koordination",
+      "Flexible Arbeitszeiten und Homeoffice-Anteil für administrative Tätigkeiten",
+      "Modernes Büro in Zürich mit guter ÖV-Erschliessung",
+      "Kollegiales Team mit flachen Hierarchien",
+    ],
+    closingNote: [
+      "Wenn du in einem Umfeld arbeiten willst, in dem Planungspräzision zählt und Weiterentwicklung mehr als ein Versprechen ist, freuen wir uns auf deine Bewerbung. Ein kurzer Anruf reicht für die ersten Fragen.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-28",
+    validThrough: "2026-12-21",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
