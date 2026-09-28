@@ -643,6 +643,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "polier-hochbau",
+    title: "Polier:in Hochbau (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 100%",
+    focus: "Hochbau · Zürich",
+    teaser:
+      "Deine Baustelle. Deine Crew. Dein Takt. Du führst als Polier:in Hochbauprojekte im Wohn-, Gewerbe- und Industriebau vor Ort, koordinierst zwischen Bauleitung, Unternehmern und deinem Team und sorgst dafür, dass Termine, Qualität und Sicherheit stimmen. Ein etabliertes Zürcher Bauunternehmen mit anspruchsvollem Projektportfolio und wertschätzender Führungskultur sucht dich unbefristet.",
+    compensation: "CHF 95'000 – 125'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Operative Führung der Baustelle im Hochbau von der Aushubphase bis zur Übergabe",
+      "Führung des Baustellenteams inklusive Facharbeiter:innen, Hilfskräften und Lernenden",
+      "Koordination von Unternehmern, Lieferanten und Kranarbeiten in enger Abstimmung mit der Bauleitung",
+      "Sicherstellung von Terminen, Qualität, Arbeitssicherheit und Baustellenordnung",
+      "Rapportierung, Ausmasse und Materialdisposition sowie Wochenplanung",
+    ],
+    requirements: [
+      "Abgeschlossene Weiterbildung als Polier:in Hochbau mit eidg. Diplom oder gleichwertige Qualifikation",
+      "Mehrjährige Erfahrung als Vorarbeiter:in oder Polier:in im Hochbau",
+      "Ausgeprägte Führungsstärke, Durchsetzungsvermögen und Teamgeist",
+      "Selbstständige, strukturierte Arbeitsweise mit unternehmerischem Denken",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Anspruchsvolle Hochbauprojekte im Grossraum Zürich mit klarer Führungsverantwortung",
+      "Servicefahrzeug zur privaten Nutzung",
+      "Klare Entwicklungsperspektive Richtung Bauführer:in oder Oberpolier:in",
+      "Unterstützung bei Weiterbildungen wie Bauführer:in HF oder Baumeister:in",
+      "Faire Überstundenregelung und geregelte Arbeitszeiten mit familienfreundlicher Grundhaltung",
+      "Modernste digitale Baustellentools und BIM-Anbindung",
+    ],
+    closingNote: [
+      "Wenn du bereit bist, deine Erfahrung auf anspruchsvollen Baustellen einzusetzen und dein Team weiterzuentwickeln, freuen wir uns auf dich. Ein Erstgespräch dauert 30 Minuten und klärt alle Fragen zu Position, Betrieb und Perspektive.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-28",
+    validThrough: "2026-12-21",
+    addressLocality: "Wallisellen",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
