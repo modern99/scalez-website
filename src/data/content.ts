@@ -809,6 +809,49 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "projektleiter-heizung-lueftung-klima",
+    title: "Projektleiter:in Heizung, Lüftung und Klima (m/w/d)",
+    region: "Grossraum Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Dübendorf",
+    teaser:
+      "Vom ersten Kundenkontakt bis zur Schlussrechnung. Du führst als Projektleiter:in Heizungs-, Lüftungs- und Klimaprojekte im Neubau, Umbau und in der Sanierung eigenverantwortlich und trägst die kaufmännische und technische Gesamtverantwortung. Wärmepumpen, PV-Integration, Kältetechnik, MuKEn-konforme Sanierungen. Ein etablierter Gebäudetechnikunternehmer im Grossraum Zürich mit vollen Auftragsbüchern und stabilem Team sucht dich unbefristet.",
+    compensation: "CHF 95'000 – 125'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Eigenverantwortliche Leitung von Projekten im Bereich Heizung, Lüftung und Klima von der Kalkulation bis zur Übergabe",
+      "Kalkulation, Offertstellung und Vertragsverhandlung mit Bauherrschaften und Generalunternehmern",
+      "Technische Ausführungsplanung, Materialdisposition und Terminplanung",
+      "Führung des Montageteams und Koordination von Subunternehmern",
+      "Kontrolle von Kosten, Terminen und Qualität sowie Rapportierung an die Geschäftsleitung",
+      "Ansprechperson für Kunden, Bauleitung und Fachplaner:innen über die gesamte Projektlaufzeit",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Heizungs-, Lüftungs- oder Sanitärinstallateur:in EFZ mit Weiterbildung zum Projektleiter:in oder Techniker HF Gebäudetechnik",
+      "Mehrjährige Erfahrung in der Projektleitung im Bereich Heizung, Lüftung, Klima oder Kälte",
+      "Sicheres Verständnis von Hydraulik, Regelungstechnik und aktuellen Energiestandards",
+      "Erfahrung mit Wärmepumpensystemen, kontrollierter Wohnraumlüftung oder Kältetechnik von Vorteil",
+      "Selbstständige, unternehmerische Arbeitsweise mit ausgeprägten Führungsqualitäten",
+      "Sehr gute Deutschkenntnisse (mind. C1) und Führerausweis Kategorie B",
+    ],
+    benefits: [
+      "Volle Auftragsbücher mit anspruchsvollen Projekten im Grossraum Zürich",
+      "Servicefahrzeug oder attraktives Poolfahrzeug",
+      "Grosszügiges Weiterbildungsbudget für Techniker HF, eidg. Diplom oder herstellerzertifizierte Schulungen",
+      "Klarer Entwicklungspfad Richtung Bereichsleitung oder Geschäftsleitung",
+      "Erfolgsbeteiligung und faire Bonusregelung",
+      "5 Wochen Ferien und flexible Zeiterfassung",
+    ],
+    closingNote: [
+      "Wenn du in einer Rolle mit voller Verantwortung, klarem Auftragsvolumen und echter Entwicklungsperspektive arbeiten willst, freuen wir uns auf dich. Ein Erstgespräch dauert 30 Minuten und klärt alle Fragen zu Position, Betrieb und Entwicklungsweg.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-28",
+    validThrough: "2026-12-21",
+    addressLocality: "Dübendorf",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
