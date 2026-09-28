@@ -767,6 +767,48 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "gebaeudetechnikplaner-hlks",
+    title: "Gebäudetechnikplaner:in EFZ Fachrichtung Heizung, Lüftung, Klima oder Sanitär (m/w/d)",
+    region: "Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Du planst, was später verbaut wird. Von der ersten Konzeptstudie bis zur Ausführungsplanung entwickelst du Heizungs-, Lüftungs-, Klima- oder Sanitäranlagen für Wohn-, Gewerbe- und Sonderbauten in Zürich. Du koordinierst mit Architekt:innen, Elektroplaner:innen und Bauherrschaften und triffst die Entscheidungen, die den Unterschied zwischen einer guten und einer sehr guten Anlage ausmachen. Ein etabliertes Zürcher Gebäudetechnik-Planungsbüro mit modernen BIM-Prozessen und nachhaltigem Projektportfolio sucht dich unbefristet.",
+    compensation: "CHF 78'000 – 105'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Fachplanung von Heizungs-, Lüftungs-, Klima- oder Sanitäranlagen von der Vor- bis zur Ausführungsphase",
+      "Erstellen von Anlageschemata, Grundrissplänen und Detailzeichnungen in CAD (Plancal Nova, Revit MEP oder AutoCAD MEP)",
+      "Erstellen von Ausschreibungsunterlagen, Devis, Massen- und Kostenermittlungen",
+      "Koordination mit Architekt:innen, weiteren Fachplaner:innen und Bauleitung",
+      "Fachliche Begleitung der Ausführungs- und Inbetriebnahmephase inklusive Abnahmen",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Gebäudetechnikplaner:in EFZ Fachrichtung Heizung, Lüftung, Klima oder Sanitär",
+      "Erste bis mehrjährige Erfahrung in der Fachplanung oder klarer Wille zur Weiterentwicklung",
+      "Sichere Anwendung von mindestens einem CAD-System (Plancal Nova, Revit MEP, AutoCAD MEP oder gleichwertig)",
+      "Interesse an BIM und nachhaltigen Energiekonzepten wie Wärmepumpen, PV-Integration oder Kältetechnik",
+      "Strukturierte, sorgfältige Arbeitsweise mit gutem technischem Verständnis",
+      "Sehr gute Deutschkenntnisse (mind. C1)",
+    ],
+    benefits: [
+      "Anspruchsvolle Projekte mit hoher gestalterischer Freiheit im Bereich nachhaltiger Gebäudetechnik",
+      "Moderne digitale Arbeitsmittel, aktuelle CAD- und BIM-Lizenzen",
+      "Gezielte Weiterentwicklung Richtung Techniker HF Gebäudetechnik, Projektleitung oder Fachbauleitung",
+      "Grosszügiges Weiterbildungsbudget für Fachvertiefungen wie Minergie, MuKEn oder BIM-Koordination",
+      "Flexible Arbeitszeiten und Homeoffice-Anteil",
+      "Modernes Büro in Zürich mit sehr guter ÖV-Erschliessung",
+    ],
+    closingNote: [
+      "Wenn du deine planerische Präzision in einem Umfeld einsetzen willst, in dem Nachhaltigkeit mehr ist als ein Marketingversprechen, freuen wir uns auf deine Bewerbung. Ein kurzer Anruf reicht für die ersten Fragen.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-09-28",
+    validThrough: "2026-12-21",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
