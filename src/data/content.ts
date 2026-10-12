@@ -397,7 +397,7 @@ export const jobPostings: JobPosting[] = [
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
     datePosted: "2026-10-12",
-    validThrough: "2026-12-16",
+    validThrough: "2026-12-31",
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
