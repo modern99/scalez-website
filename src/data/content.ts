@@ -852,6 +852,44 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Dübendorf",
     addressRegion: "ZH",
   },
+  {
+    slug: "zeichner-tiefbau-mit-berufsbildungsfunktion",
+    title: "Zeichner Tiefbau mit Berufsbildungsfunktion (m/w/d)",
+    region: "Bern",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Tiefbau · Bern",
+    teaser:
+      "Du planst mit Präzision und gibst dein Wissen gerne an die nächste Generation weiter? Als Zeichner/in Tiefbau gestaltest du bei uns spannende Infrastrukturprojekte mit und begleitest gleichzeitig unsere Lernenden auf ihrem Weg ins Berufsleben. Werde Teil unseres Teams und bau mit uns an der Zukunft, im Tiefbau wie im Nachwuchs.",
+    compensation: "CHF 68'000 – 80'000 / Jahr",
+    startDate: "Ab sofort",
+    tasks: [
+      "Erstellen von Projekt-, Ausführungs- und Detailplänen im Tiefbau (Strassen, Werkleitungen, Kanalisation, Wasserversorgung)",
+      "Mengenermittlung und Mithilfe bei Ausschreibungsunterlagen",
+      "Nachführen von Werkleitungskatastern und Erstellen von Ausführungsdokumentationen",
+      "Betreuung und Ausbildung unserer Lernenden Zeichner/in EFZ Fachrichtung Ingenieurbau",
+      "Planung der Ausbildung, Begleitung im Arbeitsalltag und Führen der Lerndokumentation",
+      "Mitwirkung bei der Rekrutierung neuer Lernender (Schnupperlehren, Auswahlgespräche)",
+    ],
+    requirements: [
+      "Abgeschlossene Ausbildung als Zeichner/in EFZ Fachrichtung Ingenieurbau bzw. Bauzeichner/in Tiefbau oder gleichwertige Qualifikation",
+      "Erste Berufserfahrung im Tiefbau",
+      "Sichere Kenntnisse in einem oder mehreren CAD-Programme",
+      "Freude an der Arbeit mit jungen Menschen, Geduld und Einfühlungsvermögen",
+      "Gute Deutschkenntnisse in Wort und Schrift",
+    ],
+    benefits: [
+      "Abwechslungsreiche Projekte von der Planung bis zur Ausführung",
+      "Gezielte Weiterbildungsmöglichkeiten (z. B. Techniker/in HF, Berufsbildung)",
+      "Moderne Arbeitsplätze und aktuelle Software",
+      "Home-Office Möglichkeiten",
+      "Attraktive Anstellungsbedingungen und fortschrittliche Sozialleistungen",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-12",
+    validThrough: "2026-12-31",
+    addressLocality: "Bern",
+    addressRegion: "BE",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
