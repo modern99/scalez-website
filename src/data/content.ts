@@ -47,9 +47,9 @@ export const jobPostings: JobPosting[] = [
   {
     slug: "bauingenieur-infrastruktur-bern",
     title: "Bauingenieur:in Infrastruktur (m/w/d)",
-    region: "Kanton Bern",
+    region: "Kanton Zürich",
     employmentType: "Festanstellung, 60–100%",
-    focus: "Tiefbau · Bern",
+    focus: "Tiefbau · Zürich",
     teaser:
       "Etabliertes, interdisziplinäres Ingenieur- und Planungsbüro im Raum Bern sucht eine:n Bauingenieur:in Infrastruktur mit Herzblut für den Tiefbau – Strassen, Werkleitungen, Entwässerung, Kunstbauten.",
     compensation: "CHF 90'000 – 115'000 / Jahr",
@@ -78,10 +78,10 @@ export const jobPostings: JobPosting[] = [
       "Kaffee geht aufs Haus",
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
-    datePosted: "2026-07-28",
-    validThrough: "2026-10-28",
-    addressLocality: "Bern",
-    addressRegion: "BE",
+    datePosted: "2026-10-12",
+    validThrough: "2026-11-30",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
   },
   {
     slug: "bauingenieur-verkehrsplanung-tiefbau-bern",
