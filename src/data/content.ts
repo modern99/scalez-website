@@ -1013,6 +1013,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Münchenstein",
     addressRegion: "BL",
   },
+  {
+    slug: "elektro-grossprojektleiter-pharma-muenchenstein",
+    title: "Elektro-Grossprojektleiter:in für Pharma und Life Sciences (m/w/d)",
+    region: "Region Basel",
+    employmentType: "Festanstellung, 100%",
+    focus: "Elektro · Münchenstein",
+    teaser:
+      "Du leitest Grossprojekte für Prozessanlagen, Reinräume und Automatisierungssysteme in der Pharma- und Life-Sciences-Industrie. Zentrale Ansprechperson für industrielle Grosskunden. Ein etablierter Elektroinstallationsbetrieb in der Region Basel sucht dich unbefristet.",
+    compensation: "CHF 120'000 – 155'000 / Jahr",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Zentrale Ansprechperson für industrielle Grossprojekte in den Bereichen Prozessanlagen, Reinräume, Automatisierungssysteme und spezialisierte elektrische Infrastrukturen",
+      "Verantwortung für die Leitung von Grossprojekten von der Angebotsphase über Planung, Umsetzung und Controlling bis zur Übergabe",
+      "Fachliche und organisatorische Führung des Projektteams inklusive Personaleinsatzplanung",
+      "Aufbau und Pflege langfristiger, vertrauensvoller Kundenbeziehungen in der Pharma- und Chemiebranche",
+      "Repräsentation des Unternehmens an Fachvorträgen und Messen als kompetente Anlaufstelle für Industrieinstallationen",
+    ],
+    requirements: [
+      "Abgeschlossene Grundbildung in der Elektrotechnik",
+      "Abgeschlossene Weiterbildung als Elektro-Projektleiter:in Installation und Sicherheit oder vergleichbar",
+      "Fundiertes Wissen über GMP, geltende Industrienormen und branchenspezifische Vorschriften",
+      "Mehrjährige Erfahrung in der Leitung von Grossprojekten, idealerweise im industriellen oder pharmazeutischen Umfeld",
+      "Verhandlungssichere Deutschkenntnisse (mind. C1), Englischkenntnisse willkommen",
+    ],
+    benefits: [
+      "Flexible Arbeitsmodelle und Homeoffice-Möglichkeiten für ausgewogene Work-Life-Balance",
+      "Übernahme zusätzlicher Verantwortung und aktive Gestaltung des eigenen Karrierewegs",
+      "Vielfältige interne und externe Weiterbildungsangebote",
+      "Attraktive Mitarbeitervergünstigungen auf Haushaltsgeräte, Werkzeuge und Fahrzeuge",
+      "Personalrestaurant, Fitnessraum und verschiedene Teamevents am Standort",
+      "Betriebliche Sozialberatung bei persönlichen und familiären Herausforderungen",
+    ],
+    closingNote: [
+      "der Pharma- und Life-Sciences-Industrie verbinden willst, in einem Umfeld das echte Verantwortung bietet und Entwicklung aktiv fördert, freuen wir uns auf deine Bewerbung. Ein 30-minütiges Erstgespräch klärt alle Details.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-15",
+    validThrough: "2026-12-31",
+    addressLocality: "Münchenstein",
+    addressRegion: "BL",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
