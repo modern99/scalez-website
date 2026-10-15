@@ -972,6 +972,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Münchenstein",
     addressRegion: "BL",
   },
+  {
+    slug: "elektro-projektleiter-ladenbau-muenchenstein",
+    title: "Elektro-Projektleiter:in mit Schwerpunkt Ladenbau und Mieterausbau (m/w/d)",
+    region: "Basel",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektro · Münchenstein",
+    teaser:
+      "Du leitest anspruchsvolle Umbau- und Ausbauprojekte im Ladenbau, Büro- und Mieterausbau in Einkaufszentren, Geschäftshäusern und Bürokomplexen. Volle Verantwortung für die gesamte Projektabwicklung. Ein etablierter Elektroinstallationsbetrieb in der Region Basel sucht dich unbefristet.",
+    compensation: "CHF 100'000 – 130'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Projektleitung anspruchsvoller Umbau- und Ausbauprojekte im Ladenbau, Büro- und Mieterausbau in Einkaufszentren, Geschäftshäusern und Bürokomplexen",
+      "Verantwortung für die gesamte Abwicklung von Konzeption und Planung über Offertstellung, technische Ausarbeitung, Bauleitung bis zur Abrechnung und Übergabe",
+      "Erstellung von Ausschreibungen, technischen Dokumentationen und Projektunterlagen",
+      "Pflege professioneller und proaktiver Kundenkommunikation als erste Ansprechperson",
+      "Fachliche und organisatorische Führung des Projektteams inklusive Personaleinsatzplanung",
+      "Teilnahme an Fachmessen, Weiterbildungen und Branchentreffen zur fachlichen Weiterentwicklung",
+    ],
+    requirements: [
+      "Abgeschlossene Grundbildung in der Elektrotechnik",
+      "Abgeschlossene Weiterbildung oder auf der Zielgeraden als Elektro-Projektleiter:in Installation und Sicherheit",
+      "Mindestens drei Jahre Berufserfahrung als Elektroinstallateur:in oder Elektroplaner:in, idealerweise im Ladenbau",
+      "Verhandlungssichere Deutschkenntnisse (mind. C1), Französischkenntnisse willkommen",
+    ],
+    benefits: [
+      "Anspruchsvolle Projekte mit Kundenkontakt zu Global Playern und regionalen Marken",
+      "Jährliche Entwicklungsgespräche und individuelle Karrierepfade",
+      "Vielfältige interne und externe Weiterbildungsangebote",
+      "Top ausgestattete Büros und Sitzungsräume in modernem Hauptgebäude mit zahlreichen Parkmöglichkeiten",
+      "Personalrestaurant, Fitnessraum und verschiedene Teamevents",
+      "Betriebliche Sozialberatung und attraktive Mitarbeitervergünstigungen",
+    ],
+    closingNote: [
+      "Wenn du Projektleitung mit vielseitigen Ladenbau-Projekten verbinden willst, in einem Umfeld das Gestaltungsfreiraum und persönliche Entwicklung ernst nimmt, freuen wir uns auf deine Bewerbung. Ein 30-minütiges Erstgespräch klärt alle offenen Fragen.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-15",
+    validThrough: "2026-12-31",
+    addressLocality: "Münchenstein",
+    addressRegion: "BL",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
