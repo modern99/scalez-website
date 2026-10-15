@@ -850,6 +850,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Bern",
     addressRegion: "BE",
   },
+  {
+    slug: "elektro-sicherheitsberater-muenchenstein",
+    title: "Elektro-Sicherheitsberater:in mit Kontrollkompetenz (m/w/d)",
+    region: "Region Basel",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektro · Münchenstein",
+    teaser:
+      "Du planst und führst Sicherheitskontrollen und elektrotechnische Prüfungen in Wohn-, Büro-, Industrie- und Spezialanlagen durch. Von Photovoltaik bis Ex-Zonen. Ein etablierter Elektro- und Gebäudetechnikbetrieb in der Region Basel sucht dich unbefristet.",
+    compensation: "CHF 95'000 – 120'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Planung, Durchführung und Dokumentation von Sicherheitskontrollen und elektrotechnischen Prüfungen in kleinen und mittleren Objekten",
+      "Prüfungen in anspruchsvollen Umgebungen wie Spitälern, Werkstätten, explosionsgefährdeten Zonen sowie an Photovoltaikanlagen und E-Ladestationen",
+      "Entwicklung individueller Lösungen für den eigenen Kundenstamm und Aufbau nachhaltiger Kundenbeziehungen über einzelne Projekte hinaus",
+      "Fachliche Unterstützung des Teams und der Kundschaft bei technischen Fragestellungen rund um Anlagen, Installationen und Normabklärungen",
+      "Zusammenarbeit mit weiteren Fachpersonen bei grösseren Anlagen und Projekten",
+    ],
+    requirements: [
+      "Abgeschlossene Grundbildung in der Elektrotechnik",
+      "Abgeschlossene Weiterbildung oder im letzten Ausbildungsjahr als Elektroprojektleiter:in Installation und Sicherheit, Sicherheitsberater:in oder Elektrokontrolleur:in",
+      "Erfahrung im Projektmanagement und gute methodische Fähigkeiten",
+      "Verhandlungssichere Deutschkenntnisse (mind. C1)",
+    ],
+    benefits: [
+      "Vielseitiges Einsatzgebiet von Standard- bis Spezialanlagen in der gesamten Region Basel",
+      "Modernste digitale Arbeitsmittel und top ausgestattete Räumlichkeiten",
+      "Jährliche Entwicklungsgespräche und individuelle Karriere- und Entwicklungswege",
+      "Vielfältige interne und externe Weiterbildungsangebote",
+      "Kostengünstiges Personalrestaurant und kostenloser Fitnessraum vor Ort",
+      "Attraktive Mitarbeitervergünstigungen und betriebliche Sozialberatung",
+    ],
+    closingNote: [
+      "Wenn du Verantwortung übernehmen willst in einem Umfeld, das Sicherheitskompetenz ernst nimmt und dir echten Entwicklungsraum bietet, freuen wir uns auf deine Bewerbung. Wir melden uns innerhalb von zwei Arbeitstagen zurück und besprechen alle Details in einem kurzen Erstgespräch.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-15",
+    validThrough: "2026-12-31",
+    addressLocality: "Münchenstein",
+    addressRegion: "BL",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
