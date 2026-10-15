@@ -931,6 +931,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Münchenstein",
     addressRegion: "BL",
   },
+  {
+    slug: "elektro-baustellenleiter-gebaeudeinstallation-muenchenstein",
+    title: "Elektro-Baustellenleiter:in Gebäudeinstallation (m/w/d)",
+    region: "Region Basel",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektro · Münchenstein",
+    teaser:
+      "Du führst Elektroinstallationsteams und koordinierst Projekte im Gewerbe-, Industrie- und Dienstleistungsbereich. Verantwortung für Planung, Durchführung und Qualität. Ein etablierter Elektroinstallationsbetrieb in der Region Basel sucht dich unbefristet.",
+    compensation: "CHF 90'000 – 115'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "Führung von Elektroinstallationsteams und Koordination vielseitiger Projekte im Gewerbe-, Industrie- und Dienstleistungsbereich",
+      "Verantwortung für Planung und Durchführung von Neuinstallationen, Unterhaltsarbeiten und Reparaturen",
+      "Enge Zusammenarbeit mit Bauleitung, Lieferanten und Handwerkern anderer Gewerke zur Sicherstellung reibungsloser Projektabläufe",
+      "Systematische Prüfung und Störungsbehebung bei Installationen",
+      "Weitergabe von Fachwissen an Mitarbeitende und Lernende zur Ausbildung der nächsten Fachkräfte-Generation",
+    ],
+    requirements: [
+      "Abgeschlossene Grundbildung als Elektroinstallateur:in EFZ, Montage-Elektriker:in EFZ, ESTI-Gleichwertigkeit oder vergleichbar",
+      "Mindestens 3 Jahre Erfahrung in der Baustellenleitung oder Teamführung",
+      "Sichere Kommunikation mit Bauleitung, Lieferanten und Handwerkern aller Gewerke",
+      "Gültiger Führerausweis Kategorie B und Flexibilität in der Region Basel und Umgebung",
+      "Verhandlungssichere Deutschkenntnisse (mind. C1)",
+    ],
+    benefits: [
+      "Modernste digitale Arbeitsmittel und gut ausgestattete Werkzeuge, komplett papierloser Arbeitsalltag",
+      "Exklusive Mitarbeitervergünstigungen auf Haushaltsgeräte, Werkzeuge, Elektroinstallationsmaterial und Fahrzeuge",
+      "Kostenlose betriebliche Sozialberatung bei persönlichen, familiären oder finanziellen Herausforderungen",
+      "Jährliche Entwicklungsgespräche und klare Karrierepfade",
+      "Verschiedene Teamevents und jährliche Gesundheitswoche",
+      "Fitnessraum und Personalrestaurant am Standort",
+    ],
+    closingNote: [
+      "Wenn du Teamführung mit echter Baustellenverantwortung verbinden willst, in einem Betrieb, der digital arbeitet und seine Mitarbeitenden ernst nimmt, freuen wir uns auf deine Bewerbung. Ein kurzes Erstgespräch klärt alle Details.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-15",
+    validThrough: "2026-12-31",
+    addressLocality: "Münchenstein",
+    addressRegion: "BL",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
