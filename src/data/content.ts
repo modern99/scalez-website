@@ -168,7 +168,7 @@ export const jobPostings: JobPosting[] = [
     title: "Projektleiter und Projektingenieur Infrastruktur für Strassen und Kunstbauten (m/w/d)",
     region: "Kanton Zürich",
     employmentType: "Festanstellung, 80–100%",
-    focus: "Tiefbau · Zürich",
+    focus: "Tiefbau · Wallisellen",
     teaser:
       "Extrem erfolgreiches, globales Ingenieurbüro in Zürich Oerlikon, das die Infrastruktur von morgen mitgestaltet, sucht eine:n Projektleiter:in und Projektingenieur:in Infrastruktur für Strassen und Kunstbauten mit echten Macherqualitäten.",
     compensation: "CHF 95'000 – 130'000 / Jahr",
@@ -201,8 +201,8 @@ export const jobPostings: JobPosting[] = [
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
     datePosted: "2026-07-29",
-    validThrough: "2026-10-29",
-    addressLocality: "Zürich",
+    validThrough: "2026-12-29",
+    addressLocality: "Wallisellen",
     addressRegion: "ZH",
   },
   {
