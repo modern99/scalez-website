@@ -158,7 +158,7 @@ export const jobPostings: JobPosting[] = [
       "Hohe Eigenverantwortung und Gestaltungsfreiraum im Arbeitsalltag",
     ],
     note: "Diskrete Besetzung · Alle Angaben vertraulich",
-    datePosted: "2026-10-26",
+    datePosted: "2026-10-15",
     validThrough: "2026-12-31",
     addressLocality: "Kriens",
     addressRegion: "LU",
