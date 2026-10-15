@@ -890,6 +890,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Münchenstein",
     addressRegion: "BL",
   },
+  {
+    slug: "projektleiter-elektroengineering-muenchenstein",
+    title: "Projektleiter:in Elektroengineering und Elektroplanung (m/w/d)",
+    region: "Region Basel",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Elektro · Münchenstein",
+    teaser:
+      "Du leitest Umbau- und Neubauprojekte im Elektroengineering von der Angebotserstellung bis zur Übergabe. Verantwortung über das gesamte Projektteam und die Kundenbeziehung. Ein etabliertes Elektro-Ingenieurunternehmen in der Region Basel sucht dich unbefristet.",
+    compensation: "CHF 105'000 – 135'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "Eigenverantwortliche Leitung von Umbau- und Neubauprojekten im Bereich Elektroengineering von der Angebotserstellung bis zur Abrechnung und Übergabe",
+      "Fachliche und organisatorische Führung des Projektteams durch alle Projektphasen",
+      "Analyse und Bewertung von Vergabeanträgen sowie Mitwirkung bei der Ausarbeitung von Werk- und Ingenieurverträgen",
+      "Selbstständige Erstellung von Spezifikationen, Ausschreibungsunterlagen und Leistungsverzeichnissen",
+      "Aufbau und Pflege langfristiger Kundenbeziehungen über einzelne Projekte hinaus",
+    ],
+    requirements: [
+      "Abgeschlossene elektrotechnische Grundausbildung",
+      "Geplante oder abgeschlossene Weiterbildung als Elektroingenieur:in FH, Elektrotechniker:in HF oder vergleichbar",
+      "Erfahrung in der Projektleitung Elektroplanung",
+      "Gute Kenntnisse in CAD- und CAE-Zeichnungsprogrammen, idealerweise auch BIM",
+      "Verhandlungssichere Deutschkenntnisse (mind. C1), jede weitere Sprache willkommen",
+    ],
+    benefits: [
+      "Anspruchsvolle Projekte mit voller Verantwortung von der Konzeption bis zur Übergabe",
+      "Modernste digitale Arbeitsmittel und top ausgestattete Räumlichkeiten",
+      "Jährliche Entwicklungsgespräche und individuelle Karrierepfade",
+      "Vielfältige Weiterbildungsangebote, intern und extern",
+      "Attraktive Mitarbeitervergünstigungen und betriebliche Sozialberatung",
+      "Fitnessraum und Personalrestaurant am Standort",
+    ],
+    closingNote: [
+      "Wenn du echte Verantwortung in einem Umfeld suchst, das Elektroengineering als Zukunftsfeld versteht und dir Freiraum zur Gestaltung lässt, freuen wir uns auf deine Bewerbung. Ein 10-minütiges Erstgespräch klärt alle offenen Fragen.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-10-15",
+    validThrough: "2026-12-31",
+    addressLocality: "Münchenstein",
+    addressRegion: "BL",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
