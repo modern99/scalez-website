@@ -1318,57 +1318,111 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "gav-elektrobranche-2026-2029",
-    title: "Neuer GAV 2026 in der Schweizer Elektrobranche was sich für dich als Fachkraft jetzt ändert",
+    title: "GAV Elektro 2026 Mindestlöhne bis 2029 im Überblick",
     category: "Markt",
-    readTime: "6 Min.",
-    publishedAt: "26. August 2026",
+    readTime: "7 Min.",
+    publishedAt: "28. Oktober 2026",
     teaser:
-      "Seit dem 1. Januar 2026 gilt der neue Gesamtarbeitsvertrag der Schweizer Elektrobranche. Mindestlöhne, Arbeitszeit und Auslagenersatz wurden für die kommenden vier Jahre neu geregelt. Wir zeigen dir, welche Zahlen für dich als Elektroinstallateur:in, Teamleiter:in oder Gebäudeinformatiker:in wirklich zählen.",
+      "Elektroinstallateur EFZ ab CHF 4'500, nach einem Branchenjahr CHF 5'000. Alle GAV Mindestlöhne 2026 bis 2029, Spesen, Ferien und wer nicht unterstellt ist.",
     intro:
-      "Der neue GAV 2026 bis 2029 der Schweizer Elektrobranche ist mehr als eine formale Vertragsverlängerung. Er definiert die Mindestlöhne, die Jahresbruttoarbeitszeit und die Regeln zum Auslagenersatz neu und läuft bis Ende 2029. Für rund 40'000 Fachkräfte in der Elektrobranche bedeutet das konkrete Zahlen zum Nachrechnen. Wir haben die Lohnvereinbarung Punkt für Punkt durchgearbeitet und ordnen die wichtigsten Änderungen so ein, dass du in fünf Minuten weisst, wo du stehst und was der Vertrag für deine nächste Lohnverhandlung bedeutet.",
+      "Seit dem 1. Januar 2026 gilt in der Schweizer Elektrobranche ein neuer GAV, allgemeinverbindlich bis Ende 2029. Als Elektroinstallateur:in EFZ verdienst du 2026 mindestens CHF 4'500 pro Monat direkt nach der Lehre und CHF 5'000 nach einem vollen Branchenjahr, jeweils 13 Mal pro Jahr. Hier findest du alle Lohnkategorien, die Regeln zu Arbeitszeit, Spesen und Ferien und die Antwort darauf, ob der GAV für dich überhaupt gilt.",
     sections: [
       {
-        id: "was-der-neue-gav-elektrobranche-ueberhaupt-regelt",
-        title: "Was der neue GAV Elektrobranche überhaupt regelt",
+        id: "fuer-wen-gilt-der-gav-elektrobranche",
+        title: "Für wen gilt der GAV Elektrobranche?",
         paragraphs: [
-          "Der neue Gesamtarbeitsvertrag ist am 1. Januar 2026 in Kraft getreten und läuft bis Ende 2029. Verhandelt wurde er zwischen dem Arbeitgeberverband EIT.swiss und den Gewerkschaften Unia und Syna. Die Delegierten von EIT.swiss haben den Vertrag am 17. September 2025 genehmigt, kurz darauf hat die Paritätische Landeskommission die Details für 2026 festgezurrt.",
-          "Wichtig zu wissen: Der GAV gilt allgemeinverbindlich für alle Betriebe, die im Nieder- oder Schwachstrombereich elektrische Installationen ausführen, sowie für vorbereitende Arbeiten wie Schlitzarbeiten, Trassenmontagen oder Rohreinlagen. Ob du in einem klassischen Elektroinstallationsbetrieb, im Bereich Gebäudeinformatik oder in der Anlagentechnik arbeitest, spielt keine Rolle. Sobald dein Arbeitgeber in den beschriebenen Bereich fällt, hast du Anspruch auf die im GAV festgelegten Mindestbedingungen.",
+          "Der GAV wurde zwischen dem Arbeitgeberverband EIT.swiss und den Gewerkschaften Unia und Syna ausgehandelt. Der Bundesrat hat ihn allgemeinverbindlich erklärt. Damit gilt er für alle Betriebe der Branche, auch für solche, die nicht Mitglied bei EIT.swiss sind. Ausgenommen sind die Kantone Genf und Wallis, die eigene Verträge haben. Unterstellt sind Betriebe, die elektrische Installationen im Niederspannungsbereich nach NIV ausführen. Dazu gehören auch Gebäudeinformatik, Energieerzeugungsanlagen wie Photovoltaik und provisorische Installationen. Ebenfalls darunter fallen Schwachstromanlagen für Kommunikation, Sicherheit und Automation sowie vorbereitende Arbeiten wie Schlitzarbeiten, Trassenmontagen und Rohreinlagen. Wichtig und oft übersehen: Nicht unterstellt sind Kader und Mitarbeitende, die vorwiegend mit Planung, Projektierung, Kalkulation und Offerten beschäftigt sind. Als Elektroplaner:in oder Projektleiter:in fällst du deshalb häufig gar nicht unter die GAV-Mindestlöhne, dein Lohn wird frei verhandelt. Was in diesen Funktionen am Markt bezahlt wird, haben wir im Beitrag „Löhne in der Schweizer Elektrobranche 2026“ aufgeschlüsselt.",
         ],
       },
       {
-        id: "die-neuen-mindestloehne-2026-im-ueberblick",
-        title: "Die neuen Mindestlöhne 2026 im Überblick",
+        id: "welche-mindestloehne-gelten-2026",
+        title: "Welche Mindestlöhne gelten 2026?",
         paragraphs: [
-          "Der GAV unterscheidet klar nach Ausbildung, Funktion und Branchenerfahrung. Für 2026 gelten diese Mindestlöhne pro Monat (13x jährlich). Elektroinstallateur:in EFZ startet bei CHF 4'500 direkt nach dem Abschluss. Nach einem vollen Jahr Branchenerfahrung in der Schweiz steigt der Mindestlohn auf CHF 5'000. Bis 2029 klettert er stufenweise auf CHF 4'700 beziehungsweise CHF 5'200.",
-          "Montage-Elektriker:in EFZ beginnt bei CHF 4'300 nach Abschluss und CHF 4'700 nach einem Branchenjahr. Gebäudeinformatiker:innen und Telematiker:innen EFZ haben mit CHF 4'770 nach Abschluss und CHF 5'300 nach einem Branchenjahr die höchsten Einstiegsmindestlöhne unter den EFZ-Berufen. Teamleiter:innen mit Prüfungszertifikat nach den Ausbildungsvorgaben von EIT.swiss oder vertraglich anerkannter Gleichwertigkeit erhalten mindestens CHF 5'600 pro Monat.",
-          "Für Fachkräfte mit schulischem Berufsabschluss oder ausländischer Elektrofachausbildung gelten CHF 4'300 nach Abschluss und CHF 4'600 nach einem Branchenjahr. Wer ohne Berufsabschluss in der Elektrobranche arbeitet, hat Anspruch auf CHF 4'200 zu Beginn und CHF 4'500 nach zwei Jahren Branchenerfahrung.",
+          "Als Elektroinstallateur:in EFZ verdienst du 2026 mindestens CHF 4'500 pro Monat direkt nach der Lehre und CHF 5'000 nach einem vollen Branchenjahr. Montage-Elektriker:innen EFZ starten bei CHF 4'300 und kommen nach einem Branchenjahr auf CHF 4'700. Gebäudeinformatiker:innen und Telematiker:innen EFZ haben mit CHF 4'770 und CHF 5'300 die höchsten Mindestlöhne unter den EFZ-Berufen. Teamleiter:innen mit Prüfungszertifikat nach EIT.swiss erhalten mindestens CHF 5'600. Mit schulischem Abschluss oder ausländischer Elektroausbildung gelten CHF 4'300 nach Abschluss und CHF 4'600 nach einem Branchenjahr. Ohne Berufsabschluss sind es CHF 4'200 zu Beginn und CHF 4'500 nach zwei Jahren in der Branche. Alle Beträge werden 13 Mal pro Jahr ausbezahlt. Für Elektroinstallateur:innen EFZ ergibt das mindestens CHF 58'500 beziehungsweise CHF 65'000 pro Jahr. Der höhere Mindestlohn gilt jeweils ab dem 1. Januar nach einem vollen Jahr Branchenerfahrung in der Schweiz. Deine Erfahrung musst du selbst belegen, etwa mit Arbeitszeugnissen oder Lohnabrechnungen. Ausländische Abschlüsse zählen wie ein EFZ, wenn eine Gleichwertigkeitsbestätigung von ESTI oder SBFI vorliegt. Für Lernende und für Jugendliche ohne EFZ bis zum 20. Altersjahr gelten die Mindestlöhne nicht.",
         ],
       },
       {
-        id: "arbeitszeit-auslagenersatz-und-weitere-aenderungen-die-zaehlen",
-        title: "Arbeitszeit Auslagenersatz und weitere Änderungen die zählen",
+        id: "wie-entwickeln-sich-die-mindestloehne-bis-2029",
+        title: "Wie entwickeln sich die Mindestlöhne bis 2029?",
         paragraphs: [
-          "Die Paritätische Landeskommission hat die Jahresbruttoarbeitszeit für 2026 auf 2'088 Stunden festgelegt. Umgerechnet auf 40 Stunden pro Woche ergibt sich daraus ein solider Referenzwert für alle Berechnungen rund um Überstunden, Ferien und Krankheitstage.",
-          "Neu geregelt ist auch der Auslagenersatz für auswärtige Arbeit bei täglicher Heimkehr. Wenn dein Arbeitsort mehr als 15 Minuten Wegstrecke vom Firmendomizil entfernt liegt, hast du Anspruch auf mindestens CHF 18 pro Tag für die auswärtige Verpflegung. Klingt nach wenig, summiert sich aber übers Jahr auf mehrere hundert Franken, die viele Fachkräfte gar nicht einfordern.",
-          "Zusätzlich zur Lohnstruktur wurde für alle Mitarbeitenden, die vor dem 1. Oktober 2025 beim gleichen Arbeitgeber angestellt waren, per 1. Januar 2026 eine generelle Erhöhung der Effektivlöhne um CHF 50 pro Monat beschlossen. Wer den Job später angetreten hat, ist von dieser generellen Anhebung ausgeschlossen. Der Vollzugskosten- und Weiterbildungsbeitrag beträgt weiterhin CHF 21 pro Monat und wird sowohl vom Arbeitnehmenden als auch vom Arbeitgeber getragen.",
+          "Die Mindestlöhne sind im Anhang 5c des GAV für die ganze Laufzeit festgelegt. Sie steigen in allen Kategorien per 1. Januar 2027 und per 1. Januar 2029 um je CHF 100 pro Monat. 2028 bleiben sie auf dem Stand von 2027. Für Elektroinstallateur:innen EFZ heisst das CHF 4'600 nach der Lehre und CHF 5'100 nach einem Branchenjahr ab 2027, ab 2029 dann CHF 4'700 und CHF 5'200. Montage-Elektriker:innen EFZ kommen 2029 auf CHF 4'500 und CHF 4'900, Gebäudeinformatiker:innen auf CHF 4'970 und CHF 5'500, Teamleiter:innen auf CHF 5'800.",
         ],
       },
       {
-        id: "mindestlohn-ist-nicht-marktlohn-und-darin-liegt-deine-chance",
-        title: "Mindestlohn ist nicht Marktlohn und darin liegt deine Chance",
+        id: "wie-hoch-ist-der-stundenlohn-nach-gav",
+        title: "Wie hoch ist der Stundenlohn nach GAV?",
         paragraphs: [
-          "Die GAV-Mindestlöhne sind genau das: Mindestansprüche. Sie schützen dich vor Unterbezahlung, sagen aber wenig über deinen tatsächlichen Marktwert aus. Im Schnitt verdienen Elektroinstallateur:innen in der Schweiz laut aktuellen Lohnstatistiken zwischen CHF 68'000 und CHF 85'000 pro Jahr, im Kanton Zürich liegt der Durchschnitt bei rund CHF 72'000 brutto. Erfahrene Fachkräfte mit Spezialisierungen wie Photovoltaik, Gebäudeautomation oder Elektroplanung erreichen häufig CHF 95'000 bis über CHF 110'000.",
-          "Zwischen dem Mindestlohn nach EFZ (CHF 58'500 bei 13 Monatslöhnen) und dem Marktdurchschnitt liegen also rund CHF 10'000 bis CHF 25'000 pro Jahr. Diese Lücke füllen Erfahrung, Zusatzqualifikationen, Verantwortung und Verhandlungsgeschick. Wer den Unterschied zwischen dem, was der GAV garantiert, und dem, was der Markt tatsächlich zahlt, kennt, verhandelt in der Regel deutlich stärker.",
-          "Regionale Unterschiede spielen ebenfalls eine grosse Rolle. In Zürich und Basel-Stadt liegen die Löhne teils bis zu 20 Prozent höher als in ländlichen Kantonen. Auch die Betriebsgrösse und der Auftragsmix des Arbeitgebers wirken sich direkt aus. Grosse Generalunternehmen und Industriebetriebe zahlen für die gleiche Funktion oft mehr als kleinere Handwerksbetriebe, dafür bieten kleinere Betriebe häufig mehr Verantwortung und schnellere Aufstiegsmöglichkeiten.",
+          "Der GAV rechnet den Stundenlohn aus dem Monatslohn geteilt durch 174 Stunden. Beim Mindestlohn von CHF 4'500 ergibt das einen Grundstundenlohn von CHF 25.86, bei CHF 5'000 sind es CHF 28.74. Im Stundenlohn kommen die Anteile für Ferien, Feiertage und den 13. Monatslohn noch dazu. Die Jahresbruttoarbeitszeit liegt 2026 bei 2'088 Stunden, berechnet auf eine 40-Stunden-Woche. Dieser Wert ist die Basis für Überstunden, Ferien und Krankheitstage.",
         ],
       },
       {
-        id: "was-du-als-fachkraft-in-der-elektrobranche-jetzt-tun-solltest",
-        title: "Was du als Fachkraft in der Elektrobranche jetzt tun solltest",
+        id: "was-gilt-bei-ueberstunden-spesen-und-ferien",
+        title: "Was gilt bei Überstunden, Spesen und Ferien?",
         paragraphs: [
-          "Prüfe zuerst, ob dein aktueller Lohn mindestens den GAV-Vorgaben entspricht. Die Zahlen findest du oben, den vollständigen Text der Lohnvereinbarung 2026 stellt die Paritätische Landeskommission auf plk-elektro.ch als PDF zur Verfügung. Falls dein Effektivlohn unter dem Mindestlohn liegt, hast du Anspruch auf sofortige Anpassung. Bei Unsicherheiten wendest du dich am besten an den Rechtsdienst von EIT.swiss oder direkt an deine Gewerkschaft.",
-          "Wenn du oberhalb des Mindestlohns liegst, aber unsicher bist, wo du im Marktvergleich stehst, hilft eine ehrliche Standortbestimmung. Berufserfahrung, Weiterbildungen wie die Fachprüfung zum Elektro-Teamleiter oder Sicherheitsberater, sowie Spezialgebiete wie KNX, Photovoltaik oder Gebäudeautomation heben deinen Marktwert oft deutlich stärker, als du denkst.",
-          "Genau hier setzen wir bei ScaleZ an. Wir kennen die Elektrobranche in der Deutschschweiz, sprechen mit Betrieben aller Grössenordnungen und wissen, welche Löhne aktuell für welche Profile bezahlt werden. Wenn du wissen willst, wo du mit deinem Profil im Markt stehst, melde dich bei uns. Wir ordnen deinen Marktwert gemeinsam mit dir ein, diskret und ohne Verpflichtung.",
+          "Überstunden entstehen, wenn du über das Jahr mehr arbeitest als die Jahresbruttoarbeitszeit. Bis zu 100 Überstunden dürfen per 31. Dezember ins nächste Jahr übertragen werden und werden dann ohne Zuschlag kompensiert oder ausbezahlt. Alles über 100 Stunden wird im Januar mit 25 % Zuschlag ausbezahlt. Arbeitest du auswärts und fährst täglich heim, hast du Anspruch auf mindestens CHF 18 pro Tag für die Verpflegung, sobald der Arbeitsort mehr als 15 Minuten vom Firmendomizil entfernt liegt. Setzt du dein Privatauto ein und hat der Betrieb kein eigenes Spesenreglement, gibt es CHF 0.60 pro Kilometer. Viele lassen diese Beträge liegen, weil sie sie nicht kennen. Bis zum vollendeten 50. Altersjahr hast du 27 Ferientage, danach 30. Bis 20 Jahre sind es 25 Tage. Für Weiterbildung kannst du bis zu 5 bezahlte Tage pro Jahr beanspruchen, beim Vaterschaftsurlaub sind es 10 Tage zu 100 % Lohn.",
+        ],
+      },
+      {
+        id: "was-hat-sich-2026-bei-den-bestehenden-loehnen-geaendert",
+        title: "Was hat sich 2026 bei den bestehenden Löhnen geändert?",
+        paragraphs: [
+          "Wer vor dem 1. Oktober 2025 beim gleichen Arbeitgeber angestellt war, hat per 1. Januar 2026 generell CHF 50 mehr pro Monat erhalten. Wer später eingestiegen ist, hat keinen Anspruch auf diese Erhöhung. Vom Lohn abgezogen werden weiterhin CHF 21 pro Monat für Vollzugskosten und Weiterbildung. Der Arbeitgeber zahlt denselben Betrag zusätzlich ein.",
+        ],
+      },
+      {
+        id: "warum-der-mindestlohn-selten-dein-echter-lohn-ist",
+        title: "Warum der Mindestlohn selten dein echter Lohn ist",
+        paragraphs: [
+          "Die GAV-Mindestlöhne schützen dich vor Unterbezahlung. Über deinen Marktwert sagen sie wenig. Gerade in Zürich und Basel liegen die tatsächlich bezahlten Löhne für erfahrene Elektroinstallateur:innen klar darüber. Den Unterschied machen Berufsjahre, Spezialgebiete wie Photovoltaik, KNX oder Gebäudeautomation und Weiterbildungen zum Elektro-Teamleiter oder Sicherheitsberater. Auch die Grösse des Betriebs spielt mit. Konkrete Lohnbänder nach Funktion findest du in unserem Beitrag „Löhne in der Schweizer Elektrobranche 2026“.",
+        ],
+      },
+      {
+        id: "wie-pruefst-du-ob-dein-lohn-gav-konform-ist",
+        title: "Wie prüfst du, ob dein Lohn GAV-konform ist?",
+        paragraphs: [
+          "Bestimme zuerst deine Kategorie anhand deines Abschlusses und deiner Branchenjahre in der Schweiz. Vergleiche dann deinen Monatslohn auf der Lohnabrechnung mit den Beträgen oben und prüfe, ob der 13. Monatslohn bezahlt wird. Liegst du darunter, hast du Anspruch auf Anpassung. Sprich zuerst mit deinem Arbeitgeber. Hilft das nicht, kannst du dich an die Paritätische Landeskommission der Elektrobranche oder an Unia oder Syna wenden.",
+        ],
+      },
+      {
+        id: "wie-viel-verdient-ein-elektroinstallateur-efz-2026-mindestens",
+        title: "Wie viel verdient ein Elektroinstallateur EFZ 2026 mindestens?",
+        paragraphs: [
+          "Nach dem GAV der Schweizer Elektrobranche mindestens CHF 4'500 pro Monat direkt nach der Lehre und CHF 5'000 nach einem vollen Branchenjahr in der Schweiz, jeweils 13 Mal pro Jahr. Das sind CHF 58'500 beziehungsweise CHF 65'000 pro Jahr.",
+        ],
+      },
+      {
+        id: "gilt-der-gav-elektro-auch-fuer-elektroplaner-und-projektleiter",
+        title: "Gilt der GAV Elektro auch für Elektroplaner und Projektleiter?",
+        paragraphs: [
+          "Meistens nicht. Mitarbeitende, die vorwiegend planen, projektieren, kalkulieren oder offerieren, sind vom GAV ausgenommen, ebenso Kader. Ihr Lohn wird frei verhandelt.",
+        ],
+      },
+      {
+        id: "gilt-der-gav-elektrobranche-in-der-ganzen-schweiz",
+        title: "Gilt der GAV Elektrobranche in der ganzen Schweiz?",
+        paragraphs: [
+          "Ja, mit Ausnahme der Kantone Genf und Wallis, die eigene Gesamtarbeitsverträge haben. Weil der Bundesrat den GAV allgemeinverbindlich erklärt hat, gilt er auch für Betriebe, die nicht Mitglied bei EIT.swiss sind.",
+        ],
+      },
+      {
+        id: "wie-viele-ferientage-gibt-der-gav-elektro",
+        title: "Wie viele Ferientage gibt der GAV Elektro?",
+        paragraphs: [
+          "27 Tage bis zum vollendeten 50. Altersjahr, danach 30 Tage. Bis 20 Jahre sind es 25 Tage.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Der GAV sagt dir, was du mindestens bekommen musst. Was du mit deiner Erfahrung tatsächlich bekommen kannst, steht nirgends geschrieben. Wir sprechen jede Woche mit Elektrobetrieben in der Deutschschweiz und wissen, welche Löhne für welche Profile gerade bezahlt werden. Wenn du wissen willst, wo du stehst, buch dir 30 Minuten mit uns unter bit.ly/scalez-booking. Unverbindlich und diskret. Unsere offenen Stellen in der Elektrobranche findest du unter scale-z.ch/jobs.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "GAV der Schweizerischen Elektrobranche, Mindestlöhne ab 1. Januar 2026, GAV-Service der Unia: https://service-cct.ch/gav/300001/version/12/vertrag/12343 Lohnvereinbarung 2026 mit Anhang 5c, Paritätische Landeskommission der Elektrobranche: https://www.plk-elektro.ch/documents/737/ELEKT_Lohnvereinbarung_2026_d.pdf Allgemeinverbindlicherklärung des GAV, SECO: https://www.seco.admin.ch/seco/de/home/Arbeit/Personenfreizugigkeit_Arbeitsbeziehungen/Gesamtarbeitsvertraege_Normalarbeitsvertraege/Gesamtarbeitsvertraege_Bund/Allgemeinverbindlich_erklaerte_Gesamtarbeitsvertraege/Elektro_Telekommunikations_Installationsgewerbes.html",
         ],
       },
     ],
