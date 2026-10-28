@@ -1059,21 +1059,20 @@ export const jobPostings: JobPosting[] = [
 export const blogPosts: BlogPost[] = [
   {
     slug: "loehne-elektrobranche-schweiz-2026",
-    title: "Löhne in der Schweizer Elektrobranche 2026 was ein Elektroinstallateur Projektleiter oder Sicherheitsberater wirklich verdient",
+    title: "Lohn Elektroinstallateur und Elektroplaner Schweiz 2026",
     category: "Markt",
     readTime: "8 Minuten",
-    publishedAt: "15. Oktober 2026",
+    publishedAt: "28. Oktober 2026",
     teaser:
-      "Der neue GAV Elektrobranche 2026 bis 2029 setzt klare Mindestlöhne. Die Marktrealität liegt in vielen Positionen deutlich darüber. Wir zeigen, was Elektroinstallateure EFZ, Elektroplaner, Projektleiter, Sicherheitsberater und Teamleiter in der Schweiz 2026 wirklich verdienen und wo die grössten Lohnhebel liegen.",
+      "Als Elektroinstallateur EFZ verdienst du meist CHF 64'000 bis 88'000 im Jahr. Dazu alle Löhne 2026 für Elektroplaner, Projektleiter und Sicherheitsberater.",
     intro:
-      "Die Schweizer Elektrobranche steht 2026 in einer paradoxen Situation. Der GAV Elektrobranche 2026 bis 2029 ist seit Januar 2026 in Kraft und schreibt verbindliche Mindestlöhne für die ganze Branche vor. Gleichzeitig liegt der tatsächliche Marktlohn in fast allen Positionen deutlich über diesen Mindestwerten. Grund dafür ist eine Kombination aus Fachkräftemangel, Energiewende und Elektrifizierung von Mobilität und Gebäudetechnik, die die Nachfrage nach qualifizierten Elektroprofis seit Jahren über das Angebot drückt. Wir vermitteln täglich Fachkräfte in dieser Branche und bekommen genaue Einblicke in die Lohnbandbreiten verschiedener Positionen. In diesem Beitrag ordnen wir die Lohnrealität 2026 nach Position ein, mit Daten aus dem offiziellen GAV, aus den grossen Lohnportalen jobs.ch, lohncheck.ch, kununu und Indeed sowie aus unseren eigenen Vermittlungsgesprächen.",
+      "Ein Elektroinstallateur EFZ verdient in der Schweiz 2026 meist zwischen CHF 64'000 und 88'000 pro Jahr, im Mittel rund CHF 75'000 oder knapp CHF 5'800 pro Monat bei 13 Monatslöhnen. Elektroplaner:innen liegen bei rund CHF 70'000 bis 100'000, Elektro-Projektleiter:innen bei CHF 85'000 bis 115'000. Hier findest du die Lohnbänder nach Funktion, die Löhne aus unseren aktuellen Mandaten und was deinen Lohn tatsächlich bewegt.",
     sections: [
       {
-        id: "der-gav-elektrobranche-2026-bis-2029-was-er-regelt-und-was-er-nicht-regelt",
-        title: "Der GAV Elektrobranche 2026 bis 2029 was er regelt und was er nicht regelt",
+        id: "was-verdient-ein-elektroinstallateur-efz-in-der-schweiz",
+        title: "Was verdient ein Elektroinstallateur EFZ in der Schweiz?",
         paragraphs: [
-          "Der Gesamtarbeitsvertrag der Schweizerischen Elektrobranche ist seit dem 1. Januar 2026 in seiner aktuellen Fassung in Kraft und läuft bis Ende 2029. Er wird von EIT.swiss gemeinsam mit den Sozialpartnern Unia und Syna getragen und gilt für die gesamte Branche in der Deutschschweiz und Romandie. Er regelt verbindliche Mindestlöhne, Arbeitszeit, Ferien, Krankentaggeld und Weiterbildungszuschüsse.",
-          "Die Mindestlöhne für 2026 sind klar strukturiert und werden bei 13 Monatslöhnen pro Jahr ausbezahlt. Für Elektroinstallateure EFZ gilt direkt nach Lehrabschluss ein Mindestlohn von CHF 4'500 pro Monat, nach einem Jahr Branchenerfahrung steigt dieser auf CHF 5'000. Montage-Elektriker EFZ liegen bei CHF 4'300 nach Abschluss und CHF 4'700 nach einem Jahr. Telematiker EFZ starten bei CHF 4'770 und erreichen nach einem Branchenjahr CHF 5'300. Teamleiter mit abgelegter Prüfung haben einen Mindestlohn von CHF 5'600 pro Monat.",
+          "Der marktübliche Lohn für Elektroinstallateur:innen EFZ liegt 2026 bei rund CHF 64'000 bis 88'000 pro Jahr, der Median bei rund CHF 75'000. Pro Monat sind das bei 13 Monatslöhnen etwa CHF 4'900 bis 6'800, im Mittel knapp CHF 5'800. Das obere Ende erreichst du mit Spezialisierung, Erfahrung in der Industrie oder Verantwortung auf der Baustelle. Montage-Elektriker:innen EFZ verdienen etwas weniger, typischerweise CHF 56'000 bis 76'000 pro Jahr mit einem Median um CHF 64'000. Die Lehre dauert drei statt vier Jahre, entsprechend tiefer liegt auch der GAV-Mindestlohn. Die Untergrenze setzt der GAV. Elektroinstallateur:innen EFZ verdienen 2026 mindestens CHF 4'500 pro Monat nach der Lehre und CHF 5'000 nach einem vollen Branchenjahr. Alle Mindestlöhne bis 2029 findest du in unserem Beitrag zum GAV Elektro 2026. Die Mindestlöhne für 2026 sind klar strukturiert und werden bei 13 Monatslöhnen pro Jahr ausbezahlt. Für Elektroinstallateure EFZ gilt direkt nach Lehrabschluss ein Mindestlohn von CHF 4'500 pro Monat, nach einem Jahr Branchenerfahrung steigt dieser auf CHF 5'000. Montage-Elektriker EFZ liegen bei CHF 4'300 nach Abschluss und CHF 4'700 nach einem Jahr. Telematiker EFZ starten bei CHF 4'770 und erreichen nach einem Branchenjahr CHF 5'300. Teamleiter mit abgelegter Prüfung haben einen Mindestlohn von CHF 5'600 pro Monat.",
           "Für die kommenden Jahre sieht der GAV eine stufenweise Erhöhung der Mindestlöhne um insgesamt CHF 200 vor, verteilt auf 2027 und 2029. Was der GAV nicht regelt, sind Positionen oberhalb der Teamleiterstufe. Elektroplaner, Elektro-Projektleiter, Sicherheitsberater und spezialisierte Rollen wie Elektro-Grossprojektleiter haben keine verbindlichen Mindestlöhne und bewegen sich frei am Markt. Genau hier entsteht die grösste Spannbreite.",
         ],
       },
@@ -1087,73 +1086,90 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        id: "elektroplaner-die-unterschaetzte-position-mit-grosser-spannbreite",
-        title: "Elektroplaner die unterschätzte Position mit grosser Spannbreite",
+        id: "was-verdienen-servicetechniker-und-teamleiter-im-elektro",
+        title: "Was verdienen Servicetechniker und Teamleiter im Elektro?",
         paragraphs: [
-          "Der Elektroplaner EFZ ist eine der strategisch wichtigsten Positionen in der Branche und gleichzeitig eine der am stärksten unterschätzten, wenn es um Lohnbewusstsein geht. Der Marktlohn liegt in der Schweiz 2026 zwischen CHF 70'000 und CHF 100'000 pro Jahr, mit einem Durchschnitt von rund CHF 83'000. Die Spannbreite ist deutlich grösser als bei der Installation, weil die Rolle stark vom Erfahrungslevel und von den eingesetzten Tools abhängt.",
-          "Einsteiger ohne Berufserfahrung starten typischerweise bei CHF 70'000 bis CHF 75'000. Mit drei bis fünf Jahren Berufserfahrung und sicherer Anwendung eines CAD-Systems wie Elcad, Plancal Nova oder Revit MEP erreichen Elektroplaner CHF 85'000 bis CHF 95'000. Spezialisierungen in BIM, in Photovoltaik-Grossanlagen oder in Gebäudeautomation treiben das obere Ende der Lohnbandbreite auf CHF 100'000 und mehr. Senior Elektroplaner mit Weiterbildung Richtung Techniker HF oder mit Teilverantwortung für Projektleitung erreichen CHF 105'000.",
+          "Im Service liegen die Löhne meist über der klassischen Installation, weil Pikett, Kundenkontakt und selbstständiges Arbeiten dazukommen. In unseren aktuellen Mandaten liegen die Lohnbänder für Service-Elektroinstallateur:innen im Raum Luzern bei CHF 75'000 bis 90'000 und für Servicemonteur:innen Elektro im Grossraum Zürich bei CHF 78'000 bis 92'000, dort inklusive Firmenfahrzeug. Wer zusätzlich Spezialanlagen betreut oder führt, liegt höher. Servicetechniker:innen für Notstromanlagen liegen in unseren Mandaten bei CHF 80'000 bis 105'000, bauleitende Monteur:innen bei CHF 82'000 bis 105'000. Für Elektroinstallateur:innen EFZ als Teamleiter:in Service und Unterhalt in Zürich liegt das Band bei CHF 84'500 bis 95'000. Einsteiger ohne Berufserfahrung starten typischerweise bei CHF 70'000 bis CHF 75'000. Mit drei bis fünf Jahren Berufserfahrung und sicherer Anwendung eines CAD-Systems wie Elcad, Plancal Nova oder Revit MEP erreichen Elektroplaner CHF 85'000 bis CHF 95'000. Spezialisierungen in BIM, in Photovoltaik-Grossanlagen oder in Gebäudeautomation treiben das obere Ende der Lohnbandbreite auf CHF 100'000 und mehr. Senior Elektroplaner mit Weiterbildung Richtung Techniker HF oder mit Teilverantwortung für Projektleitung erreichen CHF 105'000.",
           "Die Position wird am Markt stark nachgefragt. Die Energiewende hat den Bedarf an qualifizierten Elektroplanern massiv erhöht. Jede Wärmepumpe braucht neue elektrische Zuleitungen, jede Photovoltaikanlage braucht Netzanschlussplanung, jede Wallbox für Elektrofahrzeuge braucht korrekte Lastberechnung. All das läuft über Elektroplaner. Elektroplaner mit mehrjähriger Erfahrung haben in der Deutschschweiz 2026 in der Regel mehrere parallele Angebote.",
         ],
       },
       {
-        id: "elektro-sicherheitsberater-und-elektrokontrolleur-die-unterschaetzten-spezialisten",
-        title: "Elektro-Sicherheitsberater und Elektrokontrolleur die unterschätzten Spezialisten",
+        id: "was-verdient-ein-elektroplaner-in-der-schweiz",
+        title: "Was verdient ein Elektroplaner in der Schweiz?",
         paragraphs: [
-          "Zwei Positionen, deren Marktbedeutung oft unterschätzt wird, sind der Elektro-Sicherheitsberater und der Elektrokontrolleur. Beide Rollen sind sicherheitskritisch, gesetzlich geregelt durch die Niederspannungs-Installationsverordnung NIV und tragen die Verantwortung dafür, dass elektrische Installationen in Gebäuden tatsächlich sicher sind.",
-          "Der Elektro-Sicherheitsberater verdient in der Schweiz 2026 zwischen CHF 76'000 und CHF 104'000 pro Jahr, mit einem Durchschnitt von CHF 88'000. Wichtig: Der klassische Titel Sicherheitsberater wurde Ende 2021 formal abgelöst durch den Titel Elektroprojektleiter Installation und Sicherheit. In der Praxis werden beide Begriffe weiterhin verwendet, und viele Stellenausschreibungen 2026 nutzen den etablierten Titel Sicherheitsberater, weil er für Suchende in der Branche greifbarer ist.",
+          "Elektroplaner:innen EFZ verdienen in der Schweiz rund CHF 70'000 bis 100'000 pro Jahr, im Mittel etwa CHF 83'000. Für Planer:innen gibt es keinen GAV-Mindestlohn, weil planende und projektierende Tätigkeiten vom GAV ausgenommen sind. Der Lohn ist reiner Marktlohn. Die Spannbreite ist grösser als in der Installation. Entscheidend sind Berufsjahre, die Sicherheit im CAD-System und Spezialgebiete wie BIM, grosse Photovoltaikanlagen oder Gebäudeautomation. In unserem aktuellen Mandat für Elektroplaner:innen EFZ oder mit Weiterbildung in Zürich liegt das Lohnband bei CHF 85'000 bis 115'000 bei 100 Prozent. Der Elektro-Sicherheitsberater verdient in der Schweiz 2026 zwischen CHF 76'000 und CHF 104'000 pro Jahr, mit einem Durchschnitt von CHF 88'000. Wichtig: Der klassische Titel Sicherheitsberater wurde Ende 2021 formal abgelöst durch den Titel Elektroprojektleiter Installation und Sicherheit. In der Praxis werden beide Begriffe weiterhin verwendet, und viele Stellenausschreibungen 2026 nutzen den etablierten Titel Sicherheitsberater, weil er für Suchende in der Branche greifbarer ist.",
           "Der Elektrokontrolleur ist ebenfalls eine spezialisierte Rolle mit eigener Prüfungskompetenz. Der Durchschnittslohn liegt 2026 bei rund CHF 5'182 brutto pro Monat, was bei 13 Monatslöhnen etwa CHF 67'000 pro Jahr ergibt. Die Spannbreite der mittleren 50 Prozent liegt zwischen CHF 58'000 und CHF 75'000 Jahresbrutto. Erfahrene Elektrokontrolleure, die in grösseren Betrieben eigenständig komplexe Industrie- und Spezialanlagen prüfen, erreichen auch Jahreslöhne von CHF 85'000 bis CHF 95'000. Unsere Vermittlungen zeigen regelmässig, dass Senior-Sicherheitsberater mit Erfahrung in Industrie, Spitälern oder Explosionsschutzzonen über CHF 110'000 verdienen.",
         ],
       },
       {
-        id: "elektro-projektleiter-die-rolle-mit-dem-groessten-hebel",
-        title: "Elektro-Projektleiter die Rolle mit dem grössten Hebel",
+        id: "was-verdient-ein-elektro-projektleiter",
+        title: "Was verdient ein Elektro-Projektleiter?",
         paragraphs: [
-          "Die Position des Elektro-Projektleiters ist in der Schweizer Branche die wichtigste Scharnierfunktion zwischen operativer Umsetzung und strategischer Projektverantwortung. Der Marktlohn liegt in der Deutschschweiz 2026 zwischen CHF 85'000 und CHF 115'000 pro Jahr, mit einem Durchschnitt von rund CHF 98'000.",
-          "Elektro-Projektleiter mit abgeschlossener Weiterbildung Elektro-Projektleiter Installation und Sicherheit und drei bis fünf Jahren Erfahrung bewegen sich typischerweise bei CHF 95'000 bis CHF 110'000. Mit zusätzlicher Verantwortung für Grossprojekte in Industrie, Pharma oder öffentlichen Bauten erreichen Elektro-Projektleiter CHF 120'000 bis CHF 140'000. Spezialisierte Rollen wie Elektro-Grossprojektleiter in der Pharma- und Life-Sciences-Industrie oder in Reinraumanlagen sind nochmals höher dotiert und erreichen regelmässig CHF 130'000 bis CHF 155'000.",
+          "Elektro-Projektleiter:innen liegen in der Deutschschweiz meist bei CHF 85'000 bis 115'000 pro Jahr, im Mittel bei rund CHF 98'000. Diese Werte sind Orientierungswerte aus Lohnportalen und Inseraten, weil die amtliche Statistik die Funktion nicht separat ausweist. Mit Grossprojekten, Industrie oder Pharma geht es deutlich darüber hinaus. In unseren aktuellen Mandaten in der Region Basel liegen die Lohnbänder für Elektro-Projektleiter:innen Ladenbau und Mieterausbau bei CHF 100'000 bis 130'000, für Projektleiter:innen Elektroengineering und Elektroplanung bei CHF 105'000 bis 135'000. Elektro-Grossprojektleiter:innen für Pharma und Life Sciences liegen bei CHF 120'000 bis 155'000. Der Hebel dieser Rolle liegt in der Verantwortung. Projektleiter:innen kalkulieren, führen ein Team und halten den Kontakt zur Bauherrschaft. Das wirkt direkt auf die Marge des Betriebs und spiegelt sich im Lohn. Elektro-Projektleiter mit abgeschlossener Weiterbildung Elektro-Projektleiter Installation und Sicherheit und drei bis fünf Jahren Erfahrung bewegen sich typischerweise bei CHF 95'000 bis CHF 110'000. Mit zusätzlicher Verantwortung für Grossprojekte in Industrie, Pharma oder öffentlichen Bauten erreichen Elektro-Projektleiter CHF 120'000 bis CHF 140'000. Spezialisierte Rollen wie Elektro-Grossprojektleiter in der Pharma- und Life-Sciences-Industrie oder in Reinraumanlagen sind nochmals höher dotiert und erreichen regelmässig CHF 130'000 bis CHF 155'000.",
           "Was den Elektro-Projektleiter zur Rolle mit dem grössten Lohnhebel macht, sind drei Faktoren. Erstens die Verantwortung für die Kalkulation, die direkten Einfluss auf die Marge des Betriebs hat. Zweitens die Führungsverantwortung für ein Projektteam, das von der Qualität der Leitung lebt. Drittens die direkte Kundenbeziehung, aus der Folgeaufträge entstehen. Diese drei Faktoren machen Elektro-Projektleiter für Betriebe strategisch wertvoll, was sich in der Lohnbandbreite spiegelt. Wechselwillige Elektro-Projektleiter mit guter Reputation haben in der Deutschschweiz 2026 in der Regel drei bis fünf parallele Angebote innerhalb weniger Wochen.",
         ],
       },
       {
-        id: "was-den-lohn-in-der-elektrobranche-wirklich-bewegt",
-        title: "Was den Lohn in der Elektrobranche wirklich bewegt",
+        id: "was-verdient-ein-elektro-sicherheitsberater",
+        title: "Was verdient ein Elektro-Sicherheitsberater?",
         paragraphs: [
-          "Neben Position und Erfahrung gibt es fünf konkrete Faktoren, die den Lohn in der Schweizer Elektrobranche messbar beeinflussen. Erstens der Kanton. Zürich, Zug und Genf zahlen branchenübergreifend 5 bis 15 Prozent mehr als der schweizerische Durchschnitt. Basel-Stadt und Bern liegen leicht darüber, Ostschweiz und Innerschweizer Kantone wie Luzern leicht darunter. Für Elektroinstallateure EFZ bedeutet das in Zürich einen Marktlohn von CHF 78'000 bis CHF 85'000, während der schweizerische Durchschnitt bei CHF 75'000 liegt.",
-          "Zweitens die Betriebsgrösse. Grosse Betriebe mit über 200 Mitarbeitenden zahlen in der Regel strukturierter und oft am oberen Ende der Marktbandbreite, haben aber auch stärkere Lohnbänder und weniger Verhandlungsspielraum. Drittens die Spezialisierung. Allgemeine Elektroinstallation bringt den Grundlohn. Spezialisierungen wie KNX, Photovoltaik, E-Mobility, Gebäudeautomation, Explosionsschutz oder Reinraum-Elektroinstallation bringen pro Spezialisierung typischerweise CHF 300 bis CHF 800 pro Monat zusätzlich.",
+          "Elektro-Sicherheitsberater:innen verdienen in der Schweiz rund CHF 76'000 bis 104'000 pro Jahr, im Mittel etwa CHF 88'000. Mit Erfahrung in Industrie, Spezialanlagen oder Ex-Zonen geht es höher. In unserem aktuellen Mandat in der Region Basel liegt das Band bei CHF 95'000 bis 120'000 bei 100 Prozent. Der Titel Sicherheitsberater wurde Ende 2021 abgelöst. Die Berufsprüfung heisst heute Elektroprojektleiter:in Installation und Sicherheit mit eidgenössischem Fachausweis. In Inseraten und im Alltag wird der alte Titel weiterhin verwendet. Knapp ist die Rolle, weil sie gesetzlich verankert ist. Die Niederspannungs-Installationsverordnung NIV setzt diese Berufsprüfung für eine Kontrollbewilligung voraus, und ohne Kontrollbewilligung dürfen die vorgeschriebenen Sicherheitskontrollen nicht abgenommen werden. Zweitens die Betriebsgrösse. Grosse Betriebe mit über 200 Mitarbeitenden zahlen in der Regel strukturierter und oft am oberen Ende der Marktbandbreite, haben aber auch stärkere Lohnbänder und weniger Verhandlungsspielraum. Drittens die Spezialisierung. Allgemeine Elektroinstallation bringt den Grundlohn. Spezialisierungen wie KNX, Photovoltaik, E-Mobility, Gebäudeautomation, Explosionsschutz oder Reinraum-Elektroinstallation bringen pro Spezialisierung typischerweise CHF 300 bis CHF 800 pro Monat zusätzlich.",
           "Viertens die Weiterbildung. Ein Elektroinstallateur EFZ ohne Weiterbildung erreicht nach 20 Jahren Berufserfahrung einen Marktlohn um CHF 80'000. Mit abgeschlossener Weiterbildung Teamleiter springt die Lohnbandbreite auf CHF 90'000 bis CHF 105'000. Mit Weiterbildung Elektro-Projektleiter Installation und Sicherheit öffnet sich der Zugang zur Projektleiter-Gehaltsklasse mit CHF 95'000 bis CHF 115'000. Fünftens die Verhandlung beim Einstieg oder Wechsel. CHF 500 mehr beim Einstieg wirken auf jede weitere Lohnerhöhung, auf jeden Jobwechsel und schliesslich auf die Pensionskasse. Über 30 Jahre kann sich daraus ein Gesamtunterschied von CHF 100'000 bis CHF 250'000 ergeben.",
         ],
       },
       {
-        id: "was-2026-am-schweizer-elektro-arbeitsmarkt-wirklich-passiert",
-        title: "Was 2026 am Schweizer Elektro-Arbeitsmarkt wirklich passiert",
+        id: "was-den-lohn-in-der-elektrobranche-bewegt",
+        title: "Was den Lohn in der Elektrobranche bewegt",
         paragraphs: [
-          "Die Marktdynamik 2026 ist durch drei strukturelle Treiber bestimmt. Der erste Treiber ist die Energiewende. Die Musterverordnung der Kantone im Energiebereich MuKEn und die Pflicht zum Ersatz fossiler Heizsysteme haben eine Nachfragewelle nach Elektroinstallateuren, Elektroplanern und Projektleitern ausgelöst, die über das nächste Jahrzehnt anhalten wird. Jede neue Wärmepumpe braucht elektrische Infrastruktur, jede Photovoltaikanlage braucht Netzanschluss, jede Wallbox braucht Planung.",
-          "Der zweite Treiber ist die Konvergenz von Elektro und IT. Gebäudeautomation, Smart Home, IoT-Integration und Industrie 4.0 machen aus dem klassischen Elektroberuf zunehmend eine hybride Rolle, die sowohl Elektrotechnik als auch IT-Verständnis erfordert. Fachkräfte mit beiden Kompetenzen sind extrem knapp und entsprechend hoch dotiert.",
+          "Am stärksten wirkt die Funktion. Der Schritt von der Installation in Planung, Projektleitung oder Kontrolle bringt mehr als jede jährliche Lohnrunde. Danach folgen Spezialgebiete wie Photovoltaik, Gebäudeautomation, Ladeinfrastruktur oder Notstrom, die aktuell deutlich besser bezahlt werden als reine Installation. Auch die Branche des Arbeitgebers zählt. Industrie, Pharma und grosse Gesamtprojekte zahlen in der Regel mehr als das klassische Installationsgewerbe. Bei zwei Angeboten mit gleichem Grundlohn lohnt sich zudem der Blick auf Pikett, Überstundenregelung und Fahrzeug, die am Jahresende mehrere tausend Franken ausmachen können. Der grösste Lohnsprung passiert meistens beim Stellenwechsel und nur selten bei der jährlichen Anpassung. Wer beim Einstieg sauber verhandelt, profitiert davon bei jeder weiteren Erhöhung. Der zweite Treiber ist die Konvergenz von Elektro und IT. Gebäudeautomation, Smart Home, IoT-Integration und Industrie 4.0 machen aus dem klassischen Elektroberuf zunehmend eine hybride Rolle, die sowohl Elektrotechnik als auch IT-Verständnis erfordert. Fachkräfte mit beiden Kompetenzen sind extrem knapp und entsprechend hoch dotiert.",
           "Der dritte Treiber ist die demografische Entwicklung. Zwischen 2025 und 2030 verlässt die Schweiz jährlich eine Erwerbstätigenkohorte von rund 90'000 Personen, während nur etwa 75'000 nachrücken. In der Elektrobranche verschärft sich dieser Effekt zusätzlich, weil die Anzahl neu abgeschlossener Lehrverträge seit Jahren unter dem effektiven Bedarf liegt. Für Fachkräfte in der Elektrobranche bedeutet das eine Verhandlungsposition, die es in der Schweiz noch nie so eindeutig gab.",
         ],
       },
       {
-        id: "was-du-als-elektrofachkraft-2026-konkret-tun-kannst",
-        title: "Was du als Elektrofachkraft 2026 konkret tun kannst",
+        id: "wie-viel-bringt-eine-weiterbildung-im-elektro",
+        title: "Wie viel bringt eine Weiterbildung im Elektro?",
         paragraphs: [
-          "Wenn du in der Schweizer Elektrobranche arbeitest und wissen willst, wo du im Markt wirklich stehst, gibt es drei konkrete Schritte. Erstens, kenne deinen eigentlichen Marktwert. Vergleiche deinen aktuellen Lohn mit den Werten in diesem Beitrag und mit den aktuellen Angaben auf jobs.ch oder lohncheck.ch. Wenn dein aktueller Lohn mehr als 5 Prozent unter dem Marktdurchschnitt deiner Position liegt, ist das ein klares Signal, dass eine Standortbestimmung lohnt.",
-          "Zweitens, denke in Karrierestufen, nicht in Jobwechseln. Die stärksten Lohnsprünge entstehen durch die richtigen Wechsel auf die nächste Karrierestufe. Der Sprung von Elektroinstallateur zu Teamleiter, von Teamleiter zu Projektleiter, von Elektroplaner zu BIM-Koordinator. Jede dieser Stufen bringt strukturell mehr Lohn und mehr Verantwortung. Weiterbildung ist dafür der Schlüssel.",
+          "Die Weiterbildung zum Elektro-Teamleiter hebt bereits den GAV-Mindestlohn auf CHF 5'600 pro Monat, also CHF 72'800 pro Jahr. Am Markt liegen Teamleiter:innen meist deutlich darüber. Der grössere Schritt ist die Berufsprüfung Elektroprojektleiter:in Installation und Sicherheit. Sie öffnet den Zugang zu Projektleitung und Kontrolle und damit zu den Lohnbändern ab rund CHF 85'000. Mit eidgenössischem Diplom als Elektroinstallateur:in oder einer Weiterbildung zum Techniker HF geht es weiter nach oben. Zweitens, denke in Karrierestufen, nicht in Jobwechseln. Die stärksten Lohnsprünge entstehen durch die richtigen Wechsel auf die nächste Karrierestufe. Der Sprung von Elektroinstallateur zu Teamleiter, von Teamleiter zu Projektleiter, von Elektroplaner zu BIM-Koordinator. Jede dieser Stufen bringt strukturell mehr Lohn und mehr Verantwortung. Weiterbildung ist dafür der Schlüssel.",
           "Drittens, sei bei Wechseln transparent zu deinen Prioritäten. Nicht jeder Wechsel ist eine reine Lohnfrage. Anfahrt, Team, Projektstruktur, Weiterbildungsbudget, Führungskultur, Spezialisierung. All das zählt und lässt sich in einem sauberen Erstgespräch klären, bevor du überhaupt in einen Bewerbungsprozess einsteigst. Wir vermitteln bei ScaleZ aktuell mehrere Positionen in der Schweizer Elektrobranche. Wenn du wissen willst, wo du mit deinem Profil im Markt stehst, melde dich bei uns unter scale-z.ch.",
         ],
       },
       {
-        id: "abschlusstext",
-        title: "Abschlusstext",
+        id: "wie-viel-verdient-ein-elektroinstallateur-pro-monat",
+        title: "Wie viel verdient ein Elektroinstallateur pro Monat?",
         paragraphs: [
-          "Die Lohnrealität in der Schweizer Elektrobranche 2026 ist eine der dynamischsten in der gesamten Schweizer Wirtschaft. Der GAV setzt verbindliche Minimalwerte, aber der tatsächliche Markt liegt in fast allen Positionen deutlich darüber. Wer seine Marktposition kennt und sauber verhandelt, kann in dieser Marktlage substanziell mehr erreichen, als vielen bewusst ist.",
+          "Marktüblich rund CHF 4'900 bis 6'800 brutto pro Monat bei 13 Monatslöhnen, im Mittel knapp CHF 5'800. Der GAV-Mindestlohn liegt 2026 bei CHF 4'500 direkt nach der Lehre und bei CHF 5'000 nach einem vollen Branchenjahr. Wie hoch ist der Lohn als Elektroplaner pro Monat? Rund CHF 5'400 bis 7'700 pro Monat bei 13 Monatslöhnen, also CHF 70'000 bis 100'000 pro Jahr. Im Mittel sind es etwa CHF 6'400 pro Monat. Einen GAV-Mindestlohn gibt es für Elektroplaner:innen nicht, der Lohn wird frei verhandelt.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-projektleiter-elektro",
+        title: "Was verdient ein Projektleiter Elektro?",
+        paragraphs: [
+          "Meist CHF 85'000 bis 115'000 pro Jahr. Bei Grossprojekten in Industrie und Pharma liegen die Lohnbänder in unseren aktuellen Mandaten bei bis zu CHF 155'000.",
+        ],
+      },
+      {
+        id: "gibt-es-den-elektro-sicherheitsberater-noch",
+        title: "Gibt es den Elektro-Sicherheitsberater noch?",
+        paragraphs: [
+          "Der Titel wurde Ende 2021 durch die Berufsprüfung Elektroprojektleiter:in Installation und Sicherheit mit eidgenössischem Fachausweis abgelöst. Im Alltag und in Inseraten ist der Begriff Sicherheitsberater weiterhin üblich.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Lohnbänder zeigen dir die Spannbreite. Wo du darin stehst, hängt von deinem Profil ab, und das sieht man in keiner Statistik. Wir besetzen laufend Stellen in der Elektrobranche, von Service bis Grossprojektleitung, und wissen, was für welches Profil gerade bezahlt wird.",
+          "Wenn du wissen willst, wo du stehst, buch dir 30 Minuten mit uns unter bit.ly/scalez-booking. Unverbindlich und diskret.",
+          "Alle offenen Elektro-Stellen findest du unter scale-z.ch/jobs.",
         ],
       },
       {
         id: "quellen-und-weiterfuehrende-informationen",
         title: "Quellen und weiterführende Informationen",
         paragraphs: [
-          "Die in diesem Beitrag genannten Lohndaten stammen aus einer Kombination von öffentlichen Primärquellen, etablierten Schweizer Lohnportalen und unseren eigenen Vermittlungsgesprächen 2026. Für die Nachprüfbarkeit und für eigene weitergehende Recherchen findest du hier die verwendeten Quellen.",
-          "Offizielle Primärquellen zum GAV Elektrobranche 2026 bis 2029 findest du beim offiziellen Vertragstext, bei der gewerkschaftlichen Übersicht von Syna sowie bei der aktuellen Zusammenfassung der GAV-Mindestlöhne und Regeln.",
-          "Marktrealität und Durchschnittslöhne basieren auf Daten der Lohnübersicht Elektroberufe Schweiz 2026, dem Elektroinstallateur Lohnvergleich fachkraft.ch, den Elektroplaner-Lohndaten lohncheck.ch, den Elektrokontrolleur-Lohndaten lohncheck.ch und den Elektro-Sicherheitsberater-Daten kununu.",
+          "GAV der Schweizerischen Elektrobranche, Mindestlöhne ab 1. Januar 2026, GAV-Service der Unia: https://service-cct.ch/gav/300001/version/12/vertrag/12343",
+          "Marktübliche Lohnbänder: Auswertungen aus Lohnportalen und der Lohnstrukturerhebung des Bundesamts für Statistik: https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/loehne-erwerbseinkommen-arbeitskosten/lohnstruktur.html Lohnrechner des Schweizerischen Gewerkschaftsbunds: https://lohnrechner.ch",
+          "Lohnbänder aus Mandaten: aktuelle Stelleninserate von ScaleZ, Stand Oktober 2026: https://www.scale-z.ch/jobs",
         ],
       },
     ],
