@@ -1160,94 +1160,129 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "fachkraeftemangel-schweiz-2026-berufe",
-    title: "Fachkräftemangel Schweiz 2026 in welchen Berufen die Lage jetzt wirklich brennt und was das für Fachkräfte und Betriebe bedeutet",
+    title: "Fachkräftemangel Schweiz 2026 welche Berufe wirklich gesucht sind",
     category: "Markt",
-    readTime: "9 Min.",
-    publishedAt: "28. September 2026",
+    readTime: "7 Min.",
+    publishedAt: "28. Oktober 2026",
     teaser:
-      "Der Adecco Fachkräftemangel-Index 2025 zeigt eine leichte Entspannung im Gesamtbild, aber in einzelnen Berufsgruppen hat sich die Situation dramatisch verschärft. Pflege, Bau und Gebäudetechnik führen die Rangliste an. Wir zeigen dir, wo der Druck in der Schweiz 2026 wirklich am grössten ist, welche Löhne aktuell realistisch sind und welche offenen Positionen wir gerade konkret vermitteln.",
+      "Gesundheit, Bauführung, Technik und Elektro bleiben 2026 Mangelberufe. Im Büro und in der IT gibt es mehr Bewerbende als Stellen. Was das für dich heisst.",
     intro:
-      "Der Schweizer Arbeitsmarkt zeigt 2026 ein widersprüchliches Bild. Auf der einen Seite meldet das Staatssekretariat für Wirtschaft SECO eine historisch tiefe Arbeitslosenquote von 2.8 Prozent im Februar 2026. Auf der anderen Seite bestätigt der Adecco Fachkräftemangel-Index 2025, gemeinsam veröffentlicht mit dem Stellenmarkt-Monitor Schweiz der Universität Zürich, dass in 32 von 55 untersuchten Berufsgruppen ein messbarer Fachkräftemangel besteht. Zwischen 2025 und 2030 verlässt die Schweiz jährlich eine Kohorte von rund 90'000 Erwerbstätigen den Arbeitsmarkt, während nur 75'000 Junge nachrücken. Diese demografische Lücke betrifft nicht alle Branchen gleich stark. Wir haben die aktuellsten Daten aus dem Adecco Fachkräftemangel-Index, dem Swiss Job Market Index Q2 2026, der Lohnstrukturerhebung des Bundesamts für Statistik und unseren eigenen Vermittlungsgesprächen zusammengeführt und ordnen für dich ein, wo die Lage wirklich brennt und was das konkret für dich als Fachkraft oder als Betrieb bedeutet.",
+      "Der Fachkräftemangel in der Schweiz hat sich 2025 zum zweiten Mal in Folge abgeschwächt, der Index liegt rund 22 Prozent unter dem Vorjahr. Einen klaren Mangel gibt es nur noch in 4 von 32 Berufsgruppen, nämlich in Gesundheitsberufen, bei Bauführung und Polier, bei ingenieurtechnischen Fachkräften und bei Elektriker:innen. Hier erfährst du, welche Berufe 2026 gesucht sind, wo es mehr Bewerbende als Stellen gibt und was das für dich als Fachkraft oder Betrieb bedeutet.",
     sections: [
       {
-        id: "was-der-adecco-fachkraeftemangel-index-2025-und-2026-wirklich-sagt",
-        title: "Was der Adecco Fachkräftemangel-Index 2025 und 2026 wirklich sagt",
+        id: "gibt-es-in-der-schweiz-2026-noch-einen-fachkraeftemangel",
+        title: "Gibt es in der Schweiz 2026 noch einen Fachkräftemangel?",
         paragraphs: [
-          "Der Adecco Fachkräftemangel-Index Schweiz ist die wissenschaftlich fundierteste Messgrösse für den strukturellen Personalmangel in der Schweiz. Er wird jährlich in Zusammenarbeit mit dem Stellenmarkt-Monitor Schweiz am Soziologischen Institut der Universität Zürich veröffentlicht und misst das Verhältnis zwischen offenen Stellen und verfügbaren Fachkräften über 55 Berufsgruppen hinweg. Das Ergebnis für 2025, das im Dezember 2025 publiziert wurde, sorgte für einige Aufmerksamkeit. Der Gesamtindex lag rund 22 Prozent unter dem Vorjahr. Auf den ersten Blick klingt das nach einer klaren Entspannung. Beim genaueren Hinschauen zeigt sich jedoch ein anderes Bild.",
-          "Der Rückgang des Gesamtindex geht fast ausschliesslich auf zwei Berufsgruppen zurück, in denen sich das Angebot deutlich vergrössert hat. Bei Büro-, Verwaltungs- und kaufmännischen Fachkräften sowie bei ICT- und Informatikberufen hat sich die Situation innerhalb eines Jahres von einem Angebotsmangel in ein leichtes Überangebot verwandelt. Diese Berufsgruppen dominieren jede statistische Gesamtbetrachtung, weil sie einen grossen Anteil an allen Erwerbstätigen ausmachen. Der Adecco Group Swiss Job Market Index Q2 2026, veröffentlicht im Juli 2026, bestätigt genau diesen Trend. Bei kaufmännischen Fachkräften sanken die offenen Stellen im Jahresvergleich um 13 Prozent, bei Hochschulberufen Wirtschaft um 10 Prozent.",
-          "In allen anderen Berufsgruppen sieht die Lage jedoch komplett anders aus. Gesundheitsspezialist:innen führen die Rangliste des Fachkräftemangels seit Jahren an. Bauführer:innen, Polier:innen und Produktionsleiter:innen belegen laut Adecco Fachkräftemangel-Index 2025 Rang zwei. Dahinter folgen technische Spezialisten mit ausgeprägter Nachfrage bei Elektroingenieuren, Elektroplanern, Anlagen- und Apparatebauern sowie Gebäudetechnikplanern. Die demografische Entwicklung wirkt in diesen Berufen wie ein Verstärker. Wo bereits heute die Personaldecke dünn ist, wird sie durch die anstehenden Pensionierungen der Babyboomer bis 2030 noch deutlich dünner.",
+          "Ja, aber deutlich weniger breit als noch vor zwei Jahren. Der Fachkräftemangel Index der Adecco Gruppe und des Stellenmarkt-Monitors der Universität Zürich lag 2025 rund 22 Prozent unter dem Vorjahr und nähert sich wieder dem Niveau vor der Pandemie. Die Zahl der offenen Stellen sank um 8 Prozent, die Zahl der Stellensuchenden stieg um 17 Prozent. Das zeigt sich auch bei der Arbeitslosigkeit. Die Quote stieg von 2,3 Prozent im Jahr 2024 auf 2,8 Prozent im Jahr 2025. Im September 2026 lag sie laut SECO bei 3,0 Prozent, mit 140'480 registrierten Arbeitslosen. Gleichzeitig waren bei den RAV 44'199 offene Stellen gemeldet, 18 Prozent mehr als ein Jahr zuvor. Der Mangel konzentriert sich heute auf wenige Berufsgruppen. Wer in einem dieser Berufe arbeitet, spürt davon wenig Entspannung. Wer im Büro oder in der IT arbeitet, erlebt einen deutlich härteren Markt als noch 2023.",
         ],
       },
       {
-        id: "pflegefachkraeftemangel-schweiz-2026-die-zahlen-die-niemand-mehr-ignorieren-kann",
-        title: "Pflegefachkräftemangel Schweiz 2026 die Zahlen die niemand mehr ignorieren kann",
+        id: "welche-berufe-sind-in-der-schweiz-am-meisten-gesucht",
+        title: "Welche Berufe sind in der Schweiz am meisten gesucht?",
         paragraphs: [
-          "Der Pflegefachkräftemangel ist in der Schweiz kein neues Thema, aber 2026 hat er eine neue Dimension erreicht. Laut Schweizerischem Berufsverband der Pflegefachpersonen SBK fehlen in der Schweiz aktuell rund 12'000 diplomierte Pflegefachpersonen HF und FH allein im akutsomatischen Bereich. Rechnet man die Langzeitpflege, die Spitex und spezialisierte Bereiche wie Intensivpflege, Notfallpflege und Anästhesie dazu, erhöht sich die Zahl auf weit über 20'000 offene Stellen.",
-          "Die Pflegeinitiative, die im November 2021 mit 61 Prozent Ja-Stimmen angenommen wurde, ist in der Umsetzung. Die erste Etappe mit Ausbildungsoffensive und Erweiterung der Kompetenzen ist bereits in Kraft. Die zweite Etappe mit dem Bundesgesetz über die Arbeitsbedingungen in der Pflege BGAP befindet sich in der Umsetzungsphase 2025 bis 2026 und regelt Arbeitszeiten, Dienstplanung und Personalschlüssel neu. Trotz dieser strukturellen Verbesserungen bleibt der Personalmangel akut, weil die Ausbildungsoffensive Zeit braucht, bis sie im System spürbar wird.",
-          "Die Löhne haben sich als Reaktion auf den Mangel deutlich bewegt. Eine frisch diplomierte Pflegefachperson HF startet in der Deutschschweiz 2026 mit einem Bruttolohn zwischen CHF 78'000 und CHF 84'000 pro Jahr, je nach Kanton und Institution. In Zürich liegt der Medianlohn für eine Pflegefachperson HF mit einigen Jahren Berufserfahrung laut Lohnbuch Schweiz 2026 und Datenpunkten von Glassdoor bei rund CHF 88'000. Erfahrene Pflegefachpersonen HF mit Fachvertiefung wie NDS HF Intensivpflege, Notfallpflege oder Anästhesie erreichen im Kanton Zürich Jahreslöhne zwischen CHF 100'000 und CHF 120'000 inklusive Zulagen für Nacht-, Wochenend- und Feiertagsdienste. Wir vermitteln aktuell offene Positionen für Dipl. Pflegefachpersonen HF bei renommierten Zürcher Gesundheitsanbietern mit modernen Strukturen, geregelten Dienstplänen und echter Wertschätzung für Pflegefachpersonen. Details und Bewerbung auf unserer Website unter dem Reiter \"Jobs\".",
+          "Auf Rang 1 stehen seit 2022 die Spezialist:innen in Gesundheitsberufen, etwa Fachärzt:innen, Pflegefachkräfte oder Apotheker:innen. Rang 2 belegen Bauführer:innen, Polier:innen und Produktionsleiter:innen, also zum Beispiel Bauleiter:innen, Maschinenbauleiter:innen oder Elektrotechniker:innen. Auf Rang 3 folgen ingenieurtechnische Fachkräfte wie Maschinenbautechniker:innen und Techniker:innen für Systemtechnik und Automation. Rang 4 belegen Elektriker:innen und Elektroniker:innen. In der Deutschschweiz sind sechs Berufsgruppen vom Mangel betroffen, vor allem in Gesundheit, Bau und Technik. In der lateinischen Schweiz zeigt nur das Gesundheitswesen einen klaren Mangel. Stabil geblieben ist die Lage bei den Bau- und Ausbaufachkräften, zu denen auch Sanitär- und Heizungsinstallateur:innen, Zimmerleute und Dachdecker:innen gehören, sowie bei Maschinenführer:innen und Fahrer:innen von Baumaschinen. Alle diese Gruppen hängen eng am Baugewerbe, das weiterhin eine robuste Auftragslage hat.",
         ],
       },
       {
-        id: "bau-und-infrastruktur-der-mangel-hinter-dem-bauboom-in-zuerich-und-der-deutschschweiz",
-        title: "Bau und Infrastruktur der Mangel hinter dem Bauboom in Zürich und der Deutschschweiz",
+        id: "wo-gibt-es-mehr-bewerbende-als-stellen",
+        title: "Wo gibt es mehr Bewerbende als Stellen?",
         paragraphs: [
-          "Der Schweizer Bausektor steht unter Druck von zwei Seiten. Auf der einen Seite investieren Bund, Kantone und Gemeinden Rekordsummen in die Sanierung und Erweiterung der Infrastruktur. Werkleitungen, Strassen, Brücken, Bahntrassen. Der Kanton Zürich allein plant für die kommenden fünf Jahre Investitionen im hohen dreistelligen Millionenbereich in den Tiefbau. Auf der anderen Seite investieren private Bauherrschaften weiterhin massiv in Hochbau, Wohnbau und Gewerbebau. Die Konsequenz ist ein ausgeprägter Personalmangel in fast allen Baubereichen.",
-          "Besonders akut ist die Lage bei den führenden Baustellenrollen. Polier:innen und Bauführer:innen stehen laut Adecco Fachkräftemangel-Index auf Rang zwei aller Berufsgruppen. Die Marktdaten spiegeln diesen Druck wider. Ein erfahrener Polier Hochbau verdient in der Schweiz laut Indeed und Glassdoor 2026 im Durchschnitt zwischen CHF 100'000 und CHF 112'000 pro Jahr, wobei Spitzenverdiener bis zu CHF 135'000 erreichen. In Zürich liegen die Ranges nochmals höher als im schweizweiten Durchschnitt.",
-          "Auch bei den Bauleiter:innen im Tiefbau und Hochbau ist die Situation angespannt. Die Nachfrage nach Bauingenieur:innen ETH und FH sowie Techniker:innen HF Tiefbau übersteigt das Angebot deutlich. Wir haben in einem separaten Karriere-Blog aufgeschrieben, was auf jeder Karrierestufe im Tiefbau realistisch verdient wird und was den Sprung von Bauleiter zu Projektleiter ausmacht. Die dort dokumentierten Ranges bewegen sich zwischen CHF 90'000 für Einsteiger:innen und CHF 145'000 für erfahrene Projektleiter:innen mit Spezialisierung auf Kunstbauten oder Werkleitungen.",
+          "Die stärksten Rückgänge zeigen Büro-, Verwaltungs- und kaufmännische Berufe sowie ICT- und Informatikberufe. Die kaufmännischen und Verwaltungsfachkräfte sind im Ranking von Rang 21 auf Rang 28 gefallen. Die Studie führt das auch auf künstliche Intelligenz zurück. Berufe, die stark KI-exponiert sind, verzeichnen weniger Stelleninserate und mehr Arbeitslose. Ein Überangebot besteht ausserdem bei allgemeinen Büro- und Sekretariatskräften, bei Bürokräften mit Kundenkontakt und bei Hilfsarbeitskräften.",
         ],
       },
       {
-        id: "elektrobranche-zwischen-gav-2026-energiewende-und-fachkraefteboom",
-        title: "Elektrobranche zwischen GAV 2026, Energiewende und Fachkräfteboom",
+        id: "warum-handwerks-und-technische-berufe-als-krisensicher-gelten",
+        title: "Warum Handwerks- und technische Berufe als krisensicher gelten",
         paragraphs: [
-          "Die Schweizer Elektrobranche steht 2026 an einem doppelten Wendepunkt. Zum einen ist im Januar 2026 der neue Gesamtarbeitsvertrag GAV der Elektrobranche in Kraft getreten, der Mindestlöhne, Arbeitszeit und Auslagenersatz bis 2029 neu regelt. Zum anderen hat die Energiewende einen strukturellen Nachfrageschub ausgelöst, der die gesamte Elektrobranche erfasst. Photovoltaikanlagen, Wallboxen für Elektrofahrzeuge, Batteriespeicher, intelligente Gebäudeautomation und Smart-Home-Systeme brauchen alle qualifizierte Elektrofachkräfte für Planung, Installation und Wartung.",
-          "Der Mindestlohn für eine:n Elektroinstallateur:in EFZ nach Abschluss beträgt 2026 CHF 4'500 pro Monat und steigt nach einem Branchenjahr auf CHF 5'000. Teamleiter:innen mit Prüfungszertifikat nach EIT.swiss verdienen mindestens CHF 5'600. Der Marktlohn liegt jedoch deutlich über diesen GAV-Mindestwerten. Erfahrene Elektroinstallateur:innen in der Deutschschweiz erreichen 2026 Jahreslöhne zwischen CHF 68'000 und CHF 95'000. Mit Spezialisierung auf Photovoltaik, KNX-Gebäudeautomation oder Sicherheitsanlagen sind auch CHF 100'000 und mehr keine Seltenheit.",
-          "Besonders gefragt sind aktuell drei Rollen. Erstens Elektroplaner:innen mit EFZ oder Weiterbildung, die die Planungsseite der Energiewende umsetzen. Zweitens bauleitende Monteur:innen, die die operative Führung auf Baustellen übernehmen und den Nachwuchs der Betriebe repräsentieren. Drittens Servicetechniker:innen für Notstromanlagen, USV-Systeme und Sicherheitsbeleuchtungen, deren Wartung sicherheitskritisch ist und die auch in wirtschaftlich schwierigen Zeiten nicht aufschiebbar bleibt.",
+          "Im dritten Quartal 2026 hat sich der Stellenmarkt stabilisiert, die Zahl der offenen Stellen stieg um 0,8 Prozent gegenüber Vorquartal und Vorjahr. Getragen wird diese Entwicklung von den Handwerks- und technischen Berufen. Über zehn Jahre betrachtet ist der Unterschied deutlich. Zwischen 2015/16 und 2025/26 stieg die Zahl der offenen Stellen in Handwerks- und technischen Berufen um 131 Prozent, der Gesamtmarkt nur um 30 Prozent. Am stärksten legten die Bau- und Ausbaufachkräfte mit 173 Prozent und die Elektriker:innen und Elektroniker:innen mit 134 Prozent zu. Dazu kommt, dass diese Berufe deutlich seltener von KI-Automatisierung betroffen sind als akademische Berufe. Eine Wärmepumpe installiert oder eine Baustelle führt keine Software.",
         ],
       },
       {
-        id: "gebaeudetechnik-der-stille-wachstumsmarkt-mit-den-groessten-personalluecken",
-        title: "Gebäudetechnik der stille Wachstumsmarkt mit den grössten Personallücken",
+        id: "fachkraeftemangel-im-bau-und-in-der-infrastruktur",
+        title: "Fachkräftemangel im Bau und in der Infrastruktur",
         paragraphs: [
-          "Kaum eine Branche hat in den letzten fünf Jahren einen so stillen, aber massiven Nachfrageschub erlebt wie die Gebäudetechnik. Die Musterverordnung der Kantone im Energiebereich MuKEn 2014 schreibt seit 2020 in fast allen Deutschschweizer Kantonen den Ersatz fossiler Heizungen durch erneuerbare Systeme vor. Millionen von Öl- und Gasheizungen in der Schweiz müssen in den kommenden zehn Jahren ersetzt werden, meist durch Wärmepumpen, Fernwärmeanschlüsse oder Hybridsysteme. Parallel dazu wächst die Nachfrage nach kontrollierter Wohnraumlüftung, nach Kältetechnik in Gewerbe- und Industriegebäuden und nach intelligenter Gebäudeautomation.",
-          "Die Personaldecke in der Gebäudetechnik reicht für dieses Volumen bei weitem nicht aus. Servicetechniker:innen für Heizung und Wärmepumpen sind so gesucht, dass viele etablierte Betriebe im Grossraum Zürich mehrere Stellen dauerhaft offen führen. Sanitärinstallateur:innen mit Service-Erfahrung sind ebenfalls Mangelware. Der schweizerische Durchschnittslohn für Sanitärinstallateur:innen EFZ liegt laut jobs.ch bei CHF 68'000, aber Servicetechniker mit Erfahrung erreichen deutlich mehr, in Zürich typischerweise CHF 78'000 bis CHF 98'000.",
-          "Besonders akut ist der Mangel bei den planerischen und leitenden Rollen. Gebäudetechnikplaner:innen EFZ mit Fachrichtung Heizung, Lüftung, Klima oder Sanitär sind schweizweit gesucht. Der schweizerische Durchschnittslohn liegt laut jobs.ch aktuell bei CHF 76'700, mit deutlichem Aufwärtstrend seit 2021. In Zürich und bei spezialisierten Planungsbüros sind Ranges zwischen CHF 78'000 und CHF 105'000 üblich. Projektleiter:innen für Heizung, Lüftung und Klima erreichen laut Indeed 2026 einen schweizerischen Durchschnittslohn von CHF 104'000, wobei erfahrene Projektleiter:innen mit voller kaufmännischer Verantwortung Jahreslöhne bis CHF 125'000 realisieren.",
+          "Bauführung und Polier stehen unverändert auf Rang 2 aller Berufsgruppen. Gesucht sind vor allem Fachkräfte, die eine Baustelle selbstständig führen, vom Polier im Hochbau bis zur Bauleitung im Tiefbau. Das zeigt sich auch an den Löhnen in unseren aktuellen Mandaten. Für eine:n Polier:in Hochbau im Grossraum Zürich liegt das ausgeschriebene Lohnband bei CHF 95'000 bis 125'000, für Bauleiter:innen Infrastruktur bei CHF 90'000 bis 115'000. Projektleiter:innen Infrastruktur für Strassen und Kunstbauten liegen bei CHF 95'000 bis 130'000. Was auf welcher Karrierestufe im Tiefbau verdient wird, haben wir im Beitrag „Tiefbau Zürich 2026“ ausführlich aufgeschlüsselt.",
         ],
       },
       {
-        id: "warum-der-fachkraeftemangel-in-diesen-berufen-mittelfristig-noch-schlimmer-wird",
-        title: "Warum der Fachkräftemangel in diesen Berufen mittelfristig noch schlimmer wird",
+        id: "fachkraeftemangel-in-elektro-und-gebaeudetechnik",
+        title: "Fachkräftemangel in Elektro und Gebäudetechnik",
         paragraphs: [
-          "Wer die Zahlen des Bundesamts für Statistik BFS zur demografischen Entwicklung der Schweizer Erwerbsbevölkerung anschaut, erkennt schnell, dass sich die Situation in den nächsten fünf bis zehn Jahren nicht entspannen wird. Zwischen 2025 und 2030 gehen jährlich rund 90'000 Erwerbstätige in Pension. Gleichzeitig treten nur etwa 75'000 Junge neu in den Arbeitsmarkt ein. Diese demografische Lücke von 15'000 Personen pro Jahr trifft alle Branchen, konzentriert sich aber besonders auf jene, in denen bereits heute Personalmangel herrscht. In der Pflege verstärkt sich die Situation zusätzlich durch die demografische Alterung der Bevölkerung. Die Nachfrage nach Pflegeleistungen wächst genau in dem Moment, in dem die Personaldecke schrumpft. Die Pflegeinitiative wirkt langfristig, aber die Ausbildungspipeline braucht mindestens fünf bis sieben Jahre, bis sie im System spürbar mehr Fachpersonen bringt.",
-          "In Bau und Gebäudetechnik wirkt neben der Demografie ein zweiter struktureller Treiber. Die Energiewende, die Sanierung der Infrastruktur, die Elektrifizierung des Verkehrs und der stetige Ausbau des Wohnraums erzeugen eine Nachfrage nach Fachkräften, die durch klassische Ausbildungswege nicht abgedeckt werden kann. Der Schweizerische Baumeisterverband dokumentiert seit Jahren, dass die Anzahl neu abgeschlossener Lehrverträge in Bauberufen konstant unter dem Bedarf liegt. Ähnliches gilt für EIT.swiss in der Elektrobranche und für suissetec in der Gebäudetechnik.",
-          "Die Konsequenz für Fachkräfte ist eindeutig. Wer heute in einem dieser Berufe arbeitet, hat 2026 und in den kommenden Jahren die Wahl. Wechseloptionen sind zahlreich, Löhne verhandelbar, Weiterbildungsangebote grosszügig. Die Konsequenz für Betriebe ist ebenso eindeutig. Wer weiterhin nach dem gleichen Muster rekrutiert wie vor fünf Jahren, verliert. Wer Prozesse verkürzt, Lohntransparenz schafft und Fachkräften auf Augenhöhe begegnet, gewinnt.",
+          "Elektriker:innen und Elektroniker:innen stehen auf Rang 4. Die Nachfrage kommt vor allem aus dem Bau, dazu aus dem Ersatz fossiler Heizungen durch Wärmepumpen, aus Photovoltaik, Ladeinfrastruktur und Gebäudeautomation. Jede dieser Anlagen braucht Planung, Installation und Service. In der Gebäudetechnik gehören Sanitär- und Heizungsinstallateur:innen zu den Gruppen mit stabil hoher Nachfrage. In unseren Mandaten liegen die Lohnbänder für Servicetechniker:innen Heizung und Wärmepumpen bei CHF 78'000 bis 100'000, für Gebäudetechnikplaner:innen HLKS bei CHF 78'000 bis 105'000 und für Projektleiter:innen HLK bei CHF 95'000 bis 125'000. Welche Mindestlöhne in der Elektrobranche gelten, steht in unserem Beitrag zum GAV Elektro 2026. Was am Markt tatsächlich bezahlt wird, findest du im Beitrag „Löhne in der Schweizer Elektrobranche 2026“.",
         ],
       },
       {
-        id: "was-du-als-fachkraft-in-einem-mangelberuf-2026-tun-kannst",
-        title: "Was du als Fachkraft in einem Mangelberuf 2026 tun kannst",
+        id: "fachkraeftemangel-in-industrie-und-engineering",
+        title: "Fachkräftemangel in Industrie und Engineering",
         paragraphs: [
-          "Wenn du in einem der oben beschriebenen Berufe arbeitest, sitzt du in einer Verhandlungsposition, die viele Fachkräfte immer noch unterschätzen. Drei konkrete Empfehlungen aus unserer täglichen Vermittlungsarbeit. Erstens, kenne deinen Marktwert. Der aktuelle Lohn ist nicht dasselbe wie dein Marktwert. Zwischen beiden liegen bei erfahrenen Fachkräften in Mangelberufen oft CHF 500 bis CHF 1'500 pro Monat. Eine ehrliche Standortbestimmung durch einen Marktkenner deiner Branche kostet dich nichts und gibt dir eine Grundlage, mit der du entweder gezielt wechselst oder bei deinem aktuellen Arbeitgeber sauber verhandelst.",
-          "Zweitens, denke in Karrierestufen, nicht in Job-Wechseln. Die stärksten Lohnsprünge entstehen nicht durch häufige Wechsel, sondern durch die richtigen Wechsel auf die nächste Karrierestufe. Der Sprung von Bauleiter zu Projektleiter, von Servicetechniker zu Serviceleiter, von Pflegefachperson HF zu Fachexpertin Pflege NDS HF, von Elektroplaner zu Projektleiter Elektro. Jede dieser Stufen bringt strukturell mehr Lohn und mehr Verantwortung. Ein guter Vermittler denkt in solchen Karrierebögen mit dir mit.",
-          "Drittens, sei bei Wechseln transparent zu deinen Prioritäten. Nicht jeder Wechsel ist eine reine Lohnfrage. Anfahrt, Team, Projektstruktur, Weiterbildungsbudget, Führungskultur, Homeoffice-Anteil bei administrativen Rollen. All das zählt und lässt sich in einem sauberen Gespräch mit einem Marktkenner klären, bevor du überhaupt in einen Bewerbungsprozess einsteigst.",
+          "Ingenieurtechnische Fachkräfte sind 2025 auf Rang 3 vorgerückt, obwohl die MEM-Industrie unter schwacher Exportnachfrage leidet. Gemeint sind vor allem Techniker:innen und Fachkräfte mit Berufsbildung und Weiterbildung, etwa in Maschinenbau, Systemtechnik und Automation. Bei den akademischen Ingenieurberufen sieht es anders aus. Im zweiten Quartal 2026 verzeichneten die naturwissenschaftlichen Berufe, darunter Ingenieurwissenschaftler:innen, den stärksten Rückgang an offenen Stellen. Wer praktisch umsetzt, ist derzeit gefragter als wer forscht oder entwickelt.",
         ],
       },
       {
-        id: "was-das-fuer-betriebe-in-bau-elektro-gebaeudetechnik-und-pflege-2026-bedeutet",
-        title: "Was das für Betriebe in Bau, Elektro, Gebäudetechnik und Pflege 2026 bedeutet",
+        id: "fachkraeftemangel-im-gesundheitswesen",
+        title: "Fachkräftemangel im Gesundheitswesen",
         paragraphs: [
-          "Auf der anderen Seite des Marktes stehen die Betriebe, für die der Fachkräftemangel zur Existenzfrage geworden ist. Wir sprechen jede Woche mit Geschäftsführer:innen und Personalverantwortlichen, die uns bestätigen, dass die klassische Personalgewinnung nicht mehr funktioniert. Inserate auf Standard-Plattformen bringen weniger und schwächere Bewerbungen als vor fünf Jahren. Was funktioniert, ist eine aktive, direkte Ansprache passiver Fachkräfte, die aktuell nicht auf Jobsuche sind.",
-          "Was ebenfalls funktioniert, ist Prozess-Schnelligkeit. In einem Markt, in dem gute Kandidat:innen drei bis fünf parallele Angebote haben, verliert der Betrieb, der drei Wochen für die interne Freigabe braucht und dann noch mal zwei Wochen für den zweiten Gesprächstermin. Wir haben diese Erkenntnis in unserem separaten Blog zum Bewerbungsprozess ausführlicher dokumentiert.",
+          "Gesundheitsberufe führen das Ranking seit 2022 unangefochten an. Haupttreiber ist die alternde Bevölkerung mit einem wachsenden Bedarf an Pflege und medizinischer Versorgung. Auch die Gesundheitsassistenz, also etwa Fachpersonen Gesundheit oder Rettungsdienstpersonal, bewegt sich weiter in Richtung Mangel. Der Kostendruck im Gesundheitswesen bremst allerdings die Zahl der ausgeschriebenen Stellen. Was ebenfalls funktioniert, ist Prozess-Schnelligkeit. In einem Markt, in dem gute Kandidat:innen drei bis fünf parallele Angebote haben, verliert der Betrieb, der drei Wochen für die interne Freigabe braucht und dann noch mal zwei Wochen für den zweiten Gesprächstermin. Wir haben diese Erkenntnis in unserem separaten Blog zum Bewerbungsprozess ausführlicher dokumentiert.",
           "Was dritter Erfolgsfaktor ist, ist Transparenz. Lohnbandbreiten im Inserat, klare Angaben zu Pensum, Ort, Homeoffice-Regelung und Start. Alles andere kostet Zeit und Nerven auf beiden Seiten. Der Erwartungshaltung \"Gehalt nach Vereinbarung\" gehört 2026 endgültig der Vergangenheit an. Wer Fachkräfte gewinnen will, muss zeigen, dass er ihre Zeit respektiert.",
         ],
       },
       {
-        id: "fazit-und-was-du-jetzt-konkret-tun-kannst",
-        title: "Fazit und was du jetzt konkret tun kannst",
+        id: "was-du-als-fachkraft-in-einem-mangelberuf-tun-kannst",
+        title: "Was du als Fachkraft in einem Mangelberuf tun kannst",
         paragraphs: [
-          "Der Fachkräftemangel in der Schweiz hat sich 2026 nicht abgeschwächt, wie der Gesamtindex auf den ersten Blick suggeriert. Er hat sich verlagert und konzentriert. In Pflege, Bau, Elektro und Gebäudetechnik ist die Situation angespannter denn je. Die demografische Entwicklung, die Energiewende und die Sanierung der Infrastruktur werden diesen Druck in den kommenden Jahren weiter erhöhen.",
-          "Für Fachkräfte in diesen Berufen bedeutet das eine Verhandlungsposition, die es in der Schweiz noch nie so eindeutig gab. Für Betriebe bedeutet es einen Zwang zur Professionalisierung der Personalgewinnung.",
+          "Wenn du in Bau, Elektro, Gebäudetechnik oder Technik arbeitest, ist deine Verhandlungsposition stärker, als viele denken. Der wichtigste Schritt ist, deinen Marktwert zu kennen. Dein aktueller Lohn und das, was der Markt für dein Profil zahlt, liegen oft weiter auseinander, als dir bewusst ist. Die grössten Lohnsprünge entstehen beim Wechsel auf die nächste Karrierestufe, etwa vom Bauleiter zum Projektleiter oder vom Servicetechniker zum Serviceleiter. Kläre vor jedem Wechsel, was dir neben dem Lohn wichtig ist, von der Anfahrt bis zur Führungskultur. Für Fachkräfte in diesen Berufen bedeutet das eine Verhandlungsposition, die es in der Schweiz noch nie so eindeutig gab. Für Betriebe bedeutet es einen Zwang zur Professionalisierung der Personalgewinnung.",
           "Wir bei ScaleZ arbeiten genau in diesem Spannungsfeld. Wir kennen die Verticals Bau, Elektro und Pflege in der Deutschschweiz aus laufenden Gesprächen mit beiden Seiten. Wenn du wissen willst, wo du mit deinem Profil im Markt stehst, oder als Betrieb einen strukturierten Zugang zu passiven Fachkräften suchst, melde dich bei uns unter scale-z.ch. Ein 30-minütiges Erstgespräch ist kostenlos, unverbindlich und meistens der beste Startpunkt.",
+        ],
+      },
+      {
+        id: "was-betriebe-jetzt-tun-koennen",
+        title: "Was Betriebe jetzt tun können",
+        paragraphs: [
+          "In den Mangelberufen reichen klassische Inserate oft nicht mehr. Die besten Fachkräfte sind nicht auf Jobsuche und müssen direkt angesprochen werden. Ebenso entscheidend sind Tempo und Transparenz. Wer drei Wochen für eine interne Freigabe braucht oder im Inserat keinen Lohn nennt, verliert Kandidat:innen an schnellere Betriebe. Mehr dazu in unserem Beitrag zum Druck im Bewerbungsprozess.",
+        ],
+      },
+      {
+        id: "welche-berufe-sind-2026-in-der-schweiz-mangelberufe",
+        title: "Welche Berufe sind 2026 in der Schweiz Mangelberufe?",
+        paragraphs: [
+          "Laut Fachkräftemangel Index Schweiz von Adecco und Universität Zürich sind es vier Berufsgruppen: Spezialist:innen in Gesundheitsberufen, Bauführer:innen und Polier:innen, ingenieurtechnische Fachkräfte wie Maschinenbau- und Automationstechniker:innen sowie Elektriker:innen und Elektroniker:innen.",
+        ],
+      },
+      {
+        id: "ist-maschinenbau-in-der-schweiz-gefragt",
+        title: "Ist Maschinenbau in der Schweiz gefragt?",
+        paragraphs: [
+          "Ja, vor allem auf Stufe Techniker:in und Fachkraft. Ingenieurtechnische Fachkräfte, etwa Maschinenbautechniker:innen, stehen 2025 auf Rang 3 der Mangelberufe, obwohl die MEM-Industrie unter schwacher Exportnachfrage leidet.",
+        ],
+      },
+      {
+        id: "ist-ein-dipl-techniker-hf-in-der-schweiz-gefragt",
+        title: "Ist ein dipl. Techniker HF in der Schweiz gefragt?",
+        paragraphs: [
+          "In technischen Richtungen ja. Techniker:innen für Maschinenbau, Systemtechnik und Automation gehören zu den ingenieurtechnischen Fachkräften auf Rang 3, Elektrotechniker:innen zur Gruppe Bauführung und Produktionsleitung auf Rang 2.",
+        ],
+      },
+      {
+        id: "wie-hoch-ist-die-arbeitslosigkeit-in-der-schweiz-2026",
+        title: "Wie hoch ist die Arbeitslosigkeit in der Schweiz 2026?",
+        paragraphs: [
+          "Im September 2026 lag die Arbeitslosenquote laut SECO bei 3,0 Prozent. Im Jahresmittel 2025 betrug sie 2,8 Prozent, 2024 waren es 2,3 Prozent.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-im-markt",
+        title: "Wo stehst du im Markt?",
+        paragraphs: [
+          "Ob du in einem Mangelberuf arbeitest, sagt dir der Index. Was das für deinen Lohn und deine Möglichkeiten heisst, sagt er nicht. Wir sprechen jede Woche mit Betrieben in Bau, Elektro, Gebäudetechnik und Industrie in der Deutschschweiz. Wenn du wissen willst, wo du mit deinem Profil stehst, buch dir 30 Minuten mit uns unter bit.ly/scalez-booking. Als Betrieb erreichst du uns über scale-z.ch/kontakt. Unsere offenen Stellen findest du unter scale-z.ch/jobs.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "Fachkräftemangel Index Schweiz 2025, Adecco Gruppe Schweiz und Stellenmarkt-Monitor Schweiz der Universität Zürich: https://www.stellenmarktmonitor.uzh.ch/de/indices/fachkraeftemangel.html",
+          "Swiss Job Market Index Q3 2026, Stellenmarkt-Monitor Schweiz: https://www.suz.uzh.ch/de/forschung/wirtschaftssoziologie/news-ws/smm-quartalsbericht-q3-2026.html Swiss Job Market Index Q2 2026, Medienmitteilung: https://www.adeccogroup.com/-/media/project/adecco-group/switzerland/job-index/job-index-q2-2026/job_index_q2_2026_medienmitteilung.pdf",
+          "Die Lage auf dem Arbeitsmarkt September 2026, SECO: https://www.seco.admin.ch/de/newnsb/Cdju9-o8WGML",
         ],
       },
     ],
