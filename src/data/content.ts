@@ -1517,62 +1517,107 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "gehalt-verhandeln-schweiz",
-    title: "Gehalt verhandeln in der Schweiz. Der ehrliche Leitfaden.",
+    title: "Lohnverhandlung Schweiz so verhandelst du deinen Lohn richtig",
     category: "Prozess",
-    readTime: "6 Min.",
-    publishedAt: "24. August 2026",
+    readTime: "7 Min.",
+    publishedAt: "9. November 2026",
     teaser:
-      "Die meisten verhandeln fünf Mal im Leben ihren Lohn. Ihr Gegenüber jede Woche. So drehst Du dieses Ungleichgewicht um.",
+      "So bereitest du deine Lohnverhandlung in der Schweiz vor, nennst die richtige Zahl und holst mehr heraus als nur den Grundlohn. Ehrlich und konkret.",
     intro:
-      "Die meisten Menschen verhandeln in ihrem ganzen Berufsleben nur eine Handvoll Mal ihren Lohn. Ihr Gegenüber macht genau das jede Woche. Dieses Ungleichgewicht ist der eigentliche Grund, warum so viele in der Schweiz unter ihrem Wert bezahlt werden. Dieser Leitfaden dreht es um, konkret und ohne Floskeln.",
+      "Eine Lohnverhandlung in der Schweiz gewinnst du vor allem in der Vorbereitung. Wer seinen Marktwert kennt, eine begründete Spanne nennt und neben dem Grundlohn auch Pensionskasse, Ferien und Weiterbildung verhandelt, holt meist deutlich mehr heraus. Die meisten Menschen verhandeln nur eine Handvoll Mal im Leben, ihr Gegenüber macht das jede Woche, und genau diesen Vorsprung kannst du mit diesem Leitfaden aufholen.",
     sections: [
       {
-        id: "warum-der-moment-vor-der-verhandlung-schon-fast-alles-entscheidet",
-        title: "Warum der Moment vor der Verhandlung schon fast alles entscheidet",
+        id: "wie-bereitest-du-eine-lohnverhandlung-vor",
+        title: "Wie bereitest du eine Lohnverhandlung vor?",
         paragraphs: [
-          "Die verbreitetste Fehlannahme ist, dass eine Lohnverhandlung im Gespräch stattfindet. In Wahrheit ist sie meist schon entschieden, bevor Du den Raum betrittst. Entscheidend ist, ob Du weisst, was Deine Arbeit auf dem aktuellen Markt kostet, nicht was Du letztes Jahr verdient hast.",
-          "Genau hier machen die meisten den ersten Fehler. Sie leiten ihre Forderung vom eigenen alten Lohn ab, plus ein paar Prozent. Der Markt funktioniert aber nicht so. Ein Wechsel wird nicht am alten Gehalt gemessen, sondern daran, was die Position und Deine Fähigkeiten heute wert sind. Wer beim alten Lohn ansetzt, zementiert eine womöglich jahrelange Unterbezahlung.",
-          "Bevor Du also über eine Zahl sprichst, brauchst Du drei Referenzpunkte. Den Medianlohn Deiner Branche und Region, verlässlich zu finden in der Lohnstrukturerhebung des Bundesamts für Statistik. Die Spanne innerhalb Deiner Funktion, denn zwischen unterem und oberem Viertel liegen oft mehrere hundert Franken im Monat. Und den regionalen Unterschied, denn dieselbe Stelle wird in der Region Zürich deutlich anders bezahlt als etwa im Tessin.",
+          "Der häufigste Fehler ist, die eigene Forderung vom alten Lohn abzuleiten und ein paar Prozent draufzulegen. Bei einem Stellenwechsel zählt, was die Position und deine Fähigkeiten heute am Markt wert sind. Wer beim alten Lohn ansetzt, nimmt eine allfällige Unterbezahlung einfach mit.",
+          "Deinen Marktwert findest du über mehrere Quellen. Die Lohnstrukturerhebung des Bundesamts für Statistik und der Lohnrechner Salarium zeigen dir Mediane nach Branche, Region und Funktion. Der Lohnrechner des Gewerkschaftsbunds auf lohnrechner.ch ist eine zweite Referenz. Gilt in deiner Branche ein GAV, kennst du mit den Mindestlöhnen zudem die Untergrenze.",
+          "Am aussagekräftigsten sind aktuelle Inserate mit Lohnband für vergleichbare Stellen in deiner Region. Sie zeigen, was Betriebe heute tatsächlich bieten.",
         ],
       },
       {
-        id: "die-erste-zahl-wer-sie-nennt-hat-oft-schon-verloren-oder-gewonnen",
-        title: "Die erste Zahl. Wer sie nennt, hat oft schon verloren, oder gewonnen",
+        id: "wer-sollte-in-der-lohnverhandlung-die-erste-zahl-nennen",
+        title: "Wer sollte in der Lohnverhandlung die erste Zahl nennen?",
         paragraphs: [
-          "Es gibt eine alte Faustregel, nenne nie die erste Zahl. Sie stimmt nur halb. Richtig ist, wer eine schlecht vorbereitete erste Zahl nennt, verliert. Wer eine gut begründete erste Zahl nennt, setzt den Anker für das ganze Gespräch.",
-          "In der Schweiz fragen viele Arbeitgeber früh nach Deiner Lohnvorstellung. Eine Ausweichantwort wie das ist verhandelbar wirkt unsicher. Besser ist eine konkrete Spanne, deren unteres Ende bereits das ist, womit Du zufrieden wärst. Denn erfahrungsgemäss landet das Ergebnis am unteren Rand der genannten Spanne. Nennst Du 90 bis 100, rechne mit 90. Deine Spanne sollte also selbstbewusst, aber begründbar sein, gestützt auf die Marktzahlen, die Du vorher recherchiert hast.",
+          "Die alte Regel, nie die erste Zahl zu nennen, stimmt nur halb. Eine schlecht vorbereitete erste Zahl kostet dich Geld. Eine gut begründete setzt den Anker für das ganze Gespräch.",
+          "In der Schweiz fragen viele Arbeitgeber früh nach deiner Lohnvorstellung. Eine Ausweichantwort wirkt unsicher. Nenn lieber eine Spanne, deren unteres Ende bereits ein Lohn ist, mit dem du zufrieden wärst, denn das Ergebnis landet erfahrungsgemäss eher am unteren Rand.",
         ],
       },
       {
-        id: "der-teil-den-fast-alle-vergessen-lohn-ist-nicht-nur-der-lohn",
-        title: "Der Teil, den fast alle vergessen. Lohn ist nicht nur der Lohn",
+        id: "was-ist-neben-dem-grundlohn-verhandelbar",
+        title: "Was ist neben dem Grundlohn verhandelbar?",
         paragraphs: [
-          "Wer nur auf die Bruttozahl starrt, lässt in der Schweiz regelmässig Geld liegen. Ein Angebot besteht aus deutlich mehr Bausteinen, und mehrere davon sind verhandelbar, gerade wenn beim Grundlohn wenig Bewegung ist.",
-          "Dazu gehört der Anteil des dreizehnten Monatslohns, die Höhe und Bedingung eines Bonus, der Arbeitgeberanteil an der Pensionskasse, der deutlich über dem gesetzlichen Minimum liegen kann, die Anzahl Ferientage, Weiterbildungsbudget, Homeoffice-Regelungen und die Übernahme von Reise- oder Verpflegungskosten. Wenn eine Firma beim Grundlohn an eine interne Grenze stösst, ist sie oft bei diesen Punkten flexibel. Wer nur über eine einzige Zahl verhandelt, verschenkt genau diesen Spielraum.",
+          "Wer nur auf die Bruttozahl schaut, lässt Geld liegen. Ein Angebot besteht aus mehreren Bausteinen, und bei vielen hat ein Betrieb mehr Spielraum als beim Grundlohn.",
+          "Dazu gehört der 13. Monatslohn, der in der Schweiz üblich, aber gesetzlich nicht vorgeschrieben ist. Bei der Pensionskasse muss der Arbeitgeber mindestens gleich viel einzahlen wie die Mitarbeitenden, viele zahlen freiwillig mehr. Ebenso verhandelbar sind Ferien über das gesetzliche Minimum von vier Wochen hinaus, ein Weiterbildungsbudget, Bonus, Firmenfahrzeug oder die Regelung von Pikett und Überstunden.",
+        ],
+      },
+      {
+        id: "was-tun-wenn-im-inserat-lohn-nach-vereinbarung-steht",
+        title: "Was tun, wenn im Inserat «Lohn nach Vereinbarung» steht?",
+        paragraphs: [
+          "Viele Inserate in der Schweiz nennen keinen Lohn. Für dich heisst das, dass du die Spanne selbst klären musst, und zwar früh.",
+          "Frag schon im ersten Telefonat freundlich nach dem vorgesehenen Lohnband. Ein Betrieb, der dir darauf keine Antwort geben kann oder will, zeigt dir damit schon etwas über seine Art, mit Mitarbeitenden umzugehen. Ohne Lohnband im Inserat ist deine eigene Marktrecherche umso wichtiger.",
         ],
       },
       {
         id: "wenn-das-erste-angebot-zu-tief-ist",
         title: "Wenn das erste Angebot zu tief ist",
         paragraphs: [
-          "Das erste Angebot ist selten das letzte. Ein zu tiefes Angebot ist kein Grund zur Enttäuschung, sondern der normale Anfang. Der entscheidende Moment ist Deine Reaktion darauf.",
-          "Der Fehler wäre, sofort zuzusagen aus Angst, die Chance zu verlieren, oder umgekehrt beleidigt abzubrechen. Besser ist eine ruhige, sachliche Rückmeldung, die Wertschätzung fürs Angebot zeigt, aber klar auf die Differenz zu Deinen recherchierten Marktzahlen verweist. Nicht ich will mehr, sondern für diese Verantwortung und meine Erfahrung liegt der Marktwert bei X, hier ist, worauf ich das stütze. Damit verlagerst Du das Gespräch weg von Deinen Wünschen hin zu objektiven Fakten, und genau dort bist Du stark.",
+          "Das erste Angebot ist selten das letzte. Sag nicht sofort zu, aus Angst, die Chance zu verlieren, und brich auch nicht enttäuscht ab.",
+          "Besser ist eine ruhige, sachliche Rückmeldung. Zum Beispiel so: „Danke für das Angebot. Für diese Verantwortung und meine Erfahrung liegt der Markt bei rund X, das zeigen vergleichbare Stellen in der Region.“ Damit verschiebst du das Gespräch von deinen Wünschen zu Fakten, und dort bist du stark.",
         ],
       },
       {
-        id: "warum-eine-externe-begleitung-den-unterschied-macht",
-        title: "Warum eine externe Begleitung den Unterschied macht",
+        id: "wie-verhandelst-du-eine-lohnerhoehung-beim-aktuellen-arbeitgeber",
+        title: "Wie verhandelst du eine Lohnerhöhung beim aktuellen Arbeitgeber?",
         paragraphs: [
-          "An diesem Punkt zeigt sich der grösste Vorteil, wenn Du nicht allein verhandelst. Wer selbst am Tisch sitzt, ist emotional beteiligt, will den Job, will keinen Konflikt und gibt deshalb oft zu früh nach. Jemand, der den Markt kennt und für Dich verhandelt, hat diese Hemmung nicht und weiss zusätzlich, wo bei einer bestimmten Firma real noch Spielraum ist.",
-          "Genau das ist ein Teil unserer Arbeit bei ScaleZ. Wir gehen mit unseren Kandidatinnen und Kandidaten vor jedem Gespräch durch, was realistisch drin liegt, und lassen sie in der Verhandlung nicht allein. Wenn ein erstes Angebot zu tief ausfällt, geben wir nicht klein bei, sondern holen gemeinsam das beste Ergebnis heraus, das für die Position tatsächlich möglich ist.",
+          "In vielen Betrieben werden die Löhne für das kommende Jahr im Herbst festgelegt. Sprich das Thema deshalb an, bevor das Budget steht, und nicht erst im Januar. Als Orientierung: 2025 stiegen die Nominallöhne in der Schweiz laut BFS im Schnitt um 1,8 Prozent.",
+          "Bring konkrete Beispiele mit, wo du mehr Verantwortung übernommen oder Ergebnisse geliefert hast. Grössere Lohnsprünge entstehen allerdings meist beim Wechsel der Stelle oder der Funktion und seltener in der jährlichen Runde.",
         ],
       },
       {
-        id: "das-wichtigste-in-drei-saetzen",
-        title: "Das Wichtigste in drei Sätzen",
+        id: "warum-begleitung-in-der-lohnverhandlung-hilft",
+        title: "Warum Begleitung in der Lohnverhandlung hilft",
         paragraphs: [
-          "Kenne Deinen Marktwert, bevor Du über eine Zahl sprichst, und leite ihn vom Markt ab, nicht von Deinem alten Lohn. Verhandle nie nur über den Grundlohn, sondern über das gesamte Paket. Und behandle ein zu tiefes erstes Angebot als Anfang, nicht als Ende.",
-          "Wenn Du gerade vor einer Verhandlung stehst oder wissen willst, was Deine Erfahrung im aktuellen Markt wirklich wert ist, melde Dich bei uns. Ein ehrliches Gespräch darüber kostet Dich nichts und gibt Dir Klarheit, mit der Du deutlich stärker in jede Verhandlung gehst.",
+          "Wer selbst am Tisch sitzt, will den Job, will keinen Konflikt und gibt deshalb oft zu früh nach. Jemand, der den Markt kennt und für dich verhandelt, hat diese Hemmung nicht und weiss oft, wo bei einem bestimmten Betrieb noch Spielraum liegt.",
+          "Genau das ist ein Teil unserer Arbeit bei ScaleZ. Wir gehen mit unseren Kandidat:innen vor jedem Gespräch durch, was realistisch drinliegt, und lassen sie in der Verhandlung nicht allein.",
+        ],
+      },
+      {
+        id: "ist-der-13-monatslohn-in-der-schweiz-pflicht",
+        title: "Ist der 13. Monatslohn in der Schweiz Pflicht?",
+        paragraphs: [
+          "Nein. Der 13. Monatslohn ist in der Schweiz weit verbreitet, aber gesetzlich nicht vorgeschrieben. Er gilt, wenn er im Arbeitsvertrag oder im anwendbaren Gesamtarbeitsvertrag vereinbart ist.",
+        ],
+      },
+      {
+        id: "wie-viel-lohnerhoehung-ist-in-der-schweiz-realistisch",
+        title: "Wie viel Lohnerhöhung ist in der Schweiz realistisch?",
+        paragraphs: [
+          "Im Schnitt stiegen die Nominallöhne 2025 um 1,8 Prozent. Innerhalb der gleichen Stelle liegt die jährliche Erhöhung meist in dieser Grössenordnung. Mehr ist vor allem bei neuer Verantwortung oder einem Stellenwechsel möglich.",
+        ],
+      },
+      {
+        id: "wann-ist-der-beste-zeitpunkt-fuer-eine-lohnverhandlung",
+        title: "Wann ist der beste Zeitpunkt für eine Lohnverhandlung?",
+        paragraphs: [
+          "Beim aktuellen Arbeitgeber vor der Budgetrunde, in vielen Betrieben also im Herbst. Bei einem Stellenwechsel, sobald nach deiner Lohnvorstellung gefragt wird, gut vorbereitet und mit einer begründeten Spanne.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Wenn du vor einer Verhandlung stehst oder wissen willst, was deine Erfahrung am Markt wert ist, sprich mit uns. Wir kennen die aktuellen Lohnbänder in Bau, Elektro, Gebäudetechnik und Industrie. Buch dir 30 Minuten unter bit.ly/scalez-booking. Unverbindlich und diskret.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "Lohnentwicklung 2025, Bundesamt für Statistik, Medienmitteilung vom 21. April 2026: https://www.admin.ch/de/newnsb/Eh5oOnuiTBX189E3wK0yM",
+          "Lohnstrukturerhebung und Lohnrechner Salarium, Bundesamt für Statistik: https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/loehne-erwerbseinkommen-arbeitskosten/lohnstruktur.html",
+          "Lohnrechner des Schweizerischen Gewerkschaftsbunds: https://lohnrechner.ch",
         ],
       },
     ],
