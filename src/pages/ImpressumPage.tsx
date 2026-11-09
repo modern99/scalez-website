@@ -13,7 +13,7 @@ export default function ImpressumPage() {
     <>
       <Seo
         title="Impressum – ScaleZ GmbH"
-        description="Impressum der ScaleZ GmbH, Eggbühlstrasse 24, 8050 Zürich. Angaben zu Geschäftsführung und Handelsregister."
+        description="Impressum der ScaleZ GmbH, Frankentalerstrasse 54, 8049 Zürich. Angaben zu Geschäftsführung und Handelsregister."
         path="/impressum"
       />
       <section className="pt-32 pb-14">
@@ -37,8 +37,8 @@ export default function ImpressumPage() {
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-accent">Unternehmen</p>
               <div className="space-y-2 font-light leading-relaxed text-muted-foreground">
                 <p>ScaleZ GmbH</p>
-                <p>Eggbühlstrasse 24</p>
-                <p>8050 Zürich</p>
+                <p>Frankentalerstrasse 54</p>
+                <p>8049 Zürich</p>
                 <p>Schweiz</p>
               </div>
             </motion.section>

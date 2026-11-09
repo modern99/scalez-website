@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Clock3 } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import maxImg from "@/assets/max-schoenpflug.jpeg";
+import maxImg from "@/assets/max-schoenpflug-avatar.jpeg";
 import { Button } from "@/components/ui/button";
 import { getBlogPost } from "@/data/content";
 import { cn } from "@/lib/utils";

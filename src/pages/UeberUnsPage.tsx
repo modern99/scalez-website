@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import maxImg from "@/assets/max-schoenpflug-portrait.jpeg";
+import kevinImg from "@/assets/kevin-kigle-portrait.jpeg";
 import Seo from "@/components/Seo";
 
 const aboutSchema = {
@@ -132,6 +133,48 @@ export default function UeberUnsPage() {
                   <Linkedin className="h-4 w-4" />
                   LinkedIn
                 </a>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-24 md:mt-32 max-w-4xl md:ml-auto">
+            <motion.p {...fadeUp} className="mb-8 text-xs font-bold uppercase tracking-[0.3em] text-accent md:text-right">
+              Partner
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid md:grid-cols-[1fr_320px] gap-8 md:gap-12 items-start"
+            >
+              <div className="order-2 md:order-1 md:text-right">
+                <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">Kevin Kigle</h3>
+                <p className="mt-6 text-justify text-lg font-light leading-relaxed text-brand-surface-foreground/72">
+                  Ich kenne die Besetzung von Stellen aus drei Blickwinkeln. In der Personalabteilung eines Unternehmens, im Austausch mit den Fachabteilungen, die am Ende mit der neuen Person arbeiten und als Berater von aussen. Dabei ist mir aufgefallen, dass diese drei Seiten oft aneinander vorbeireden.
+                </p>
+                <p className="mt-4 text-justify text-lg font-light leading-relaxed text-brand-surface-foreground/72">
+                  Mit ScaleZ möchte ich das ändern und Klartext reden!
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/kevin-kigle/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 border border-accent px-4 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+              </div>
+              <div className="order-1 md:order-2 aspect-square overflow-hidden bg-brand-surface-foreground/10">
+                <img
+                  src={kevinImg}
+                  alt="Kevin Kigle – Partner bei ScaleZ"
+                  width="900"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </div>

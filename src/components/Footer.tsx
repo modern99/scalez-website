@@ -29,7 +29,7 @@ export default function Footer() {
                 Kontakt
               </p>
               <p className="text-[0.82rem] font-medium leading-[1.1] text-brand-surface-foreground md:text-[0.88rem]">
-                Eggbühlstrasse 24, 8050 Zürich, Schweiz
+                Frankentalerstrasse 54, 8049 Zürich, Schweiz
               </p>
               <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-[0.74rem] leading-[1.2] text-brand-surface-foreground/70 md:text-[0.82rem] dark:text-brand-surface-foreground/72">
                 <a href="tel:+41797046000" className="transition-colors hover:text-accent">

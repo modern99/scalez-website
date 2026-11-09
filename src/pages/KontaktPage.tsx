@@ -24,8 +24,8 @@ const contactPageSchema = {
     email: "info@scale-z.ch",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Eggbühlstrasse 24",
-      postalCode: "8050",
+      streetAddress: "Frankentalerstrasse 54",
+      postalCode: "8049",
       addressLocality: "Zürich",
       addressCountry: "CH",
     },
@@ -58,7 +58,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Standort",
     value: "Z\u00fcrich, Schweiz",
-    href: "https://maps.google.com/?q=Eggb\u00fchlstrasse+24+8050+Z\u00fcrich",
+    href: "https://maps.google.com/?q=Frankentalerstrasse+54+8049+Z\u00fcrich",
   },
   {
     icon: Linkedin,

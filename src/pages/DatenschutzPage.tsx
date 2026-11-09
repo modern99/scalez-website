@@ -10,7 +10,7 @@ const fadeUp = {
 
 const headerLines = [
   "ScaleZ GmbH",
-  "Eggbühlstrasse 24, 8050 Zürich, Schweiz",
+  "Frankentalerstrasse 54, 8049 Zürich, Schweiz",
   "E-Mail: info@scale-z.ch · Telefon: +41 79 704 60 00",
   "Stand: 04.2026",
 ];
@@ -29,8 +29,8 @@ const sections = [
     paragraphs: [
       "Verantwortlich für die Datenbearbeitung ist:",
       "ScaleZ GmbH",
-      "Eggbühlstrasse 24",
-      "8050 Zürich, Schweiz",
+      "Frankentalerstrasse 54",
+      "8049 Zürich, Schweiz",
       "E-Mail: info@scale-z.ch",
       "Telefon: +41 79 704 60 00",
       "Für alle Fragen zum Datenschutz, zur Ausübung Ihrer Rechte sowie für Beschwerden wenden Sie sich bitte an info@scale-z.ch.",
