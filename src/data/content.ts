@@ -1137,6 +1137,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Baar",
     addressRegion: "ZG",
   },
+  {
+    slug: "entwurfsarchitekt-zuerich",
+    title: "Entwurfsarchitekt (m/w/d)",
+    region: "Stadt Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Architektur · Zürich",
+    teaser:
+      "Entwürfe für Bauten im Luxussegment in einem renommierten Zürcher Architekturbüro. Mit Erfahrung auch als Kader und bis CHF 180'000.",
+    compensation: "CHF 110'000 – 180'000 / Jahr je nach Erfahrung, mit Kaderfunktion",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Du entwickelst Entwürfe für hochwertige Bauten im Luxussegment, von der ersten Skizze bis zum ausgereiften Projekt",
+      "Du übersetzt die Wünsche anspruchsvoller Bauherrschaften in eine klare architektonische Haltung",
+      "Du arbeitest an Materialisierung, Details und Visualisierungen auf höchstem Niveau",
+      "Du präsentierst Entwürfe gegenüber der Bauherrschaft und vertrittst sie überzeugend",
+      "Mit entsprechender Erfahrung übernimmst du Verantwortung im Kader und führst ein Entwurfsteam",
+    ],
+    requirements: [
+      "Abgeschlossenes Architekturstudium an einer ETH oder Fachhochschule",
+      "Mehrjährige Erfahrung in der Entwurfsplanung in der Schweiz, idealerweise im gehobenen Wohnungsbau",
+      "Ausgeprägtes Gespür für Proportion, Material und Detail",
+      "Sicherer Umgang mit gängiger CAD- und Visualisierungssoftware",
+      "Sehr gute Deutschkenntnisse und ein souveräner Auftritt gegenüber Bauherrschaften",
+    ],
+    benefits: [
+      "Projekte im Luxussegment mit hohem gestalterischem Anspruch",
+      "Lohn bis CHF 180'000 und Kaderfunktion je nach Erfahrung",
+      "Renommiertes Architekturbüro in der Stadt Zürich",
+      "Gut erreichbar mit dem ÖV, ab Zug ist Zürich HB in rund 25 Minuten erreichbar",
+    ],
+    closingNote: [
+      "Du wohnst zwischen Zürich und Zug, im Knonaueramt oder am Zimmerberg, oder pendelst gern? Dann passt diese Stelle auch geografisch.",
+      "Du schickst uns deinen Lebenslauf und eine Auswahl aus deinem Portfolio, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht. Du hörst nach jedem Schritt von uns, auch wenn es eine Absage ist.",
+      "Fragen vorab? Ruf Max Schönpflug direkt an unter 079 704 60 00.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-09",
+    validThrough: "2027-01-09",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
