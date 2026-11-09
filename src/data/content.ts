@@ -1097,6 +1097,46 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "architekt-entwurfsplanung-zug",
+    title: "Architekt Entwurfsplanung (m/w/d)",
+    region: "Kanton Zug",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Architektur · Baar",
+    teaser:
+      "Entwürfe für architektonisch anspruchsvolle Hochbauprojekte im Kanton Zug entwickeln, mit viel Gestaltungsraum in einem grösseren Büro der Zentralschweiz.",
+    compensation: "CHF 105'000 – 145'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du entwickelst Entwürfe für anspruchsvolle Hochbauprojekte, von der ersten Idee bis zum ausgereiften Projekt",
+      "Du arbeitest in engagierten Projektteams und bringst deine gestalterischen Ideen ein",
+      "Du erstellst Pläne, 3D-Modelle und Visualisierungen in ArchiCAD und gängigen Bildbearbeitungsprogrammen",
+      "Du prüfst deine Entwürfe auf Baugesetze und Vorschriften und stimmst sie mit der Projektleitung ab",
+    ],
+    requirements: [
+      "Mindestens drei Jahre Planungserfahrung in der Schweiz",
+      "Erfahrung in der Entwurfsplanung und sicherer Umgang mit den gängigen Baugesetzen",
+      "Hoher gestalterischer Anspruch und eigenverantwortliche, vorausschauende Arbeitsweise",
+      "Professioneller Umgang mit ArchiCAD in 3D und mit gängigen Bildbearbeitungsprogrammen",
+      "Sehr gute Deutschkenntnisse in Wort und Schrift",
+    ],
+    benefits: [
+      "Architektonisch anspruchsvolle und abwechslungsreiche Projekte",
+      "Viel Gestaltungsraum in engagierten Projektteams",
+      "Zeitgemässe Anstellungsbedingungen",
+      "Modernes, zentral gelegenes Büro im Kanton Zug",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf und ein paar Projekte aus deinem Portfolio, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht.",
+      "Passt es für beide Seiten, organisieren wir das Gespräch im Büro. Du hörst nach jedem Schritt von uns, auch wenn es eine Absage ist.",
+      "Fragen vorab? Ruf Max Schönpflug direkt an unter 079 704 60 00.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-09",
+    validThrough: "2027-01-09",
+    addressLocality: "Baar",
+    addressRegion: "ZG",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
