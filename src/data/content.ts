@@ -1579,46 +1579,78 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lohn-projektleiter-gebaeudeautomation-schweiz",
-    title: "Was verdient ein Projektleiter Gebäudeautomation in der Schweiz?",
+    title: "Lohn Projektleiter Gebäudeautomation Schweiz 2026",
     category: "Markt",
-    readTime: "5 Min.",
-    publishedAt: "18. August 2026",
+    readTime: "7 Min.",
+    publishedAt: "9. November 2026",
     teaser:
-      "Wie viel verdient man als Projektleiter Gebäudeautomation in der Schweiz wirklich? Wir zeigen realistische Lohnbänder, was den Lohn nach oben treibt und wo die grössten Unterschiede liegen.",
+      "Projektleiter Gebäudeautomation verdienen in der Schweiz meist CHF 90'000 bis 125'000, in Senior- und Leitungsrollen bis über 160'000. Mit Quellen.",
     intro:
-      "Die Gebäudeautomation ist einer der spannendsten und am schnellsten wachsenden Bereiche der Schweizer Gebäudetechnik. Wer hier als Projektleiter arbeitet, verbindet Elektro, HLK und Digitalisierung und ist entsprechend gefragt. Doch was verdient man in dieser Rolle tatsächlich? Feste Zahlen sind schwer zu finden, weil der Lohn stark von Erfahrung, Region und Verantwortung abhängt. In diesem Beitrag ordnen wir die realistischen Lohnbänder ein und zeigen, welche Faktoren am meisten bewegen. Die genannten Werte sind Erfahrungswerte und Marktbeobachtungen, keine amtliche Statistik.",
+      "Als Projektleiter:in Gebäudeautomation verdienst du in der Schweiz 2026 meist zwischen CHF 90'000 und 125'000 pro Jahr, das sind rund CHF 6'900 bis 9'600 pro Monat bei 13 Monatslöhnen. In Senior- und Leitungsfunktionen sind auch Löhne von CHF 160'000 und mehr ausgeschrieben. Hier findest du die Löhne aus aktuellen Inseraten und Lohnportalen, was den Lohn bewegt, warum die Nachfrage steigt und welche Weiterbildung dich weiterbringt.",
     sections: [
       {
-        id: "das-realistische-lohnband-auf-einen-blick",
-        title: "Das realistische Lohnband auf einen Blick",
+        id: "was-verdient-ein-projektleiter-gebaeudeautomation-2026",
+        title: "Was verdient ein Projektleiter Gebäudeautomation 2026?",
         paragraphs: [
-          "Für einen Projektleiter Gebäudeautomation in der Deutschschweiz bewegt sich das Jahresgehalt erfahrungsgemäss meist zwischen rund 90'000 und 125'000 Franken brutto. Der Einstieg mit erster Projektverantwortung liegt häufig im Bereich um 90'000 bis 100'000 Franken. Wer mehrere Jahre Erfahrung mitbringt und grössere Projekte eigenverantwortlich führt, erreicht oft 110'000 bis 125'000 Franken oder mehr.",
-          "Diese Spanne ist bewusst breit, denn kaum eine andere Rolle hängt so stark von den konkreten Umständen ab. Zwei Projektleiter mit demselben Titel können mehrere Tausend Franken auseinanderliegen, je nachdem, für welche Art Projekte und welche Firma sie arbeiten.",
+          "Öffentlich ausgeschriebene Stellen nennen 2026 meist Lohnbänder zwischen CHF 90'000 und 120'000. Ein Inserat in Zürich vom August 2026 nannte CHF 95'000 bis 120'000, eines in Aarau ebenfalls CHF 95'000 bis 120'000, eines in Muttenz CHF 90'000 bis 110'000. In unserem eigenen Mandat in Zürich liegt das Band bei CHF 85'000 bis 110'000.",
+          "Die Lohnportale bestätigen diese Grössenordnung. Auf Indeed liegt der Durchschnitt für Planer:innen Gebäudeautomation bei rund CHF 103'000, mit einer typischen Spanne von CHF 82'000 bis 129'000 (Stand September 2026). Glassdoor nennt für Projektleiter:innen Gebäudeautomation CHF 83'000 bis 123'000, allerdings auf Basis von nur sechs Lohnangaben.",
+          "Einen GAV-Mindestlohn gibt es für diese Rolle in der Regel nicht. Projektierende und planende Tätigkeiten sind vom GAV der Elektrobranche ausgenommen, der Lohn wird frei verhandelt. Diese Spanne ist bewusst breit, denn kaum eine andere Rolle hängt so stark von den konkreten Umständen ab. Zwei Projektleiter mit demselben Titel können mehrere Tausend Franken auseinanderliegen, je nachdem, für welche Art Projekte und welche Firma sie arbeiten.",
         ],
       },
       {
-        id: "was-den-lohn-nach-oben-treibt",
-        title: "Was den Lohn nach oben treibt",
+        id: "lohn-nach-erfahrung-und-verantwortung",
+        title: "Lohn nach Erfahrung und Verantwortung",
         paragraphs: [
-          "Den grössten Unterschied macht die Projektgrösse und die Budgetverantwortung. Wer Projekte im Millionenbereich führt und ein Team koordiniert, wird deutlich anders vergütet als jemand, der einzelne Anlagen betreut.",
-          "Ein zweiter starker Hebel ist die technische Breite. Projektleiter, die Elektro, HLK und die digitale Steuerung wirklich verbinden können und mit modernen Systemen und Schnittstellen vertraut sind, sind selten und entsprechend gesucht.",
-          "Auch die Art des Arbeitgebers zählt. Grössere Generalunternehmen und spezialisierte Automationsfirmen zahlen tendenziell anders als kleinere Installationsbetriebe. Und schliesslich spielt die Region eine Rolle, im Grossraum Zürich und Zug liegen die Löhne meist über dem Schweizer Durchschnitt.",
+          "Wer frisch in die Projektleitung einsteigt oder kleinere Projekte führt, liegt meist am unteren Ende, also bei rund CHF 85'000 bis 100'000. Erfahrene Projektleiter:innen, die Projekte selbstständig von der Offerte bis zur Übergabe verantworten, bewegen sich typischerweise zwischen CHF 100'000 und 125'000.",
+          "Nach oben ist das Band offen. Die Bundesverwaltung schrieb 2026 für eine Stelle als Fachberater:in Gebäudeautomation in Bern ein Lohnband von CHF 110'000 bis 160'000 aus. Für Leiter:innen Automation weist jobs.ch einen Durchschnitt von rund CHF 112'000 aus, mit einzelnen Angaben bis CHF 180'000.",
+          "Löhne über CHF 160'000 sind also möglich, aber nicht der Normalfall. Sie setzen meist Führungsverantwortung, sehr grosse oder komplexe Projekte oder eine Rolle bei der Bauherrschaft voraus.",
         ],
       },
       {
-        id: "lohn-ist-nicht-alles-worauf-es-ankommt",
-        title: "Lohn ist nicht alles, worauf es ankommt",
+        id: "was-macht-ein-projektleiter-gebaeudeautomation",
+        title: "Was macht ein Projektleiter Gebäudeautomation?",
         paragraphs: [
-          "So wichtig die Zahl ist, sie erzählt nur die halbe Geschichte. Gerade in der Gebäudeautomation entscheiden oft Faktoren über die Zufriedenheit, die nicht auf dem Lohnzettel stehen. Dazu gehören die Art der Projekte, der Grad an Eigenverantwortung, die Entwicklungsmöglichkeiten Richtung Senior- oder Bereichsleitung und wie modern eine Firma technisch aufgestellt ist.",
-          "Ein etwas tieferer Lohn bei einem Arbeitgeber mit spannenderen Projekten und echter Entwicklungsperspektive kann sich langfristig mehr lohnen als das Maximum bei eintöniger Arbeit. Wer einen Wechsel überlegt, sollte deshalb den Gesamtwert einer Stelle betrachten, nicht nur die Bruttozahl.",
+          "Projektleiter:innen Gebäudeautomation bearbeiten Projekte von der Konzeption über Planung und Ausführung bis zur Übergabe an die Kundschaft. Sie sorgen dafür, dass Heizung, Lüftung, Klima, Sanitär und Elektro eines Gebäudes über eine gemeinsame Steuerung zusammenarbeiten.",
+          "Im Alltag heisst das, Pflichtenhefte und Offerten erarbeiten, Programmierung und Montage koordinieren, Anlagen testen und in Betrieb nehmen und die Bauherrschaft begleiten. Gearbeitet wird im Büro und vor Ort bei der Kundschaft.",
         ],
       },
       {
-        id: "wo-du-im-markt-stehst",
-        title: "Wo du im Markt stehst",
+        id: "warum-gebaeudeautomation-gefragt-ist",
+        title: "Warum Gebäudeautomation gefragt ist",
         paragraphs: [
-          "Die ehrlichste Antwort auf die Lohnfrage ist immer individuell. Dein realistischer Wert hängt von deinem genauen Profil, deiner Erfahrung und dem aktuellen Marktbedarf ab. Genau das lässt sich am besten in einem kurzen, vertraulichen Gespräch einordnen.",
-          "Wenn du wissen möchtest, wo du mit deinem Profil aktuell stehst und was für dich realistisch drin liegt, melde dich bei uns. Wir kennen den Markt in der Gebäudetechnik und sagen dir ehrlich und unverbindlich, wie deine Ausgangslage aussieht.",
+          "Ingenieurtechnische Fachkräfte, zu denen auch Techniker:innen für Automation gehören, stehen im Fachkräftemangel Index Schweiz 2025 auf Rang 3 aller Berufsgruppen. Elektriker:innen und Elektroniker:innen folgen auf Rang 4.",
+          "Dazu kommt die Energiepolitik. Mit den Mustervorschriften der Kantone im Energiebereich, Ausgabe 2025 (MuKEn 2025), müssen neue Nichtwohnbauten ab 2000 Quadratmetern Energiebezugsfläche mit Gebäudeautomation ausgerüstet werden. Die Kantone setzen die MuKEn 2025 zwischen 2025 und 2030 schrittweise um, was den Bedarf an Fachleuten weiter erhöhen dürfte.",
+        ],
+      },
+      {
+        id: "welche-weiterbildung-lohnt-sich-in-der-gebaeudeautomation",
+        title: "Welche Weiterbildung lohnt sich in der Gebäudeautomation?",
+        paragraphs: [
+          "Der direkte Weg ist die eidgenössische Berufsprüfung Projektleiter:in Gebäudeautomation mit Fachausweis, getragen von EIT.swiss. Die Vorbereitung dauert berufsbegleitend in der Regel vier Semester und wird unter anderem vom ZbW in St. Gallen, der ibW Höheren Fachschule Südostschweiz und der hftm angeboten.",
+          "Zugelassen wird in der Regel, wer eine passende Grundbildung, etwa in Elektro, Automation oder Gebäudetechnik, und mehrere Jahre Erfahrung in der Gebäudeautomation mitbringt. Die genauen Bedingungen stehen in der Prüfungsordnung von EIT.swiss.",
+          "Wie viel verdient ein Projektleiter Gebäudeautomation pro Monat? Bei 13 Monatslöhnen und einem Jahreslohn von CHF 90'000 bis 125'000 sind das rund CHF 6'900 bis 9'600 brutto pro Monat. In Senior- und Leitungsfunktionen mit CHF 160'000 sind es rund CHF 12'300.",
+        ],
+      },
+      {
+        id: "gilt-der-gav-elektro-fuer-projektleiter-gebaeudeautomation",
+        title: "Gilt der GAV Elektro für Projektleiter Gebäudeautomation?",
+        paragraphs: [
+          "In der Regel nicht. Mitarbeitende, die vorwiegend planen, projektieren, kalkulieren oder offerieren, sind vom GAV der Schweizerischen Elektrobranche ausgenommen, ebenso Kader.",
+        ],
+      },
+      {
+        id: "ist-gebaeudeautomation-in-der-schweiz-ein-beruf-mit-zukunft",
+        title: "Ist Gebäudeautomation in der Schweiz ein Beruf mit Zukunft?",
+        paragraphs: [
+          "Ja. Ingenieurtechnische Fachkräfte stehen auf Rang 3 der Mangelberufe, und mit der MuKEn 2025 wird Gebäudeautomation für grosse neue Nichtwohnbauten Pflicht, sobald die Kantone die Vorschriften umgesetzt haben.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-profil",
+        title: "Wo stehst du mit deinem Profil?",
+        paragraphs: [
+          "Wo du im Lohnband stehst, hängt von deinen Projekten, Systemen und deiner Verantwortung ab. Wir sprechen laufend mit Betrieben in Gebäudetechnik und Automation und wissen, was gerade bezahlt wird.",
+          "Wenn du wissen willst, wo du stehst, buch dir 30 Minuten mit uns unter bit.ly/scalez-booking. Unsere offene Projektleitung Gebäudeautomation in Zürich findest du unter scale-z.ch/jobs.",
         ],
       },
     ],
