@@ -1055,6 +1055,48 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Münchenstein",
     addressRegion: "BL",
   },
+  {
+    slug: "immobilienbewirtschafter-zuerich",
+    title: "Immobilienbewirtschafter (m/w/d)",
+    region: "Stadt Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Immobilien · Zürich",
+    teaser:
+      "Ein eigenes Immobilienportfolio in Zürich mit Budgetverantwortung bewirtschaften und eine Sachbearbeitung fachlich führen. Mit Du-Kultur.",
+    compensation: "CHF 90'000 – 106'000 / Jahr bei 100%",
+    startDate: "Nach Vereinbarung",
+    tasks: [
+      "Du bewirtschaftest ein eigenes, abwechslungsreiches Immobilienportfolio und bist erste Ansprechperson für Eigentümerschaft, Mieterschaft, Behörden und Handwerk",
+      "Du verantwortest Budget und Budgetkontrolle, Reportings und Zustandsberichte",
+      "Du legst Marktmieten fest, planst den Unterhalt und setzt Mietvertrags- und Mietzinsänderungen um",
+      "Du vermietest, übergibst und nimmst Objekte ab und begleitest Gesamtsanierungen und Neubauprojekte",
+      "Du führst eine Sachbearbeiterin oder einen Sachbearbeiter fachlich",
+    ],
+    requirements: [
+      "Kaufmännische Grundausbildung mit Weiterbildung im Immobilienbereich, idealerweise eidg. Fachausweis Immobilienbewirtschaftung",
+      "Mehrjährige Erfahrung in der Immobilienbewirtschaftung in einer ähnlichen Rolle",
+      "Sicherer Umgang mit MS Office, Erfahrung mit GARAIO REM ist von Vorteil",
+      "Freude am Kontakt mit Eigentümerschaft, Mieterschaft und Handwerk",
+      "Sehr gute Deutschkenntnisse",
+    ],
+    benefits: [
+      "Eigenes Portfolio mit viel Eigenverantwortung",
+      "Fachliche Führung und Raum für eigene Ideen",
+      "Flache Hierarchien und Du-Kultur über alle Ebenen",
+      "Eingespieltes Team mit gemeinsamen Aktivitäten",
+      "Etabliertes Immobilienunternehmen mit langer Tradition",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht.",
+      "Passt es für beide Seiten, organisieren wir das Gespräch beim Unternehmen. Du hörst nach jedem Schritt von uns, auch wenn es eine Absage ist.",
+      "Fragen vorab? Ruf Max Schönpflug direkt an unter 079 704 60 00.",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-09",
+    validThrough: "2027-01-09",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
