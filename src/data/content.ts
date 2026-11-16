@@ -1182,6 +1182,106 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "loehne-gebaeudetechnik-hlk-schweiz-2026",
+    title: "Löhne Gebäudetechnik und HLK Schweiz 2026",
+    category: "Markt",
+    readTime: "7 Min.",
+    publishedAt: "16. November 2026",
+    teaser:
+      "Heizungs- und Sanitärinstallateure EFZ verdienen nach GAV mindestens CHF 4'600, Projektleiter HLK oft über CHF 100'000. Alle Löhne 2026 im Überblick.",
+    intro:
+      "In der Schweizer Gebäudetechnik verdienst du 2026 als Installateur:in EFZ mindestens CHF 4'600 pro Monat, 13 Mal pro Jahr. Gebäudetechnikplaner:innen liegen im Schnitt bei rund CHF 69'000 im Jahr, Projektleiter:innen HLK in aktuellen Inseraten meist zwischen CHF 95'000 und 135'000. Hier findest du die Mindestlöhne nach GAV, die Marktlöhne nach Funktion und was deinen Lohn wirklich bewegt.",
+    sections: [
+      {
+        id: "welche-mindestloehne-gelten-in-der-gebaeudetechnik-2026",
+        title: "Welche Mindestlöhne gelten in der Gebäudetechnik 2026?",
+        paragraphs: [
+          "Für Heizungs-, Lüftungs-, Sanitär- und Spenglerbetriebe gilt der allgemeinverbindliche Gesamtarbeitsvertrag der Gebäudetechnikbranche, abgeschlossen zwischen suissetec und den Gewerkschaften Unia und Syna. Er legt die Mindestlöhne nach Ausbildung und Berufsjahren fest, der 13. Monatslohn ist Teil des GAV.",
+          "Als Installateur:in EFZ verdienst du 2026 mindestens CHF 4'600 pro Monat ab Lehrabschluss, CHF 5'100 ab dem dritten und CHF 5'300 ab dem fünften Jahr nach der Lehre. Mit Berufsattest EBA oder einer handwerklichen Lehre in einer metallverarbeitenden Branche sind es CHF 4'100, 4'300 und 4'500. Ohne Ausbildung, ab 20 Jahren, gelten CHF 4'000, 4'100 und 4'300.",
+          "Aufs Jahr gerechnet heisst das für Installateur:innen EFZ mindestens CHF 59'800 direkt nach der Lehre und CHF 68'900 ab dem fünften Berufsjahr. Weil die Teuerung per Ende August 2025 nur 0,2 Prozent betrug, blieben die Mindestlöhne für 2026 unverändert.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-gebaeudetechnikplaner-in-der-schweiz",
+        title: "Was verdient ein Gebäudetechnikplaner in der Schweiz?",
+        paragraphs: [
+          "Gebäudetechnikplaner:innen verdienen laut den Lohnangaben auf jobs.ch im Schnitt rund CHF 69'300 pro Jahr, basierend auf über 500 Einträgen. Für die Jahre 2024 bis 2026 liegt der Durchschnitt mit CHF 76'700 deutlich höher als in früheren Jahren.",
+          "Im Raum Zürich zahlen Planungsbüros für erfahrene Leute mehr. Ein aktuelles Inserat für eine:n Gebäudetechnikplaner:in HLK nennt CHF 85'000 bis 90'000. In unserem eigenen Mandat in Zürich liegt das Lohnband bei CHF 78'000 bis 105'000 bei 100 Prozent.",
+          "Für Planungsfunktionen legt der GAV keine eigenen Mindestlöhne fest, seine Lohnkategorien beziehen sich auf Installateur:innen. Der Lohn als Planer:in wird frei verhandelt, und genau deshalb lohnt sich der Blick auf den Markt.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-projektleiter-hlk",
+        title: "Was verdient ein Projektleiter HLK?",
+        paragraphs: [
+          "Projektleiter:innen in Heizung, Lüftung und Klima gehören zu den bestbezahlten Funktionen der Gebäudetechnik. Öffentliche Inserate aus dem Oktober 2026 nennen CHF 100'000 bis 105'000 für eine Projektleitung Heizung in Luzern, CHF 105'000 bis 120'000 für eine Projektleitung Sanitär in Zürich und CHF 110'000 bis 135'000 für eine Projektleitung Heizung und Kälte in Winterthur.",
+          "In unserem aktuellen Mandat in Dübendorf liegt das Band für eine Projektleitung HLK bei CHF 95'000 bis 125'000, zusätzlich mit Erfolgsbeteiligung. Wer zusätzlich Kälte, grosse Sanierungen oder ein Team verantwortet, landet am oberen Ende.",
+        ],
+      },
+      {
+        id: "was-verdienen-servicetechniker-in-der-gebaeudetechnik",
+        title: "Was verdienen Servicetechniker in der Gebäudetechnik?",
+        paragraphs: [
+          "Im Service liegen die Löhne in der Regel über der reinen Montage, weil Pikett, Fehlersuche und Kundenkontakt dazukommen. In unseren aktuellen Mandaten im Grossraum Zürich liegt das Lohnband für Servicetechniker:innen Heizung und Wärmepumpen bei CHF 78'000 bis 100'000, für Servicetechniker:innen Sanitär bei CHF 78'000 bis 98'000.",
+          "Gerade Wärmepumpen sind gefragt, weil viele ältere Öl- und Gasheizungen ersetzt werden. Wer Kältetechnik und Steuerungen beherrscht, ist besonders gesucht.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-verkaufsingenieur-in-der-gebaeudetechnik",
+        title: "Was verdient ein Verkaufsingenieur in der Gebäudetechnik?",
+        paragraphs: [
+          "Technischer Verkauf ist der Weg für Leute, die Technik verstehen und gern mit Kundschaft arbeiten. In unserem aktuellen Mandat für Verkaufsingenieur:innen HLK und Gebäudeautomation liegt das Lohnband bei CHF 97'000 bis 117'000, ohne Bonus.",
+        ],
+      },
+      {
+        id: "was-den-lohn-in-der-gebaeudetechnik-bewegt",
+        title: "Was den Lohn in der Gebäudetechnik bewegt",
+        paragraphs: [
+          "Am stärksten wirkt der Schritt von der Ausführung in Planung, Projektleitung oder Verkauf. Danach zählen Spezialgebiete wie Kälte, Wärmepumpen oder Gebäudeautomation und Weiterbildungen, etwa zur Projektleiterin oder zum Projektleiter Gebäudetechnik mit eidgenössischem Fachausweis oder zum Techniker HF.",
+          "Auch der Arbeitgeber spielt mit. Grosse Planungsbüros, Generalunternehmen und Industriebetriebe zahlen für dieselbe Funktion oft anders als kleine Installationsbetriebe. Vergleiche deshalb immer das ganze Paket mit Lohn, Fahrzeug, Pikett und Weiterbildung.",
+        ],
+      },
+      {
+        id: "wie-viel-verdient-ein-heizungsinstallateur-efz-pro-monat",
+        title: "Wie viel verdient ein Heizungsinstallateur EFZ pro Monat?",
+        paragraphs: [
+          "Nach dem GAV der Gebäudetechnik 2026 mindestens CHF 4'600 brutto ab Lehrabschluss, CHF 5'100 ab dem dritten und CHF 5'300 ab dem fünften Berufsjahr, jeweils 13 Mal pro Jahr.",
+        ],
+      },
+      {
+        id: "gilt-der-gav-gebaeudetechnik-auch-fuer-planer-und-projektleiter",
+        title: "Gilt der GAV Gebäudetechnik auch für Planer und Projektleiter?",
+        paragraphs: [
+          "Die Mindestlöhne des GAV sind nach Installateur-Kategorien festgelegt. Für Planungs- und Projektleitungsfunktionen nennt er keine eigenen Mindestlöhne, der Lohn wird frei verhandelt.",
+        ],
+      },
+      {
+        id: "steigen-die-mindestloehne-in-der-gebaeudetechnik-2026",
+        title: "Steigen die Mindestlöhne in der Gebäudetechnik 2026?",
+        paragraphs: [
+          "Nein. Weil die Teuerung per Ende August 2025 nur 0,2 Prozent betrug, blieben die Mindestlöhne für 2026 unverändert.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Wir sprechen jede Woche mit Betrieben der Gebäudetechnik in der Deutschschweiz, vom Installationsbetrieb bis zum Planungsbüro, und wissen, was für welches Profil gerade bezahlt wird.",
+          "Wenn du wissen willst, wo du stehst, dann buche dir einen Termin mit uns.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "Mindestlöhne 2026, suissetec: https://suissetec.ch/files/PDFs/Recht/GAV_Salaer/Deutsch/Mindestl%C3%B6hne%202026-d.pdf Information zur Lohnanpassung 2026, suissetec: https://suissetec.ch/de/news-detail/information-zur-lohnanpassung-2026.html",
+          "Lohnangaben Gebäudetechnikplaner, jobs.ch: https://www.jobs.ch/de/lohn/?canton=ch&term=geb%C3%A4udetechnikplaner",
+          "Lohnbänder aus aktuellen öffentlichen Inseraten (Oktober und November 2026) sowie aus den Stelleninseraten von ScaleZ: https://www.scale-z.ch/jobs",
+        ],
+      },
+    ],
+  },
+  {
     slug: "loehne-elektrobranche-schweiz-2026",
     title: "Lohn Elektroinstallateur und Elektroplaner Schweiz 2026",
     category: "Markt",
