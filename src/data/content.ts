@@ -1178,6 +1178,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "servicetechniker-brandmeldeanlagen-aargau",
+    title: "Servicetechniker Brandmeldeanlagen (m/w/d)",
+    region: "Kanton Aargau",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Aarau",
+    teaser:
+      "Brandmeldeanlagen im Aargau warten und in Betrieb nehmen, mit eigenem Elektroauto auch für privat und freier Planung deiner Einsätze.",
+    compensation: "CHF 80'000 – 100'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "• Du wartest, inspizierst und reparierst Brandmeldeanlagen bei der Kundschaft und dokumentierst deine Einsätze digital",
+      "Du analysierst Störungen und behebst sie direkt vor Ort",
+      "• Du nimmst neue Anlagen in Betrieb und erweiterst bestehende Systeme",
+      "• Du begleitest Abnahmen und Kontrollen durch die Behörden und führst Systemtests durch",
+      "• Du unterstützt dein Team im Pikettdienst",
+    ],
+    requirements: [
+      "• Technische Grundbildung, zum Beispiel als Elektroinstallateur:in EFZ oder Automatiker:in EFZ",
+      "• Mehrjährige Erfahrung in Service, Unterhalt oder Instandhaltung technischer Anlagen",
+      "• Gute IT-Anwenderkenntnisse und Freude an digitalen Arbeitsmitteln",
+      "• Erfahrung mit Brandmeldeanlagen und den VKF-Brandschutzvorschriften ist von Vorteil, aber kein Muss",
+      "• Sehr gute Deutschkenntnisse und Freude am Kontakt mit der Kundschaft",
+    ],
+    benefits: [
+      "• Eigenes Elektroauto, das du auch privat nutzen darfst",
+      "• Freiheit bei der Planung deiner Einsätze",
+      "• Bezahlte Weiterbildungen und klare Entwicklungsmöglichkeiten",
+      "Stabile Aufträge in einer Branche, die immer gebraucht wird",
+      "• Eine Aufgabe mit Sinn, deine Arbeit schützt Menschen",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht.",
+      "Passt es für beide Seiten, organisieren wir das Gespräch und begleiten dich bis zur Unterschrift. Dein Dossier geht nur mit deiner Zustimmung weiter. Fragen vorab? Buch dir direkt einen kurzen Termin bei uns!",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-20",
+    validThrough: "2027-01-10",
+    addressLocality: "Aarau",
+    addressRegion: "AG",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
