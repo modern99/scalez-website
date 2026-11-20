@@ -1182,6 +1182,99 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lohn-immobilienbewirtschafter-schweiz-2026",
+    title: "Lohn Immobilienbewirtschafter Schweiz 2026",
+    category: "Markt",
+    readTime: "6 Min.",
+    publishedAt: "20. November 2026",
+    teaser:
+      "Immobilienbewirtschafter verdienen in der Schweiz im Schnitt rund CHF 85'000, erfahrene über CHF 100'000. Löhne nach Erfahrung, Region und Fachausweis.",
+    intro:
+      "Immobilienbewirtschafter:innen verdienen in der Schweiz laut den Lohnangaben auf jobs.ch im Schnitt rund CHF 85'000 pro Jahr, im Kanton Zürich rund CHF 92'000. In der Sachbearbeitung liegt der Durchschnitt bei rund CHF 65'000, der Schritt zur eigenen Bewirtschaftung ist also einer der grössten Lohnsprünge der Branche. Hier findest du die Löhne nach Erfahrung, den Unterschied zwischen Zürich und dem Rest der Schweiz und den Weg dorthin.",
+    sections: [
+      {
+        id: "was-verdient-ein-immobilienbewirtschafter-in-der-schweiz",
+        title: "Was verdient ein Immobilienbewirtschafter in der Schweiz?",
+        paragraphs: [
+          "Der Durchschnittslohn für Immobilienbewirtschafter:innen liegt laut jobs.ch bei rund CHF 85'000 pro Jahr, das sind bei 13 Monatslöhnen etwa CHF 6'500 pro Monat. Im Kanton Zürich sind es mit rund CHF 92'300 deutlich mehr, basierend auf über 600 Lohnangaben allein in diesem Kanton.",
+          "Ein zweiter Lohnrechner bestätigt dieses Bild. Auf kununu liegt der Durchschnitt bei CHF 86'500, basierend auf 459 Lohnangaben, die meisten Angaben liegen zwischen rund CHF 79'500 und 89'300. Die gesamte Spanne reicht von CHF 69'700 bis CHF 118'600.",
+          "Die Bezeichnungen sind nicht einheitlich. Immobilienverwalter:in und Immobilienbewirtschafter:in meinen meist dieselbe Funktion, und auch die Lohnangaben auf jobs.ch liegen für beide Begriffe praktisch gleich.",
+        ],
+      },
+      {
+        id: "wie-entwickelt-sich-der-lohn-mit-der-erfahrung",
+        title: "Wie entwickelt sich der Lohn mit der Erfahrung?",
+        paragraphs: [
+          "In den ersten zwei Jahren als Bewirtschafter:in liegt der Durchschnitt laut jobs.ch bei rund CHF 76'700, nach drei bis fünf Jahren bei rund CHF 79'300. Nach sechs bis acht Jahren sind es rund CHF 85'000, nach neun bis elf Jahren rund CHF 88'700.",
+          "Wer über 21 Jahre im Beruf ist, kommt im Schnitt auf rund CHF 102'200. Der Lohn steigt also stetig, ohne grosse Sprünge innerhalb derselben Funktion. kununu kommt zu einem ähnlichen Ergebnis. Mit weniger als drei Jahren Erfahrung liegt der Lohn dort im Schnitt bei CHF 78'500, nach zehn Jahren Erfahrung bei CHF 100'700.",
+        ],
+      },
+      {
+        id: "von-der-sachbearbeitung-in-die-bewirtschaftung",
+        title: "Von der Sachbearbeitung in die Bewirtschaftung",
+        paragraphs: [
+          "Der grösste Schritt passiert beim Wechsel aus der Sachbearbeitung in die eigene Bewirtschaftung. Sachbearbeiter:innen Immobilienbewirtschaftung verdienen laut jobs.ch im Schnitt rund CHF 65'000 pro Jahr, in Zürich rund CHF 66'000.",
+          "Wer ein eigenes Portfolio übernimmt, startet im Schnitt bereits bei rund CHF 76'700. Der Abstand von gut CHF 10'000 zeigt, wie viel die Verantwortung für eigene Liegenschaften, Budgets und Eigentümerschaften wert ist.",
+          "Der übliche Weg dorthin führt über eine kaufmännische Grundausbildung, erste Jahre in der Sachbearbeitung und die Berufsprüfung Immobilienbewirtschafter:in mit eidgenössischem Fachausweis. Viele Inserate für Bewirtschaftungsstellen nennen diesen Fachausweis ausdrücklich.",
+        ],
+      },
+      {
+        id: "quereinstieg-aus-kv-und-banken",
+        title: "Quereinstieg aus KV und Banken",
+        paragraphs: [
+          "Die Immobilienbewirtschaftung ist ein naheliegender Schritt für Leute mit kaufmännischem Hintergrund, auch aus Banken und Versicherungen. Zahlen, Verträge und Kundenkontakt kennen sie bereits, neu dazu kommen Mietrecht, Unterhalt und der Umgang mit Handwerk und Mieterschaft.",
+          "Wer quer einsteigt, beginnt meist in der Sachbearbeitung und baut parallel den Fachausweis auf. Mit Erfahrung aus der Finanzbranche kann der Weg in die Bewirtschaftung oder in Richtung Portfolio- und Asset-Management kürzer sein.",
+        ],
+      },
+      {
+        id: "was-den-lohn-in-der-immobilienbewirtschaftung-bewegt",
+        title: "Was den Lohn in der Immobilienbewirtschaftung bewegt",
+        paragraphs: [
+          "Am stärksten wirken Grösse und Art des Portfolios. Wer Gewerbeliegenschaften, Stockwerkeigentum oder Sanierungen und Neubauprojekte begleitet, trägt mehr Verantwortung als bei einem reinen Wohnportfolio.",
+          "Dazu kommen Führungsaufgaben, etwa die fachliche Führung einer Sachbearbeitung, und die Region. Zürich liegt im Schnitt rund CHF 7'000 über dem Schweizer Durchschnitt.",
+        ],
+      },
+      {
+        id: "wie-viel-verdient-ein-immobilienbewirtschafter-pro-monat",
+        title: "Wie viel verdient ein Immobilienbewirtschafter pro Monat?",
+        paragraphs: [
+          "Im Schnitt rund CHF 6'500 brutto pro Monat bei 13 Monatslöhnen, im Kanton Zürich rund CHF 7'100.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-sachbearbeiter-immobilienbewirtschaftung",
+        title: "Was verdient ein Sachbearbeiter Immobilienbewirtschaftung?",
+        paragraphs: [
+          "Laut den Lohnangaben auf jobs.ch im Schnitt rund CHF 65'000 pro Jahr, in Zürich rund CHF 66'000.",
+        ],
+      },
+      {
+        id: "braucht-man-fuer-die-bewirtschaftung-einen-fachausweis",
+        title: "Braucht man für die Bewirtschaftung einen Fachausweis?",
+        paragraphs: [
+          "Gesetzlich nicht, viele Arbeitgeber setzen ihn aber voraus oder wünschen ihn. Die Berufsprüfung Immobilienbewirtschafter:in mit eidgenössischem Fachausweis ist der übliche Weg aus der Sachbearbeitung in die eigene Bewirtschaftung.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Wir besetzen aktuell Stellen in der Immobilienbewirtschaftung in Zürich und wissen, was Verwaltungen und Immobilienunternehmen für welches Profil gerade bezahlen.",
+          "Wenn du wissen willst, wo du stehst, buch dir 30 Minuten mit uns: https://bookings.cloud.microsoft/bookwithme/user/cfb807b567ee40399f96d9976d93cb62%40scale-z.ch. Unsere offenen Stellen findest du unter scale-z.ch/jobs.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "Lohnangaben Immobilienbewirtschafter, Schweiz und Zürich, jobs.ch: https://www.jobs.ch/de/lohn/?canton=ch&term=immobilienbewirtschafter und https://www.jobs.ch/de/lohn/?canton=zh&term=immobilienbewirtschafter",
+          "Lohnangaben Sachbearbeiter Immobilienbewirtschaftung, jobs.ch: https://www.jobs.ch/de/lohn/?canton=ch&term=sachbearbeiter+immobilienbewirtschaftung",
+          "Löhne im Kanton Zürich, jobs.ch: https://www.jobs.ch/de/lohn/kanton/?canton=zh Lohnangaben Immobilienbewirtschafter:in Schweiz, kununu: https://www.kununu.com/ch/gehalt/immobilienbewirtschafter-in-19422",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lohn-architekt-schweiz-2026",
     title: "Lohn Architekt Schweiz 2026 nach Erfahrung und Region",
     category: "Markt",
