@@ -1182,6 +1182,108 @@ export const jobPostings: JobPosting[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lohn-architekt-schweiz-2026",
+    title: "Lohn Architekt Schweiz 2026 nach Erfahrung und Region",
+    category: "Markt",
+    readTime: "6 Min.",
+    publishedAt: "20. November 2026",
+    teaser:
+      "Architekt:innen verdienen in der Schweiz im Schnitt rund CHF 82'000, in der Gesamtprojektleitung bei GU oder TU auch um CHF 150'000. Alle Löhne 2026.",
+    intro:
+      "Architekt:innen verdienen in der Schweiz laut den Lohnangaben auf jobs.ch im Schnitt rund CHF 82'000 pro Jahr, das sind etwa CHF 6'300 pro Monat bei 13 Monatslöhnen. Mit über zwölf Jahren Erfahrung sind es im Schnitt knapp CHF 99'000, und in der Gesamtprojektleitung bei General- und Totalunternehmen bewegen sich die Löhne bis in den Bereich von CHF 150'000. Hier findest du die Löhne nach Erfahrung, Kanton und Rolle, vom Entwurf bis zur Gesamtprojektleitung.",
+    sections: [
+      {
+        id: "was-verdient-ein-architekt-in-der-schweiz",
+        title: "Was verdient ein Architekt in der Schweiz?",
+        paragraphs: [
+          "Der Durchschnittslohn für Architekt:innen liegt laut jobs.ch bei rund CHF 82'000 pro Jahr, basierend auf über 3'000 Lohnangaben. Für die Jahre 2024 bis 2026 weist jobs.ch mit rund CHF 87'000 einen höheren Durchschnitt aus als in früheren Jahren.",
+          "Die Spanne ist gross. Zwischen einem Berufseinstieg nach dem Studium und einer Kaderfunktion in einem renommierten Büro liegen leicht CHF 100'000. Für dich zählt deshalb vor allem, wo du mit deinem Profil in dieser Spanne stehst.",
+        ],
+      },
+      {
+        id: "wie-entwickelt-sich-der-lohn-mit-der-erfahrung",
+        title: "Wie entwickelt sich der Lohn mit der Erfahrung?",
+        paragraphs: [
+          "Die Lohnangaben auf jobs.ch zeigen eine klare Treppe. In den ersten zwei Berufsjahren liegt der Durchschnitt bei rund CHF 70'000, nach drei bis fünf Jahren bei rund CHF 74'000 und nach sechs bis acht Jahren bei rund CHF 82'000.",
+          "Mit neun bis elf Jahren Erfahrung sind es im Schnitt rund CHF 88'000, mit zwölf bis einundzwanzig Jahren knapp CHF 99'000. Wer über 21 Jahre im Beruf ist, liegt im Schnitt bei rund CHF 109'000.",
+          "Die grössten Sprünge kommen also später, wenn Verantwortung für Projekte, Teams oder Bauherrschaften dazukommt.",
+        ],
+      },
+      {
+        id: "was-verdienen-architekten-in-zuerich-zug-und-bern",
+        title: "Was verdienen Architekten in Zürich, Zug und Bern?",
+        paragraphs: [
+          "Zwischen den Kantonen sind die Unterschiede kleiner, als viele denken. Laut jobs.ch liegt der Durchschnitt im Kanton Zürich bei rund CHF 82'100, im Kanton Zug bei rund CHF 87'100, im Kanton Bern bei rund CHF 83'000 und im Aargau bei rund CHF 88'000.",
+          "Wichtiger als der Kanton ist das Büro. Ein grosses Büro mit Wettbewerbserfolgen oder ein Spezialist für Bauten im Luxussegment zahlt für dieselbe Erfahrung oft anders als ein kleines Büro mit regionalen Aufträgen.",
+        ],
+      },
+      {
+        id: "entwurf-ausfuehrung-oder-projektleitung",
+        title: "Entwurf, Ausführung oder Projektleitung?",
+        paragraphs: [
+          "Im Entwurf entscheidet die gestalterische Qualität. Wer überzeugende Entwürfe liefert und sie gegenüber Bauherrschaften vertreten kann, ist in guten Büros sehr gefragt, gerade im gehobenen Wohnungsbau. In unserem aktuellen Mandat für eine Entwurfsarchitektin oder einen Entwurfsarchitekten im Luxussegment in Zürich liegt das Lohnband bei CHF 110'000 bis 180'000, die obere Grenze mit Kaderfunktion.",
+          "In der Ausführungsplanung und Projektleitung zählen Kosten, Termine und Koordination mit Fachplanern und Unternehmern. Diese Rollen sind meist näher am Bau und bieten einen klaren Weg in die Gesamtleitung.",
+          "Auf der Stufe davor arbeiten Zeichner:innen. In unserem aktuellen Mandat für Zeichner:innen EFZ Fachrichtung Architektur oder Ingenieurbau in Zürich liegt das Band bei CHF 75'000 bis 95'000.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-gesamtprojektleiter-architektur-bei-gu-und-tu",
+        title: "Was verdient ein Gesamtprojektleiter Architektur bei GU und TU?",
+        paragraphs: [
+          "Am oberen Ende der Lohnskala stehen Architekt:innen, die als Gesamtprojektleiter:in bei einem Generalunternehmen oder Totalunternehmen arbeiten. Dort tragen sie gegenüber der Bauherrschaft die Verantwortung für Kosten, Termine und Qualität eines ganzen Projekts und führen Planer, Unternehmer und Bauleitung.",
+          "Laut den Lohnangaben auf jobs.ch verdienen Gesamtprojektleiter:innen im Raum Zürich im Schnitt rund CHF 104'000, für die Jahre 2024 bis 2026 liegt der Durchschnitt bei rund CHF 108'000. Die obere Spanne reicht bis rund CHF 154'000, basierend auf über 2'500 Lohnangaben. Ein aktuelles Inserat für eine Projektleitung Architektur in Zürich vom Oktober 2026 nennt CHF 125'000 bis 130'000.",
+          "Wer grosse Projekte bei einem GU oder TU führt und dafür ein Team verantwortet, landet also realistisch im Bereich um CHF 150'000. Entscheidend sind Projektvolumen, Führungsverantwortung und die Erfahrung mit Werkverträgen und Kostengarantien.",
+        ],
+      },
+      {
+        id: "was-den-lohn-als-architekt-bewegt",
+        title: "Was den Lohn als Architekt bewegt",
+        paragraphs: [
+          "Am stärksten wirken Verantwortung und Referenzen. Ein Portfolio mit realisierten Projekten, die du selbst entworfen oder geleitet hast, ist in Lohnverhandlungen mehr wert als jeder Titel.",
+          "Danach zählen Spezialisierungen wie BIM, Bauen im Bestand, Holzbau oder Bauten im Luxussegment und die Frage, ob du Bauherrschaften selbst führst. Wer diese Rolle übernimmt, verhandelt aus einer deutlich stärkeren Position.",
+        ],
+      },
+      {
+        id: "wie-viel-verdient-ein-architekt-pro-monat",
+        title: "Wie viel verdient ein Architekt pro Monat?",
+        paragraphs: [
+          "Im Schnitt rund CHF 6'300 brutto pro Monat bei 13 Monatslöhnen. Mit über zwölf Jahren Erfahrung sind es im Schnitt rund CHF 7'600.",
+        ],
+      },
+      {
+        id: "wo-verdienen-architekten-in-der-schweiz-am-meisten",
+        title: "Wo verdienen Architekten in der Schweiz am meisten?",
+        paragraphs: [
+          "Laut den Lohnangaben auf jobs.ch liegen Zug und der Aargau mit rund CHF 87'000 bis 88'000 vorne. Entscheidender als der Kanton sind aber das Büro, die Projekte und die Verantwortung.",
+        ],
+      },
+      {
+        id: "was-verdient-ein-gesamtprojektleiter-bei-einem-gu",
+        title: "Was verdient ein Gesamtprojektleiter bei einem GU?",
+        paragraphs: [
+          "Im Raum Zürich im Schnitt rund CHF 104'000 pro Jahr laut jobs.ch, mit einer oberen Spanne bis rund CHF 154'000. Mit grossen Projekten und Führungsverantwortung sind Löhne um CHF 150'000 realistisch.",
+        ],
+      },
+      {
+        id: "wo-stehst-du-mit-deinem-lohn",
+        title: "Wo stehst du mit deinem Lohn?",
+        paragraphs: [
+          "Wir besetzen Stellen in der Architektur zwischen Zürich und der Zentralschweiz, vom Entwurf bis zur Projektleitung, und wissen, was Büros für welches Profil gerade bezahlen.",
+          "Wenn du wissen willst, wo du stehst, buch dir direkt ein unverbindliches Erstgespräch über unser Kontaktformular.",
+        ],
+      },
+      {
+        id: "quellen-und-weiterfuehrende-informationen",
+        title: "Quellen und weiterführende Informationen",
+        paragraphs: [
+          "Lohnangaben Architekt Schweiz und nach Kanton, jobs.ch: https://www.jobs.ch/de/lohn/?canton=ch&term=architekt und https://www.jobs.ch/de/lohn/?canton=zh&term=architekt",
+          "Lohnangaben 2024 bis 2026, jobs.ch: https://www.jobs.ch/de/lohn/?canton=ch&term=architect",
+          "Lohnbänder aus den Stelleninseraten von ScaleZ, Stand November 2026: https://www.scale-z.ch/jobs",
+        ],
+      },
+    ],
+  },
+  {
     slug: "loehne-gebaeudetechnik-hlk-schweiz-2026",
     title: "Löhne Gebäudetechnik und HLK Schweiz 2026",
     category: "Markt",
