@@ -1247,7 +1247,7 @@ export const jobPostings: JobPosting[] = [
       "• Eigenes Elektroauto, das du auch privat nutzen darfst",
       "• Selbstständiges Arbeiten mit Freiheit bei der Einsatzplanung",
       "• Bezahlte Weiterbildungen und viele Entwicklungsmöglichkeiten",
-      "Zugang zu einem Aktienprogramm für Mitarbeitende",
+      "• Zugang zu einem Aktienprogramm für Mitarbeitende",
       "• Abwechslungsreiche Einsätze in der Industrie",
     ],
     closingNote: [
