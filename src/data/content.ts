@@ -1219,6 +1219,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Aarau",
     addressRegion: "AG",
   },
+  {
+    slug: "servicetechniker-sicherheitsanlagen-olten",
+    title: "Servicetechniker Sicherheitsanlagen (m/w/d)",
+    region: "Region Olten, Solothurn und Basel",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Olten",
+    teaser:
+      "Gaswarn- und Sicherheitsanlagen in der Industrie betreuen, zwischen Olten und Basel. Mit eigenem Elektroauto und Aktienprogramm.",
+    compensation: "CHF 82'000 – 105'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "• Du nimmst stationäre Gaswarnanlagen in Betrieb, modernisierst und erweiterst sie",
+      "• Du behebst Störungen und führst die periodische Wartung bestehender Anlagen durch",
+      "• Du berätst die Kundschaft vor Ort zu Anforderungen und Sicherheitsfragen",
+      "• Du erstellst und pflegst die technische Dokumentation der Anlagen",
+      "• Du instruierst Elektriker:innen und Betreiber und leistest Pikettdienst",
+    ],
+    requirements: [
+      "• Technische Grundbildung, zum Beispiel als Elektroinstallateur:in EFZ oder Automatiker:in EFZ",
+      "• Erfahrung in Service, Unterhalt oder Instandhaltung technischer Anlagen",
+      "• Freude an der Arbeit in Industrieumgebungen mit klaren Sicherheitsvorschriften",
+      "• Erfahrung mit Brandmelde- oder anderen Sicherheitsanlagen ist von Vorteil",
+      "• Sehr gute Deutschkenntnisse und Fahrausweis Kategorie B",
+    ],
+    benefits: [
+      "• Eigenes Elektroauto, das du auch privat nutzen darfst",
+      "• Selbstständiges Arbeiten mit Freiheit bei der Einsatzplanung",
+      "• Bezahlte Weiterbildungen und viele Entwicklungsmöglichkeiten",
+      "Zugang zu einem Aktienprogramm für Mitarbeitende",
+      "• Abwechslungsreiche Einsätze in der Industrie",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht.",
+      "Passt es für beide Seiten, organisieren wir das Gespräch und begleiten dich bis zur Unterschrift. Dein Dossier geht nur mit deiner Zustimmung weiter. Fragen vorab? Buch dir direkt einen kurzen Termin bei uns!",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-20",
+    validThrough: "2027-01-10",
+    addressLocality: "Olten",
+    addressRegion: "SO",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
