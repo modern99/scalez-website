@@ -1301,6 +1301,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Zürich",
     addressRegion: "ZH",
   },
+  {
+    slug: "projektingenieur-niederspannungsschaltanlagen-zuerich",
+    title: "Projektingenieur Niederspannungsschaltanlagen (m/w/d)",
+    region: "Stadt Zürich",
+    employmentType: "Festanstellung, 60–100%",
+    focus: "Elektro · Zürich",
+    teaser:
+      "Niederspannungsschaltanlagen projektieren, von der Spezifikation bis zur Abnahme. Zürich, ab 60 %, mit 2 bis 3 Tagen Homeoffice pro Woche.",
+    compensation: "CHF 95'000 – 130'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du projektierst Niederspannungsschaltanlagen und erarbeitest technisch und wirtschaftlich optimale Lösungen",
+      "Du setzt Spezifikationen und Ausschreibungen in Projektierungs-, Dokumentations- und Fertigungsunterlagen um",
+      "Du führst Berechnungen und Dimensionierungen durch und unterstützt bei Netzberechnungen",
+      "Du klärst Schnittstellen zu Stromschienen, Netzersatzanlagen, USV-Systemen und Elektroinstallationen",
+      "Du begleitest Projekte von der Auftragsklärung bis zur Abnahme",
+    ],
+    requirements: [
+      "Grundbildung als Elektroinstallateur:in EFZ, Automatiker:in EFZ oder vergleichbar",
+      "Weiterbildung in Elektro- oder Energietechnik auf Stufe HF, FH oder HFP, auch wenn du gerade daran bist",
+      "Erfahrung in der Projektierung von Schaltanlagen oder Energieverteilungen",
+      "Kenntnisse in EPLAN oder AutoCAD sind von Vorteil",
+      "Verhandlungssicheres Deutsch und gute Englischkenntnisse",
+    ],
+    benefits: [
+      "Zwei bis drei Tage Homeoffice pro Woche als Standard",
+      "Flexibles Pensum ab 60 Prozent",
+      "Vergünstigtes ÖV-Abo und Gratisparkplätze",
+      "Vielfältige Weiterbildungsmöglichkeiten",
+      "Zugang zu einem Aktienprogramm für Mitarbeitende",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht.",
+      "Passt es für beide Seiten, organisieren wir das Gespräch und begleiten dich bis zur Unterschrift. Dein Dossier geht nur mit deiner Zustimmung weiter. Fragen vorab? Buch dir direkt einen kurzen Termin mit uns!",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-20",
+    validThrough: "2027-01-10",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
