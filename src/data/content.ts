@@ -1260,6 +1260,47 @@ export const jobPostings: JobPosting[] = [
     addressLocality: "Olten",
     addressRegion: "SO",
   },
+  {
+    slug: "verkaufsingenieur-gebaeudeautomation-zuerich",
+    title: "Verkaufsingenieur Gebäudeautomation (m/w/d)",
+    region: "Stadt Zürich",
+    employmentType: "Festanstellung, 80–100%",
+    focus: "Gebäudetechnik · Zürich",
+    teaser:
+      "Gebäudeautomation modernisieren und verkaufen, vom ersten Anlagencheck bis zum Vertrag. Zürich, 2 bis 3 Tage Homeoffice pro Woche.",
+    compensation: "CHF 100'000 – 125'000 / Jahr bei 100%",
+    startDate: "Ab sofort",
+    tasks: [
+      "Du betreust und entwickelst bestehende Kund:innen und analysierst ihre Gebäudeautomationsanlagen",
+      "Du erkennst Potenziale für Modernisierung und Migration und erarbeitest mit Fachpersonen massgeschneiderte Lösungen",
+      "Du erstellst Angebote, verfolgst sie nach und baust deine Pipeline aktiv auf",
+      "Du berätst deine Kundschaft technisch und wirtschaftlich bis zum Vertragsabschluss",
+      "Du arbeitest eng mit Service, Engineering und Projektabwicklung zusammen",
+    ],
+    requirements: [
+      "Technische Ausbildung in Gebäudeautomation, Automation, Elektrotechnik oder HLK",
+      "Fundiertes Wissen in Gebäudeautomation, vom Management- bis zur Feldebene",
+      "Erfahrung mit Modernisierungen, Migrationen oder im technischen Verkauf beziehungsweise in der Projektleitung",
+      "Unternehmerisches Denken und ein überzeugendes Auftreten",
+      "Sehr gute Deutsch- und gute Englischkenntnisse",
+    ],
+    benefits: [
+      "Zwei bis drei Tage Homeoffice pro Woche als Standard",
+      "Vergünstigtes ÖV-Abo und Gratisparkplätze",
+      "Pauschale für die geschäftliche Nutzung deines Privatautos",
+      "Vielfältige Weiterbildungsmöglichkeiten",
+      "Zugang zu einem Aktienprogramm für Mitarbeitende",
+    ],
+    closingNote: [
+      "Du schickst uns deinen Lebenslauf, ein Motivationsschreiben brauchen wir nicht. Innert zwei Arbeitstagen rufen wir dich an und erzählen dir in 15 Minuten alles, was nicht im Inserat steht. Passt es für beide Seiten, organisieren wir das Gespräch und begleiten dich bis zur Unterschrift. Dein Dossier geht nur mit deiner Zustimmung weiter.",
+      "Fragen vorab? Buch dir direkt einen kurzen Termin mit uns!",
+    ],
+    note: "Diskrete Besetzung · Alle Angaben vertraulich",
+    datePosted: "2026-11-20",
+    validThrough: "2027-01-10",
+    addressLocality: "Zürich",
+    addressRegion: "ZH",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
